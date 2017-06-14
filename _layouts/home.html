@@ -1,20 +1,52 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
+  {% include head.html %}
 
-  <div class="name">
-    <h1> Eric Windmill, Software Engineer </h1>
-  </div>  
-  <div class="title">
-    <h1>Developer</h1>
-    <h1>Designer</h1>
-  </div>  
-
-  <p>Software engineer with a penchant to make things userful <em>and</em> beauftiful.</p>
-    
+  <body>
 
 
+    <div class="home">
 
-</div>
+      <main class='intro'>
+        <header class="name-title">
+          <h1> Eric Windmill</h1>
+          <h1>Front-End Developer, Designer</h1>
+        </header>
+
+        <a id="to_site" href="{{site.url}}/portfolio">Blog, Resume, etc -></a>
+
+        <div class='copy'>
+          <h2>I build software experiences.</h2>
+          <p>
+            Form follows function. A beautiful software experience is about connecting the 
+            guest to the content with the least resistance possible. I thrive on creating these holistic 
+            experiences with careful planning, scalable technology, and intuitive design. 
+          </p>
+        </div>
+
+      </main> <!-- intro --> 
+      
+      <section class="projects">
+        <div class="project" id="grooviehq">
+          GROOVIE
+        </div>
+        <div class="project" id="on-the-grid">
+          ON THE GRID
+        </div>
+        <div class="project" id="bulletin">
+          BULLETIN
+        </div>
+      </section> <!-- prjects -->
+      
+      <aside class="about">
+        <h2>About</h2>
+        <p>I graduated from the University of Louisville in 2012, where I studied social sciences and language. I'm currently living in San Francisco, CA.</p>
+        <p>I spend my time making tools that I want to use, reading books, and devouring music. I used to be a Sommelier, and I still find wine to be the most interesting way to study places and history. It's been a joy to apply the hospitality mindset to software experiences. </p>
+        <p> Github | Linked In | Email | Instagram | Twitter | Blog | Résumé 
+      </aside> <!-- about -->
+
+
+    </div>
+  </body>
+</html>

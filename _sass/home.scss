@@ -1,0 +1,61 @@
+.home {
+  padding: 20px;
+
+  main, section, header {
+    border-bottom: 1px solid grey;
+  }
+}
+
+.intro {
+  .name-title {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      margin: 0;
+    }
+  }
+  
+
+
+  a#to_site {
+    display: block;
+    text-align: right;
+  }
+
+  .copy {
+    padding: 20px;
+    margin: 20px 0;
+
+    p {
+      width: 60%;
+      font-size: $base-font-size * 1.4;
+    }
+  }
+}
+
+.projects {
+  
+  .project {
+    height: 300px;
+    background-color: grey;
+    margin: 40px 0;
+  }
+
+  #grooviehq {
+    background-color: $light-purple;
+  }
+
+  #on-the-grid {
+    background-color: $shell-pink;
+  }
+
+  #bulletin {
+    background-color: $light-blue;
+  }
+}
+
+.about {
+  padding: 20px;
+  width: 50%;
+}
