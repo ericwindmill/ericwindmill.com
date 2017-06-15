@@ -11,15 +11,25 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
+$text-color:       darken($slate, 50%) !default;
 $background-color: #fdfdfd !default;
-$purple:           #6534ff !default;
-$light-blue:       #62bcfa !default;
-$shell-pink:       #fccdd3 !default;
-$light-purple:     #bbc4ef !default;
-$brand-color:      #2a7ae2 !default;
 
-$grey-color:       #828282 !default;
+//flat, cool theme:
+$blue:             #4D6D9A !default; 
+$grey-blue:        #86B3d1 !default;
+$shell-pink:       #EDB5BF !default; // ACCENT
+$teal:             #99CED3 !default; // ACCENT
+
+// darker greens and reds:
+$slate:            #2F4454 !default; // Backgrounds whatnot
+$dark-red:         #2E151B !default; 
+$light-red:        #DA7B93 !default; //accents
+$light-teal:       #376E6F !default; //accents
+$dark-teal:        #1C3334 !default;
+
+
+//Greys
+$grey-color:       #5F6366 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
