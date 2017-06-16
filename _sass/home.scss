@@ -1,70 +1,215 @@
-.home {
-  padding: 20px;
+.home-wrapper {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  // margin-left: auto;
+  padding-right: $spacing-unit;
+  // padding-left: $spacing-unit;
+  @extend %clearfix;
 
-  main, section, header {
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+
+.home_body {
+  .breaker {
     border-bottom: 1px solid $text-color;
   }
 }
 
-.intro {
-  .name-title {
+.home {
+  padding: 20px;
+
+
+  main, section, header {
+
+  }
+}
+
+.name-title {
+
+  .title {
     display: flex;
     justify-content: space-between;
-
     h1 {
+      font-size: $base-font-size * 1.5;
       margin: 0;
     }
   }
-  
-
 
   a#to_site {
     display: block;
     text-align: right;
   }
+}
 
-  .copy {
-    padding: 20px;
-    margin: 20px 0;
 
-    p {
-      width: 60%;
-      font-size: $base-font-size * 1.4;
-    }
+
+.intro {
+  padding: 20px;
+  width: 60%;
+
+
+  p {
+    font-size: $base-font-size * 1.4;
   }
 }
 
-.projects {
+.projects-container {
+  width: $content-width;
   
-  .project {
-    height: 300px;
-    background-color: $slate;
-    margin: 40px 0;
-  }
+  .projects {
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
 
-  .project-header {
-    margin: 0 20px;
-    height: 60px;
-    
-    h1 {
-      color: $grey-color-light;
+    .project {
+      max-width: 400px;
+      background-color: $slate;
+      margin: 5px;
+
+      .project-header {  
+        height: 60px;
+        background-color: lighten($slate,5%);
+        
+        h1 {
+          color: $light-red;
+          font-size: $base-font-size * 2;
+          text-transform: uppercase; 
+          font-weight: 700;
+          padding: 10px;
+        }
+      }
+
+
+    .project-image {
+      width: 100%;
+      position: relative;
+      margin: 0;
+      overflow: hidden;
     }
+
+      .project-image img {
+        width: 100%;
+        display: block;
+      }
+
+      .project-image figcaption {
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+      .project-image.left figcaption {
+      top: 0;
+      left: -100%;
+    }
+
+      .project-image.right figcaption {
+      top: 0;
+      right: -100%;
+    }
+
+      .project-image.top figcaption {
+      top: -100%;
+    }
+
+      .project-image.bottom figcaption {
+      bottom: -100%;
+    }
+
+    .project-image figcaption {
+      transition: 0.2s ease-in-out;
+    }
+
+      .project-image.left.animated figcaption {
+      left: 0;
+    }
+
+      .project-image.right.animated figcaption {
+      right: 0;
+    }
+
+      .project-image.top.animated figcaption {
+      top: 0;
+    }
+
+      .project-image.bottom.animated figcaption {
+      bottom: 0;
+    }
+
+      .project-image figcaption .description {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+      .project-image figcaption .description h1 {
+          color: lighten($light-teal, 10%);
+          font-size: $base-font-size * 2;
+          text-transform: uppercase; 
+          font-weight: 700;
+          padding: 10px;
+    }
+
+      .project-image figcaption .description p {
+      font-family: helvetica, arial, sans-serif;
+      color: white;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      bottom: 50px;
+    }
+
+    }
+   
   }
 
-  #grooviehq {
+    
 
-  }
+    #grooviehq {
 
-  #on-the-grid {
+      #groovie-img {
+        // width: 100%;
+        height: auto;
+      }
 
-  }
+    }
 
-  #bulletin {
+    #on-the-grid {
 
-  }
+    }
+
+    #bulletin {
+
+    }
 }
 
 .about {
   padding: 20px;
-  width: 50%;
+  width: 60%;
 }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    z-index: 10000;
+}
+
+
+

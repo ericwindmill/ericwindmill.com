@@ -2,8 +2,8 @@
 
 // Define defaults for each variable.
 
-$serif:       'Georgia', serif !default;
-$sans-serif:            "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serif:            'Georgia', serif !default;
+$sans-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -11,14 +11,13 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       darken($slate, 50%) !default;
-$background-color: #fdfdfd !default;
+
 
 //flat, cool theme:
-$blue:             #4D6D9A !default; 
-$grey-blue:        #86B3d1 !default;
-$shell-pink:       #EDB5BF !default; // ACCENT
-$teal:             #99CED3 !default; // ACCENT
+// $blue:             #4D6D9A !default; 
+// $grey-blue:        #86B3d1 !default;
+// $shell-pink:       #EDB5BF !default; // ACCENT
+// $teal:             #99CED3 !default; // ACCENT
 
 // darker greens and reds:
 $slate:            #2F4454 !default; // Backgrounds whatnot
@@ -27,14 +26,17 @@ $light-red:        #DA7B93 !default; //accents
 $light-teal:       #376E6F !default; //accents
 $dark-teal:        #1C3334 !default;
 
-
 //Greys
 $grey-color:       #5F6366 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$text-color:       darken($slate, 30%) !default;
+$text-color-light: lighten($text-color, 40%) !default;
+$background-color: #fdfdfd !default;
+
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    900px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;

@@ -3,54 +3,119 @@
 
   {% include head.html %}
 
-  <body>
-
-
+  <body class='home_body'>
     <div class="home">
 
-      <main class='intro'>
-        <header class="name-title">
+
+
+      <header class="name-title home-wrapper">
+        <div class='title'>
           <h1> Eric Windmill</h1>
           <h1>Front-End Developer, Designer</h1>
-        </header>
+        </div>
+          <a id="to_site" href="{{site.url}}/portfolio">Blog, Resume, etc -></a>
+      </header>  
 
-        <a id="to_site" href="{{site.url}}/portfolio">Blog, Resume, etc -></a>
+      <div class='breaker'></div>
 
-        <div class='copy'>
+      <main class='intro home-wrapper'>
           <h2>I build software experiences.</h2>
           <p>
             Form follows function. A beautiful software experience is about connecting the 
             guest to the content with the least resistance possible. I thrive on creating these holistic 
             experiences with careful planning, scalable technology, and intuitive design. 
           </p>
-        </div>
-
       </main> <!-- intro --> 
-      
-      <section class="projects">
-        <div class="project" id="grooviehq">
-          <div class='project-header'>
-            <h1>GROOVIE HQ</h1> 
+
+      <div class='breaker'></div>
+
+      <section class="projects-container home-wrapper">
+
+        <div class='projects'>
+          <div class="project" id="grooviehq">
+            <figure class="project-image">
+              <div class='project-header'>
+              <h1><em>GroovieHQ</em></h1> 
+            </div>
+              <img id='groovie-img' src='http://res.cloudinary.com/ericwindmill/image/upload/v1497634144/portfolio_site/groovie-browser.png' />
+              <figcaption>
+                <div class='description'>
+                  <h1><em>GroovieHQ</em></h1> 
+                  <p>Description</h1>
+                </div>
+              </figcaption>
+              </figure>
           </div>
 
+          <div class="project" id="grooviehq">
+            <figure class="project-image">
+              <div class='project-header'>
+              <h1><em>GroovieHQ</em></h1> 
+            </div>
+              <img id='groovie-img' src='http://res.cloudinary.com/ericwindmill/image/upload/v1497634144/portfolio_site/groovie-browser.png' />
+              <figcaption>
+                <div class='description'>
+                  <h1><em>GroovieHQ</em></h1> 
+                  <p>Description</h1>
+                </div>
+              </figcaption>
+              </figure>
+          </div>
+            
+          <div class="project" id="grooviehq">
+            <figure class="project-image">
+              <div class='project-header'>
+              <h1><em>GroovieHQ</em></h1> 
+            </div>
+              <img id='groovie-img' src='http://res.cloudinary.com/ericwindmill/image/upload/v1497634144/portfolio_site/groovie-browser.png' />
+              <figcaption>
+                <div class='description'>
+                  <h1><em>GroovieHQ</em></h1> 
+                  <p>Description</h1>
+                </div>
+              </figcaption>
+              </figure>
+          </div>
 
-        </div>
-        <div class="project" id="on-the-grid">
-          ON THE GRID
-        </div>
-        <div class="project" id="bulletin">
-          BULLETIN
-        </div>
-      </section> <!-- prjects -->
+                    <div class="project" id="grooviehq">
+            <figure class="project-image">
+              <div class='project-header'>
+              <h1><em>GroovieHQ</em></h1> 
+            </div>
+              <img id='groovie-img' src='http://res.cloudinary.com/ericwindmill/image/upload/v1497634144/portfolio_site/groovie-browser.png' />
+              <figcaption>
+                <div class='description'>
+                  <h1><em>GroovieHQ</em></h1> 
+                  <p>Description</h1>
+                </div>
+              </figcaption>
+              </figure>
+          </div>
       
-      <aside class="about">
+        </div> <!-- projects -->
+      </section> <!-- prjects-containter -->
+
+      <div class='breaker'></div>
+
+      <aside class="about home-wrapper">
         <h2>About</h2>
         <p>I graduated from the University of Louisville in 2012, where I studied social sciences and language. I'm currently living in San Francisco, CA.</p>
         <p>I spend my time making tools that I want to use, reading books, and devouring music. I used to be a Sommelier, and I still find wine to be the most interesting way to study places and history. It's been a joy to apply the hospitality mindset to software experiences. </p>
         <p> Github | Linked In | Email | Instagram | Twitter | Blog | Résumé 
       </aside> <!-- about -->
-
-
     </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--<script type='text/javascript' src="{{"/assets/home.js" | relative_url }}"></script>-->
+  <script>
+  (function(b,c){b.HoverDir=function(d,e){this.$el=b(e);this._init(d)};b.HoverDir.defaults={hoverDelay:0,reverse:false};b.HoverDir.prototype={_init:function(d){this.options=b.extend(true,{},b.HoverDir.defaults,d);this._loadEvents()},_loadEvents:function(){var d=this;this.$el.on("mouseenter.hoverdir, mouseleave.hoverdir",function(i){var g=b(this),h=i.type,e=g.find("div"),j=d._getDir(g,{x:i.pageX,y:i.pageY}),f=d._getClasses(j);e.removeClass();if(h==="mouseenter"){e.hide().addClass(f.from);clearTimeout(d.tmhover);d.tmhover=setTimeout(function(){e.show(0,function(){b(this).addClass("da-animate").addClass(f.to)})},d.options.hoverDelay)}else{e.addClass("da-animate");clearTimeout(d.tmhover);e.addClass(f.from)}})},_getDir:function(f,j){var e=f.width(),g=f.height(),d=(j.x-f.offset().left-(e/2))*(e>g?(g/e):1),k=(j.y-f.offset().top-(g/2))*(g>e?(e/g):1),i=Math.round((((Math.atan2(k,d)*(180/Math.PI))+180)/90)+3)%4;return i},_getClasses:function(e){var f,d;switch(e){case 0:(!this.options.reverse)?f="da-slideFromTop":f="da-slideFromBottom";d="da-slideTop";break;case 1:(!this.options.reverse)?f="da-slideFromRight":f="da-slideFromLeft";d="da-slideLeft";break;case 2:(!this.options.reverse)?f="da-slideFromBottom":f="da-slideFromTop";d="da-slideTop";break;case 3:(!this.options.reverse)?f="da-slideFromLeft":f="da-slideFromRight";d="da-slideLeft";break}return{from:f,to:d}}};var a=function(d){if(this.console){console.error(d)}};b.fn.hoverdir=function(e){if(typeof e==="string"){var d=Array.prototype.slice.call(arguments,1);this.each(function(){var f=b.data(this,"hoverdir");if(!f){a("cannot call methods on hoverdir prior to initialization; attempted to call method '"+e+"'");return}if(!b.isFunction(f[e])||e.charAt(0)==="_"){a("no such method '"+e+"' for hoverdir instance");return}f[e].apply(f,d)})}else{this.each(function(){var f=b.data(this,"hoverdir");if(!f){b.data(this,"hoverdir",new b.HoverDir(e,this))}})}return this}})(jQuery);
+
+  $(function() {
+    $('project').hoverdir();
+    $('figcaption').addClass('da-slideFromLeft da-slideLeft da-animate')
+  });
+
+  </script>
   </body>
 </html>
+
