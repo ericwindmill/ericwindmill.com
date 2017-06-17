@@ -54,6 +54,7 @@ $(document).ready(() => {
     });
     
     $('.project-image').bind('mouseleave', function(e){
+      // var lastDirection = getDir($(this), e);
       $(this).removeClass(lastDirection).removeClass('animated');
     });
   })

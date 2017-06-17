@@ -65,12 +65,12 @@
   
   .projects {
     margin: 20px;
-    display: flex;
+    // display: flex;
     width: 100%;
     flex-flow: row wrap;
 
     .project {
-      max-width: 400px;
+      // max-width: 400px;
       background-color: $slate;
       margin: 5px;
 
@@ -125,8 +125,8 @@
       bottom: -100%;
     }
 
-    .project-image figcaption {
-      transition: 0.2s ease-in-out;
+    .project-image.animated figcaption {
+      transition: 0.2s ease-out;
     }
 
       .project-image.left.animated figcaption {
@@ -159,7 +159,7 @@
           padding: 10px;
     }
 
-      .project-image figcaption .description p {
+    .project-image figcaption .description p {
       font-family: helvetica, arial, sans-serif;
       color: white;
       text-align: center;
@@ -197,19 +197,28 @@
   width: 60%;
 }
 
-#overlay {
-    position: fixed;
+// #overlay {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #000;
+//     filter:alpha(opacity=50);
+//     -moz-opacity:0.5;
+//     -khtml-opacity: 0.5;
+//     opacity: 0.5;
+//     z-index: 10000;
+// }
+
+
+
+.overlay-header {
+    color: $light-teal;
+    font-size: $base-font-size * 2;
+    text-transform: uppercase; 
+    font-weight: 700;
+    padding: 10px;
+    font-family: $sans-serif;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    filter:alpha(opacity=50);
-    -moz-opacity:0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
-    z-index: 10000;
 }
-
-
-
