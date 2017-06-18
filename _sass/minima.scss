@@ -28,12 +28,11 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $text-color:       #030303 !default;
-$text-color-light: lighten($text-color, 40%) !default;
+$light-text:       #cbd2db !default;
 $background-color: #fff9f9 !default;
 
 // Width of the content area
 $content-width:    900px !default;
-
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 

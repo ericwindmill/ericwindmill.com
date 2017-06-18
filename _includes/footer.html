@@ -1,45 +1,26 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <!--<div class="wrapper">
+      <div class='footer-nav'>
+        <a class='footer-nav-item' href="#">Portfolio</a>
+        <a class='footer-nav-item' href="#">Articles</a>
+        <a class='footer-nav-item' href="#">Reading List</a>
+        <a class='footer-nav-item' href="#">Résumé</a>
+      </div>-->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
+          <a href='https://github.com/ericwindmill' class='social-icon github'><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href='https://mailto:eric@ericwindmill.com' class='social-icon email'><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          <a href='https://instagram.com/ericwindmill' class='social-icon instagram'><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href='https://linkedin.com/in/ericwindmill' class='social-icon linkedin'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href='https://twitter.com/ericwindmill' class='social-icon twitter'><i class="fa fa-twitter" aria-hidden="true"></i></a>
       </div>
-
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+        <p class='site-description'>{{ site.description | escape }}</p>    
       </div>
     </div>
+
 
   </div>
 

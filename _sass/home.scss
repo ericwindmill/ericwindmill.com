@@ -60,7 +60,7 @@
 
 
 .intro {
-  padding: 100px 0;
+  padding: 150px 0;
   background-color: #2B313D;
 
 
@@ -200,9 +200,21 @@
   
 }
 
+.about-content {
+  display: flex;
+  flex-direction: row;
+}
+
 .about {
-  padding: 20px;
+  padding:  100px 20px;
   width: 60%;
+
+}
+
+#about-img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
 }
 
 
