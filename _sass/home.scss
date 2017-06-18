@@ -2,9 +2,9 @@
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
-  // margin-left: auto;
+  margin-left: auto;
   padding-right: $spacing-unit;
-  // padding-left: $spacing-unit;
+  padding-left: $spacing-unit;
   @extend %clearfix;
 
   @include media-query($on-laptop) {
@@ -15,181 +15,189 @@
   }
 }
 
-
-.home_body {
-  .breaker {
-    border-bottom: 1px solid $text-color;
-  }
-}
-
-.home {
-  padding: 20px;
+.title-bg {
+  background-color: $sky-blue;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
 
-  main, section, header {
+  .name-title {
 
-  }
-}
-
-.name-title {
-
-  .title {
-    display: flex;
-    justify-content: space-between;
     h1 {
+      color: $background-color;
+      font-size: $base-font-size * 4;
+      text-transform: uppercase;
+      font-weight: 800;
+      align-self: center; 
+      text-shadow: 2px 2px 1px rgba(10,10,10,0.3);
+      font-family: $base-font;
+      letter-spacing: 10px;
+      }
+
+    h3 {
+      color: $background-color;
       font-size: $base-font-size * 1.5;
-      margin: 0;
+      font-weight: 300;
+      text-align: center;
     }
   }
 
-  a#to_site {
-    display: block;
-    text-align: right;
+  #title-sq {
+    z-index: 0;
+    background-color: $sky-blue;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 6%;
+    left: 47%;
+    transform: rotate(45deg); 
+
   }
 }
-
 
 
 .intro {
-  padding: 20px;
-  width: 60%;
+  padding: 100px 0;
+  background-color: #2B313D;
 
 
-  p {
-    font-size: $base-font-size * 1.4;
+  .intro-content {
+
+    z-index: -2;
+    padding: 20px;
+    width: 60%;
+    h2 {
+      color: $background-color;
+      font-size: $base-font-size * 2.4;
+    }
+    p {
+      color: $background-color;
+      font-size: $base-font-size * 1.4;
+    }
   }
 }
 
-.projects-container {
-  width: $content-width;
-  
-  .projects {
-    margin: 20px;
-    // display: flex;
-    width: 100%;
-    flex-flow: row wrap;
 
-    .project {
-      // max-width: 400px;
-      background-color: $slate;
-      margin: 5px;
 
-      .project-header {  
-        height: 60px;
-        background-color: lighten($slate,5%);
-        
-        h1 {
-          color: $light-red;
-          font-size: $base-font-size * 2;
-          text-transform: uppercase; 
-          font-weight: 700;
-          padding: 10px;
-        }
+
+.portfolio-title {
+  font-size: $base-font-size * 4;
+  background-color: #2B313D;
+  margin: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.portfolio {
+  padding: 0 0 100px;
+  margin: 0 0;
+  background-color: #2B313D;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.project-list {
+  li {
+    font-size: $base-font-size * 2;
+    font-weight: 300;    
+    list-style: none;
+    padding: 10px 20px;
+
+
+    p {
+      display: inline-block;
+      color: lighten($dark-background, 30%);
+    }
+
+    h2 {
+      display: inline-block;
+      font-weight: 300;
+      color: lighten($dark-background, 30%);
+    }
+  }
+}
+
+.projects {
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+
+  .project-content {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    
+    &:hover {
+      .project-info {
+        color: black;
       }
-
-
-    .project-image {
-      width: 100%;
-      position: relative;
-      margin: 0;
-      overflow: hidden;
-    }
-
-      .project-image img {
-        width: 100%;
-        display: block;
+      .highlights {
+        color: white;
+        background-color: grey;
       }
-
-      .project-image figcaption {
-      background: rgba(0,0,0,0.5);
-      position: absolute;
-      width: 100%;
-      height: 100%;
     }
-
-      .project-image.left figcaption {
-      top: 0;
-      left: -100%;
-    }
-
-      .project-image.right figcaption {
-      top: 0;
-      right: -100%;
-    }
-
-      .project-image.top figcaption {
-      top: -100%;
-    }
-
-      .project-image.bottom figcaption {
-      bottom: -100%;
-    }
-
-    .project-image.animated figcaption {
-      transition: 0.2s ease-out;
-    }
-
-      .project-image.left.animated figcaption {
-      left: 0;
-    }
-
-      .project-image.right.animated figcaption {
-      right: 0;
-    }
-
-      .project-image.top.animated figcaption {
-      top: 0;
-    }
-
-      .project-image.bottom.animated figcaption {
-      bottom: 0;
-    }
-
-      .project-image figcaption .description {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-
-      .project-image figcaption .description h1 {
-          color: lighten($light-teal, 10%);
-          font-size: $base-font-size * 2;
-          text-transform: uppercase; 
-          font-weight: 700;
-          padding: 10px;
-    }
-
-    .project-image figcaption .description p {
-      font-family: helvetica, arial, sans-serif;
-      color: white;
-      text-align: center;
-      position: absolute;
-      width: 100%;
-      bottom: 50px;
-    }
-
-    }
-   
   }
 
-    
+  .project-info {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    width: 70%;
+    font-size: $base-font-size * 1.4;
+    margin: 0 0 40px 15px;
+    background-color: rgba(10,10,10,1);
+    box-shadow: -2px 2px 5px rgba(10,10,10,.5);
+    .highlights {
+      display: inline;
 
-    #grooviehq {
+    }
+  }
 
-      #groovie-img {
-        // width: 100%;
-        height: auto;
+    #groovie-display {
+      background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1497802803/portfolio_site/groovie-dash-with-border.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    #bulletin-display {
+      background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1497803744/portfolio_site/bulletin-map-border.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      #bulletin-info {
+        width: 40%;
       }
-
     }
 
-    #on-the-grid {
+     #on-the-grid-display {
+      background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1497804715/portfolio_site/on-the-grid-border.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
 
+      #on-the-grid-info {
+        width: 70%;
+      }
     }
 
-    #bulletin {
+}
 
-    }
+
+
+.about-bg {
+  
 }
 
 .about {
@@ -197,28 +205,24 @@
   width: 60%;
 }
 
-// #overlay {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #000;
-//     filter:alpha(opacity=50);
-//     -moz-opacity:0.5;
-//     -khtml-opacity: 0.5;
-//     opacity: 0.5;
-//     z-index: 10000;
-// }
 
+.overlay {
+    font-size: 32px;
+    font-weight: 300;    
+    list-style: none;
+    padding: 10px 20px;
+    color: $pink;
 
+}
 
 .overlay-header {
-    color: $light-teal;
-    font-size: $base-font-size * 2;
-    text-transform: uppercase; 
-    font-weight: 700;
-    padding: 10px;
-    font-family: $sans-serif;
-    top: 0;
+    margin-left: 5px;
+    color: $pink;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.overlay-num {
+    display: inline-block;
+    color: $pink;
 }
