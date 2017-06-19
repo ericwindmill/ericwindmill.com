@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-## [GroovieHQ](grooviehq.com) 
+## [GroovieHQ](https://grooviehq.com) 
 {: style='text-align: center'}
 #### Ruby on Rails, React.js, Redux
 *Tracks users concert attendance and returns metrics based on concert history.*
