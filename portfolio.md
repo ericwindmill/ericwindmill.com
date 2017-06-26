@@ -13,6 +13,10 @@ permalink: /portfolio/
 * Hand-rolled backend and frontend user authentication by bootstrapping the credentials
 {: style='padding-bottom:10px;margin-bottom: 100px;border-bottom:solid black 1px;'}
 
+<div class='groovie-grid'>
+
+
+</div>
 
 
 ## [On the Grid](https://ericwindmill.github.io/on-the-grid/)
