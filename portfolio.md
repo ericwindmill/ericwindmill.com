@@ -1,8 +1,4 @@
----
-layout: page
-title: Portfolio
-permalink: /portfolio/
----
+
 
 ## [GroovieHQ](https://grooviehq.com) 
 {: style='text-align: center'}
