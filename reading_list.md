@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Reading List
+title: Library
 permalink: /books/
 ---
 ### “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.” ― Dr. Seuss, I Can Read With My Eyes Shut!
 
 <br/><br/>
-I'm often perplexed that I didn't appreciate books until I was an adult.
+We're often asked where we learned about ________ . No matter the subject, the best answer is books. 
 
- I find them to the best way to learn how to live. We all have a duty to help those around us become their best possible selves. The best way I know how to do so is pass them on to the words of men and women who are much wiser than me. 
+I look to books to become a better person, a better developer and better friend. I use books to study and pass exams. I read books simply to escape. 
 
-The following books have made me better at everything I do. From simply being a more pleasant person, to being a more proactive problem solver and developer.
+The following books have made me better at everything I do. 
 
 
 <br/><br/>
@@ -30,16 +30,23 @@ The lessons learned in this book expand far beyond the restaurant industry. This
 If that isn't enough,  the lessons in this book are wrapped up in the true stroy of how one man changed the resturant industry through the power of simply following the golden rule.  I can't recommend this book enough for anyone that has to interact with a human at work. (So, everyone.)
 <br/><br/>
 
-#### The Rest of the Bunch
+## The Rest of the Bunch
 
+### On Living: 
 + **Guide to the Good Life: The Ancient Art of Stoic Joy – William B. Irvine**
 + **Letters From a Stoic – Seneca**
 + **When Breath Becomes Air – Paul Kalanithi**
 + **The Alchemist – Paulo Coelho**
 + **Mans Search For Meaning – Viktor Frankl**
-+ **In Defense of Food – Michael Pollan**
-+ **The Obstacle is the Way** and **The Ego is the Enemy – Ryan Holiday**
-+ **Bird by Bird - Ann Lemont**
++ **The Ego is the Enemy – Ryan Holiday**
 + **The River of Doubt – Candice Millard**
 + **Stumbling On Happiness – Daniel Gilbert**
 + **Wild – Cheryl Strayed –**
++ **In Defense of Food – Michael Pollan**
+
+### On Development, Design and Work:
++ **Bird by Bird - Ann Lemont**
++ **Learn to Program - Chris Pine**
++ **The Cathedral and the Baazar - Eric Raymond** 
++ **The Obstacle is the Way - Ryan Holiday**
+
