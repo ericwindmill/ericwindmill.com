@@ -1,0 +1,58 @@
+.q {
+  font-weight: 600;
+  font-size: $base-font-size * 1.2;
+  line-height: $base-line-height * 1.5;
+}
+
+.contact-form {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  font-family: $base-font;
+}
+
+.email-field {
+  height: 40px;
+  border: none;
+  border-bottom: .5px grey solid;
+  margin-bottom: 10px;
+  transition: all 0.3 ease-in;
+    font-family: $base-font;
+    font-size: $base-font-size;
+
+    &:focus {
+      border-bottom: 2px #54CC9B solid;
+      outline: none;
+    }
+}
+
+.message-field {
+  flex-grow: 1;
+  border: none;
+  border: .5px grey solid;
+  margin-bottom: 10px;
+      font-family: $base-font;
+    font-size: $base-font-size;
+
+  &:focus {
+    border: 2px #54CC9B solid;
+    outline: none;
+  }
+}
+
+.submit-button {
+  border: 1px solid black;
+  border-radius: none;
+  background: white;
+  height: 40px;
+    font-family: $base-font;
+    font-size: $base-font-size;
+    &:hover, &:focus {
+      background-color: dodgerblue;
+      background-image: linear-gradient(to right, #59BCDB, #56C4BB, #54CC9B, #52D47B, #50DC5B);
+      border: 1px solid white;
+      color: white;
+    }
+}
