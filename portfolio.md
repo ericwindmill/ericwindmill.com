@@ -1,10 +1,6 @@
----
-layout: page
-title: Portfolio
-permalink: /portfolio/
----
 
-## [GroovieHQ](grooviehq.com) 
+
+## [GroovieHQ](https://grooviehq.com) 
 {: style='text-align: center'}
 #### Ruby on Rails, React.js, Redux
 *Tracks users concert attendance and returns metrics based on concert history.*
@@ -13,6 +9,10 @@ permalink: /portfolio/
 * Hand-rolled backend and frontend user authentication by bootstrapping the credentials
 {: style='padding-bottom:10px;margin-bottom: 100px;border-bottom:solid black 1px;'}
 
+<div class='groovie-grid'>
+
+
+</div>
 
 
 ## [On the Grid](https://ericwindmill.github.io/on-the-grid/)
