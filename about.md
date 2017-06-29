@@ -1,9 +1,4 @@
-<!----- 
-layout: page
-title: About
-permalink: /about/
------>
-
+<!--
 ### 1990 - Born in the Bluegrass State
 
 
@@ -21,4 +16,4 @@ I made a Ruby script that outputs random prompts for daily journaling in differe
 
 ### 2017 - App Academy - The Deep Dive
 The 'bootcamp' lifestyle appeals to me. As does the hack-a-thon weekend. Going all in on one subject to excellerate learning and building. App Academy gave me the foundation I needed to understand how to build full-stack apps. Most importanly, I learned what's actually happening behind the scenes. Writing Rails or React is one thing, understanding is another.
-
+-->

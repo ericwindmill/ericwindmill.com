@@ -114,9 +114,37 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  margin: -1px;
   padding: $spacing-unit 0;
   background-color: $dark-background;
+}
+.footer-msg {
+  text-align: center;
+  color: white;
+  font-size: $base-font-size * 2;
+  font-weight: 300;
+}
+
+.button-container {
+  margin: 30px auto 50px;; 
+  text-align: center
+}
+
+.button {
+  font-size: $base-font-size * 1.5;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 10px;
+  background-image: linear-gradient(to right, #8860D0, #7C76D6, #718Cdd, #65a2e3, #5ab9ea);
+  background: #54CC9B;
+  transition: all 0.1s ease;
+  color: $dark-background;
+  font-weight: 300;
+
+  &:hover {
+    border-radius: 0 15px 15px 15px;
+  }
+
 }
 
 .footer-heading {

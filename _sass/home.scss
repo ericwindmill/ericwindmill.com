@@ -17,16 +17,25 @@
 
 .title-bg {
   background-color: $sky-blue;
-  background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1498534849/portfolio_site/bg.png');
+  background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1498708259/portfolio_site/bg-2.png');
   background-size: cover;
-  height: 75vh;
+  background-position: right bottom;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 
-
   .name-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      align-self: center;
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
     h1 {
       color: $background-color;
@@ -44,40 +53,7 @@
       font-size: $base-font-size * 1.5;
       font-weight: 300;
       text-align: center;
-    }
-  }
-
-  #title-sq {
-    z-index: 0;
-    background-color: $sky-blue;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 6%;
-    left: 47%;
-    transform: rotate(45deg); 
-
-  }
-}
-
-
-.intro {
-  padding: 150px 0;
-  background-color: #2B313D;
-
-
-  .intro-content {
-
-    z-index: -2;
-    padding: 20px;
-    width: 60%;
-    h2 {
-      color: $background-color;
-      font-size: $base-font-size * 2.4;
-    }
-    p {
-      color: $background-color;
-      font-size: $base-font-size * 1.4;
+      margin-bottom: 0;
     }
   }
 }
@@ -86,157 +62,46 @@
 
 
 .portfolio-title {
-  font-size: $base-font-size * 4;
-  background-color: #2B313D;
-  margin: 0;
+  font-size: $base-font-size * 3;
+  font-weight: 300;
+  margin: 40px 0;
   text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 800;
+  color: block;
 }
 
-.portfolio {
-  padding: 0 0 100px;
-  margin: 0 0;
-  background-color: #2B313D;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
+
+.works-page {
+  margin: 20px 0 150px;
 
 }
-
-.project-list {
-  li {
-    font-size: $base-font-size * 2;
-    font-weight: 300;    
-    list-style: none;
-    padding: 10px 20px;
-
-
-    p {
-      display: inline-block;
-      color: lighten($dark-background, 30%);
-    }
-
-    h2 {
-      display: inline-block;
-      font-weight: 300;
-      color: lighten($dark-background, 30%);
-    }
-  }
-}
-
-.projects {
-  width: 600px;
-  height: 500px;
-  overflow: hidden;
-
-  .project-content {
-    width: auto;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    
-    &:hover {
-      .project-info {
-        color: black;
-      }
-      .highlights {
-        color: white;
-        background-color: grey;
-      }
-    }
-  }
-
-  .project-info {
-    color: white;
-    position: absolute;
-    bottom: 5%;
-    left: 1%;
-    width: 70%;
-    font-size: $base-font-size * 1.4;
-    margin: 0 0 40px 15px;
-    background-color: rgba(10,10,10,1);
-    box-shadow: -2px 2px 5px rgba(10,10,10,.5);
-    .highlights {
-      display: inline;
-
-    }
-  }
-
-    #groovie-display {
-      background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_500/v1498608266/portfolio_site/Groovie-gradient.png');
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    #bulletin-display {
-      background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_500/v1498608514/portfolio_site/bulletin-gradient-2.png');
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      #bulletin-info {
-        width: 40%;
-      }
-    }
-
-     #on-the-grid-display {
-      background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_500/v1498608498/portfolio_site/on-the-grid-gradient-2.png');
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      #on-the-grid-info {
-        width: 70%;
-      }
-    }
-
-}
-
 
 
 .about-bg {
-  
-}
-
-.about-content {
-  display: flex;
-  flex-direction: row;
+    background-color: #2B313D;
+    padding: 60px 0 20px;
 }
 
 .about {
-  padding:  100px 20px;
-  width: 60%;
 
+  h2 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    line-height: 1.2;
+  }
 }
+
+.about-content {
+
+  > p {
+    color: white;
+  }
+}
+
+
 
 #about-img {
   width: 200px;
   height: 200px;
   margin-right: 20px;
-}
-
-
-.overlay {
-    font-size: 32px;
-    font-weight: 300;    
-    list-style: none;
-    padding: 10px 20px;
-    color: $pink;
-
-}
-
-.overlay-header {
-    margin-left: 5px;
-    color: $pink;
-    display: inline-block;
-    font-weight: 300;
-}
-
-.overlay-num {
-    display: inline-block;
-    color: $pink;
 }
