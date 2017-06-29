@@ -114,9 +114,28 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  margin: -1px;
   padding: $spacing-unit 0;
   background-color: $dark-background;
+}
+.footer-msg {
+  text-align: center;
+  color: white;
+  font-size: $base-font-size * 2;
+  font-weight: 300;
+}
+
+.button {
+    font-size: $base-font-size * 1.7;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  background-color: black;
+
+  &:hover {
+    border-radius: 0 15px 15px 15px;
+  }
+
 }
 
 .footer-heading {
