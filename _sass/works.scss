@@ -5,21 +5,21 @@
 // tools
 $purp-blue: #8860D0, #7C76D6, #718Cdd, #65a2e3, #5ab9ea; 
 @for $i from 1 through length($purp-blue) {
-  .tools li:nth-child(#{length($purp-blue)}n+#{$i}) > div {
+  .apps li:nth-child(#{length($purp-blue)}n+#{$i}) > div {
     background: nth($purp-blue, $i)
   }
 }
 //articles
 $blue-green: #59BCDB, #56C4BB, #54CC9B, #52D47B, #50DC5B;
 @for $i from 1 through length($blue-green) {
-  .articles li:nth-child(#{length($blue-green)}n+#{$i}) > div {
+  .tools li:nth-child(#{length($blue-green)}n+#{$i}) > div {
     background: nth($blue-green, $i)
   }
 }
 //apps
 $pink-orange: #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e;
 @for $i from 1 through length($pink-orange) {
-  .apps li:nth-child(#{length($pink-orange)}n+#{$i}) > div {
+  .articles li:nth-child(#{length($pink-orange)}n+#{$i}) > div {
     background: nth($pink-orange, $i)
   }
 }
@@ -73,7 +73,7 @@ $pink-orange: #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e;
   flex-direction: row;
 }
 
-.tools > li {
+.apps > li {
   &:hover {
     div {
       background-image: -webkit-linear-gradient(left, #8860D0, #7C76D6, #718Cdd, #65a2e3, #5ab9ea);
@@ -84,7 +84,7 @@ $pink-orange: #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e;
   }
 }
 
-.articles > li {
+.tools > li {
   &:hover {
     div {
       background-image: -webkit-linear-gradient(left, #59BCDB, #56C4BB, #54CC9B, #52D47B, #50DC5B);
@@ -95,7 +95,7 @@ $pink-orange: #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e;
   }
 }
 
-.apps > li {
+.articles > li {
   &:hover {
     div {
       background-image: -webkit-linear-gradient(left, #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e);
