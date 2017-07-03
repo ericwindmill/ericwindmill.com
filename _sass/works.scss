@@ -27,13 +27,8 @@ $pink-orange: #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e;
 /**************
   LAYOUT
 *************/
-// .tools, .articles, .apps {
-//   display: flex;
-//   flex-flow: row wrap;
-// }
 
 .works-page {
-
   h2 {
     font-size: $base-font-size * 2;
     font-weight: 300;
@@ -128,18 +123,13 @@ $pink-orange: #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e;
   margin: 0 20px;
   padding: 10px;
   text-align: center;
-
 }
 
 .img-gallery {
- 
-
-
   img {
     flex-shrink: 1;
   }
 }
-
 
 .description-links {
   text-align: center;
@@ -147,4 +137,7 @@ $pink-orange: #F953A2, #f76a91, #f68280, #f49a6f, #f3b25e;
 
 .firrs-list > li {
   margin-left: 50px;
+}
+.portfolio {
+  margin-bottom: 100px;
 }
