@@ -1,8 +1,18 @@
 /**
  * Site header
  */
+
+ .fixed-nav-bar {
+  position: fixed;
+  background: white;
+  width: 85vw;
+  top:0;
+  left:50%;
+  z-index: 999;
+ }
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+
+  border-bottom: 1px solid $grey-color-dark;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
