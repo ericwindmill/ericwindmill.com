@@ -1,0 +1,65 @@
+.desktop {
+  display: visible;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 667px) {
+  .mobile {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    height: 100vh;
+    width: 100vw;
+    background-color: darken($sky-blue, 15%);
+    background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1498708259/portfolio_site/bg-2.png');
+    overflow: scroll;
+
+    .mobile-header {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid white;
+    }
+
+    .mobile-body {
+      width: 85%;
+      font-weight: 300;
+    }
+
+    .footer-msg {
+      font-size: 24px;
+    }
+
+    .button {
+      background-color: $light-blue;
+    }
+
+    p {
+      color: white;
+    }
+
+    .mobile-icons {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    a > i {
+      color: white;
+      text-align: center;
+    }
+    img {
+      display:block;
+      margin: auto;
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
