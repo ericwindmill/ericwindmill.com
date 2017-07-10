@@ -8,12 +8,28 @@
       {% include header.html %}
       <div class="home">
         <div class='title-bg'>
-        <header class="name-title home-wrapper">
-          <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1499097821/pic_color_portfolio_2_rikf2f.png' width='200px' />
-            <h3> <em>Hey, I'm </em> </h3>
-            <h1> Eric Windmill</h1>
-            <h3> <em>Making the web a more beautiful place.</em> </h3>
-        </header> 
+        <section class="name-title home-wrapper">
+          <span>
+            <h1> Eric Windmill -</h1>
+            <h1> Front End Developer </h1>
+          </span>
+          <span class='slogan-container'>
+            <h3>Human</h3>
+            <h3>Friendly</h3>
+            <h3 class='slogan one'>Development</h3>
+            <h3 class='slogan two'>Design</h3>
+            <h3 class='slogan three'>User-Interaction</h3>
+            <h3 class='slogan four'>Software.</h3>
+            <h3 class='slogan five'>Software.</h3>
+          </span>
+
+          <span class='wordbox--word'>  
+            <span class='wordbox--letter'>A</span>
+            <span class='wordbox--letter'>B</span>
+            <span class='wordbox--letter'>C</span>
+          </span>
+
+        </section> 
     </div>
 
   
@@ -239,31 +255,21 @@
     </div>
   </html>
 
+    <script>
+      const slogans = document.querySelectorAll('.slogan')
+      slogans.forEach(slogan => {
+        slogan.addEventListener('mouseover', handleShift)
+      })
+      const sloganClasses = ['one', 'two', 'three', 'four', 'five']
+      let currentSloganIdx = 0
+      function handleShift () {
 
-   <!--Shadow bob-->
-  <script>
-    const hero = document.querySelector(".title-bg");
-    const text = hero.querySelector("h1");
-
-
-    function shadow(e){
-      const width = hero.offsetWidth;
-      const height = hero.offsetHeight;
-      const walk = 5; 
-      let { offsetX: x, offsetY: y} = e;
-      
-      if (this !== e.target){
-        x = x + e.target.offsetLeft;
-        y = y + e.target.offsetTop;	
+        setInterval(()=> {
+          let slogan = slogans[currentSloganIdx % 5]
+          let nextSlogan = slogans[(currentSloganIdx + 1) % 5]
+          slogan.style.display = 'none'
+          nextSlogan.style.display = 'block'
+          currentSloganIdx ++
+        }, 1000)
       }
-      const xWalk = Math.round((x / width * walk) - (walk / 2));
-      const yWalk = Math.round((x / height * walk)-(walk / 2));
-      
-    text.style.textShadow = `
-    ${xWalk}px ${yWalk}px 1px rgba(10,10,10,0.3),
-    ${xWalk-1}px ${yWalk+1}px 1px rgba(10,10,10,0.3)
-    `;				
-    }
-
-    hero.addEventListener("mousemove", shadow);
     </script>
