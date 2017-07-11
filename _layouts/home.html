@@ -13,22 +13,20 @@
             <h1> Eric Windmill -</h1>
             <h1> Front End Developer </h1>
           </span>
-          <span class='slogan-container'>
-            <h3>Human</h3>
-            <h3>Friendly</h3>
-            <h3 class='slogan one'>Development</h3>
-            <h3 class='slogan two'>Design</h3>
-            <h3 class='slogan three'>User-Interaction</h3>
-            <h3 class='slogan four'>Software.</h3>
-            <h3 class='slogan five'>Software.</h3>
-          </span>
 
-          <span class='wordbox--word'>  
-            <span class='wordbox--letter'>A</span>
-            <span class='wordbox--letter'>B</span>
-            <span class='wordbox--letter'>C</span>
-          </span>
 
+          <span class='slogan--container'>
+            <div class='slogan--sentence'>
+              <h4>Human</h4>
+              <h4>Friendly</h4>
+              <span class='slogan--word'>
+                <h3 class='slogan one'>Development</h3>
+                <h3 class='slogan two'>Design</h3>
+                <h3 class='slogan three'>User-Interaction</h3>
+                <h3 class='slogan four'>Software.</h3>
+              </div>
+            </span>
+          </span>
         </section> 
     </div>
 
@@ -254,22 +252,3 @@
       </div>
     </div>
   </html>
-
-    <script>
-      const slogans = document.querySelectorAll('.slogan')
-      slogans.forEach(slogan => {
-        slogan.addEventListener('mouseover', handleShift)
-      })
-      const sloganClasses = ['one', 'two', 'three', 'four', 'five']
-      let currentSloganIdx = 0
-      function handleShift () {
-
-        setInterval(()=> {
-          let slogan = slogans[currentSloganIdx % 5]
-          let nextSlogan = slogans[(currentSloganIdx + 1) % 5]
-          slogan.style.display = 'none'
-          nextSlogan.style.display = 'block'
-          currentSloganIdx ++
-        }, 1000)
-      }
-    </script>

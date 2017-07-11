@@ -15,9 +15,8 @@
   }
 }
 
-
 .title-bg {
-  height: 80vh;
+  height: 85vh;
   background: black;
   
   .name-title {
@@ -32,54 +31,73 @@
       font-weight: 400;
       font-family: $base-font;
       line-height: 1;
-      
       }
 
     h3 {
       color: white;
       font-size: $base-font-size * 3;
-      font-weight: 300;
+      font-weight: 200;
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+
+    h4 {
+      color: white;
+      font-size: $base-font-size * 2.6;
+      font-weight: 200;
       margin-bottom: 0;
       line-height: 1;
     }
   }
 }
 
-.slogan-container {
+@keyframes rotateWordsFirst {
+    0% { opacity: 0; transform: translateY(10px); animation-timing-function: ease-in; }
+    8% { opacity: 1; transform: translateY(0); }
+    19% { opacity: 1; transform: translateY(0); }
+	  25% { opacity: 0; transform: translateY(-10px); }
+    75% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 0; }
+}
+
+.slogan--container {
   display: block;
   width: 50%;
   text-align: right;
+  position: relative;
+}
+
+.slogan--sentence {
+
+}
+
+.slogan--word {
+  display: inline;
+  height: 100px;
 }
 
 .slogan {
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+  animation: rotateWordsFirst 12s linear infinite 0s;
+
   &.one {
-    display: inline-block;
+    animation-delay: 0s;
   }
 
   &.two {
-    display: none;
+    animation-delay: 3s;
   }
 
   &.three {
-    display: none;
+    animation-delay: 6s;
   }
 
   &.four {
-    display: none;
+    animation-delay: 9s;
   }
-
-  &.five {
-    display: none;
-  }
-}
-
-.wordbox--word {
-
-  .wordbox--letter {
-    color: white;
-    font-size: 30px;
-  }
-
 }
 
 .section-title {
