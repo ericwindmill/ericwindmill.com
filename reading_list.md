@@ -6,7 +6,6 @@ permalink: /books/
 ### “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.” ― Dr. Seuss, I Can Read With My Eyes Shut!
 
 <br/><br/>
-We're often asked where we learned about ________ . No matter the subject, the best answer is books. 
 
 I look to books to become a better person, a better developer and better friend. I use books to study and pass exams. I read books simply to escape. 
 
@@ -46,6 +45,7 @@ If that isn't enough,  the lessons in this book are wrapped up in the true stroy
 
 ### On Development, Design and Work:
 + **Bird by Bird - Ann Lemont**
++ **The Elements of Graphic Design - Alex White**
 + **Learn to Program - Chris Pine**
 + **The Cathedral and the Baazar - Eric Raymond** 
 + **The Obstacle is the Way - Ryan Holiday**
