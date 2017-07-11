@@ -10,14 +10,15 @@
   left:50%;
   transform: translate(-50%, 0%);
   z-index: 999;
- }
-.site-header {
-
   border-bottom: 1px solid $grey-color-dark;
-  min-height: $spacing-unit * 1.865;
+  padding: 0 30px;
+ }
 
+.site-header {
+  min-height: $spacing-unit * 1.865;
   // Positioning context for the mobile navigation icon
   position: relative;
+  background:black;
 }
 
 .site-title {
@@ -39,8 +40,9 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   font-weight: 300;
 
+
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
@@ -127,7 +129,7 @@
 .site-footer {
   margin: -1px;
   padding: $spacing-unit 0;
-  background-color: $dark-background;
+  background-color: black;
 }
 .footer-msg {
   text-align: center;
@@ -148,12 +150,13 @@
   padding: 5px 10px;
   background-image: linear-gradient(to right, #8860D0, #7C76D6, #718Cdd, #65a2e3, #5ab9ea);
   background: #54CC9B;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease-in-out;
   color: $dark-background;
   font-weight: 300;
 
   &:hover {
     border-radius: 0 15px 15px 15px;
+    color: white;
   }
 
 }
