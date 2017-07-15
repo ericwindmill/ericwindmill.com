@@ -184,6 +184,15 @@
 .Home--Elsewhere {
   display: flex;
   flex-direction: column;
+
+  a {
+    color: white;
+    text-transform: uppercase;
+    // text-align: right;
+    font-size: $base-font-size * 1.5;
+    // padding-right: 100px;
+    left: 25%;
+  }
 }
 
 
@@ -191,11 +200,16 @@
 .Home--SubHead {
         color: white;
         text-transform: uppercase;
-        text-align: right;
+        // text-align: right;
         font-family: $base-font;
         font-weight: 300;
         font-size: $base-font-size * 2;
-        margin: 100px 0;
+        margin: 100px 0 0;
+        padding-right: 100px;
+}
+
+#details-quote {
+  margin-bottom: 100px;
 }
 
 
