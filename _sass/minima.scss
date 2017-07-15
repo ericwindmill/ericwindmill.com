@@ -2,13 +2,12 @@
 
 // Define defaults for each variable.
 $base-font:        'Lato', sans-serif;
-$serif:            'Georgia', serif !default;
+$serif:            'Cardo', serif !default;
 $sans-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.7 !default;
-
 $spacing-unit:     30px !default;
 
 
@@ -32,7 +31,7 @@ $light-text:       #cbd2db !default;
 $background-color: #fff !default;
 
 // Width of the content area
-$content-width:    900px !default;
+$content-width:    1100px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 

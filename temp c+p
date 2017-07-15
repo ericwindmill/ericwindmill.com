@@ -1,0 +1,44 @@
+      <!--<div class="home">
+        <div class='title-bg'>
+        <section class="name-title home-wrapper">
+          
+          <span>
+
+          </span>
+
+          <main class='main'>
+          <span class='slogan--container'>
+            <div class='slogan--sentence'>
+              <h4>Human</h4>
+              <h4>Friendly</h4>
+              <span class='slogan--word'>
+                <h3 class='slogan one'>Development</h3>
+                <h3 class='slogan two'>Design</h3>
+                <h3 class='slogan three'>User-Interaction</h3>
+                <h3 class='slogan four'>Software.</h3>
+              </div>
+            </span>
+          </span>
+
+
+        <div class='about-bg'>
+          <aside class="about home-wrapper">
+            <div class='about-content'>
+                <h2> Born and raised in the Bluegrass State. </h2>
+                <h2> Currently living in San Francisco, CA. </h2>
+                <h2>Former Sommelier, chronic wine enthusiast.</h2>
+            </div>
+          </aside>
+        </div>
+      </div>
+          </main
+        </section> 
+    </div>
+
+
+
+
+      {% include footer.html %}
+
+    </body>
+    </div>-->

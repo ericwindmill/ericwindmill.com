@@ -95,15 +95,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $sky-blue;
+  color: green;
   text-decoration: none;
 
   &:visited {
-    color: darken($sky-blue, 15%);
+    color: darken(mediumpurple, 15%);
   }
 
   &:hover {
-    color: darken($sky-blue, 25%);
+    color: darken(mediumpurple, 25%);
   }
 
   .social-media-list &:hover {

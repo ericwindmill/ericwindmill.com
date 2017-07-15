@@ -1,0 +1,265 @@
+.Home--Body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background: black;
+}
+
+.Home--Title {
+  flex: 1;
+  padding: 0 65px;
+
+  img {
+    display: block;
+    padding-bottom: 80px;
+    max-width: 200px;
+  }
+  //d2d8e0
+  h1 {
+    color: white;
+    font-size: $base-font-size * 2;
+    font-weight: 300;
+    font-family: $base-font;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: white;
+    font-size: $base-font-size * 1.6;
+    font-family: $base-font;
+    font-weight: 300;
+  }
+
+}
+
+.Home--Styles {
+  padding: 0 30px;
+}
+
+.Home--Content {
+  flex: 2;
+  align-self: center;
+  height: 100%;
+  overflow-y: scroll;
+
+  .slogan--container {
+    height: 95%;
+
+    .slogan--sentence {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  h4, .slogan {
+      font-family: $base-font;
+      color: white;
+      font-size: $base-font-size * 3;
+      font-weight: 300;
+      margin-bottom: 0;
+      line-height: 1.2;
+  }
+
+  .Home--About {
+    margin: 100px 0;
+
+    h1, p {
+      color: white;
+    }
+
+    h1 {
+      font-size: $base-font-size;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $serif;
+      font-size: $base-font-size * 1.5;
+      color: silver;
+    }
+  }
+
+
+  .Home--Portfolio {
+    .Home-Project {
+      h1, h2, h3, p, a {
+        color: white;
+        margin-bottom: 0;
+      }
+
+      li div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      li img {
+        width: 400px;
+        height: auto;
+      }
+
+      li:last-of-type {
+        padding-bottom: 30px;
+      }
+
+      .Project--Header {
+        padding-bottom: 20px;
+      }
+
+      .Project--Title {
+        font-size: $base-font-size * 1.7;
+        font-weight: 300;
+        color: darken(mediumpurple, 10%);
+        border-bottom: 0px solid white;
+        position: relative;
+        margin-top: 10px;
+        transition: background-color 0.5s;
+
+        &:hover {
+          background-color: white;
+        }
+
+        &:before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 0;
+          right: 0;
+          height: 1px;
+          background: white;
+          transition: width .5s ease 0s, right 0.5s ease 0s;
+        }
+
+        &:after {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 0;
+          height: 1px;
+          background: white;
+          transition: width .3s;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
+
+        &:hover:before {
+          width: 100%;
+          right: 0;
+        }
+      }
+
+      .Project--Role {
+        font-weight: 200;
+        color: silver;
+        align-self: center;
+      }
+
+      .Project--Description {
+        font-family: $serif;
+        color: silver;
+        font-size: $base-font-size * 1.2;
+      }
+
+    }
+  }
+}
+
+.directions {
+  opacity: 0;
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  margin: 0 auto;
+  position: relative;
+  top: -20%;
+}
+
+.Home--Elsewhere {
+  display: flex;
+  flex-direction: column;
+}
+
+
+//Reused Classes
+.Home--SubHead {
+        color: white;
+        text-transform: uppercase;
+        text-align: right;
+        font-family: $base-font;
+        font-weight: 300;
+        font-size: $base-font-size * 2;
+        margin: 100px 0;
+}
+
+
+.clearfix {
+  height: 100px;
+  display: block;
+}
+
+.fancy-link {
+  float: right;
+  font-size: $base-font-size * 1.7;
+  font-weight: 300;
+  color: darken(mediumpurple, 10%);
+  border-bottom: 0px solid white;
+  position: relative;
+  margin-top: 10px;
+  transition: background-color 0.5s;
+  right: 0;
+
+  &:hover {
+    background-color: white;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    right: 0;
+    height: 1px;
+    background: white;
+    transition: width .5s ease 0s, right 0.5s ease 0s;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width .3s;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  &:hover:before {
+    width: 100%;
+    right: 0;
+  }
+}
+
+.seperator {
+  height: 1px;
+  border-bottom: 0.5px dimgrey solid;
+  width: 100%;
+  color: dimgrey;
+}
+
+.inner-seperator {
+  height: 1px;
+  border-bottom: 0.5px dimgrey solid;
+  width: 100%;
+  color: dimgrey;
+}
