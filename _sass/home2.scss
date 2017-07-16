@@ -9,11 +9,14 @@
 
 .Home--Title {
   flex: 1;
-  padding: 0 65px;
+  padding: 0 65px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   img {
     display: block;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     max-width: 200px;
   }
   //d2d8e0
@@ -31,6 +34,21 @@
     font-size: $base-font-size * 1.6;
     font-family: $base-font;
     font-weight: 300;
+  }
+
+  .Home--Nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      color: darken(dimgray, 25%);
+      font-family: $serif;
+
+      &:hover {
+        color: black;
+      }
+    }
   }
 
 }
@@ -221,6 +239,7 @@
   background: black;
 
   h1 {
+    text-align: right;
     color: silver;
     font-weight: 300;
     font-size: $base-font-size;
