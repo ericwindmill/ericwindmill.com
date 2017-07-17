@@ -55,8 +55,8 @@
 
 
     &:hover {
-      color: $sky-blue;
-      background-color: rgba(90,185,234, .1);
+      color: black;
+      background-color: lighten(mediumpurple, 25%);
       text-decoration: none;
     }
 
@@ -148,12 +148,13 @@
   display: inline-block;
   padding: 5px 10px;
   background-image: linear-gradient(to right, #8860D0, #7C76D6, #718Cdd, #65a2e3, #5ab9ea);
-  background: #54CC9B;
+  background: darken(mediumpurple, 15%);
   transition: all 0.2s ease-in-out;
-  color: $dark-background;
+  color: white;
   font-weight: 300;
 
   &:hover {
+    
     border-radius: 0 15px 15px 15px;
     color: white;
   }
