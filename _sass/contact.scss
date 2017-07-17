@@ -1,58 +1,81 @@
+.contact {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 45%;
+
+    p, a {
+      font-size: $base-font-size * 1.6;
+      font-family: $serif;
+    }
+
+    a {
+      border-bottom: .5px mediumpurple solid;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        border-bottom: 5px mediumpurple solid;
+      }
+    }
+  }
+}
+
 .q {
   font-weight: 600;
   font-size: $base-font-size * 1.2;
   line-height: $base-line-height * 1.5;
 }
 
+
+.email-field,
+.message-field,
+.submit-button {
+  border: none;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 5px;
+  outline: .5px black solid;
+  background: white;
+  font-family: $base-font;
+  font-size: $base-font-size;
+  transition: all 0.1s ease-in;
+  margin-left: 5px;
+
+  &:focus {
+      background-color: lighten(mediumpurple, 30%);
+      width: 510px;
+      border: none;
+      outline: .5px black solid;
+      outline-offset: 0;
+      z-index: 5;
+  }
+}
+
 .contact-form {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 400px;
-  font-family: $base-font;
+  align-items: center;
 }
 
 .email-field {
   height: 40px;
-  border: none;
-  border-bottom: .5px grey solid;
-  margin-bottom: 10px;
-  transition: all 0.3 ease-in;
-    font-family: $base-font;
-    font-size: $base-font-size;
-
-    &:focus {
-      border-bottom: 2px #54CC9B solid;
-      outline: none;
-    }
 }
 
 .message-field {
-  flex-grow: 1;
-  border: none;
-  border: .5px grey solid;
-  margin-bottom: 10px;
-      font-family: $base-font;
-    font-size: $base-font-size;
+  height: 200px;
 
   &:focus {
-    border: 2px #54CC9B solid;
-    outline: none;
+    height:201px;
   }
 }
 
 .submit-button {
-  border: 1px solid black;
-  border-radius: none;
-  background: white;
   height: 40px;
-    font-family: $base-font;
-    font-size: $base-font-size;
     &:hover, &:focus {
-      background-color: dodgerblue;
-      background-image: linear-gradient(to right, #59BCDB, #56C4BB, #54CC9B, #52D47B, #50DC5B);
-      border: 1px solid white;
+      background-color: mediumpurple;
+      outline: 1px solid black;
       color: white;
     }
 }

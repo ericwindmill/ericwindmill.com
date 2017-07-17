@@ -1,44 +1,11 @@
-      <!--<div class="home">
-        <div class='title-bg'>
-        <section class="name-title home-wrapper">
-          
-          <span>
+            <p>
+              Other than building digital things, sometimes I <a href='#'>write</a> about what I know. I'm a former Sommelier and chronic wine lover, I like to <a href='#'>travel</a> to exotic places, and I devour music. 
+            </p>
 
-          </span>
+            <!--<h1 class='Home--SubHead' id='details-quote'>Good development is &nbsp; <em>sweating the details</em></h1>-->
 
-          <main class='main'>
-          <span class='slogan--container'>
-            <div class='slogan--sentence'>
-              <h4>Human</h4>
-              <h4>Friendly</h4>
-              <span class='slogan--word'>
-                <h3 class='slogan one'>Development</h3>
-                <h3 class='slogan two'>Design</h3>
-                <h3 class='slogan three'>User-Interaction</h3>
-                <h3 class='slogan four'>Software.</h3>
-              </div>
-            </span>
-          </span>
-
-
-        <div class='about-bg'>
-          <aside class="about home-wrapper">
-            <div class='about-content'>
-                <h2> Born and raised in the Bluegrass State. </h2>
-                <h2> Currently living in San Francisco, CA. </h2>
-                <h2>Former Sommelier, chronic wine enthusiast.</h2>
-            </div>
-          </aside>
-        </div>
-      </div>
-          </main
-        </section> 
-    </div>
-
-
-
-
-      {% include footer.html %}
-
-    </body>
-    </div>-->
+            #details-quote {
+  margin-bottom: ($spacing-unit * 3.5);
+  text-align: right;
+  padding-right: 0;
+}

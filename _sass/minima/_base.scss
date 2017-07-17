@@ -95,9 +95,8 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: green;
+  color: darken(mediumpurple, 15%);
   text-decoration: none;
-
   &:visited {
     color: darken(mediumpurple, 15%);
   }
@@ -108,9 +107,6 @@ a {
 
   .social-media-list &:hover {
     text-decoration: none;
-
-    .username {
-    }
   }
 }
 
