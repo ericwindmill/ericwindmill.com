@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Exact Algorithms You Need to Practice to Get Into App Academy or HackReactor "
+title:  "A Free Bootcamp Interview Prep Resource"
 date:   2017-07-12 19:10:08 -0700
 categories: bootcamp algorithms
 permalink: blog/bootcamp-prep

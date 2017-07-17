@@ -4,10 +4,17 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+  <ul class='post-list'>
+    <li>
+      <h2>
+        <a class='post-link' href='/books'>My Library</a>
+        <p class='post-meta'>A list of books that have made me a better developer, designer, friend, son, human, etc.</p>
+      </h2>
+    </li>
+  </ul>
 
+  <div style='margin-bottom:50px;'class='seperator'> </div>
+  <h1>Recent Articles:</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>

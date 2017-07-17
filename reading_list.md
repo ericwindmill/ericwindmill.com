@@ -1,19 +1,15 @@
 ---
 layout: page
 title: Library
-permalink: /books/
+permalink: books
 ---
-### “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.” ― Dr. Seuss, I Can Read With My Eyes Shut!
-
-<br/><br/>
-
 I look to books to become a better person, a better developer and better friend. I use books to study and pass exams. I read books simply to escape. 
 
 The following books have made me better at everything I do. 
 
 
 <br/><br/>
-## Books to Live Your Life By
+### Books to Live Your Life By
 
 #### Meditations - Marcus Aurelius
 Marcus Aurelius was not only the pinnacle Stoic, but he was one of the wisest and greatest thinkers who ever recorded his thoughts. Meditations is a collection of his own instructions to himself on self-discipline, duty, ethics, and  having a philosophy of life. This is *the* guide on how to live. 

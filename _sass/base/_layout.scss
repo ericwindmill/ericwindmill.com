@@ -4,7 +4,7 @@
 
  .fixed-nav-bar {
   position: fixed;
-  background: white;
+  background: $background-color;
   width: 85vw;
   top:0;
   left:50%;
@@ -266,7 +266,9 @@ i {
 }
 
 .page-heading {
-  @include relative-font-size(1.25);
+  font-size: $base-font-size * 2.2;
+  font-family: $serif;
+  color: $dark-grey-text;
 }
 
 .post-list {
@@ -298,9 +300,10 @@ i {
 }
 
 .post-title {
-  @include relative-font-size(2.625);
+  @include relative-font-size(2);
   letter-spacing: -1px;
   line-height: 1;
+  font-weight: 300;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
@@ -333,4 +336,23 @@ i {
       @include relative-font-size(1.125);
     }
   }
+}
+
+
+/*****
+*Utility
+*****/
+.seperator {
+  height: 1px;
+  border-bottom: 0.5px dimgrey solid;
+  width: 100%;
+  color: dimgrey;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }

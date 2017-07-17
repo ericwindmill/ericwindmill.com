@@ -12,26 +12,24 @@ $spacing-unit:     30px !default;
 
 
 
-//flat, cool theme:
 $blue:             #5680E9 !default; 
 $light-blue:       #84CEEB !default;
 $sky-blue:         #5AB9EA !default;
 $pink:             #C1C8E4 !default; 
 $purple:           #8860D0 !default; 
-$dark-background:  #2B313D !default;
+$background-color: white !default;
 
-
-//Greys
 $grey-color:       #5F6366 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$dark-grey-text:  #2B313D !default;
 $text-color:       #030303 !default;
 $light-text:       #cbd2db !default;
-$background-color: #fff !default;
+
 
 // Width of the content area
-$content-width:    1100px !default;
+$content-width:    900px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
@@ -54,7 +52,7 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
+  "base/base",
+  "base/layout",
+  "base/syntax-highlighting"
 ;
