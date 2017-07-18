@@ -1,9 +1,57 @@
 .Portfolio--Grid {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-flow: row wrap;
+
+  div {
+    margin: 1px;
+  }
 }
 
 .Portfolio--Tile {
-  height: 250px;;
+  max-width: 250px;
+  max-height: 250px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    z-index: 999;
+    .Portfolio--Overlay {
+      display: block;
+      z-index: 30;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.Portfolio--Tile--2 {
+  width: 500px;
+  height: 250px;
+
+  padding: auto;
+  position: relative;
+
+  h1 {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+  }
+}
+
+.Portfolio--Overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+    &:hover {
+      display: block;
+    }
 }

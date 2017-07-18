@@ -54,7 +54,7 @@
     padding: 17px 10px 20px;
 
 
-    &:hover {
+    &:hover  {
       color: black;
       background-color: lighten(mediumpurple, 25%);
       text-decoration: none;
@@ -297,8 +297,14 @@ i {
 /**
  * Posts
  */
+.text-content-width {
+  width: 600px;
+  margin: 0 auto;
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
+  text-align: center;
 }
 
 .post-title {
@@ -313,7 +319,7 @@ i {
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  margin: 0 auto $spacing-unit;
 
   h2 {
     @include relative-font-size(2);
