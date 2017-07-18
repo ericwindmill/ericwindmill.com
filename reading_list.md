@@ -1,8 +1,10 @@
 ---
-layout: page
-title: Library
-permalink: books
+layout: default
+
+permalink: /books
 ---
+
+<h1 class='page-heading'>Welcome to my library.</h1>
 I look to books to become a better person, a better developer and better friend. I use books to study and pass exams. I read books simply to escape. 
 
 The following books have made me better at everything I do. 
@@ -25,9 +27,9 @@ The lessons learned in this book expand far beyond the restaurant industry. This
 If that isn't enough,  the lessons in this book are wrapped up in the true stroy of how one man changed the resturant industry through the power of simply following the golden rule.  I can't recommend this book enough for anyone that has to interact with a human at work. (So, everyone.)
 <br/><br/>
 
-## The Rest of the Bunch
+### The Rest of the Bunch
 
-### On Living: 
+#### On Living: 
 + **Guide to the Good Life: The Ancient Art of Stoic Joy – William B. Irvine**
 + **Letters From a Stoic – Seneca**
 + **When Breath Becomes Air – Paul Kalanithi**
@@ -39,7 +41,7 @@ If that isn't enough,  the lessons in this book are wrapped up in the true stroy
 + **Wild – Cheryl Strayed –**
 + **In Defense of Food – Michael Pollan**
 
-### On Development, Design and Work:
+#### On Development, Design and Work:
 + **Bird by Bird - Ann Lemont**
 + **The Elements of Graphic Design - Alex White**
 + **Learn to Program - Chris Pine**

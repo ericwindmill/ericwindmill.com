@@ -4,7 +4,8 @@
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
-  font-family: $serif;
+  font-family: $base-font;
+  font-weight: 300;
   color: $text-color;
   margin: 0;
   padding: 0;

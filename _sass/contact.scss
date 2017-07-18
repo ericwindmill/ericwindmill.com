@@ -1,5 +1,4 @@
 .contact {
-  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 
@@ -8,7 +7,7 @@
 
     p, a {
       font-size: $base-font-size * 1.6;
-      font-family: $serif;
+      font-family: $base-font;
     }
 
     a {
@@ -22,7 +21,7 @@
 }
 
 .q {
-  font-weight: 600;
+  font-weight: 400;
   font-size: $base-font-size * 1.2;
   line-height: $base-line-height * 1.5;
 }

@@ -267,8 +267,10 @@ i {
 
 .page-heading {
   font-size: $base-font-size * 2.2;
-  font-family: $serif;
+  font-family: $base-font;
   color: $dark-grey-text;
+  text-align: center;
+  padding-bottom: $spacing-unit * 2;
 }
 
 .post-list {
