@@ -9,7 +9,7 @@ permalink: /about/
 <p>Hi. I'm Eric. I'm a front-end developer who loves design and user-interaction. I'm devoted to making the web accessible and beautiful for everyone.</p>
 <br />
 <p>
-I build web applications that people want to use. My favorite projects are ones that I can see through from the beginning to end. Which is why I've settled on development and design. From brainstorming to designing to prototyping to implementing a usable product, they're all special parts of the creative journey.
+I build web applications that people want to use. My favorite projects are ones that I can see through from the beginning to end. Which is why I can't decide between just development and design. From brainstorming to designing to prototyping to implementing a usable product, they're all special parts of the creative journey.
 </p>
 <p>
 I believe in user-driven development and I'm a data freak, but I'm not afraid to instill some soul into a project either. The intersection of userful and interesting is where I find myself at home.
