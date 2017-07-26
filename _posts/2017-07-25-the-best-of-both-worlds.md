@@ -28,4 +28,4 @@ This also has incredible implications for the clients. Have you ever tried to hi
 
 The ideal relationship for freelancers and clients is one where trust and communication are abundant and flow in both directions. TopTal does everything in their power to ensure this, which means the relationships will start out on the right foot. 
 
-So, I’m currently going through the interview process to join the Web Programmer Community on TopTal. I’m going TopTal because **I can have the best of both worlds.**
+So, I’m currently going through the interview process to join the Web Programmers Community on TopTal. I’m going TopTal because **I can have the best of both worlds.**
