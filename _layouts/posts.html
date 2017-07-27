@@ -24,14 +24,17 @@ layout: default
   <div style='margin-bottom:50px;'class='seperator'> </div>
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+      
+      {% if post.external_url %}
+      <dt><time>{{ post.date | date: "%d %b %y" }}</time></dt>
+      <dd> {{ post.external_site }} </dd>
+      <dd class="{{ post.external_site }}">
+      <a class='post-link' href='{{ post.external_url }}'>{{ post.title }}</a>
+      </dd>
+      {% else %}
+        <dt><time>{{ post.date | date: "%d %b %y" }}</time></dt>
+        <a class='post-link' href='{{ post.url}}'>{{ post.title }}</a>
+      {% endif %}
     {% endfor %}
   </ul>
 

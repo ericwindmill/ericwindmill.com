@@ -34,6 +34,7 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+  height: 100vh;
 }
 
 
@@ -185,25 +186,6 @@ pre {
     padding-left: $spacing-unit / 2;
   }
 }
-
-.home-wrapper {
-  max-width: -webkit-calc(1100 - (#{$spacing-unit} * 2));
-  max-width:         calc(1100 - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
 
 /**
  * Clearfix

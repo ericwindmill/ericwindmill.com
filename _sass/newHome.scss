@@ -1,0 +1,107 @@
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(75deg, #8860D0, #5680E9, #5AB9EA);
+  height: 100%;
+  width: 100%;
+}
+
+.Home--Body {
+  max-width: 1000px;
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  box-shadow: 0px 0px 10px black;
+  position: relative;
+}
+
+.Home--Title {
+  padding-left: 50px;
+  background: white;
+  position: relative;
+  height: 100%;
+  width: calc(50% - 50px);
+  float: left;
+  
+  img {
+    display: block;
+    padding-bottom: ($spacing-unit * 2);
+    max-width: 200px;
+
+  }
+
+  .Home--Nav {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      border-bottom: 1px black solid;
+    }
+
+    .page-link {
+      color: $text-color;
+      line-height: $base-line-height;
+      margin: 5px;
+      padding: 7px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover  {
+        color: black;
+        background-color: lighten(mediumpurple, 25%);
+        border-bottom: 1px white solid;
+      }
+    }
+  }
+}
+
+.Home--Me {
+  width: 85%;
+
+  h1, h2, p {
+    color: black;
+  }
+
+  h1 {
+    line-height: 1;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+}
+
+.Home--Content {
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-color: white;
+  overflow: scroll;
+  position: relative;
+
+  
+}
+
+.Home--post-list {
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}

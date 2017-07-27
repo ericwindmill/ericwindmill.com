@@ -128,7 +128,6 @@
 .site-footer {
   margin: -1px;
   padding: $spacing-unit 0;
-  background-color: black;
 }
 .footer-msg {
   text-align: center;
@@ -261,8 +260,7 @@ i {
  * Page content
  */
 .page-content {
-  padding: ($spacing-unit *3) 0;
-  // margin: 30px 0;
+  padding: ($spacing-unit * 3) 0;
 }
 
 .page-heading {
@@ -364,3 +362,49 @@ i {
 .left {
   float: left;
 }
+
+// .fancy-link {
+//   font-size: $base-font-size * 1.2;
+//   font-weight: 300;
+//   color: darken(mediumpurple, 10%);
+//   border-bottom: 1px solid black;
+//   position: relative;
+//   margin-top: 10px;
+//   transition: all 0.5s;
+//   right: 0;
+
+//   &:hover {
+//     // color: lighten(mediumpurple, 10%);
+//     color:black;
+//   }
+
+//   &:before {
+//     position: absolute;
+//     content: '';
+//     display: block;
+//     width: 0;
+//     right: 0;
+//     height: 1px;
+//     background: white;
+//     transition: width .5s ease 0s, right 0.5s ease 0s;
+//   }
+
+//   &:after {
+//     position: absolute;
+//     content: '';
+//     display: block;
+//     width: 0;
+//     height: 1px;
+//     background: white;
+//     transition: width .3s;
+//   }
+
+//   &:hover:after {
+//     width: 100%;
+//   }
+
+//   &:hover:before {
+//     width: 100%;
+//     right: 0;
+//   }
+// }

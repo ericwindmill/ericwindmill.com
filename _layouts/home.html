@@ -4,68 +4,51 @@
     <!--{% include header.html %} -->
     <div class='desktop'>
 
-    <div class='Home--Body home-wrapper'>
+    <div class='Home--Body Home-wrapper'>
         <div class='Home--Title'>
+          <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1501186620/portfolio_site/bw_clinton_photography.png' />
           <div class='Home--Me'>
-            <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1500594654/portfolio_site/color-1-head.jpg'/>
-            <h1> Eric Windmill -</h1>
-            <h2> Front End Developer </h2>
+            <h1> Eric Windmill</h1>
+            <h2> Front-End Engineer </h2>
+            <p> I make <a class='page-link' href="/portfolio"><em>human-friendly</em></a> software. I'm a fan of design, user-interaction, and data-visualization.</p>
+            <p> I'm a <em>certified sommelier</em> and chronic wine lover. I like to <a class='page-link' href="/posts">write</a>, and I devour music.</p>
+            <p> I also like question everything.</p>
           </div>
 
-          <div class='Home--Nav'>
-            <a class='fancy-link' href="/portfolio">Portfolio</a>
-            <a class='fancy-link' href="/posts">Articles</a>
-            <a class='fancy-link' href="/about">About</a>
-            <a class='fancy-link' href="/contact">Contact</a>
+            <div class='Home--Nav'>
+              <a class='page-link' href="/portfolio">Portfolio</a>
+              <a class='page-link' href="/posts">Articles</a>
+              <a class='page-link' href="/contact">Contact</a>
           </div>
+
         </div>
 
 
 
         <div class='Home--Content'>
-          <span class='slogan--container'>
-            <div class='slogan--sentence'>
-              <h4>Human</h4>
-              <h4>Friendly</h4>
-              <span class='slogan--word'>
-                <h3 class='slogan one'>Development</h3>
-                <h3 class='slogan two'>Design</h3>
-                <h3 class='slogan three'>User-Interaction</h3>
-                <h3 class='slogan four'>Software.</h3>
-              </span>
-            </div>
-          </span>
-          <div class='directions'> </div>
-          <div class='seperator first-sep'> </div>
-          <div class='Home--Styles Home--About'>
-            <p>
-              I'm a multifunctional <em>front-end developer</em> with a penchant for design and user-interaction. 
-              <br />
-            </p>
-            <br />
-            <a class='fancy-link right' href='/contact'>I'm available for work.</a>
-          </div>
-
-          <div class='seperator'> </div>
-            <h1 class="Home--SubHead">Services</h1>
-          <div class='Home--Services'>
-              <div class='Home--Service'>
-                <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1500250190/portfolio_site/apps.png' width='300px'/>
-                <h2>App & Website Design</h2> 
-                <p>User-driven development, influenced by data. I design apps with intuitive interface and beautiful design.</p>
-              </div>
-              <div class='Home--Service'>
-                <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1500250193/portfolio_site/code.png' width='300px'/>
-                <h2>Ground Up Development</h2>
-                <p>The entire process. From idea to conception to full-fledged working product.</p>
-              </div>
-
-          </div>
+          <h1> Recent Posts </h1>
+          <ul class="Home--post-list">
+            {% for post in site.posts %}
+              {% if post.external_url %}
+              <li>
+                <dt><time>{{ post.date | date: "%d %b %y" }}</time></dt>
+                <dd> {{ post.external_site }} </dd>
+                <dd class="{{ post.external_site }}">
+                  <a class='post-link' href='{{ post.external_url }}'>{{ post.title }}</a>
+                </dd>
+              </li>
+              {% else %}
+                <li>
+                  <dt><time>{{ post.date | date: "%d %b %y" }}</time></dt>
+                  <a class='post-link' href='{{ post.url}}'>{{ post.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
 
 
 
-          <div class='seperator'> </div>
-          <div class='Home--Styles Home--Portfolio'>
+          <!--<div class='Home--Styles Home--Portfolio'>
 
             <h1 class='Home--SubHead'>Selected Work</h1>
             <ul class='Home-Project'>
@@ -133,7 +116,7 @@
           <div class='seperator'> </div>
           <div class='Home--Footer'>
             <h1>2016 - Future | Eric Windmill</h1>
-          </div>
+          </div>-->
         </div>
     </div> 
   </div>
