@@ -11,10 +11,10 @@
     }
 
     a {
-      border-bottom: .5px mediumpurple solid;
+      border-bottom: .5px $cadet-blue solid;
       transition: all 0.2s ease-in-out;
       &:hover {
-        border-bottom: 5px mediumpurple solid;
+        border-bottom: 5px $cadet-blue solid;
       }
     }
   }
@@ -42,7 +42,7 @@
   margin-left: 5px;
 
   &:focus {
-      background-color: lighten(mediumpurple, 30%);
+      background-color: lighten($cadet-blue, 30%);
       width: 460px;
       border: none;
       outline: .5px black solid;
@@ -73,7 +73,7 @@
 .submit-button {
   height: 40px;
     &:hover, &:focus {
-      background-color: mediumpurple;
+      background-color: $cadet-blue;
       outline: 1px solid black;
       color: white;
     }

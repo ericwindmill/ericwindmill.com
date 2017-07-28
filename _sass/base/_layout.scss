@@ -1,25 +1,29 @@
 /**
  * Site header
  */
+
 .main-wrapper {
-  // background-image: linear-gradient(75deg, #8860D0, #5680E9, #5AB9EA);
-  height: 100%;
+  margin: auto;
+  height: 95%;
+  width: 95%;
   max-width: 1000px;
   display: flex;
-    flex-direction: column;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 
 .site-header {
+  width: 100%;
+  background: white;
   min-height: $spacing-unit * 1.865;
+  border-bottom: black 1px solid;
   // Positioning context for the mobile navigation icon
 }
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 700;
+  font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -49,12 +53,13 @@
     color: $text-color;
     line-height: $base-line-height;
     padding: 17px 10px 20px;
+    transition: all 0.3s ease-in-out;
 
 
     &:hover  {
       color: black;
-      background-color: $cadet-blue;
-      text-decoration: none;
+      background-color: lighten($cadet-blue, 25%);
+      border-bottom: 1px white solid;
     }
 
     // Gaps between nav items, but not on the last one
@@ -123,12 +128,14 @@
  * Site footer
  */
 .site-footer {
+  border-top: 1px solid black;
   margin: -1px;
   padding: $spacing-unit 0;
+  background-color: white;
+  width: 100%;
 }
 .footer-msg {
   text-align: center;
-  color: white;
   font-size: $base-font-size * 2;
   font-weight: 300;
 }
@@ -144,7 +151,7 @@
   display: inline-block;
   padding: 5px 10px;
   background-image: linear-gradient(to right, #8860D0, #7C76D6, #718Cdd, #65a2e3, #5ab9ea);
-  background: darken(mediumpurple, 15%);
+  background: darken(cornflowerblue, 15%);
   transition: all 0.2s ease-in-out;
   color: white;
   font-weight: 300;
@@ -170,7 +177,7 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
+  color: black;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
   display: flex;
@@ -213,12 +220,12 @@
 }
 
 i {
-  color: $light-text;
+  color: black;
   padding-right: 10px;
   font-size: 50px;
 }
 .site-description {
-  color: $light-text;
+  color: black;
   text-align: center;
   vertical-align: center;
   font-size: $base-font-size * 1.2;
@@ -236,16 +243,16 @@ i {
 }
 
 .fa-twitter:hover {
-  color: #8860D0;
+  color: cornflowerblue;
 }
 .fa-linkedin-square:hover {
-  color: #5ab9ea;
+  color: cadetblue;
 }
 .fa-instagram:hover {
   color: #F953A2;
 }
 .fa-github:hover {
-  color: #50DC5B;
+  color: rosybrown;
 }
 .fa-envelope-o:hover {
   color: #f49a6f;
@@ -259,6 +266,7 @@ i {
 .page-content {
   padding: ($spacing-unit * 3) 0;
   background: white;
+  width: 100%;
 }
 
 .page-heading {
