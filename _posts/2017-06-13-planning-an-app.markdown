@@ -3,7 +3,8 @@ layout: post
 title:  "Step By Step: Planning a Web Application"
 date:   2017-06-13 19:10:08 -0700
 categories: ux planning
-permalink: blog/planning-an-app
+external_url: https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353
+external_site: Medium
 ---
 
 Someone with much more experience told me that the most common mistake they see new programmers make is not taking the planning phase seriously. 
