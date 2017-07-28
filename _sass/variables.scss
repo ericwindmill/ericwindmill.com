@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-$base-font:        'Lato', sans-serif;
+$base-font:        'Avenir', sans-serif;
 $serif:            'Cardo', serif !default;
 $sans-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
@@ -10,7 +10,11 @@ $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.7 !default;
 $spacing-unit:     30px !default;
 
-
+$cadet-blue: #639da7; //rgb(99,157,167)
+$rosy-brown: #a59588; //rgb(165,149,136)
+$medium-turquoise: #68d0d7; //rgb(104,208,215)
+$cornflower-blue: #57a9ec; //rgb(87,169,236)
+$sandy-brown: #e7ca49;
 
 $blue:             #5680E9 !default; 
 $light-blue:       #84CEEB !default;
@@ -33,13 +37,7 @@ $content-width:    900px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;

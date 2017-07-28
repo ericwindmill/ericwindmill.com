@@ -34,6 +34,9 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
+  background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1501212538/portfolio_site/background-3.png');
+  background-size: cover;
+  // height: 100vh;
 }
 
 
@@ -104,14 +107,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: darken(mediumpurple, 15%);
+  color: darken($cadet-blue, 15%);
+  font-weight: 500;
   text-decoration: none;
   &:visited {
-    color: darken(mediumpurple, 15%);
+    color:  $cadet-blue;
   }
 
   &:hover {
-    color: darken(mediumpurple, 25%);
+    color:  darken($cadet-blue, 15%); 
   }
 
   .social-media-list &:hover {
@@ -133,6 +137,41 @@ blockquote {
 
   > :last-child {
     margin-bottom: 0;
+  }
+}
+
+// Detail Lists
+dl {
+  dt {
+      font-size: 17px;
+      font-weight: 500;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      color: darken($cadet-blue, 15%);
+    }
+  }
+
+  dd {
+    font-size: 14px;
+    max-width: 80%;
+
+  }
+
+  .app-description {
+    padding-bottom: 25px;
+  }
+
+  .post-description {
+      text-transform: uppercase;
+      font-size: .75em;
+      color: $rosy-brown;
+      font-weight: 600;
+      padding-bottom: 15px;
+
+      & > time {
+        font-size: 1.1em;
+      }
   }
 }
 
@@ -185,25 +224,6 @@ pre {
     padding-left: $spacing-unit / 2;
   }
 }
-
-.home-wrapper {
-  max-width: -webkit-calc(1100 - (#{$spacing-unit} * 2));
-  max-width:         calc(1100 - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
 
 /**
  * Clearfix

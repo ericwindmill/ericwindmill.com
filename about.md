@@ -1,8 +1,3 @@
----
-layout: page
-title: About
-permalink: /about/
----
 
 <h1 class='page-heading'> Good development is <em>sweating the details.</em></h1>
 <div class='text-content-width'>

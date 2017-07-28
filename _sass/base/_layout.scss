@@ -2,27 +2,28 @@
  * Site header
  */
 
- .fixed-nav-bar {
-  position: fixed;
-  background: $background-color;
-  width: 85vw;
-  top:0;
-  left:50%;
-  transform: translate(-50%, 0%);
-  z-index: 999;
-  border-bottom: 1px solid $grey-color-dark;
-  padding: 0 30px;
- }
+.main-wrapper {
+  margin: auto;
+  height: 95%;
+  width: 95%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .site-header {
+  width: 100%;
+  background: white;
   min-height: $spacing-unit * 1.865;
+  border-bottom: black 1px solid;
   // Positioning context for the mobile navigation icon
-  position: relative;
 }
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 700;
+  font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -52,12 +53,13 @@
     color: $text-color;
     line-height: $base-line-height;
     padding: 17px 10px 20px;
+    transition: all 0.3s ease-in-out;
 
 
     &:hover  {
       color: black;
-      background-color: lighten(mediumpurple, 25%);
-      text-decoration: none;
+      background-color: lighten($cadet-blue, 25%);
+      border-bottom: 1px white solid;
     }
 
     // Gaps between nav items, but not on the last one
@@ -126,13 +128,14 @@
  * Site footer
  */
 .site-footer {
+  border-top: 1px solid black;
   margin: -1px;
   padding: $spacing-unit 0;
-  background-color: black;
+  background-color: white;
+  width: 100%;
 }
 .footer-msg {
   text-align: center;
-  color: white;
   font-size: $base-font-size * 2;
   font-weight: 300;
 }
@@ -148,7 +151,7 @@
   display: inline-block;
   padding: 5px 10px;
   background-image: linear-gradient(to right, #8860D0, #7C76D6, #718Cdd, #65a2e3, #5ab9ea);
-  background: darken(mediumpurple, 15%);
+  background: darken(cornflowerblue, 15%);
   transition: all 0.2s ease-in-out;
   color: white;
   font-weight: 300;
@@ -174,7 +177,7 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
+  color: black;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
   display: flex;
@@ -217,12 +220,12 @@
 }
 
 i {
-  color: $light-text;
+  color: black;
   padding-right: 10px;
   font-size: 50px;
 }
 .site-description {
-  color: $light-text;
+  color: black;
   text-align: center;
   vertical-align: center;
   font-size: $base-font-size * 1.2;
@@ -240,16 +243,16 @@ i {
 }
 
 .fa-twitter:hover {
-  color: #8860D0;
+  color: cornflowerblue;
 }
 .fa-linkedin-square:hover {
-  color: #5ab9ea;
+  color: cadetblue;
 }
 .fa-instagram:hover {
   color: #F953A2;
 }
 .fa-github:hover {
-  color: #50DC5B;
+  color: rosybrown;
 }
 .fa-envelope-o:hover {
   color: #f49a6f;
@@ -261,8 +264,9 @@ i {
  * Page content
  */
 .page-content {
-  padding: ($spacing-unit *3) 0;
-  // margin: 30px 0;
+  padding: ($spacing-unit * 3) 0;
+  background: white;
+  width: 100%;
 }
 
 .page-heading {
@@ -364,3 +368,49 @@ i {
 .left {
   float: left;
 }
+
+// .fancy-link {
+//   font-size: $base-font-size * 1.2;
+//   font-weight: 300;
+//   color: darken(mediumpurple, 10%);
+//   border-bottom: 1px solid black;
+//   position: relative;
+//   margin-top: 10px;
+//   transition: all 0.5s;
+//   right: 0;
+
+//   &:hover {
+//     // color: lighten(mediumpurple, 10%);
+//     color:black;
+//   }
+
+//   &:before {
+//     position: absolute;
+//     content: '';
+//     display: block;
+//     width: 0;
+//     right: 0;
+//     height: 1px;
+//     background: white;
+//     transition: width .5s ease 0s, right 0.5s ease 0s;
+//   }
+
+//   &:after {
+//     position: absolute;
+//     content: '';
+//     display: block;
+//     width: 0;
+//     height: 1px;
+//     background: white;
+//     transition: width .3s;
+//   }
+
+//   &:hover:after {
+//     width: 100%;
+//   }
+
+//   &:hover:before {
+//     width: 100%;
+//     right: 0;
+//   }
+// }

@@ -1,0 +1,107 @@
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.Home--Body {
+  height: 95%;
+  width: 95%;
+  margin: auto;
+  box-shadow: 0px 0px 10px black;
+  position: relative;
+}
+
+.Home--Title {
+  padding-left: 75px;
+  background: white;
+  position: relative;
+  height: 100%;
+  width: calc(60% - 75px);
+  float: left;
+  
+  img {
+    display: block;
+    padding-bottom: ($spacing-unit * 2);
+    max-width: 200px;
+
+  }
+
+  .Home--Nav {
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      border-bottom: 1px black solid;
+    }
+
+    .home-page-link {
+      color: $text-color;
+      line-height: $base-line-height;
+      margin: 5px;
+      padding: 7px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover  {
+        color: black;
+        background-color: lighten($cadet-blue, 25%);
+        border-bottom: 1px white solid;
+      }
+    }
+  }
+}
+
+.Home--Me {
+  width: 85%;
+
+  h1, h2, p {
+    color: black;
+  }
+
+  h1 {
+    line-height: 1;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: $rosy-brown;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.Home--Content {
+  height: 100%;
+  width: 40%;
+  float: right;
+  background-color: white;
+  overflow: scroll;
+  position: relative;
+
+  .content {
+    margin-top: 30px;
+
+    h2 {
+      margin: 15px 0;
+      border-bottom: 1px solid black;
+    }
+
+    .content-link {
+      display: block;
+      text-align: center;
+      padding-right: 15px;
+    }
+  }
+}

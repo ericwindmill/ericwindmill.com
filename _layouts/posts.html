@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
   <div class='text-content-width'>
-  <h1>Top Articles:</h1>
+  <h1>Sticky Articles:</h1>
   <ul class='post-list'>
     <li>
       <h2>
@@ -12,28 +12,21 @@ layout: default
         <p class='post-meta'>A list of books that have made me a better developer, designer, friend, son, human, etc.</p>
       </h2>
     </li>
-    <li>
-        <h3 class='post-publication'>Huffington Post:</h3>
-      <h2>
-        <a class='post-link' href='http://www.huffingtonpost.com/entry/59790e45e4b0c69ef7052547'>The Truth About Getting a Tech Job After a Bootcamp</a>
-        <p class='post-meta'>The truth about being a career-changer in the Bay Area after a bootcamp. Spoiler: it's an uphill battle.</p>
-      </h2>
-    </li>
   </ul>
 
   <div style='margin-bottom:50px;'class='seperator'> </div>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <dl>
+            {% for post in site.posts %}
+              {% if post.external_url %}
+                <dt>
+                  <a href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
+                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
+              {% else %}
+                  <dt><a href='{{ post.url}}'>{{ post.title }}</dt>
+                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+              {% endif %}
+            {% endfor %}
+          </dl>  
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 </div>
