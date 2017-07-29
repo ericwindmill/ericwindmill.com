@@ -3,7 +3,6 @@
  */
 
 .main-wrapper {
-  margin: auto;
   height: 95%;
   width: 95%;
   max-width: 1000px;
@@ -130,7 +129,7 @@
 .site-footer {
   border-top: 1px solid black;
   margin: -1px;
-  padding: $spacing-unit 0;
+  padding: 20px 0 $spacing-unit;
   background-color: white;
   width: 100%;
 }
@@ -141,7 +140,7 @@
 }
 
 .button-container {
-  margin: 30px auto 50px;; 
+  margin: 10px auto 20px; 
   text-align: center
 }
 
@@ -360,57 +359,3 @@ i {
   width: 100%;
   color: dimgrey;
 }
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-// .fancy-link {
-//   font-size: $base-font-size * 1.2;
-//   font-weight: 300;
-//   color: darken(mediumpurple, 10%);
-//   border-bottom: 1px solid black;
-//   position: relative;
-//   margin-top: 10px;
-//   transition: all 0.5s;
-//   right: 0;
-
-//   &:hover {
-//     // color: lighten(mediumpurple, 10%);
-//     color:black;
-//   }
-
-//   &:before {
-//     position: absolute;
-//     content: '';
-//     display: block;
-//     width: 0;
-//     right: 0;
-//     height: 1px;
-//     background: white;
-//     transition: width .5s ease 0s, right 0.5s ease 0s;
-//   }
-
-//   &:after {
-//     position: absolute;
-//     content: '';
-//     display: block;
-//     width: 0;
-//     height: 1px;
-//     background: white;
-//     transition: width .3s;
-//   }
-
-//   &:hover:after {
-//     width: 100%;
-//   }
-
-//   &:hover:before {
-//     width: 100%;
-//     right: 0;
-//   }
-// }

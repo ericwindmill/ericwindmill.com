@@ -34,9 +34,16 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-  background-image: url('http://res.cloudinary.com/ericwindmill/image/upload/v1501212538/portfolio_site/background-3.png');
-  background-size: cover;
-  // height: 100vh;
+  background: url('http://res.cloudinary.com/ericwindmill/image/upload/v1501212538/portfolio_site/background-3.png');
+  background-size: 1800px;
+  @extend %clearfix;
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
