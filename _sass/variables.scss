@@ -1,36 +1,40 @@
 @charset "utf-8";
 
-// Define defaults for each variable.
-$base-font:        'Avenir', sans-serif;
-$serif:            'Cardo', serif !default;
-$sans-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.7 !default;
-$spacing-unit:     30px !default;
-
-$cadet-blue: #639da7; //rgb(99,157,167)
-$rosy-brown: #a59588; //rgb(165,149,136)
+// Font
+$sans:               'Avenir', Helvetica, Arial, sans-serif;
+$serif:              'Cardo', serif !default;
+$font-size:          16px !default;
+$font-weight:        300 !default;
+$small-font-size:    $font-size * 0.875 !default;
+$line-height:        1.7 !default;
+$ink:              #212B35 !default;
+/*Colors*/
+/*Brand Colors*/
+$brand:            #57a9ec; //rgb(87,169,236)
+$accent:           #e7ca49;
+/*Accents*/
+$cadet-blue:       #639da7; //rgb(99,157,167)
+$rosy-brown:       #a59588; //rgb(165,149,136)
 $medium-turquoise: #68d0d7; //rgb(104,208,215)
-$cornflower-blue: #57a9ec; //rgb(87,169,236)
-$sandy-brown: #e7ca49;
+/*UI Colors*/
+/*Indigo (Interaction, Buttons)*/ 
+$indigo:           #5C6AC4;
+/*Teal  (Helpful Info, Secondary Color, Secondary Graph)*/
+$teal:             #47C1BF;
+/*Green (Success Tips)*/
+$green:            #50B83C;
+/*Blue (Text Links)*/
+$blue:             #007ACE;
+/*Red (Errors, Critical Tips)*/
+$red:              #ED6347;
+/*Purple (Graphing)*/
+$purple:           #9C6ADE;
+/*Greys (Shadows)*/
+$grey:             #DFE4E8;
 
-$blue:             #5680E9 !default; 
-$light-blue:       #84CEEB !default;
-$sky-blue:         #5AB9EA !default;
-$pink:             #C1C8E4 !default; 
-$purple:           #8860D0 !default; 
-$background-color: white !default;
 
-$grey-color:       #5F6366 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-
-$dark-grey-text:  #2B313D !default;
-$text-color:       #030303 !default;
-$light-text:       #cbd2db !default;
-
+/*Spacing*/ 
+$spacing-unit:     30px !default;
 
 // Width of the content area
 $content-width:    900px !default;
@@ -45,7 +49,7 @@ $on-laptop:        800px !default;
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+  font-size: $font-size * $ratio;
 }
 
 // Import partials.
@@ -53,4 +57,3 @@ $on-laptop:        800px !default;
   "base/base",
   "base/layout",
   "base/syntax-highlighting"
-;
