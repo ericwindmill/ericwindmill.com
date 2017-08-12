@@ -31,13 +31,10 @@
     max-width: 200px;
 
   }
-
-  .Home--Nav {
-    margin-top: 50px;
-    // position: absolute;
-    // bottom: 3%;
-    // display: flex;
-    // justify-content: flex-end;
+}
+.Home--Nav {
+  text-align: right;
+  margin: 15px;
 
     a {
       border-bottom: 1px black solid;
@@ -57,8 +54,6 @@
       }
     }
   }
-}
-
 .Home--Me {
   width: 85%;
   max-height: 300;

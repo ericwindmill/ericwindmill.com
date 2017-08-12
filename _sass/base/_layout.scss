@@ -26,11 +26,16 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
+  padding: 0 5px;
   float: left;
+  transition: all 0.3s ease-in-out;
 
-  &,
   &:visited {
     color: $grey-color-dark;
+  }
+  &:hover  {
+    color: black;
+    background-color: lighten($cadet-blue, 25%);
   }
 }
 
