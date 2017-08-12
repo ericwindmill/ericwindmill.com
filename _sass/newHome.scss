@@ -23,6 +23,7 @@
   height: 100%;
   width: calc(60% - 75px);
   float: left;
+  overflow: scroll;
   
   img {
     display: block;
@@ -32,10 +33,11 @@
   }
 
   .Home--Nav {
-    position: absolute;
-    bottom: 3%;
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 50px;
+    // position: absolute;
+    // bottom: 3%;
+    // display: flex;
+    // justify-content: flex-end;
 
     a {
       border-bottom: 1px black solid;
@@ -59,6 +61,8 @@
 
 .Home--Me {
   width: 85%;
+  max-height: 300;
+  overflow: scroll;
 
   h1, h2, p {
     color: black;
