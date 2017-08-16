@@ -17,7 +17,7 @@
       </div>
 
         <!-- RED ROCKS -->
-      <div class='square'>
+      <div class='square move-up-1'>
         <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
       </div>
 
@@ -55,7 +55,7 @@
         <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843592/edmodo/Rectangle_3.png' />
       </div>
 
-      <a class='hero-insta' href='#'>Instagram Feed →</a>
+      <a class='hero-insta' href='https://www.instagram.com/ericwindmill/?hl=en'>Instagram Feed →</a>
     </section>
 
     <div class='wrapper'>
@@ -82,19 +82,36 @@
         <div class='experience-item'>
           <h3>General Manager and Sommelier</h3>
           <p> Starting a very young age, I spent many years in hospitality. There, I learned the importance of hospitality and radical empathy. By the time I left the restaurant scene for good, I had gained a passion for wine, became a certaified Sommelier, and worked with some of the best damn people I ever will.<p> 
+      </div>
       </section>
 
       <span class='label-seperator'><p>Side-Projects</p><div class='seperator'></div></span>
-      <section class='experience portfolio-section'>
-          <p>
-              I make <strong>human-friendly</strong> software.
-            </p> 
-            <p>
-              I'm a fan of design, user-interaction, and data-visualization. When developing, I constantly ask, 'How does this [feature, technology, etc] affect the end user?" The more time that passes, the more I find myself falling into the 'data-driven' camp, but there's always room for intuiton in creation.
-            </p>
-            <p>
-              Other than that, I'm a certified sommelier and chronic wine lover. I like to write, and I devour music. Growing up, I wanted to make soundtracks for comedy movies.
-            </p>
+      <section class='side-projects portfolio-section'>
+          <div class='experience-item'>
+            <h3><a href='https://github.com/ericwindmill/on-the-grid'>On the Grid</a></h3>
+            <p> This tool teaches web developers how to use the newest and most powerful layout tool in the CSS language: <strong>CSS Grid</strong>.<p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='https://ericwindmill.github.io/philosphy_finder/'>Getting to Philosophy</a></h3>
+              <p>This project was purely made for fun. It's a <strong>web-crawler</strong> built entirely on the front end that displays the popular Wikipedia <a href='https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy'>Getting To Philosophy</a> challenge.<p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='https://github.com/ericwindmill/doddles'>Interview Doddl.es</a></h3>
+              <p>A simple web application meant to help web developers with the pesky phone screen. Inspired by Interview Cake. Made with <strong>Vue</strong> and <strong>Firebase.</strong><p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='http://bulletn.me/'>Firebase/React/Sass/Redux Boilerplate</a></h3>
+              <p>My perferred stack for rapid prototyping. Git clone and it's ready to go.<p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='https://fanspaceapp.herokuapp.com/#/home'>Groovie</a></h3>
+              <p>My first full-stack web application, and truly a passion project. This app is a fan club of sorts for My Morning Jacket fans. It allows them to track the MMJ concerts they've seen like trophies, and displays metrics based on concert history. Made with <strong>React</strong> and <strong>Rails</strong>.<p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='http://bulletn.me/'>Bulletin</a></h3>
+              <p>A forray into mobile application development, built with React Native. Drop a friend a note wherever you are, and they'll be able to read it when they arrive.<p> 
+          </div>
+          </section>
       </section>
 
       <span class='label-seperator'><p>writing</p><div class='seperator'></div></span>
@@ -102,12 +119,11 @@
           <div>
               {% for post in site.tags.front-page limit: 3%}
               {% if post.external_url %}
-                <dt>
-                  <a target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
-                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
+              <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
+              <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
               {% else %}
-                  <dt><a href='{{ post.url}}'>{{ post.title }}</dt>
-                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+              <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</dt>
+                <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
               {% endif %}
             {% endfor %}
           </div>
@@ -116,3 +132,10 @@
     </div>
     <body>
   </html>
+
+  <script>
+
+
+
+
+  </script>

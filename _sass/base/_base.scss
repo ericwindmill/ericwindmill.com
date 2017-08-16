@@ -90,7 +90,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans;
 }
 
-
+dl {
+  dt {
+      font-size: 17px;
+      font-weight: 500;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      color: darken($cadet-blue, 15%);
+    }
+  }
+  dd {
+    font-size: 14px;
+    max-width: 80%;
+  }
+}
 /**
  * Links
  */
