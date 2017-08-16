@@ -1,9 +1,112 @@
 <!DOCTYPE html>
   <html lang="{{ page.lang | default: site.lang | default: "en" }}">
     {% include head.html %}
-    <body class='wrapper'>
-      {% include header.html %}
+    <body>
+      <div class='wrapper'>
+        {% include header.html %}
+        <section class='title'>
+          <h1 class='name'>Eric Windmill</h1>
+          <p class='tag'>stitching together development and design</p>
+        </section>
+      </div>
     
+    <section class='hero'>
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
 
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
+
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
+
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
+
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
+
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
+
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
+
+      <div class='square'><!--red-->
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843602/edmodo/teal.png' />
+      </div>
+
+      <div class='square'><!--yellow-->
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843595/edmodo/periwinkle.png' />
+      </div>
+
+      <div class='square'><!--blue-->
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843592/edmodo/Rectangle_3.png' />
+      </div>
+    </section>
+
+    <div class='wrapper'>
+      <section class='about'>
+        <h3><strong>human-friendly</strong> software</h3>
+        <p>
+          Hi! I'm Eric. I'm a fan of design, user-interaction, and data-visualization. When developing, I like to think about how actual humans will experience the software. 
+        </p>
+        <p>
+          Outside of development, I'm a certified sommelier and chronic wine lover. I like to write, and I devour music. I've seen my favorite band over 60 times, and I'm an aspiring nomad.
+        </p>
+      </section>
+
+      <span class='label-seperator'><p>Experience</p><div class='seperator'></div></span>
+      <section class='experience portfolio-section'>
+        <div class='experience-item'>
+          <h3> DACA Time </h3>
+          <p> DACA Time is a non-profit that seeks to simplify the DACA application for children of Immigrants. I contribute to DACA as a front-end developer, where we're building the app with React.</p>
+        </div>
+        <div class='experience-item'>
+          <h3> Freelance Web Developer and Designer </h3>
+          <p> I build websites and serverless apps for clients such as X, Y, Z </p>
+        </div>
+        <div class='experience-item'>
+          <h3>General Manager and Sommelier</h3>
+          <p> Starting a very young age, I spent many years in hospitality. There, I learned the importance of hospitality and radical empathy. By the time I left the restaurant scene for good, I had gained a passion for wine, became a certaified Sommelier, and worked with some of the best damn people I ever will.<p> 
+      </section>
+
+      <span class='label-seperator'><p>Side-Projects</p><div class='seperator'></div></span>
+      <section class='experience portfolio-section'>
+          <p>
+              I make <strong>human-friendly</strong> software.
+            </p> 
+            <p>
+              I'm a fan of design, user-interaction, and data-visualization. When developing, I constantly ask, 'How does this [feature, technology, etc] affect the end user?" The more time that passes, the more I find myself falling into the 'data-driven' camp, but there's always room for intuiton in creation.
+            </p>
+            <p>
+              Other than that, I'm a certified sommelier and chronic wine lover. I like to write, and I devour music. Growing up, I wanted to make soundtracks for comedy movies.
+            </p>
+      </section>
+
+      <span class='label-seperator'><p>writing</p><div class='seperator'></div></span>
+      <section class='writing portfolio-section'>
+          <div>
+              {% for post in site.tags.front-page limit: 3%}
+              {% if post.external_url %}
+                <dt>
+                  <a target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
+                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
+              {% else %}
+                  <dt><a href='{{ post.url}}'>{{ post.title }}</dt>
+                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+              {% endif %}
+            {% endfor %}
+          </div>
+      </section>
+      {% include footer.html %}
+    </div>
     <body>
   </html>

@@ -4,7 +4,7 @@
 $sans:               'Avenir', Helvetica, Arial, sans-serif;
 $serif:              'Cardo', serif !default;
 $font-size:          16px !default;
-$font-weight:        300 !default;
+$font-weight:        400 !default;
 $small-font-size:    $font-size * 0.875 !default;
 $line-height:        1.7 !default;
 $ink:              #212B35 !default;
@@ -16,6 +16,9 @@ $accent:           #e7ca49;
 $cadet-blue:       #639da7; //rgb(99,157,167)
 $rosy-brown:       #a59588; //rgb(165,149,136)
 $medium-turquoise: #68d0d7; //rgb(104,208,215)
+$primary-blue: #4A90E2;
+$primary-yellow: #F4EC87;
+$primary-red: #ED6D7D;
 /*UI Colors*/
 /*Indigo (Interaction, Buttons)*/ 
 $indigo:           #5C6AC4;
@@ -37,7 +40,7 @@ $grey:             #DFE4E8;
 $spacing-unit:     30px !default;
 
 // Width of the content area
-$content-width:    900px !default;
+$content-width:    1000px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 

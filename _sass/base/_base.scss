@@ -15,7 +15,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 html {
-  background: url('http://res.cloudinary.com/ericwindmill/image/upload/v1502572251/portfolio_site/background_august.png');
+  background: url('http://res.cloudinary.com/ericwindmill/image/upload/o_50/v1502572251/portfolio_site/background_august.png');
 }
 
 body {
@@ -28,6 +28,7 @@ body {
           font-feature-settings: "kern" 1;
   font-kerning: normal;
   @extend %clearfix;
+  max-width: 100vw;
 }
 
 
@@ -93,13 +94,11 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
+
 a {
   color: darken($blue, 25%);
   font-weight: 400;
   text-decoration: none;
-  &:visited {
-    color:  $blue;
-  }
 
   &:hover {
     color:  darken($blue, 15%); 
