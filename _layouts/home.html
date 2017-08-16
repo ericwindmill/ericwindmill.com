@@ -1,81 +1,143 @@
 <!DOCTYPE html>
   <html lang="{{ page.lang | default: site.lang | default: "en" }}">
     {% include head.html %}
-    <!--{% include header.html %} -->
-    <div class='desktop'>
-      <div class='Home--Body Home--Wrapper'>
-          <div class='Home--Title'>
-            <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1501186620/portfolio_site/bw_clinton_photography.png' />
-            <div class='Home--Me'>
-              <h1> Eric Windmill</h1>
-              <h2> Front-End Engineer </h2>
-              <p> I make <a class='page-link' href="/portfolio">human-friendly</a> software.</p>
-              <p>I'm a fan of design, user-interaction, and data-visualization. When developing, I constantly ask, 'How does this [feature, technology, etc] affect the end user?" The more time that passes, the more I find myself falling into the 'data-driven' camp, but there's always room for intuiton in creation. </p>
-              <p>Other than that, I'm a certified sommelier and chronic wine lover. I like to <a class='page-link' href="/posts">write</a>, and I devour music. Growing up, I wanted to make soundtracks for comedy movies. </p>
-            </div>
-              <div class='Home--Nav'>
-                <a class='home-page-link' href="/portfolio">Portfolio</a>
-                <a class='home-page-link' href="/posts">Articles</a>
-                <a class='home-page-link' href="/contact">Contact</a>
-            </div>
+    <body>
+      <div class='wrapper'>
+        {% include header.html %}
+        <section class='title'>
+          <h1 class='name'>Eric Windmill</h1>
+          <p class='tag'><em>front-end developer</em></p>
+        </section>
+      </div>
+    
+    <section class='hero'>
+      <div class='square'>
+        <!-- CIVIC CENTER -->
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561770/portfolio_site/IMG_2841.jpg' />
+      </div>
+
+        <!-- RED ROCKS -->
+      <div class='square move-up-1'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+      </div>
+
+      <!-- Somm -->
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502571526/portfolio_site/Screen_Shot_2017-08-12_at_10.39.36_AM.png' />
+      </div>
+
+      <!-- CHIANG MAI -->
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502561803/portfolio_site/Screen_Shot_2017-08-12_at_10.40.07_AM.png' />
+      </div>
+      <!-- MOMA -->
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502561800/portfolio_site/IMG_1465.jpg' />
+      </div>
+      <!-- JIM -->
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502579742/portfolio_site/jim_rr_2011.png' />
+      </div>
+      <!-- REAPER -->
+      <div class='square'>
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561795/portfolio_site/Screen_Shot_2017-08-12_at_10.41.39_AM.png' />
+      </div>
+
+      <div class='square'><!--red-->
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843602/edmodo/teal.png' />
+      </div>
+
+      <div class='square'><!--yellow-->
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843595/edmodo/periwinkle.png' />
+      </div>
+
+      <div class='square'><!--blue-->
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843592/edmodo/Rectangle_3.png' />
+      </div>
+
+      <a class='hero-insta' href='https://www.instagram.com/ericwindmill/?hl=en'>Instagram Feed →</a>
+    </section>
+
+    <div class='wrapper'>
+      <section class='about'>
+        <h3><strong>human-friendly</strong> software</h3>
+        <p>
+          Hi! I'm Eric. I'm a developer whos a big fan of design, user-interaction, and data-visualization. I'm happiest when my work meets at the intersection of engineering and design.  When developing, I like to think about how actual humans will experience the software. 
+        </p>
+        <p>
+          Outside of development, I'm a certified sommelier and chronic wine lover. I like to write, and I devour music. I've seen my favorite band over 60 times, and I'm an aspiring nomad.
+        </p>
+      </section>
+
+      <span class='label-seperator'><p>Experience</p><div class='seperator'></div></span>
+      <section class='experience portfolio-section'>
+        <div class='experience-item'>
+          <h3> DACA Time </h3>
+          <p> DACA Time is a non-profit that seeks to simplify the DACA application for children of Immigrants. I contribute to DACA as a front-end developer, where we're building the app with React.</p>
+        </div>
+        <div class='experience-item'>
+          <h3> Freelance Web Developer and Designer </h3>
+          <p> I build websites and serverless apps for clients such as X, Y, Z </p>
+        </div>
+        <div class='experience-item'>
+          <h3>General Manager and Sommelier</h3>
+          <p> Starting a very young age, I spent many years in hospitality. There, I learned the importance of hospitality and radical empathy. By the time I left the restaurant scene for good, I had gained a passion for wine, became a certaified Sommelier, and worked with some of the best damn people I ever will.<p> 
+      </div>
+      </section>
+
+      <span class='label-seperator'><p>Side-Projects</p><div class='seperator'></div></span>
+      <section class='side-projects portfolio-section'>
+          <div class='experience-item'>
+            <h3><a href='https://github.com/ericwindmill/on-the-grid'>On the Grid</a></h3>
+            <p> This tool teaches web developers how to use the newest and most powerful layout tool in the CSS language: <strong>CSS Grid</strong>.<p> 
           </div>
-        <div class='Home--Content'>
-          <div class='content'>
-          <h2> Experience </h2>
-          <dl class='Home--Portfolio'>
-            <dt><a href='http://dacatime.com/'>DACA Time</a></dt>
-            <dd><em>Front-End Engineer, React, On Going</em></dd> 
-            <dd class='app-description'>DACA Time is a non-profit that seeks to simplify the DACA application for children of Immigrants.<br /> <br /> I contribute to DACA as a front-end developer, where we're building the app with React.</dd>
-            <dt><a href='/portfolio'>GroovieHQ</a></dt>
-            <dd><em>Full Stack Engineer, Rails and React, 2017</em><dd>
-            <dd class='app-description'>Groovie is a web-application built for My Morning Jacket mega-fans. It allows fans to track the shows they've seen. It uses data-visualization to show them metrics based on that show history. (For example, how many unique songs they've seen.) The users can also interact and build community around the band.</dd>
-            <dt><a href='/portfolio'>On The Grid</a></dt>
-            <dd><em>Developer, Javascript</em></dd>
-            <dd class='app-description'>On the Grid is a small side-project that I created in order teach developers about the most powerful new layout feature in CSS: Grid. The app contains a sand-box mode and tutorial mode, and it's approachable for all skill levels.</dd>
-          </dl>
-          
-          <h2> Recent Posts</h2>
-          <dl>
-            {% for post in site.posts limit: 10 %}
+          <div class='experience-item'>
+              <h3><a href='https://ericwindmill.github.io/philosphy_finder/'>Getting to Philosophy</a></h3>
+              <p>This project was purely made for fun. It's a <strong>web-crawler</strong> built entirely on the front end that displays the popular Wikipedia <a href='https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy'>Getting To Philosophy</a> challenge.<p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='https://github.com/ericwindmill/doddles'>Interview Doddl.es</a></h3>
+              <p>A simple web application meant to help web developers with the pesky phone screen. Inspired by Interview Cake. Made with <strong>Vue</strong> and <strong>Firebase.</strong><p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='http://bulletn.me/'>Firebase/React/Sass/Redux Boilerplate</a></h3>
+              <p>My perferred stack for rapid prototyping. Git clone and it's ready to go.<p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='https://fanspaceapp.herokuapp.com/#/home'>Groovie</a></h3>
+              <p>My first full-stack web application, and truly a passion project. This app is a fan club of sorts for My Morning Jacket fans. It allows them to track the MMJ concerts they've seen like trophies, and displays metrics based on concert history. Made with <strong>React</strong> and <strong>Rails</strong>.<p> 
+          </div>
+          <div class='experience-item'>
+              <h3><a href='http://bulletn.me/'>Bulletin</a></h3>
+              <p>A forray into mobile application development, built with React Native. Drop a friend a note wherever you are, and they'll be able to read it when they arrive.<p> 
+          </div>
+          </section>
+      </section>
+
+      <span class='label-seperator'><p>writing</p><div class='seperator'></div></span>
+      <section class='writing portfolio-section'>
+          <div>
+              {% for post in site.posts %}
+              {% unless post.hidden %}
               {% if post.external_url %}
-                <dt>
-                  <a target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
-                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time> ({{ post.external_site }})</dd>
-              {% else %}
-                  <dt><a href='{{ post.url}}'>{{ post.title }}</dt>
-                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+                <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
+                <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
+                {% else %}
+                <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</dt>
+                  <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
               {% endif %}
+              {% endunless %}
             {% endfor %}
-          </dl>  
-        </div>
-      </div>
-    </div> 
-  </div>
-
-
-
-    <!--Mobile layout!-->
-     <div class='mobile'>
-      <div class='mobile-header'><em>Making the web a more beautiful place.</em></div>
-
-      <div class='mobile-body'>
-        <p> Hi, I'm <strong>Eric Windmill</strong></p>
-        <p> I'm a front-end web developer with a penchant for design and user-interaction. I'm devoted to making the web accessible and easy to use for everyone.</p>
-        <p> I've lived in all different corners of the country and the globe, and I'm curious and passionate about designing for a global platform, while preserving all of our uniqueness.</p> 
-        <p> Currently, I'm living in San Francisco, CA </p>
-        <p> Besides creating digital things, I'm a Sommelier, and I write about wine and web development around the web at places like The Huffington Post. I like to read books and devour music.</p>
-        <br />
-        <p> As of June 2017, I am available for work. </p>
-        <p class='footer-msg'><em>Let's get in touch.</em></p>
-        <div class='button-container' >
-          <a class='button' href='mailto:eric@ericwindmill.com'>eric@ericwindmill.com</a>
-        </div>
-        <div class='mobile-icons'>
-          <a href='https://github.com/ericwindmill' class='social-icon github'><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href='https://instagram.com/ericwindmill' class='social-icon instagram'><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href='https://www.linkedin.com/in/eric-windmill-71843849/' class='social-icon linkedin'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          <a href='https://twitter.com/ericwindmill' class='social-icon twitter'><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        </div>
-      </div>
+          </div>
+      </section>
+      {% include footer.html %}
     </div>
+    <body>
   </html>
+
+  <script>
+
+
+
+
+  </script>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 
 <div class="home">
@@ -18,12 +18,11 @@ layout: default
   <dl>
             {% for post in site.posts %}
               {% if post.external_url %}
-                <dt>
-                  <a target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
-                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
+                <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
+                  <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
               {% else %}
-                  <dt><a href='{{ post.url}}'>{{ post.title }}</dt>
-                  <dd class='post-description'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+                  <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</dt>
+                  <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
               {% endif %}
             {% endfor %}
           </dl>  

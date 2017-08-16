@@ -1,4 +1,44 @@
-.post-publication {
-  margin: 0;
-  padding: 0;
+// articles list 
+.post-link {
+  color: $blue;
+  font-weight: 500;
+}
+
+.post-meta {
+  text-transform: uppercase;
+  font-size: .75em;
+  color: $ink;
+  font-weight: 600;
+  padding-bottom: 15px;
+
+  & > time {
+    font-size: 1.1em;
+  }
+}
+
+
+// articles themselves
+.post {
+  margin-top: $spacing-unit;
+  .post-seperator {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .text-content-width {
+    *:not(hr) {
+      padding-bottom: $post-padding;
+    }
+  }
+}
+
+.post-header {
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    color: $blue;
+    line-height: 1.5;
+    margin: 0;
+
+  }
 }

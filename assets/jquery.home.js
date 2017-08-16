@@ -1,40 +1,78 @@
 // $(() => {
-//   let arrow = document.querySelector('.directions')
-//   let content = document.querySelector('.Home--Content')
-//   let title = document.querySelector('.Home--Title')
-//   let arrowView
+//   function debounce(func, wait = 20, immediate = true) {
+//     var timeout;
+//     return function() {
+//       var context = this, args = arguments;
+//       var later = function() {
+//         timeout = null;
+//         if (!immediate) func.apply(context, args);
+//       };
+//       var callNow = immediate && !timeout;
+//       clearTimeout(timeout);
+//       timeout = setTimeout(later, wait);
+//       if (callNow) func.apply(context, args);
+//     };
+//   };
 
-//   const showArrow = () => {
-//     let i = 0
-//     let reverse = false
-//     arrowView = setInterval(() => {
-//       arrow.style.opacity = (i / 10)
-//       if (i === 7 && !reverse) {
-//         reverse = true
-//       } else if (i === 0 && reverse) {
-//         reverse = false
+//   const sliderImages = document.querySelectorAll('.square')
+
+//   let currentScrollPos = 0
+//   let dir = 'up' 
+//   function slide () {
+//     sliderImages.forEach(img => {
+//       const innerImg = img.querySelector('img')
+//       const startSlideAt = 125
+//       const stopSlideAt = 800
+
+//       function changeDir () {
+//         if (window.scrollY > currentScrollPos) {
+//           dir = 'up'
+//           currentScrollPos = window.scrollY
+//         } else if (window.scrollY < currentScrollPos) {
+//           dir = 'down'
+//           currentScrollPos = window.scrollY
+//         }
 //       }
-//       if (!reverse) {
-//         i++
-//       } else {
-//         i--
+
+
+//       if (window.scrollY > startSlideAt &&
+//           window.scrollY < stopSlideAt) {
+//             changeDir()
+//             if (dir === 'up') {
+//               img.style.top = (img.offsetTop - (img.offsetTop / 40)) + 'px'
+//             } else {
+//               img.style.top = (img.offsetTop + (img.offsetTop / 40)) + 'px'
+//             }
 //       }
-//     }, 100)
+//     })
 //   }
 
-//   let flag = false
-//   content.addEventListener('scroll', () => {
-//     clearInterval(arrowView)
-//     arrow.style.opacity = 0
-//     flag = true
-//   })
+//   // function checkSlide () {
+//   //   sliderImages.forEach((sliderImage, idx) => {
+//   //     if (window.scrollY > 125 && window.scrollY < 850) {
+//   //       let newScrollY = setTimeout(checkScrollY(window.scrollY), 0)
+//   //       sliderImage.style.top = newScrollY - sliderImage.style.top
+//   //     }
+//   //   })
+//   // }
 
-//   setTimeout(() => {
-//     if (flag) {
-//       return
-//     } else {
-//       showArrow()
-//     }
-//   }, 2500)
+//   // $(window).scroll(() => {
+//   //   if (window.scrollY > 125 && window.scrollY < 225) {
+//   //     console.log($(window).scrollTop()))
+//   //     $(".square").css({
+//   //       'top': (.style.top - 10) + "px"
+//   //     })
+//   //   }
+//   // })
+
+//   // window.onscroll = (e) => {
+//   //   let vertical_position = 0;
+//   //   if (window.pageYOffset) {//usual
+//   //     vertical_position = window.pageYOffset;
+//   //   }
+//   // }
+
+//   //   var your_div = document.querySelectorAll('.square');
+//   //   your_div.style.top = (vertical_position + 200) + 'px';
+//     window.addEventListener('scroll', slide)
 // })
-
