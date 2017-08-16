@@ -1,5 +1,4 @@
 // articles list 
-
 .post-link {
   color: $blue;
   font-weight: 500;
@@ -14,5 +13,32 @@
 
   & > time {
     font-size: 1.1em;
+  }
+}
+
+
+// articles themselves
+.post {
+  margin-top: $spacing-unit;
+  .post-seperator {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .text-content-width {
+    *:not(hr) {
+      padding-bottom: $post-padding;
+    }
+  }
+}
+
+.post-header {
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    color: $blue;
+    line-height: 1.5;
+    margin: 0;
+
   }
 }

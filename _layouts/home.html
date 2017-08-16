@@ -60,7 +60,7 @@
 
     <div class='wrapper'>
       <section class='about'>
-        <h3><em><strong>human-friendly</strong> software</em></h3>
+        <h3><strong>human-friendly</strong> software</h3>
         <p>
           Hi! I'm Eric. I'm a developer whos a big fan of design, user-interaction, and data-visualization. I'm happiest when my work meets at the intersection of engineering and design.  When developing, I like to think about how actual humans will experience the software. 
         </p>
@@ -117,14 +117,16 @@
       <span class='label-seperator'><p>writing</p><div class='seperator'></div></span>
       <section class='writing portfolio-section'>
           <div>
-              {% for post in site.tags.front-page limit: 3%}
+              {% for post in site.posts %}
+              {% unless post.hidden %}
               {% if post.external_url %}
-              <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
-              <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
-              {% else %}
-              <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</dt>
-                <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+                <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
+                <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
+                {% else %}
+                <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</dt>
+                  <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
               {% endif %}
+              {% endunless %}
             {% endfor %}
           </div>
       </section>

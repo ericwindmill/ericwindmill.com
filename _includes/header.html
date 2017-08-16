@@ -3,8 +3,8 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}"> {{ site.title | escape }}</a>
-    <nav class="site-nav">
-      <a class="page-link {% if page.title == "Profile" %}active {% endif %}" href="{{ site.baseurl }}/profile" aria-label="About this site.">Profile</a>
-      <a class="page-link {% if page.title == "Stream" %}active {% endif %}" href="{{ site.baseurl }}/stream" aria-label="Working with us.">Stream</a>
-    </nav>
+    <!-- <nav class="site-nav">
+      <a class="page-link {% if page.title == "Profile" %}active {% endif %}" href="{{ site.baseurl }}/profile" aria-label="About Me.">Profile</a>
+      <a class="page-link {% if page.title == "Stream" %}active {% endif %}" href="{{ site.baseurl }}/stream" aria-label="Posts, Pictures, and Projects.">Stream</a>
+    </nav> -->
 </header>
