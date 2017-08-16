@@ -111,6 +111,7 @@
 .site-footer {
   border-top: 1px solid $blue;
   padding: ($spacing-unit * 2) 0 $spacing-unit;
+  margin-top: $spacing-unit;
   width: 100%;
   display: flex;
   flex-direction: column;
