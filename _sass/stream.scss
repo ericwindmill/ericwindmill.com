@@ -89,10 +89,13 @@
 }
 
 .stream-item.project {
+  // $bg-colors: $primary-red, $primary-yellow, $primary-blue;
+  // $random-color: nth($bg-colors, random(3));
+
   border: none;
   grid-column: auto / span 2;
   width: 100%;
-  background-color: $primary-red;
+  // background-color: $primary-red;
   a {
     height: 100%;
     display: flex;

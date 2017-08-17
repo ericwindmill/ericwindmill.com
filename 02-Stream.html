@@ -3,13 +3,10 @@ layout: default
 title: Stream
 permalink: /stream/
 weight: 1
+description: This is a collection of my articles, projects and photos.
 ---
 
-<section class='title'>
-    <h1 class='name'>Eric Windmill</h1>
-    <p class='tag'>I'm a <em>a front-end engineer</em> living in San Francisco, CA. </p> 
-    <p>This is a collection of my articles, projects, and photos.</p>
-</section>
+{% include title.html %}
 
 <section class='stream'>
   {% for post in site.posts %}

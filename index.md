@@ -4,4 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
+description: My life in list format.
 ---
