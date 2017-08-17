@@ -5,7 +5,16 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr) );
   justify-items: space-around;
   justify-content: center;
-  max-width: 1030px;
+  
+
+  @media screen 
+    and (min-width: 1050px) {
+    max-width: 1050px; }
+  @media screen 
+    and (min-width: 790px)
+    and (max-width: 1049px) {
+      max-width: 790px; }
+  
 }
 
 .stream-item {
