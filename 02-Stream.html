@@ -15,7 +15,11 @@ weight: 1
   {% for post in site.posts %}
   {% unless post.hidden %}
     <div class="stream-item {{post.type}}">
-      
+      {% if post.external_url %}
+        <a href='{{post.external_url}}' />
+      {% else %}
+        <a href='{{post.url}}' />
+      {% endif %}
       {% if post.type == 'article' %}
         <h3>{{post.type}}</h3>
         <h1>{{post.title}}</h1>
@@ -41,6 +45,7 @@ weight: 1
 
         <img src="{{post.img_url}}" />†∑
       {% endif %}
+      </a>
     </div>
   {% endunless %}
   {% endfor %}
