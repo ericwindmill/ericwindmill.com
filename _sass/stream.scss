@@ -20,7 +20,7 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  overflow: hidden;
+  // overflow: hidden;
 
   &:hover {
     box-shadow: 0 15px 20px -6px  $primary-blue;
@@ -87,6 +87,7 @@
 .stream-item.project {
   grid-column: auto / span 2;
   width: 100%;
+  border-color: $primary-red;
 
   &:hover {
     box-shadow:  0 15px 20px -6px $primary-yellow;
