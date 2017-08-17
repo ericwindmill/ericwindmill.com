@@ -31,8 +31,10 @@ weight: 1
 
       {% if post.type == 'project' %}
         <h3>{{post.type}}</h3>
-        <h1>{{post.title}}</h1>
-        <p>{{post.description}}</h1>
+        <div class='project-description'>
+          <h1>{{post.title}}</h1>
+          <p>{{post.description}}</h1>
+        </div>
       {% endif %}
 
       {% if post.type == 'photo' %}

@@ -17,13 +17,18 @@
   padding: 15px 20px 15px 40px;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0 , 0.3);
   border: 2px solid $blue;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
+
+  a {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
   // overflow: hidden;
 
   &:hover {
-    box-shadow: 0 15px 20px -6px  $primary-blue;
+    box-shadow: 0 15px 20px -6px  rgba(0, 0, 0 , 0.3);
 
   }
 
@@ -73,7 +78,6 @@
   }
   
   &:hover {
-    box-shadow:  0 15px 20px -6px $primary-red;
     .post-description {
       opacity: 1;
     }
@@ -85,11 +89,25 @@
 }
 
 .stream-item.project {
+  border: none;
   grid-column: auto / span 2;
   width: 100%;
-  border-color: $primary-red;
+  background-color: $primary-red;
+  a {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
 
+
+  h1, h3, p, a {
+    color: black;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
   &:hover {
-    box-shadow:  0 15px 20px -6px $primary-yellow;
   }
 }
