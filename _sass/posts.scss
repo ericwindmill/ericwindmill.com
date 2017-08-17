@@ -20,6 +20,10 @@
 // articles themselves
 .post {
   margin-top: $spacing-unit;
+  padding: $spacing-unit;
+  background: white;
+  box-shadow: 0 10px 6px -6px darken($grey, 25%);
+  border: 2px solid $blue;
   .post-seperator {
     width: 100%;
     margin-bottom: 10px;

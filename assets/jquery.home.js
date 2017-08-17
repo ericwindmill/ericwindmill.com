@@ -3,11 +3,14 @@
 
 
 $(() => {
+  //random background colors 
   let projects = document.querySelectorAll('.stream-item.project')
   let colors = ['#ED6D7D', '#4A90E2', '#F4EC87']
   projects.forEach(project => {
     project.style.background = colors[Math.floor(Math.random() * colors.length)]
   })
+
+
 //   function debounce(func, wait = 20, immediate = true) {
 //     var timeout;
 //     return function() {
@@ -23,7 +26,6 @@ $(() => {
 //     };
 //   };
 
-  //random background colors for projects:
 
 
 
