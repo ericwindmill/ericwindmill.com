@@ -4,6 +4,7 @@
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr) );
   justify-items: space-around;
+  justify-content: center;
   max-width: 1030px;
 }
 
@@ -13,7 +14,7 @@
   min-width: 250px; 
   background-color: white;
   text-decoration: none;
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
   padding: 15px 20px 15px 40px;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0 , 0.3);
   border: 2px solid $blue;
@@ -29,6 +30,8 @@
 
   &:hover {
     box-shadow: 0 15px 20px -6px  rgba(0, 0, 0 , 0.3);
+    height: 245px;
+    margin-bottom: 5px;
 
   }
 

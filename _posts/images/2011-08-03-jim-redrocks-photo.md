@@ -7,8 +7,6 @@ type: photo
 category: photo
 tags: none
 location: Red Rocks Ampitheater, CO
-
 img_url: "http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_250/v1502579742/portfolio_site/jim_rr_2011.png"
 external_url: https://www.instagram.com/ericwindmill/?hl=en
-
 ---
