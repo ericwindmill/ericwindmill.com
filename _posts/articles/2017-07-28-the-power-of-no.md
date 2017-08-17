@@ -3,6 +3,7 @@ layout: post
 title:  "The Power of No"
 date:   2017-07-28 12:10:08 -0700
 categories: productivity self
+type: article
 permalink: blog/the-power-of-no
 ---
 

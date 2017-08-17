@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
   <html lang="{{ page.lang | default: site.lang | default: "en" }}">
     {% include head.html %}
@@ -6,52 +7,52 @@
         {% include header.html %}
         <section class='title'>
           <h1 class='name'>Eric Windmill</h1>
-          <p class='tag'><em>front-end developer</em></p>
+          <p class='tag'><em>front-end engineer</em></p>
         </section>
       </div>
     
     <section class='hero'>
       <div class='square'>
         <!-- CIVIC CENTER -->
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561770/portfolio_site/IMG_2841.jpg' />
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_250/v1502561770/portfolio_site/IMG_2841.jpg' />
       </div>
 
         <!-- RED ROCKS -->
       <div class='square move-up-1'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561766/portfolio_site/IMG_1532.jpg' />
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_250/v1502561766/portfolio_site/IMG_1532.jpg' />
       </div>
 
       <!-- Somm -->
       <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502571526/portfolio_site/Screen_Shot_2017-08-12_at_10.39.36_AM.png' />
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502571526/portfolio_site/Screen_Shot_2017-08-12_at_10.39.36_AM.png' />
       </div>
 
       <!-- CHIANG MAI -->
       <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502561803/portfolio_site/Screen_Shot_2017-08-12_at_10.40.07_AM.png' />
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502561803/portfolio_site/Screen_Shot_2017-08-12_at_10.40.07_AM.png' />
       </div>
       <!-- MOMA -->
       <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502561800/portfolio_site/IMG_1465.jpg' />
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502561800/portfolio_site/IMG_1465.jpg' />
       </div>
       <!-- JIM -->
       <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200,w_200/v1502579742/portfolio_site/jim_rr_2011.png' />
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502579742/portfolio_site/jim_rr_2011.png' />
       </div>
       <!-- REAPER -->
       <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_200/v1502561795/portfolio_site/Screen_Shot_2017-08-12_at_10.41.39_AM.png' />
+        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_250/v1502561795/portfolio_site/Screen_Shot_2017-08-12_at_10.41.39_AM.png' />
       </div>
 
-      <div class='square'><!--red-->
+      <div class='square color-block'><!--red-->
         <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843602/edmodo/teal.png' />
       </div>
 
-      <div class='square'><!--yellow-->
+      <div class='square color-block'><!--yellow-->
         <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843595/edmodo/periwinkle.png' />
       </div>
 
-      <div class='square'><!--blue-->
+      <div class='square color-block'><!--blue-->
         <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843592/edmodo/Rectangle_3.png' />
       </div>
 
@@ -60,13 +61,17 @@
 
     <div class='wrapper'>
       <section class='about'>
+        <div class='about-tag'>
         <h3><strong>human-friendly</strong> software</h3>
+        </div>
+        <div class='about-content'>
         <p>
           Hi! I'm Eric. I'm a developer whos a big fan of design, user-interaction, and data-visualization. I'm happiest when my work meets at the intersection of engineering and design.  When developing, I like to think about how actual humans will experience the software. 
         </p>
         <p>
           Outside of development, I'm a certified sommelier and chronic wine lover. I like to write, and I devour music. I've seen my favorite band over 60 times, and I'm an aspiring nomad.
         </p>
+      </div>
       </section>
 
       <span class='label-seperator'><p>Experience</p><div class='seperator'></div></span>
@@ -119,12 +124,14 @@
           <div>
               {% for post in site.posts %}
               {% unless post.hidden %}
-              {% if post.external_url %}
-                <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
-                <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
-                {% else %}
-                <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</dt>
-                  <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+              {% if post.type == 'article' and post.front-page %}
+                {% if post.external_url %}
+                  <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
+                  <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
+                  {% else %}
+                  <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</dt>
+                    <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
+                {% endif %}
               {% endif %}
               {% endunless %}
             {% endfor %}

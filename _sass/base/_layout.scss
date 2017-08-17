@@ -3,7 +3,11 @@
  */
 .site-header {
   min-height: $spacing-unit * 2;
-  margin-top: 5px;
+  // margin-top: 5px;
+  background: white;
+  border-bottom: 2px solid $blue;
+  box-shadow: 0 10px 6px -6px darken($grey, 25%);
+  padding: 0 20px;
 }
 
 .site-title {
@@ -43,6 +47,7 @@
 
     &:hover  {
       color: $brand;
+      border-bottom:5px solid $brand;
     }
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -193,11 +198,9 @@
 // /**
 //  * Page content
 //  */
-// .page-content {
-//   padding: ($spacing-unit * 3) 0;
-//   background: white;
-//   width: 100%;
-// }
+.page-content {
+  padding: 10px;
+}
 
 // .page-heading {
 //   font-size: $font-size * 2.2;

@@ -1,6 +1,13 @@
 .title {
   text-align: center;
-  padding: 50px 0;
+  margin: 100px auto;
+  border: solid 2px $blue;
+  padding: 20px;
+  width: 50%;
+  background: white;
+  box-shadow: 0 10px 6px -6px darken($grey, 25%);
+
+
   .name {
     font-size: 3rem;
     color: $blue;
@@ -21,17 +28,23 @@
 
   .hero-insta {
     position: absolute;
-    left: 5%;
-    bottom: 95px;
+    left: 34%;
+    top: 205px;
   }
   .square {
     position: absolute;
     overflow: hidden;
+    // box-shadow: 1px 1px 5px black;
 
     > img {
-      min-width: 200px;
-      min-height: 200px;
+      max-width: 200px;
+      max-height: 200px;
       margin: 0;
+
+      // @media screen and (min-width: 1024px ) {
+      //   max-width: 250px;
+      //   max-height: 250px;
+      // }
     }
 
     &:after {
@@ -45,63 +58,63 @@
 
 // CIVIC CENTER
     &:nth-of-type(1) {
-      top: 10px;
-      left: 0%;
-      z-index: 4;
+      top: 0px;
+      left: -1%;
+      z-index: 2;
     }
 // RED ROCKS
     &:nth-of-type(2) {
-      top: 160px;
-      left: 25%;
-      z-index: 8;
+      top: 0px;
+      left: 50%;
+      z-index: 1;
     }
 // SOMM 
     &:nth-of-type(3) {
-      top:10px;
-      left: 35%;
-      z-index: 6;
+      top:0px;
+      left: 33%;
+      z-index: 2;
     }
 // CHIANG MAI
     &:nth-of-type(4) {
-      top: 25px;
-      right: 25%;
-      z-index: 5;
+      top: 0px;
+      right: -1%;
+      z-index: 1;
     }
 // MOMA
     &:nth-of-type(5) {
-      top: 225px;
-      right: 30%;
-      z-index: 7;
+      top: 200px;
+      right: 16%;
+      z-index: 2;
     }
 // JIM
     &:nth-of-type(6) {
-      top: 350px;
-      right: 5%;
-      z-index: 7;
+      top: 400px;
+      right: -1%;
+      z-index: 2;
     }
 // REAPER
     &:nth-of-type(7) {
-      top: 10px;
-      right: 0%;
-      z-index: 4;
+      top: 200px;
+      right: -1%;
+      z-index: 1;
     }
 // RED
     &:nth-of-type(8) {
       top: 0px;
-      left: 15%;
-      z-index: 2;
+      left: 16%;
+      z-index: 1;
     }
 // YELLOW
     &:nth-of-type(9) {
-      top: 125px;
-      left: 5%;
+      top: 200px;
+      left: 50%;
       z-index: 1;
     }
 // BLUE
     &:nth-of-type(10) {
-      top: 175px;
-      right: 15%;
-      z-index: 1;
+      top: 0px;
+      right: 16%;
+      z-index: 2;
     }
 }
 
@@ -111,6 +124,32 @@
 
   h3 {
     color: $blue;
+    margin: 0 0 3px 0;
+  }
+
+  .about-tag {
+    position: relative;
+    border-top: 5px solid $blue;
+    border-left: 2px solid $blue;
+    border-right: 2px solid $blue;
+    background: white;
+    display: inline-block;
+    z-index: 5;
+    padding: 20px;
+    
+  }
+  .about-content {
+    position: relative;
+    margin-top: -2px;
+    border-left: 2px solid $blue;
+    border-bottom: 2px solid $blue;
+    border-right: 2px solid $blue;
+    border-top: 2px solid $blue;
+    background: white;
+    display: inline-block;
+    box-shadow: 0 10px 6px -6px darken($grey, 25%);
+    z-index: 0;
+    padding: 20px;
   }
 }
 
@@ -118,13 +157,25 @@
 .portfolio-section {
   width: 50%;
   margin: 0 0 0 auto;
+  border: solid 2px $blue;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 10px 6px -6px darken($grey, 25%);
 }
 
 .experience-item {
   margin: ($spacing-unit * .67) 0;
-  h3 {
+  h3, h3 > a {
     font-weight: 500;
     margin: 0;
+  }
+
+  h3 > a {
+    font-size: 16px;
+    color: $blue;
+    &:hover {
+      color: darken($blue, 25%)
+    }
   }
 }
 

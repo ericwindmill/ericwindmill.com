@@ -3,6 +3,7 @@ layout: post
 title:  "The Best of Both Worlds"
 date:   2017-07-25 10:10:08 -0700
 categories: freelance toptal
+type: article
 permalink: blog/toptal
 ---
 Sunday dread. This is what I call the feeling that I used to get at the end of an amazing weekend away from my full-time job. As the feeling sunk in, I began the cycle: struggle through the week. Struggle with the fact that my schedule isn’t my own. Struggle with the bureaucracy and office politics. Struggle with the fact that I simply don’t believe in the project I’m working on. 

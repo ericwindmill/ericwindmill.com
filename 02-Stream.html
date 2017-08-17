@@ -1,0 +1,47 @@
+---
+layout: default
+title: Stream
+permalink: /stream/
+weight: 1
+---
+
+<section class='title'>
+    <h1 class='name'>Eric Windmill</h1>
+    <p class='tag'>I'm a <em>a front-end engineer</em> living in San Francisco, CA. </p> 
+    <p>This is a collection of my articles, projects, and photos.</p>
+</section>
+
+<section class='stream'>
+  {% for post in site.posts %}
+  {% unless post.hidden %}
+    <div class="stream-item {{post.type}}">
+      
+      {% if post.type == 'article' %}
+        <h3>{{post.type}}</h3>
+        <h1>{{post.title}}</h1>
+        <time datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
+          {{ post.date | date: "%d %b %y" }}
+          {% if post.external_site %} • {{ post.external_site }}{% endif %}
+        </time>
+      {% endif %}
+
+      {% if post.type == 'project' %}
+        <h3>{{post.type}}</h3>
+        <h1>{{post.title}}</h1>
+        <p>{{post.description}}</h1>
+      {% endif %}
+
+      {% if post.type == 'photo' %}
+      <div class='post-description'> 
+        <h1>{{post.title}}</h1>
+        <p>{{post.location}}</p>
+        <p>{{ post.date | date: "%d %b %y" }}</p>
+
+      </div>
+
+        <img src="{{post.img_url}}" />†∑
+      {% endif %}
+    </div>
+  {% endunless %}
+  {% endfor %}
+</section>

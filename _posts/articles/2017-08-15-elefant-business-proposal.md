@@ -4,6 +4,7 @@ title:  "Elefant"
 date:   2017-08-15 12:10:08 -0700
 categories: elefant
 hidden: true
+type: hidden
 permalink: /elefant
 ---
 Hey Nick, 
