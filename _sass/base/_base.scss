@@ -2,7 +2,7 @@
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
+p, blockquote, pre,
 dl, dd, ol, ul, figure {
   font-family: $sans;
   font-weight: $font-weight;
@@ -80,6 +80,10 @@ li {
 }
 
 
+hr {
+  border: 2px solid $blue;
+  margin: $spacing-unit 0;
+}
 
 /**
  * Headings

@@ -42,7 +42,7 @@ Much of the layout cusomization was done by using semantic HTML, and relying on 
 * `display: inline` makes an element take up only the width that it needs, allowing multiple items to be horizontally aligned. These elements respect right and left margins, but not top and bottom, and you cannot set a height and width.
 * `display: inline-block` is more or less a combination of the two. It doesn't force a line-break, so elements can sit at it's right and left, but in all other regards it's a 'block' level element.
 
- // Image of p element variation.
+<img src='http://res.cloudinary.com/ericwindmill/image/upload/v1503687483/blog_posts/Screen_Shot_2017-08-25_at_10.32.59_AM.png' style='margin:auto;display:block;' height='100px'>
 
 Perhaps the first step to writing good CSS and semantic HTML is knowing each elements default display style. Here's a non-exhaustive list:
 * `block`
@@ -78,10 +78,9 @@ Perhaps the first step to writing good CSS and semantic HTML is knowing each ele
   * `<title>`
 
 
-[Click here for an exaustive list of default element values from W3Schools.](https://www.w3schools.com/cssref/css_default_values.asp)
-
-
-[Click here for an exaustive list of default display property values from MDN.](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+Good resources:
+* [Exaustive list of default element values from W3Schools.](https://www.w3schools.com/cssref/css_default_values.asp)
+* [Exaustive list of default display property values from MDN.](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
 ---- 
 
@@ -108,7 +107,8 @@ I'm going to break this down into the most important nuggets, because this could
 
   Open up your dev-tools, go to `elements` and click on `computed` and you'll see this:
 
-  **box model**
+
+<img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_300/v1503687474/blog_posts/CSSBoxModel.png' style='margin:auto;display:block;' height='300px'>
 
   This helpful thing is showing you the true size of your item, not the width or height you explicitly set.
 
@@ -118,7 +118,8 @@ I'm going to break this down into the most important nuggets, because this could
   * `Margin` is the property that surrounds the border. I like to think about the element itself being content, border and padding, and the margin being the the elements 'personal' space. It's important to note that in different situations margin may or may not collapse! Check out this example of both collapsing and non-collapsing margins.
   * `box-sizing: border-box` is a property added later to CSS that makes the box-model more intuitive. Remember when I said that I like to think of the element itself as the content, padding and border? That's exactly what the `border-box` fix does. It's used very, very often.
 
-  **border box** 
+<img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_300/v1503687474/blog_posts/CSSBoxBoxModel-BordeRBox.png' style='margin:auto;display:block;' height='300px'>
+
 
 * Width
   * Width is pretty self-explanitroy *at first*. Simply set `width: auto | 10px | 10%` etc, and your element will take that width. 
@@ -139,19 +140,28 @@ I'm going to break this down into the most important nuggets, because this could
 * `margin: auto` trick
   * This is a seriously useful trick, but its not without it's issues. Basically, if you give an element a width, and then set its margin to `auto`, it will automatically put equal margin on both the right and left. You just centered an element.
   * This only works on block-level elements. Which makes sense, because an inline element can't be given a width.
-
+  
+*The above CodePen uses margin-auto if you'd like to check it out.*
 
 ----
 
-## Layout 101: Floats, Table Hacks, and `position`
+## Layout 101: Floats, Table Hacks, and Position
 
-With a little knowledge of exactly how CSS elements *sizing* works, we can finally get into the meat. How do we manipulate and elements position on a page? With so many different screen sizes and devices, accessibility, and responsive design at play, this question is ultimately not easy. In a boring world where there was only one screen size, you could realistically just use `position` in order to display a page *exactly* how you'd want. (But this isn't a boring world.)
+With a little knowledge of exactly how CSS elements *sizing* works, we can finally get into the meat. 
 
-### `position`
+How do we manipulate and elements position on a page? With so many different screen sizes and devices, accessibility, and responsive design at play, this question is ultimately not easy. In a boring world where there was only one screen size, you could realistically just use `position` in order to display a page *exactly* how you'd want. (But this isn't a boring world.)
+
+### Position
 
 The next step in understanding layouts, then, is understanding the `position` property. The position property is basically used to define **exactly** where you want an element to be. Using different values for this property, you can set the position relative to its containing element, or to the browser window. The position element allows you to make something stick to the window, and doesn't respect scroll. It also allows to create complete overlays and cool features like parallax.
 
-The most important thing to remember about positioning is that it effects the flow of the document. If you position something absolutly or fixed, it's removed from the normal flow and basically sits above the rest of your content. So, if the content around the element changes, the element itself won't. And vise versa. 
+The most important thing to remember about positioning is that it changes the flow of the document. If you position something absolutly or fixed, it's removed from the normal flow and basically sits 'above' (in z-index) the rest of your content. So, if the content around the element changes, the element itself won't 'reflow'. And vise versa. 
+
+<img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_600/v1503687483/blog_posts/Screen_Shot_2017-08-25_at_11.23.27_AM.png' style='margin:auto;display:block;' height='300px'>
+
+The image above shows two different ways of laying out a simlple name-tag div. The first column uses `floats`, and second absolute positioning. The only difference between the top and bottom nametags is that the `img` width has been changed from `100px` to `120px`. (Nevermind floats or the funky boarders shown above, focus on the image and its relation to the text.)
+
+In the second column, the images have been taken out of the flow of the document using absolute positioning, so when the image is resized, it has no affect on how other elements behave. Thats the 10 second version of what 'document flow' is.
 
 The values that `position` accetps are:
 * static
@@ -165,21 +175,22 @@ The values that `position` accetps are:
 * `absolute` sets the element relative to its first ancestor which is not static. In laymens terms, if you set an element's position to `absolute` and also give it `left: 20px`, it will be painted 20px to the left of its closest ancestor with a `position` that's been explicity set (and not to static) * aside: Most often, you'll see `relative` put on an element simply to act as an anchor for it's absolutely positioned child. Positioning can cause major headaches when you're setting position to `absolute` without first deciphering what the anchor element is. In some cases, you may want a deeply nested element to be positioned relatively to the `body` tag, but that's rare. It usually best practice to position something relative to its direct parent. 
 * `fixed` is like absolute, except that it's positioning is always relative to the browser window. so `left: 50px` places the element 50 pixels to the left of the very left of the screen. `Fixed` elements do not scroll with the page. An elemnt that's at `top: 0, left: 0` will stay fixed in the top-left corner. 
 
-The above properties are used often in layouts. Its worth noting that when using positioning you can use values other than `px`. It's also worth nothing that using percentages and `ems` can get tricky with absolute and fixed elements. You've been warned!
+The above properties are used often in layouts. Its worth noting that when using positioning you can use values other than `px`. It's also worth nothing that using percentages and `ems` can get tricky with absolute and fixed elements. Basically, if you're using dynamic sizing properties on elements that aren't in the flow of the document, it can get really ugly on different sized screens when mixing positioned elements with other layout forms..  You've been warned!
 
-The last position property is new, and awesome, but not  widely supported yet. Here's the breif rundown:
+The last position property is new, and awesome, but not widely supported yet. Here's the breif rundown:
 
 #### `position: sticky`
 
-Often websites may want an element to switch between `relative` and `fixed` based on users scroll position. Check out this demo from MDN:
+Often websites may want an element to switch between `relative` and `fixed` based on users scroll position. Check out this demo:
 
-`demo`
+<p data-height="265" data-theme-id="0" data-slug-hash="KvxdOz" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="Position: Sticky basics" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/KvxdOz/">Position: Sticky basics</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 The standard way to make this happen is to use Javascript to change the `position` property based on the users scroll position. It isn't necessarily difficult, but it does take a bit of know-how. `sticky` basically implements this for us.
 
 As of writing (August 2017), this feature is supported in Firefox, Chrome, Safari, Opera, Edge (16 only), and iOS Safari. It has no IE support. [Complete support list](http://caniuse.com/css-sticky/embed/)
 
-Checkout my entire post and demo of `position: sticky` here.
+Because this feature isn't widely supported, I won't go into to much, but you basically just need to set `position` to `sticky` and give it another paramenter. In the above example I do this by setting `top` to `-1px`. I think this will account for 99% of future use.
 
 #### `translate: transform`
 
@@ -189,10 +200,11 @@ Or, you can use the `transform` property with the `translate` function as its va
 
 (Okay, you may have to do some math, but not for this specific, but common need.)
 
+---
 
 ### Floats
 
-The first tool added to CSS specifically for creating better layouts was the `float` property. assigning any element the `float` property keeps it in the flow of the document and pushes it against the `left` or `right` of the containing element, depending the value you give it. It was originally designed to wrap text around tables and images, but developers being developers, they found ways to make it much more powerful. Floats can be used realistically to make entire web layouts.
+The first tool added to CSS specifically for creating better layouts was the `float` property. Assigning any element the `float` property keeps it in the flow of the document and pushes it against the `left` or `right` of the containing element, depending the value you give it. The above CodePen that uses 'name-tags' uses floats. It was originally designed to wrap text around tables and images, but developers being developers, they found ways to make it much more powerful. Floats can be used realistically to make entire web layouts.
 
 Let's start from the beginning.
 
@@ -203,29 +215,30 @@ The `float` property accepts the following values:
 
 The values are pretty straight forward. A left-floated element sticks to the left of the page, a right to the right, none is default, and inherit makes the element take the value of its parent.
 
-*** diagrams ***
+<img src='http://res.cloudinary.com/ericwindmill/image/upload/v1503687483/blog_posts/Screen_Shot_2017-08-24_at_3.49.20_PM.png' style='margin:auto;display:block;' height='300px'>
 
+#### Clear
 
-
-
-
-You can't talk about floats without including `clear`. This property is used to control how other elements interact with floated properties. If you add `clear: left` to the next sibling of a property that's been floated to the left, the sibling will be forced to a new line.
+You can't talk about floats without including `clear`. This property is used to control how other elements interact with floated properties. If you add `clear: left` to the next sibling of a property that's been floated to the left, the sibling will be forced to a new line if the element above is floated to the left. If the element is floated to the right, you can use `clear: right`, and `both` clears no matter what the float value from the previous element. 
 
 The `clear` property accepts:
 * `left`
 * `right`
 * `both`
 
-*** diagramps ***
-**also that super simple code pen to play with floats and clears.
+<p data-height="427" data-theme-id="0" data-slug-hash="ayjYpJ" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="IceCreamPigFloats" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/ayjYpJ/">IceCreamPigFloats</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 Floats probably seem pretty easy thus far. And honestly... it seems easy to me right now, too. While writing this, I'm thinking 'How have I ever had problems with this?' But alas, there are some common problems.
 
 The biggest problem comes into play when an element's size (usually height) is greater than it's containing element. Consider the original use of floats, wrapping text.
 
-***Example image***
+Let's look at a previous example:
+<img src='http://res.cloudinary.com/ericwindmill/image/upload/v1503687483/blog_posts/Screen_Shot_2017-08-25_at_11.23.27_AM.png' style='margin:auto;display:block;' height='300px'>
 
-If the height of the text is less than that of the image, the image will bust out of the element, messing up the flow of the documnet. There are a couple ways to avoid the issue of clearing. The first, and best way is to simply use `clear`, but that only works if you know forsure what the next element it going to be, and if the page is more or less static. Here's a couple hacks:
+Pay attention to the left column now. Even though the reflow is great, the image is now taller than the containing div.
+
+If the height of the text is less than that of the image, the image will bust out of the element. There are a couple ways to avoid the issue of clearing. The first, and best way is to simply use `clear`, but that only works if you know forsure what the next element it going to be, and if the page is more or less static. Here's a couple hacks:
 
 * `overflow: hidden`
   * Setting the parent elements overflow to hidden does cause it expand to the height of the floats. Which is quite nice, but it can trigger unwanted scrollbars or hidden content depending on the browser. So it requires a lot of testing.
@@ -240,7 +253,12 @@ This is the most modern verstion, and is supported by IE8 and up.
     clear: both;
   }
 ```
-This is the go-to hack at this point. It simply adds a tiny bit of content *after* the element, whos content is an empty string, so it's invisable. Empty string content isn't supported by older browsers,so you may have to add aditional properties for that. 
+This is the go-to hack at this point. It simply adds a tiny bit of content *after* the element, whos content is an empty string, so it's invisible. Empty string content isn't supported by older browsers,so you may have to add aditional properties for that. 
+
+Here's the same image with a clearfix applied:
+
+<img src='http://res.cloudinary.com/ericwindmill/image/upload/v1503688159/blog_posts/Screen_Shot_2017-08-25_at_12.08.53_PM.png' style='margin:auto;display:block;' height='300px'>
+
 
 Floats come with quite a bit of 'gotchas' that are always hard to forsee, but not so hard to fix. It's always almost possible to acheive what you want, but you usually have to sarifice semantic HTML.
 
@@ -255,7 +273,7 @@ Essentially the table properties allow you to do what HTML table tags already co
 
 Here's a very simple example of using `table-cell` to make a row of columns. Toggling the button changes the elements from `display: block` to `display: table-cell`.
 
-<p data-height="437" data-theme-id="0" data-slug-hash="QMVWBW" data-default-tab="css,result" data-user="ericwindmill" data-embed-version="2" data-pen-title="Table Hacks" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/QMVWBW/">Table Hacks</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="239" data-theme-id="0" data-slug-hash="QMVWBW" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="Table Layout pt 1" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/QMVWBW/">Table Layout pt 1</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -264,7 +282,7 @@ Here's a very simple example of using `table-cell` to make a row of columns. Tog
 The first big advantage here is equal height divs. Sizing elements properly is kind of nightmare when you're starting out with CSS layouts. It arguably gives me the most pain in the world of web development. Using tables for layout solves this problem with ease. Naturally, if you have a containing element set to `display: table` and the children set as `display: table-cell`, the cells automatically expand to fix the height of the table. It's a pretty sweet and easy way to solve this problem. 
 
 
-<p data-height="438" data-theme-id="0" data-slug-hash="mMGyyg" data-default-tab="css,result" data-user="ericwindmill" data-embed-version="2" data-pen-title="Table Layout Pt 2" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/mMGyyg/">Table Layout Pt 2</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="344" data-theme-id="0" data-slug-hash="mMGyyg" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="Table Layout Pt 2" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/mMGyyg/">Table Layout Pt 2</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -305,10 +323,10 @@ So there we have it, folks. A simple intro into the CSS Layout tools of the past
 
 --- 
 *Checkout the other guides in this series:*
-* [Layout 201: Intro to Flexbox](#)
-* [Layout 202: Intro to CSS Grid](#)
-* [Layout 301: Choosing the Right Tools](#)
-* [Layout 401: Combining the Tools for the Modern Layout](#)
+* [Layout 201: Intro to Flexbox](#) *coming soon*
+* [Layout 202: Intro to CSS Grid](#) *coming soon*
+* [Layout 301: Choosing the Right Tools](#) *coming soon*
+* [Layout 401: Combining the Tools for the Modern Layout](#) *coming soon*
 
 <!-- 
  thoughts: whats the thread or 'through line?' It should all be building up to using ALL of the power of CSS Layout, but before you can use it all together you have to learn the foundations. 
