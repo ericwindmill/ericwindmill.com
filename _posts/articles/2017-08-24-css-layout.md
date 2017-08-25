@@ -117,11 +117,11 @@ I'm going to break this down into the most important nuggets, because this could
 
 ----
 
-### Layout 101: Floats, Table Hacks, and `position`
+## Layout 101: Floats, Table Hacks, and `position`
 
 With a little knowledge of exactly how CSS elements *sizing* works, we can finally get into the meat. How do we manipulate and elements position on a page? With so many different screen sizes and devices, accessibility, and responsive design at play, this question is ultimately not easy. In a boring world where there was only one screen size, you could realistically just use `position` in order to display a page *exactly* how you'd want. (But this isn't a boring world.)
 
-#### `position`
+### `position`
 
 The logical next step in understanding layouts, then, is understanding the `position` property. The position property is basically used to define **exactly** where you want an element to be. Using different values for this property, you can set the position relative to its containing element, or to the browser window. The position element allows you to make something stick to the window, and doesn't respect scroll. It also allows to create complete overlays and cool features like parallax. I use `position` a lot, but with great power comes great repsonsibility.
 
@@ -162,7 +162,51 @@ Or, you can use the `transform` property with the `translate` function as its va
 (Okay, you may have to do some math, but not for this specific, but common need.)
 
 
+### Floats
 
+The first tool added to CSS specifically for creating better layouts was the `float` property. assigning any element the `float` property keeps it in the flow of the document and pushes it against the `left` or `right` of the containing element, depending the value you give it. It was originally designed to wrap text around tables and images, but developers being developers, they found ways to make it much more powerful. Floats can be used realistically to make entire web layouts.
+
+Let's start from the beginning.
+
+The `float` property accepts the following values:
+* `left`
+* `right`
+* `inherit`
+
+The values are pretty straight forward. A left-floated element sticks to the left of the page, a right to the right, none is default, and inherit makes the element take the value of its parent.
+
+*** diagrams ***
+
+
+
+
+
+You can't talk about floats without including `clear`. This property is used to control how other elements interact with floated properties. If you add `clear: left` to the next sibling of a property that's been floated to the left, the sibling will be forced to a new line.
+
+The `clear` property accepts:
+* `left`
+* `right`
+* `both`
+
+*** diagramps ***
+**also that super simple code pen to play with floats and clears.
+
+Floats probably seem pretty easy thus far. And honestly... it seems easy to me right now, too. While writing this, I'm thinking 'How have I ever had problems with this?' But alas, there are some common problems.
+
+The biggest problem comes into play when an element's size (usually height) is greater than it's containing element. Consider the original use of floats, wrapping text.
+
+***Example image***
+
+If the height of the text is less than that of the image, the image will bust out of the element, messing up the flow of the documnet. When I first got into CSS, before the flexbox days, some clever people came up with the `clearfix` hack. This hack has gone through a number of iterations in attempt to be supported by all browsers. It's an ugly hack, but a user would never know that the CSS was hacky, so its often used. 
+
+This is the most modern verstion, and is supported by IE8 and up. 
+```css
+  .item:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+```
 
 
 --- 
@@ -171,5 +215,8 @@ Or, you can use the `transform` property with the `translate` function as its va
 * [Layout 202: Intro to CSS Grid](#)
 * [Layout 301: Choosing the Right Tools](#)
 * [Layout 401: Combining the Tools for the Modern Layout](#)
+
+
+ thoughts: whats the thread or 'through line?' It should all be building up to using ALL of the power of CSS Layout, but before you can use it all together you have to learn the foundations. 
 
 
