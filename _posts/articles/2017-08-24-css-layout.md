@@ -8,6 +8,8 @@ front-page: true
 permalink: blog/css-layout
 ---
 
+## Part 1: Getting up to speed: Sizing, Display, Positon, Floats, and Tables
+
 When I first started learning CSS, my tactic was basically: try things and tweak things until it works. It usually took hours to make layouts work correectly. I would spend entire days just messing with flex-box. No matter how many times I read about flex-box preoperties, I would have issues. 
 
 Then I realized that if I spent a bit of time understanding the basics of layout, then these problems would be much easier, and my tweaks to CSS would be based in intelligence.
