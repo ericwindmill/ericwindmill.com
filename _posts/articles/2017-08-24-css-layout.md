@@ -8,7 +8,13 @@ front-page: true
 permalink: blog/css-layout
 ---
 
-CSS layout has come a long way. Today, CSS 'frameworks' or libraries just aren't necessary. Standard CSS provides us with ways to make complex layouts fairly easily. The blessing and curse of this is the variety of approaches one can take to create their layout. 
+When I first started learning CSS, my tactic was basically: try things and tweak things until it works. It usually took hours to make layouts work correectly. I would spend entire days just messing with flex-box. No matter how many times I read about flex-box preoperties, I would have issues. 
+
+Then I realized that if I spent a bit of time understanding the basics of layout, then these problems would be much easier, and my tweaks to CSS would be based in intelligence.
+
+Abe Lincoln once said "Give me 4 hours to chop down a tree, and I'll spend the first three sharpening the axe". (Or something along those lines). The point is, it's super beneficial to learn the foundation of CSS layout, even if most of your layout relies on modern properties. 
+
+CSS layout has come a long way. Today, CSS 'frameworks' or libraries like Bootstrap and Foundation aren't necessary. Standard CSS provides us with multiple ways to make complex layouts fairly easily. In fact, I would say its easier to learn flex-box and grid than it is to learn Bootstrap. The blessing and curse of this is the variety of approaches one can take to create their layout. 
 
 When referring to layout, I'm specifically talking about the size and positioning of different elements on a web page. Heights/widths, padding/margin, and display properties are essentially what I want to address. 
 
@@ -17,6 +23,7 @@ When referring to layout, I'm specifically talking about the size and positionin
 This series of posts will cover the ins-and-outs of:
 * The Basics and Beginnings of CSS Layouts 
 * Margins, widths, and more basics.
+* Positioning
 * Floats
 * The Table Hack
 * Flexbox
@@ -29,11 +36,13 @@ This series of posts will cover the ins-and-outs of:
 ### The Basics
 Today, the CSS creators have given us some amazing tools, but once upon a time creating layouts was pretty hacky. But even before those hacks we had really basic webpages, that by today's standard had no layout at all. It was simply 'laid' out like the page of a book. The content flowed from left to right, top to bottom.
 
-Much of the layout cusomization was done by using semantic HTML, and relying on the standard `display` properties of those HTML elements (such as `block`, `inline`, and `inline-block`.
+Much of the layout cusomization was done by using semantic HTML, and relying on the standard `display` properties of those HTML elements (such as `block`, `inline`, and `inline-block`.)
 
 * `display: block` makes an element take up the entire width of its parent element. Therefor no other elements will be on the same line. Block ites respect margins and padding, and can have a width and height. Even when a width is set, the element still forces a link break.
 * `display: inline` makes an element take up only the width that it needs, allowing multiple items to be horizontally aligned. These elements respect right and left margins, but not top and bottom, and you cannot set a height and width.
 * `display: inline-block` is more or less a combination of the two. It doesn't force a line-break, so elements can sit at it's right and left, but in all other regards it's a 'block' level element.
+
+ // Image of p element variation.
 
 Perhaps the first step to writing good CSS and semantic HTML is knowing each elements default display style. Here's a non-exhaustive list:
 * `block`
@@ -79,7 +88,7 @@ Perhaps the first step to writing good CSS and semantic HTML is knowing each ele
 
 In addition to these, pre-layout web developers organized content using `tables` and `lists`. (While the internet would be a much more boring place if that's what we were still using, it would be refreshing to see HTML that was so semantic.)
 
-Certain CSS properties and 'hacks' can be used with  these standard elements in order to do some basic layout work. This includes manipulating the `margin` (specifically centering using `margin: auto`, and using the `align` property on images and tables (no longer supported)).
+Certain CSS properties and 'hacks' can be used with these standard elements in order to do some basic layout work. This includes manipulating the `margin` (specifically centering using `margin: auto`, and using the `align` property on images and tables (no longer supported)).
 
 In addition to aligning elements, there's nuance in controlling widths and heights of elements. As mentioned, certain elements will respect some of these properties, and others won't. Making sure that your element takes up the proper space is one of the bains of my existence, so let's dive into that.
 
@@ -96,10 +105,20 @@ I'm going to break this down into the most important nuggets, because this could
 * Box-Model, Margins, Padding
 
   * All CSS layout theory is based on the foundation of the box-model. Every element rendered to the DOM is box.  The size of that box is based on the content within the tag + the `padding`, `border`, and `margin`. In the past, this meant that when laying out a page, you had to do math in order to account for the padding and margin of an element. Setting the `width` property simply maniupulates the content width.
+
+  Open up your dev-tools, go to `elements` and click on `computed` and you'll see this:
+
+  **box model**
+
+  This helpful thing is showing you the true size of your item, not the width or height you explicitly set.
+
+
   * `Padding` is the space in between the content and the border.
   *  `Border` is the physical border you can put around the conent and padding. Theoretically you can give it as much thickness as you'd like, but its generally not used to add significant size to an element.
   * `Margin` is the property that surrounds the border. I like to think about the element itself being content, border and padding, and the margin being the the elements 'personal' space. It's important to note that in different situations margin may or may not collapse! Check out this example of both collapsing and non-collapsing margins.
   * `box-sizing: border-box` is a property added later to CSS that makes the box-model more intuitive. Remember when I said that I like to think of the element itself as the content, padding and border? That's exactly what the `border-box` fix does. It's used very, very often.
+
+  **border box** 
 
 * Width
   * Width is pretty self-explanitroy *at first*. Simply set `width: auto | 10px | 10%` etc, and your element will take that width. 
@@ -109,7 +128,14 @@ I'm going to break this down into the most important nuggets, because this could
 * Max and Min Width
   * `max-width` and `min-width` are easy enough. And extremely useful.
   * It's first worth noting that these properties override the `width` property.
-  * min and max width are both useful when working with responsive layouts. Later, when we talk about flex and grid, you'll see how useful they can be. Essentially, though, elements with % widths will change width based on parent element (or browser window size). But and element that's supposed to be 50% would look ridiculously different on a table compared to large monitor. So you may want the element to stop changing size based at certain sizes. 
+  * min and max width are both useful when working with responsive layouts. Later, when we talk about flex and grid, you'll see how useful they can be. Essentially, though, elements with % widths will change width based on parent element (or browser window size). But and element that's supposed to be 50% would look ridiculously different on a tablet compared to large monitor. So you may want the element to stop changing size based on certain screen sizes. 
+
+  
+
+<p data-height="188" data-theme-id="0" data-slug-hash="BdOopG" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="min-max-width" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/BdOopG/">min-max-width</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
 * `margin: auto` trick
   * This is a seriously useful trick, but its not without it's issues. Basically, if you give an element a width, and then set its margin to `auto`, it will automatically put equal margin on both the right and left. You just centered an element.
   * This only works on block-level elements. Which makes sense, because an inline element can't be given a width.
@@ -123,7 +149,9 @@ With a little knowledge of exactly how CSS elements *sizing* works, we can final
 
 ### `position`
 
-The logical next step in understanding layouts, then, is understanding the `position` property. The position property is basically used to define **exactly** where you want an element to be. Using different values for this property, you can set the position relative to its containing element, or to the browser window. The position element allows you to make something stick to the window, and doesn't respect scroll. It also allows to create complete overlays and cool features like parallax. I use `position` a lot, but with great power comes great repsonsibility.
+The next step in understanding layouts, then, is understanding the `position` property. The position property is basically used to define **exactly** where you want an element to be. Using different values for this property, you can set the position relative to its containing element, or to the browser window. The position element allows you to make something stick to the window, and doesn't respect scroll. It also allows to create complete overlays and cool features like parallax.
+
+The most important thing to remember about positioning is that it effects the flow of the document. If you position something absolutly or fixed, it's removed from the normal flow and basically sits above the rest of your content. So, if the content around the element changes, the element itself won't. And vise versa. 
 
 The values that `position` accetps are:
 * static
@@ -197,7 +225,12 @@ The biggest problem comes into play when an element's size (usually height) is g
 
 ***Example image***
 
-If the height of the text is less than that of the image, the image will bust out of the element, messing up the flow of the documnet. When I first got into CSS, before the flexbox days, some clever people came up with the `clearfix` hack. This hack has gone through a number of iterations in attempt to be supported by all browsers. It's an ugly hack, but a user would never know that the CSS was hacky, so its often used. 
+If the height of the text is less than that of the image, the image will bust out of the element, messing up the flow of the documnet. There are a couple ways to avoid the issue of clearing. The first, and best way is to simply use `clear`, but that only works if you know forsure what the next element it going to be, and if the page is more or less static. Here's a couple hacks:
+
+* `overflow: hidden`
+  * Setting the parent elements overflow to hidden does cause it expand to the height of the floats. Which is quite nice, but it can trigger unwanted scrollbars or hidden content depending on the browser. So it requires a lot of testing.
+* `clearfix` hack
+  * When I first got into CSS, before the flexbox days, some clever people came up with the `clearfix` hack. This hack has gone through a number of iterations in attempt to be supported by all browsers. It's an ugly hack, but a user would never know that the CSS was hacky, so its often used. 
 
 This is the most modern verstion, and is supported by IE8 and up. 
 ```css
@@ -207,7 +240,68 @@ This is the most modern verstion, and is supported by IE8 and up.
     clear: both;
   }
 ```
+This is the go-to hack at this point. It simply adds a tiny bit of content *after* the element, whos content is an empty string, so it's invisable. Empty string content isn't supported by older browsers,so you may have to add aditional properties for that. 
 
+Floats come with quite a bit of 'gotchas' that are always hard to forsee, but not so hard to fix. It's always almost possible to acheive what you want, but you usually have to sarifice semantic HTML.
+
+The good news is that you *never* have to use floats if you don't want to anymore. This was the first attempt at a powerful layout tool for CSS, but life is much better now.
+
+
+### Table Hacks
+
+In CSS2, we were given the ability to add `table` properties to any HTML container element. Which changed the game for CSS Layout. 
+
+Essentially the table properties allow you to do what HTML table tags already could do. The compelling thing about having them as CSS properties (rather than HTML tags) is that we can use JavaScript (and Media Queries) to dynamically change the css properties to make interestesting and responsive layouts.
+
+Here's a very simple example of using `table-cell` to make a row of columns. Toggling the button changes the elements from `display: block` to `display: table-cell`.
+
+<p data-height="437" data-theme-id="0" data-slug-hash="QMVWBW" data-default-tab="css,result" data-user="ericwindmill" data-embed-version="2" data-pen-title="Table Hacks" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/QMVWBW/">Table Hacks</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+#### Advantages over Floats
+
+The first big advantage here is equal height divs. Sizing elements properly is kind of nightmare when you're starting out with CSS layouts. It arguably gives me the most pain in the world of web development. Using tables for layout solves this problem with ease. Naturally, if you have a containing element set to `display: table` and the children set as `display: table-cell`, the cells automatically expand to fix the height of the table. It's a pretty sweet and easy way to solve this problem. 
+
+
+<p data-height="438" data-theme-id="0" data-slug-hash="mMGyyg" data-default-tab="css,result" data-user="ericwindmill" data-embed-version="2" data-pen-title="Table Layout Pt 2" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/mMGyyg/">Table Layout Pt 2</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+You're probably starting to see how useful this would be to create layouts. Consider for a second that you needed a standard blogging layout: Header, Main section w/ a sidebar, and a footer. You could easily contol the layout of the main section and the sidebar with a `table` and `table-cell`s.
+
+There are additional `table` rules that make this even more compelling. If you've ever worked with HTML tables, each different tag has a corresponding CSS property. 
+
+``` css
+{display: table} /* <table> */
+{display: table-row} /* <tr> */
+{display: table-header-group} /* <thead> */
+{display: table-row-group} /* <tbody> */
+{display: table-footer-group} /* <tfoot> */
+{display: table-cell} /* <td>, <th> */
+```
+
+ 
+
+There area few more table properties, but these are the most important for layout. As you can imagine, you can use `table-header-group` and `table-footer-group` to manipulate a layout header and footer. So essentially, you can just wrap your page in a giant table and call it a day.
+
+Thats not all. It's pretty damn easy to imagine how you could use media queries with table to make a responsive layout. Just look at that first codepen about tables. Remove the `table-cell` property under a certain screen size and boom, you've got a stacked layout perfect for mobile.
+
+So right now you're probably pretty stoked. But unfortunately (and fortunately) we have to talk about why you wouldn't want to use tables for layout. 
+
+#### The 'Gotchas'
+
+* The first and most important: Using a table layout makes like hard for users with screen-readers. If you aren't worried about accessibility, there's an issue.. Semantic HTML matters and best practices matter.
+* Page load times are generally slower. Tables usually require a bunch of markup. 
+* Tables make redesign much harder. You're basically locked into using that table, or doing a complete redesign.
+
+The HTML 5 spec says: 
+ > Tables should not be used as layout aids. Historically, many Web authors have tables in HTML as a way to control their page layout making it difficult to extract tabular data from such documents. In particular, users of accessibility tools, like screen readers, are likely to find it very difficult to navigate pages with tables used for layout. If  a table is to be used for layout it must be marked with the attribute role="presentation" for a user agent to properly represent the table to an assistive technology and to properly convey the intent of the author to tools that wish to extract tabular data from the document.
+
+
+### The Next Steps
+
+So there we have it, folks. A simple intro into the CSS Layout tools of the past. Another title for this post could be 'Building a foundation so you can understand the tools you actually want' As you'll see in the next posts, CSS3 layout made a huge jump with Flexbox and Grid. They have a higher learning curve, but once you know them, they're super powerful.
 
 --- 
 *Checkout the other guides in this series:*
@@ -216,7 +310,9 @@ This is the most modern verstion, and is supported by IE8 and up.
 * [Layout 301: Choosing the Right Tools](#)
 * [Layout 401: Combining the Tools for the Modern Layout](#)
 
-
+<!-- 
  thoughts: whats the thread or 'through line?' It should all be building up to using ALL of the power of CSS Layout, but before you can use it all together you have to learn the foundations. 
+
+ Story / why people care / empathy => Once I was building a paralax effect, and failing miserably. At some point, it hit me: If I actually understood what was going on, maybe I wouldn't be spending hours guessing and checking.  -->
 
 
