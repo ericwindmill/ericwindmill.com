@@ -101,13 +101,10 @@
 }
 
 .stream-item.project {
-  // $bg-colors: $primary-red, $primary-yellow, $primary-blue;
-  // $random-color: nth($bg-colors, random(3));
-
   border: none;
   grid-column: auto / span 2;
   width: 100%;
-  // background-color: $primary-red;
+
   a {
     height: 100%;
     display: flex;
@@ -123,6 +120,32 @@
   h1 {
     font-size: 3em;
   }
-  &:hover {
+}
+
+.stream-item.quote {
+  border-color: $blue;
+  grid-column: auto / span 2;
+  width: 100%;
+
+  .project-description {
+    margin: auto 0 0 0;
+    > p {
+      color: lighten($ink, 15%);
+      padding-left: 15px;
+      font-style: italic;
+      vertical-align: end;
+    }
+    .quote {
+      font-size: 1.2rem;
+      position: relative;
+    }
+    .quote:before {
+      content: '\"';
+      color: $grey;
+      font-size: 5rem;
+      position: absolute;
+      top: -30px;
+      left: -30px;
+    }
   }
 }
