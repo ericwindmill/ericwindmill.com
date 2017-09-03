@@ -51,4 +51,21 @@ a {
 }
 
 
-// Stream... 
+// Specific Posts:
+//Library
+
+#library-bq {
+  text-align:right;
+  background-color: $grey;
+  padding: 10px;
+
+  > .quote {
+    max-width: 500px;
+    margin: 0 0 0 auto;
+  }
+
+  > .cite {
+    font-size: .8em;
+    font-style: normal;
+  }
+}
