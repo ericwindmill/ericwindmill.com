@@ -50,6 +50,31 @@ a {
   }
 }
 
+.aside {
+  font-size: .8em;
+  background: $grey;
+  padding: 10px;
+  position: relative;
+  text-align: right;
+  border-radius: 2px;
+  margin: $spacing-unit 0;
+
+  p {
+    width: 80%;
+    margin: 0 0 0 auto;
+  }
+
+
+  &:before {
+    content: 'aside:';
+    font-style: italic;
+    font-size: 1.5em;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+}
+
 
 // Specific Posts:
 //Library

@@ -21,12 +21,22 @@ From WikiPedia:
 
 Dart is an object-oriented, class defined, single inheritance language using a C-style syntax that transcompiles optionally into JavaScript. It supports interfaces, mixins, abstract classes, reified generics, optional typing, and a sound type system' 
 
-## In Laymans Terms
+### In Laymans Terms
 It seems that Dart *can* compile into JavaScript, but doesn't have to. I'm not sure what the advantage of this, becuase JavaScript already can be run in browsers or server side. 
 
 Like TypeScript, Dart seems to be a language that combines the useability of JavaScript with the opinions of slightly-lower-level and application languages like Java. I'd assume that a lot of Dart users fancy it over JS because its Object Oriented and supports all the Object Oriented Programming features. (I think prototypes are superior to classical inheretence, but that's another conversation for another day...).
 
-Anyways, the first resource I went through when looking into dart was [Dart Academy Boot Camp](https://da-bootcamp.firebaseapp.com/?course=start_programming_dart). This resource is probably meant for a brand new developer who's learning Dart as their first language. Nevertheless, there was some valuable insight into the basic syntax similarities and basic language functionality. So here we go...
+## Resources
+
+The first resource I went through when looking into dart was [Dart Academy Boot Camp](https://da-bootcamp.firebaseapp.com/?course=start_programming_dart). This resource is probably meant for a brand new developer who's learning Dart as their first language. Nevertheless, there was some valuable insight into the basic syntax similarities and basic language functionality.
+
+The second resouce I ran into is [Dart by Example](http://jpryan.me/dartbyexample/). Funny enough, the creator of this is my future teams Sr. Engineer, and I found this while stalking his Twitter. This definitely get's much deeper into the language. I'm glad I started with the previous resource, but this is where the real learning happens.
+
+There's a nifty tool that's similar to JSFiddle or CodePen, but for Dart called [DartPad](https://dartpad.dartlang.org/4ea67cfb5294c146a541).
+
+<div class='aside'>
+  <p>The format of this post is 'constantly-updated'. I go out on the internet, I read and learn, and then I update the content inline. It isn't sequential, but rather building up from basic to more advanced. By the end, I hope its a one-stop shop for someones first forray into Dart from JavaScript.</p>
+</div>
 
 
 ## Hellow, Orld
@@ -47,6 +57,13 @@ void main()
 * main() is called automatically when the program is run.
 * `void` tells Dart that `main()` will prodocue no output.
 * Semicolons matter, unlike JavaScript.
+* You can also do arrow function syntax (ES6 Functions for JS devs).
+
+```dart
+void main() => print('Hello, World!');
+```
+
+*Aside:* I love arrow functions, so this is a welcomed insight.
 
 ## Variables
 * Variables seem to be exactly like JavaScript
@@ -320,8 +337,16 @@ In that case, you'd want to use an if statement:
     ...
 ```
 
+Dart even uses the exact JS *ternary* syntax. Woop.
+
+```dart
+var bullseye = true
+var gameOver = bullseye ? 'Game over, you win!' : 'throw again'
+print($gameOver)
+```
+
 ## Loops
-While loops and for loops seem to be, again, exactly the same in syntax:
+`While loops` seem to be, again, exactly the same in syntax:
 
 ```dart
 void main() {
@@ -333,7 +358,7 @@ void main() {
 }
 ```
 
-Then there's the do-while loop:
+Then there's the `do-while` loop:
 A do while loop in any language simply tests the condition at the end of the loop iteration rather than the beginning. In laymans terms, the do-while loop will execute once no matter what, then at the end of that iteration it will test the condition before running the next time. 
 ```dart
 void main() {
@@ -345,7 +370,7 @@ void main() {
 ```
 This example is pretty contrived also, but the point is that it'll print i even though the while condition is `i == 0`. It'll just exit at the first test, which is after the first exectuion block.
 
-And finally, for loops. Again, just like JavaScript. 
+And finally, `for` loops. Again, just like JavaScript. 
 
 ```dart
 void main() {
@@ -356,4 +381,19 @@ void main() {
 ```
 This example simply prints out 0 through 9. Just like in JS and every other language, you need to be careful of off-by-one errors!
 
+`for-in` loops are the same as well. These loops allow you to iterate over anything that that extends the mixin Iterable
 
+```dart
+void main() {
+  list nums = [1,2,3]
+  for (var x in collection) {
+    print(x)
+  }
+}
+```
+
+
+## Scope
+Like JavaScript, Dart is **lexically** scoped. This is a huge relief for me, because its one of the things about JS that's the most important to understand, the most difficult to learn correctly, and one of my favorite parts of using JS. 
+
+Closures still apply here. 
