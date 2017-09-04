@@ -8,7 +8,27 @@ front-page: false
 permalink: blog/dart 
 ---
 
-compiles to JavaScript
+## Why Dart
+I've recently accepted a position with a company that's doing something very challenging and also very interesting. Also interesting: they have a weird stack. They're basically all in on Google (Go, Dart, Angular, and even flutter). So I'm studying Dart to prepare. 
+
+My initial thoughts, having only read a few articles, is that Dart is basically TypeScript. 
+
+I can already tell that my desire to use JavaScript 'Standard' style as my syntax is going to be a big pain in the ass. Semicolons and extra spacing that I'm use to from Standard throws warnings in Dart. 
+
+# What is Dart?
+From WikiPedia:
+'Dart is a general-purpose programming language originally developed by Google and later approved as a standard by Ecma. It is used to build web, server and mobile applications, and for Internet of Things devices.
+
+Dart is an object-oriented, class defined, single inheritance language using a C-style syntax that transcompiles optionally into JavaScript. It supports interfaces, mixins, abstract classes, reified generics, optional typing, and a sound type system' 
+
+## In Laymans Terms
+It seems that Dart *can* compile into JavaScript, but doesn't have to. I'm not sure what the advantage of this, becuase JavaScript already can be run in browsers or server side. 
+
+Like TypeScript, Dart seems to be a language that combines the useability of JavaScript with the opinions of slightly-lower-level and application languages like Java. I'd assume that a lot of Dart users fancy it over JS because its Object Oriented and supports all the Object Oriented Programming features. (I think prototypes are superior to classical inheretence, but that's another conversation for another day...).
+
+Anyways, the first resource I went through when looking into dart was [Dart Academy Boot Camp](https://da-bootcamp.firebaseapp.com/?course=start_programming_dart). This resource is probably meant for a brand new developer who's learning Dart as their first language. Nevertheless, there was some valuable insight into the basic syntax similarities and basic language functionality. So here we go...
+
+
 ## Hellow, Orld
 Getting to 'Hello, World' in Dart looks like this.
 
@@ -97,6 +117,8 @@ Operators in Dart are similar to JavaScript.
 | *        | *             | Multiplication |
 |----------|---------------|------------|
 | /        | /             | Division |
+|----------|---------------|------------|
+| %        | %             | Modulo |
 |----------|---------------|------------|
 | ++       | ++            | Increment |
 |----------|---------------|------------|
@@ -192,5 +214,146 @@ Conditionals are exactly the same in as they are in JS (and many other languages
 
 And, if you conditional code get's out of hand, use a `switch` statement. 
 
+The `switch` statement seems to be, again, exactly like JavaScript. Like most languages that offer `switch`, it's essentially a cleaner way to write a long line of `if else` conditionals. I rarely use `switch` statements when writing in plain JS, but `switch` is used in many frameworks (like React with Redux).
+
+Here's a basic Dart `switch` statement:
+
+``` dart 
+void main() {
+  int chooseANum = 2;
+
+  switch(chooseANum) {
+    case 0:
+      print('zero');
+      break;
+    case 1:
+      print('one');
+      break;
+    case 2:
+      print('two');
+      break;
+    case 3:
+      print('three');
+      break;
+    default:
+      print('Thats not an integer!');
+  }
+}
+```
+This is the exact syntax for JS switch statements, down to the required 'breaks', the default exectuion block, etc. 
+
+This post assumes you understand JavaScript, so maybe this is overkill, but I think it's important to explain why 'break' is an advantage to `switch` statements. 
+
+Suppose you have two possible outcomes, but many ways to reach either outcome. Let's say, for example, that you want to tell whether a number between 1-10 is even or odd. Using a switch statement *without* a break in every case allows you to 'batch' your possible outcomes to a single execution block.
+
+A very contrived example in an if-statement:  
+``` dart
+void main() {
+
+  void evenOrOdd() {
+    int myNum = 2;
+
+    if (myNum == 2 || myNum == 4 || myNum == 6 || myNum == 8 || myNum == 10) {
+      print('Even!');
+    } else if (myNum == 1 || myNum == 3 || myNum == 5 || myNum == 7 ||  myNum == 9) {
+      print('Odd!');
+    } else {
+      print('pick a new number!');
+    }
+  }
+
+
+}
+```
+
+This is okay, but those conditions in the `if` and `if else` blocks aren't very pretty. They could be more readable:
+
+```dart
+void main() {
+
+  void evenOrOdd() {
+    myNum = 6;
+    switch (myNum) {
+      case 2:
+      case 4:
+      case 6:
+      case 8:
+      case 10:
+        print('Even!');
+        break;
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 9:
+        print ('Odd!');
+        break;
+      default:
+        print ('choose a different number!');
+    }
+  }
+}
+```
+
+Again, this example is completely contrived, and this isn't the easiest way to accomplish this by any means. But, it proves a point: The way the `switch` statement works is by basically comparing the condition to EACH case, and if it matches, then it executes that code. It can and will run through and exectue all blocks of code where the condition matches. That's what makes the `break` necessary. Using `break` in every case essentailly turns your `switch` into a series of `if` and `if else`s. It ensures that only one condition (the first met that evaluates to true) will run. This is also why no break is requires under default, because its the last condition. `switch` runs (as you'd expect) from top to bottom.
+
+The weird thing about `switch` in Dart, is that it doesn't allow you to work with `operators`. As in, you couldn't say `case myNum % 2 == 0`, or a better example... the following is an **invalid** way to test a range numbers:
+
+```dart
+  void main() {
+    int myNum = 9;
+
+    switch (myNum)
+      case myNum < 10: // Not valid!!!
+        print('less than 10');
+        break;
+        ...
+```
+
+In that case, you'd want to use an if statement:
+
+```dart
+  void main() {
+    int myNum = 9
+    if (myNum < 10) { // this works
+      print('less than 10');
+    ...
+```
+
+## Loops
+While loops and for loops seem to be, again, exactly the same in syntax:
+
+```dart
+void main() {
+  int i = 0;
+  while (i <= 10) {
+    print(i);
+    i++;
+  }
+}
+```
+
+Then there's the do-while loop:
+A do while loop in any language simply tests the condition at the end of the loop iteration rather than the beginning. In laymans terms, the do-while loop will execute once no matter what, then at the end of that iteration it will test the condition before running the next time. 
+```dart
+void main() {
+  int i = 1
+  do {
+    print(i);
+  } while (i == 0);
+}
+```
+This example is pretty contrived also, but the point is that it'll print i even though the while condition is `i == 0`. It'll just exit at the first test, which is after the first exectuion block.
+
+And finally, for loops. Again, just like JavaScript. 
+
+```dart
+void main() {
+  for (int i = 0; i < 10; i++) {
+    print(i)
+  }
+}
+```
+This example simply prints out 0 through 9. Just like in JS and every other language, you need to be careful of off-by-one errors!
 
 

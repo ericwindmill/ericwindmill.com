@@ -1,13 +1,17 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
+
+body {
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 dl, dd, ol, ul, figure {
   font-family: $sans;
   font-weight: $font-weight;
   color: $ink;
-  margin: 0;
+  margin: $spacing-unit 0;
   padding: 0;
 }
 
@@ -79,7 +83,6 @@ li {
   }
 }
 
-
 hr {
   border: 2px solid $blue;
   margin: $spacing-unit 0;
@@ -90,9 +93,13 @@ hr {
  */
 h1, h2, h3, h4, h5, h6 {
   color: $ink;
-  font-weight: 400;
+  font-weight: 500;
   font-family: $sans;
 }
+
+/**
+ * Lists, Tables
+ */
 
 dl {
   dt {
@@ -109,6 +116,25 @@ dl {
     max-width: 80%;
   }
 }
+
+table {
+  outline: 2px solid #333;
+  outline-offset: -2px;
+  margin-bottom: $spacing-unit;
+  thead {
+    background-color: $blue;
+    color: white;
+  }
+
+  td {
+    padding-left: 5px;
+  }
+
+  tbody:nth-child(even) {
+    background: $grey;
+  }
+}
+
 /**
  * Links
  */

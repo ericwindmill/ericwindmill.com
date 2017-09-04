@@ -6,7 +6,6 @@ categories: reading growth
 front-page: true
 type: article
 permalink: blog/books
-external_site: 
 ---
 
 <blockquote id='library-bq' cite='Tiny Beautiful Things by Cheryl Strayed'>
@@ -52,4 +51,5 @@ If that isn't enough,  the lessons in this book are wrapped up in the true stroy
 + **Learn to Program - Chris Pine**
 + **The Cathedral and the Baazar - Eric Raymond** 
 + **The Obstacle is the Way - Ryan Holiday**
++ **Effective JavaScript - David Herman**
 
