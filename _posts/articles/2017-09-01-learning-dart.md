@@ -38,7 +38,7 @@ There's a nifty tool that's similar to JSFiddle or CodePen, but for Dart called 
   <p>The format of this post is 'constantly-updated'. I go out on the internet, I read and learn, and then I update the content inline. It isn't sequential, but rather building up from basic to more advanced. By the end, I hope its a one-stop shop for someones first forray into Dart from JavaScript.</p>
 </div>
 
-
+<hr>
 ## Hellow, Orld
 Getting to 'Hello, World' in Dart looks like this.
 

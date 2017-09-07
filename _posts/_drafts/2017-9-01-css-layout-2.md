@@ -49,6 +49,9 @@ As I mentioned, `display: inline-flex` also exists. It's the same as `flex`, exc
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 -----
+# 2: Cross Axis and Main Axis
+
+
 
 points:
 * It's available in ALL browsers [http://caniuse.com/#feat=flexbox]

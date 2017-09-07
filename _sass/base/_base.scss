@@ -11,12 +11,8 @@ dl, dd, ol, ul, figure {
   font-family: $sans;
   font-weight: $font-weight;
   color: $ink;
-  margin: 10px 0 0 0;
+  margin:  0;
   padding: 0;
-}
-
-p {
-  margin: $spacing-unit 0;
 }
 
 /**
@@ -47,7 +43,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit;
 }
 
 
@@ -88,8 +84,10 @@ li {
 }
 
 hr {
-  border: 2px solid $blue;
-  margin: $spacing-unit 0;
+  box-sizing: border-box;
+  border: 1px solid $blue;
+  background: $blue;
+  margin: 45px 0 ;
 }
 
 /**
@@ -124,7 +122,7 @@ dl {
 table {
   outline: 2px solid #333;
   outline-offset: -2px;
-  margin-bottom: $spacing-unit;
+  margin: 0 auto $spacing-unit;
   thead {
     background-color: $blue;
     color: white;

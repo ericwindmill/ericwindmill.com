@@ -76,6 +76,23 @@ a {
 }
 
 
+.technical-quote {
+  font-size: .8em;
+  background: $grey;
+  padding: 10px;
+  border-radius: 2px;
+  margin: $spacing-unit 0;
+  font-style: italic;
+
+  > p, ul {
+    margin-bottom: 0;
+  }
+
+  > .citation {
+    padding-left: $spacing-unit;
+  }
+}
+
 // Specific Posts:
 //Library
 
