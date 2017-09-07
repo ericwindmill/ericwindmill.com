@@ -30,9 +30,9 @@ permalink: blog/dart
 <div id='intro'></div>
 
 ## Why Dart
-I've recently accepted a position with a company that's doing something very challenging and also very interesting. Also interesting: they have a weird stack. They're basically all in on Google (Go, Dart, Angular, and even flutter). So I'm studying Dart to prepare. 
+I've recently accepted a position with a company that's doing something challenging and also interesting. Most interesting is their stack. They're basically all in on Google (Go, Dart, Angular, and even flutter). So I'm studying Dart to prepare. 
 
-My initial thoughts, having only read a few articles, is that Dart is basically TypeScript. 
+My initial thoughts, having only read a few articles, is that Dart is basically TypeScript. It looks a lot like JavaScript, but its more opinionated. It also has quite a bit of features that backend languages have that JavaScript lacks. 
 
 I can already tell that my desire to use JavaScript 'Standard' style as my syntax is going to be a big pain in the ass. Semicolons and extra spacing that I'm use to from Standard throws warnings in Dart. 
 
@@ -688,7 +688,28 @@ String peanutButter(String type, {brand: 'Jif'}) {
 ## Scope
 Like JavaScript, Dart is **lexically** scoped. This is a huge relief for me, because its one of the things about JS that's the most important to understand, the most difficult to learn correctly, and one of my favorite parts of using JS. 
 
-Closures still apply here. 
+One of the 'gotchas' of JavaScript is the use of `var` vs `let` in a loop with setTimeout. It's one of the classic ways to show what a `block` scoped variable is. (This isn't a JS tutorial, so check out a good example [here](http://wesbos.com/for-of-es6/))
+
+The point of that article to keep in mind is that `let` is a block-scoped variable. So each new iteration of a loop produces a new version of the variable.
+
+Dart is the same way, as this is lexical scoping.
+
+```dart
+main() {
+  
+  printInt(num) {
+    print(num)
+  }
+
+  for (int i = 0; i < 3; i++) {
+    printInt() => i;
+  }
+
+}
+//  0
+//  1
+//  2
+```
 
 
 <div id='exceptions'></div>
