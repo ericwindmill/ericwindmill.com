@@ -49,8 +49,63 @@ As I mentioned, `display: inline-flex` also exists. It's the same as `flex`, exc
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 -----
-# 2: Cross Axis and Main Axis
+# 2: Axes and flex-direction
 
+This is perhaps the most important thing to understand to be able to work with flex effectively. The good news is, it's not a hard concept.
+
+Flex is based on the idea that layouts are 2d, and there are two axis. The main-axis, and the cross-axis. By default, the main-axis is horizontal, and the cross-axis is vertical.
+
+![axes on flex-direction: row](http://res.cloudinary.com/ericwindmill/image/upload/v1504824862/blog_posts/Artboard.png)
+
+This photo is hopefully pretty easy to digest. There are no tricks here. Until you change the axis' directions with `flex-direction`. 
+
+`flex-direction` is simply that, a property that allows you to switch the direction that flex items are laid out. By default, `flex-direction` is set to `row`. When set to row, the items are laid out side by side, forming... a row.
+
+So far, this is our flex-box setup:
+```css
+  .container {
+    display: flex;
+    flex-direction: row
+  }
+```
+
+But, you can change the flex-direction to `column`, and then the axes switch:
+![axes on flex-direction: column](http://res.cloudinary.com/ericwindmill/image/upload/v1504824860/blog_posts/flex-direction_column.png)
+
+```css
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+```
+
+In total, flex-direction has 4 possible values:
+  * row (default)
+  * column
+  * row-reverse
+  * column-reverse
+
+The second two simply flip the order in which flex-items are laidout. This is easiest to imaging with images or a list. Reverse the order of the list without having to touch HTML or content!
+
+<p data-height="358" data-theme-id="0" data-slug-hash="XaQJRQ" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex axis and direction" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/XaQJRQ/">flex axis and direction</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+The directions of the axes is the base for all the flex properties. At anytime if you're getting guff from flex, it helps a lot to stop and think about what your axis is.
+
+
+
+-----
+# 2: flex-wrap
+
+You can probably guess what 'wrap' does. It allows elements to wrap. I would argue that it's more important to understand how the elements behave when wrap is set to `no-wrap`, which is the default. 
+
+Wrap comes into play when your flex-items are combined to be wider than your flex-container. This is true even if you explicity set a width on your items!
+
+
+
+
+---
 
 
 points:
@@ -87,34 +142,6 @@ points:
 
 ----- What the flexbox notes:
 
-vid 1: 
-flex container 
- * flex
- * inline-flex
-
-flex item 
-  * when container is given display prop, children automatically get display property.
-
-
-- You kind of have to throw away previous ideas of layout. Display flex essentially throws floats, inline, percentages, etc out the window and gives us a whole new layout system
-- The first thing to note is that flex requires a parent element and children element.
-- give the parent element display: flex (or inline flex) and you're ready to with flex. 
-- you can set a width on your flex container, (but probably not the children??).
-- you can set a height on whatever (I think.)
-
-vid 2: 
-flex direction:
-  * row is default
-  * column is other option
-  * row reverse
-  * column reverse
-
-main-axis:
-  *  row == left to right
-  *  column == top to bottom
-  * cross opposite is obviously opposite
-
-- Knowing what your main-axis is a good reference point to whatever you're doing.
 
 vid 3:
 flex-wrap: default - nowrap, wrap, wrap-reverse... it reverses the CROSS axis.
