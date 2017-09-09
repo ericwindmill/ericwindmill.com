@@ -21,11 +21,16 @@ permalink: blog/dart
   * <a href='#lists'>Lists</a>
   * <a href='#maps'>Maps</a>
   * <a href='#structures'>More Data Structures</a>
+* <a href='#const'>Const, Final, Static</a>
 * <a href='#conditionals'>Conditionals</a>
 * <a href='#loops'>Loops</a>
 * <a href='#functions'>Functions</a>
 * <a href='#scope'>Scope</a>
 * <a href='#exceptions'>Exceptions</a>
+* <a href='#class'>Classes</a>
+  * <a href='#constructor'>Constuctors</a>
+* <a href='#mixins'>Mixins</a>
+* <a href='#async'>Asynchronous Dart</a>
 
 <div id='intro'></div>
 
@@ -414,9 +419,64 @@ Queues are Lists' with Queue-like properties. You can't lookup by index, but you
 
 
 <hr />
+<div id='const'></div>
+
+## Const, Final, & Static Assignments
+
+### Const
+
+Constants are entirably immutable. They can be any object or value that can be determined at compile time. A good example of this can be found [here](http://news.dartlang.org/2012/06/const-static-final-oh-my.html). This article states that `const three = 1 + 2` is a valid constant becasue it can be calculated at compile time, but `const time = DateTime.now()` isn't valid.
+
+Const works recursively. This is unlike JavaScript. So all the values in a List must remain constant for the `const` to be valid. In JavaScript, you can update the values in an Array, you just can't change the variable itself to another type.
+
+`Const` values are signletons. They're created once and reused, rather than recreated. This makes sense, because memory allocation. Why recreate something that you know is never going to change, when you could just continually reference that same object.
+
+```dart
+getConst() => const [1, 2];
+void main() {
+  List a = getConst();
+  List b = getConst();
+  print (a === b); // true
+```
+This example was taken from [dartlang.org](http://news.dartlang.org/2012/06/const-static-final-oh-my.html).
+
+### Final
+
+Final objects are immutable. They're technically single-assignments. Once they're given a value, it can never be changed.
+
+``` dart
+void main() {
+  final banana = "bread";
+  banana = "pancakes"; // runtime error; already assigned
+  
+  // even Lists are completely immutable
+
+  final fruit = new List(3)
+  fruit[0] = 'banana' // runtime error; already assigned
+}
+```
+
+### Static
+
+Static functions and properties are available on the class, and not the instances of the class. In Ruby this is called 'class methods' (fittingly). JS uses composition rather than inheritance so the concept doesn't exist.
+
+(I've written more about Classes below.)
+
+```dart
+class Fruit {
+  static bool rotten = false
+}
+var apple = new Fruit();
+
+void main() {
+  print(Fruit.rotten); // false
+  print(apple.rotten); // Uncaught TypeError: $.$get$apple(...).get$rotten is not a function
+}
+```
+
 <div id='conditionals'></div>
 
-##Conditionals
+## Conditionals
 
 Conditionals are exactly the same in as they are in JS (and many other languages). You can conditionally execute blocks of code based on their condition's boolean value:
 * `if`
@@ -714,6 +774,8 @@ main() {
 
 <div id='exceptions'></div>
 
+<hr />
+
 ## Exceptions
 Handling errors is fun in any language. It's actually pretty simple in Dart. Almost all exceptions are Errors. 
 
@@ -783,4 +845,240 @@ try {
 ```
 
 Wether the car starts or not, you're evenutally going to get out of the car and get on with your day. 
+
+<hr />
+<div id='class'></div>
+
+## Classes
+
+Classes in Dart are just the classic OOP classical inheritance system. You have classes, from which you can make new objects. This is quite different from JavaScript, so it's probably worth going into. (However, if you've used another OOP language, like Ruby, this'll be old news.)
+
+So, you have classes, which I like to think of as blueprints. They don't do anything on their own. They simply create a blueprint from which future objects will be built. Think of it like a car in a factory. You're building cars, but they aren't constructed without plenty of planning and instructions. 
+
+```dart 
+class Car {
+  String make = 'Volkswagen';
+  int gasoline = 100;
+  // ... 
+
+  driveCar (key) {
+    gasoline -= 10;
+  }
+}
+```
+
+This is helpful because now every time you need a car, you can just type `var myCar = new Car ()`, and it automatically has those features. It's the definition of writing DRY code.
+
+Then, you can get more specific:
+
+```dart 
+class Jetta extends Car {
+  String color = 'black';
+  int topSpeed = 100;
+}
+```
+
+This Jetta class allow you to create new Jettas that automicatlly get the members (properties and functions) of both the Jetta class and the Car class (because it 'extends') that class.
+
+If you've ever developed in React, then this may look familiar. In fact, JS now supports classes (as of ES6), but they're really just a wrapper on protoypes. There's a big debate about prototypes vs classes, but thats another conversation for another day. If you're writing in dart, you're using classes, so learn to love them!
+
+#### Everything is an instance of a class
+
+Dart is an OOP language. Everything is an object, and everything is an instance of a class. All classes decend from `object`
+
+Dart is a single-inheritance language, so you can `extend` from only one class. 
+
+## Constructors
+
+Constructos are used much like they are in the ES6 implementation of Class, and much like constructors in all languages I've used. Syntactically, you only need to define a function on the class with the same name as the class.
+
+```dart 
+class Fruit {
+
+  Fruit (type) {
+    this.type = type;
+  }
+
+}
+var banana = new Fruit('banana');
+```
+
+Dart also allows for named constructors. I've never seen named constructors in languages I use, and I have to say they're pretty awesome. It's almost like throwing a bit of composition into classical inheritance.
+
+```dart
+class Fruit {
+  bool rotten = false
+
+  Fruit.banana() {
+    this.type = 'banana';
+  }
+
+  Fruit.apple() {
+    this.type = 'apple';
+  }
+}
+
+
+var tastyFruit = new Fruit.apple();
+void main () {
+   print(tastyFruit.type) // apple
+   print(tastyFruit.rotten) // false
+}
+```
+
+Again, a contrived example, but this feature is awesome!
+
+<hr />
+
+<div id='mixins'></div>
+
+## Mixins
+
+Mixins are another core idea in many OOP languages. Essentially, Mixins are used to to add members to classes without establishing a new class.
+
+For example, let's say you have a Fruit class, some fruits have thick outer skins or shells that must be cut before you can eat them. Other don't. You wouldn't want your apples and grapes to have a function called `removeShell()`, because there is no shell. That should be reserved for Watermelons and Bananas.
+
+``` dart
+
+class Fruit {
+  bool tasty = true;
+
+  eatFruit () {
+    // ... eat the fruit
+  }
+}
+
+class Shell {
+  removeShell() {
+    // ... remove the peel or shell or whatever
+  }
+}
+
+// no shell...
+class Apple extends Fruit {
+ // ... apple stuff 
+}
+
+// shell... 
+class Watermelon extents Fruit with Shell {
+
+}
+
+void main() {
+  var tastyTreat = new Watermelon();
+  print(tastyTreat.removeShell());
+}
+```
+
+<hr />
+
+## Import
+
+The import keyword is pretty similar to the ES6 `import`. It's used to pull in libraries.
+
+First, you have to create the library.
+
+Let's say we have this file structure:
+
+src
+| -- myLib.dart
+| -- app.dart
+
+```dart
+// myLib.dart
+
+library myLib;
+
+// .. classes and objects etc....
+```
+```dart
+// app.dart
+import 'src/mylib.dart';
+```
+
+That's the basic way to import libraries, but you can also abstract those libraries out into smaller files. With component based architecture sweeping the JS framework world, that makes me happy.
+
+Let's say we have this:
+
+src
+| -- myLib
+      | -- myLib
+      | -- class1
+      | -- class2
+| -- app.dart
+
+```dart
+// src/myLib/myLib
+library myLib
+part 'class1'
+part 'class2'
+```
+```dart
+  // src/myLib/class1
+  part of mylib;
+```
+```dart
+  // src/myLib/class2
+  part of mylib;
+```
+
+Now, you can import `myLib` and get all the members of class1 and class2 as well.
+
+<hr />
+
+<div id='async'></div>
+
+## Asynchronous Dart
+
+After spending so much time figuring out the most complicated aspect of JavaScript, I'm stoked to see that there are a lot of similarities in Dart.
+
+### Futures (Promises)
+
+First, there are Futures. These are basically exactly the same as JS promises. Unfortunately, the name Promise is way more intutive. But I digress...
+
+```dart
+
+void main() {
+  biteFruit() {
+    // bite fruit
+  }
+
+  // Futures are called with .then()
+  eatFruit
+    .then(swallowFruit())
+    .then(celebrate())
+}
+``` 
+In this excrutiatingly forced example, `swallowFruit` and `celebrate` are just callbacks. You can definie a callback within the argument just as you could in JavaScript.
+
+Also just like JavaScript, you can catch errors.
+```dart
+eatFruit.catchError(() => print('fruit rotten!'));
+```
+
+
+If you aren't coming from JavaScript, and you're unclear on whats going on here, [here's a primer I wrote for using Promises and Async/Await in Javascript](https://css-tricks.com/using-es2017-async-functions/).
+
+### Async / Await
+
+If you're up to the latest JS asynchronous API, then this will look familar. Again, this is just like `async` and `await` in JavaScript. 
+
+You establish that a function is `async` and then as the function is running, it will pause each time it sees the `await` keyword. The await keyword should be placed between a function that you need to complete before the next line of code. In JS, this is the easiest way to wrap your head around asynchronous code, because it reads the way its executed.
+
+```dart
+
+void main() async {
+
+  // the code will pause until the function after 'await' is complete.
+  var data = await grabDataFromDb();  
+
+  // this will work how you'd want it to work.
+  print($data);
+}
+```
+
+This still blows my mind, even though I use it regularly in JS. It's amazing how readable and simple asynchronous programming is in these languages. 
+
+Dart expands on this though. And adds the ability to use await in for loops. Inside of an `async` function, you can use `await for (var) ... ` and the loop will await until all asynchronous code in the block is run before starting the next iteration. So, you can use delays and make HTTP requests inside your for loop, and it'll work how you'd want. That's awesome.
+
 
