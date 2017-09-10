@@ -27,6 +27,9 @@ In order to use flexbox, you kind of have to take all your knowledge about float
 Before flex, the `display` property was pretty straight forward. You most likely just used `block`, `inline block` and `inline`. Now, you can set a containers `display` to `flex` and `inline-flex`. These are entirely new ways to think about an elements role on a page. 
 
 
+Flex-box is available in [ALL browsers](http://caniuse.com/#feat=flexbox).
+
+
 ---
 # 1: Set up and display: flex;
 
@@ -57,7 +60,7 @@ This is perhaps the most important thing to understand to be able to work with f
 
 Flex is based on the idea that layouts are 2d, and there are two axis. The main-axis, and the cross-axis. By default, the main-axis is horizontal, and the cross-axis is vertical.
 
-![axes on flex-direction: row](http://res.cloudinary.com/ericwindmill/image/upload/v1504824862/blog_posts/Artboard.png)
+![axes on flex-direction: row](http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_400/v1504824862/blog_posts/Artboard.png)
 
 This photo is hopefully pretty easy to digest. There are no tricks here. Until you change the axis' directions with `flex-direction`. 
 
@@ -72,7 +75,7 @@ So far, this is our flex-box setup:
 ```
 
 But, you can change the flex-direction to `column`, and then the axes switch:
-![axes on flex-direction: column](http://res.cloudinary.com/ericwindmill/image/upload/v1504824860/blog_posts/flex-direction_column.png)
+![axes on flex-direction: column](http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_400/v1504824860/blog_posts/flex-direction_column.png)
 
 ```css
   .container {
@@ -209,6 +212,12 @@ Alignment in flex is really the main learning curve, and its mostly a matter of 
 
 Justify-conent takes 5 possible values, which are all easy enough to work with in a basic case. 
 
+* flex-start
+* center 
+* flex-end
+* space-around
+* space-between
+
 <p data-height="400" data-theme-id="0" data-slug-hash="jLgBxm" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex: justify-content" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/jLgBxm/">flex: justify-content</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -236,7 +245,7 @@ This becomes clearer when you toggle on an explicit height for the flex-containe
 ---
 # Alignment: Align-Items
 
-I like to think of `align-items` as the cross-axis equivelent of `justify-content`. 
+I like to think of `align-items` as the cross-axis equivelent of `justify-content`. (Technically, that isn't true, because `align-content` is the opposite, but `align-items` is the property that you'll use to manipulate the cross axis the most.)
 
 Align-items takes 5 values:
   * stretch (default)
@@ -245,116 +254,263 @@ Align-items takes 5 values:
   * flex-end
   * baseline (we'll cover this in a bit...)
 
+<p data-height="400" data-theme-id="0" data-slug-hash="JygJbE" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="align-items" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/JygJbE/">align-items</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
+All of these values are pretty self-explanetory, but there is caveate worth mentioning. `Stretch` only works if there isn't an explicit height set. If there is, it basically does what `flex-end` does. If you're ever having trouble with stretch *not stretching*, that's the first thing I'd check for.
 
-align items is more concerned with cross axis.
-by default, align-items: center wont do anything. It will if you give the parent containter height.
+Another common 'gotcha' is that the parent container has to have height in order for `align-items` to work. Otherwise, theres no white-space to interact with.
 
-baseline is different. it makes sure that the baseline of the content is aligned. Extremely handy if you have different size fonts you want to align.
+---
+# Alignment: Align-Items: Baseline
+
+The value `baseline` for `align-items` isn't used often, but when you need it, it's a life-saver. It aligns all the items according the base of their content. Think about the CSS box-model.
+
+// box model pic
+
+The bottom of the 'content' portion of an HTML element is how baseline aligns. As far as their position within the container, they're aligned so that the tallest element is flush to the flex-start.
+
+<p data-height="400" data-theme-id="0" data-slug-hash="BdXZmv" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="align-items-2 (baseline)" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/BdXZmv/">align-items-2 (baseline)</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
 
 ---
 # Alignment: Align-Content
+
+`Align-content` is the true opposite `justify-content`. It takes the same five properties as `justify-content`, and distributes the items among the cross-axis. 
+
+* flex-start
+* center 
+* flex-end
+* space-around
+* space-between
+
+For this exercise, forget about flex-direction. For the sake of simplifying explanation, we're only concerned with 'row', for now. 
+
+The difference between `align-content` and `align-items` is that `align-content` basically requires wrapping *and* that the container has a height greater than the total height of the rows. 
+
+Think about it like this: *Content* implies that it's manipulating the entirety of the items as a group *and their relationship to eachother*, where *items* implies that it's just manipulating the individual items.  The following Codepen already has `flex-flow` set to `wrap`and explicit height. If there was no wrapping, flexbox wouldn't know how to distribute the white-space, because the content *as a whole* is being manipulated. If there's only one row, then you're actually concerned with `align-items`.
+
+This is kind of a wonky concept to explain, but it's made much easier if you can see it:
+
+<p data-height="400" data-theme-id="0" data-slug-hash="MvNoGa" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="align-content" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/MvNoGa/">align-content</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+If you did want to switch the `flex-direction` to `column`, align-items would work the same way, but obviously on the opposite axes.
+
+----
 # Alignment: Align-Self
+
+Align-self is the first property that we'll explore which is on the flex-item, rather than the container.
+
+It's pretty simple. It overwrites the `align-items` property for individual items. It takes the same possible values. 
+
+  * stretch (default)
+  * center
+  * flex-start
+  * flex-end
+  * baseline
+
+
+<p data-height="400" data-theme-id="0" data-slug-hash="prMrgE" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="align-self" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/prMrgE/">align-self</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+---
 # Flex-Items: Order
+
+Alright, now we're moving onto properties that live completely on flex-items. 
+
+First we'll talk about `order`, something that isn't used terribly often (as far as I know), but it's extremely useful when you need it. Simply, giving a flex-item an `order` allows you to change the order that the flex-items appear to be painted onto the DOM (*without Javascript!*). 
+
+I said **appear** and it's an important distinction. If you pop open the dev-tools, you'll see that the items still appear in order in the DOM. There's only one thing that this affects that I'm aware of. If you try and copy and paste anything, it will copy things in their true order. Luckily, the main purpose of this that I'm aware of removes a majority of the copy+pasting that'll be going on in your web app.
+
+`Order` works like z-index. By default, everything is set set to 0. Then, if you change a single items `order` to 1, it will become the *last* item. 
+
+The best use of this, or the only one that I've ever needed it for, is when making pages responsive. Sometimes you'll want sections of text or images painted in a different order on mobile and desktop. This is now easily done without a bunch of hacks or JavaScript. 
+
+<p data-height="400" data-theme-id="0" data-slug-hash="rzXYeV" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-item-count" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/rzXYeV/">flex-item-count</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+---
 # Flex-Items: Flex (intro)
+`flex` is the most useful of the flex-item properties. It's actually a shorthand for three properties: `flex-basis`, `flex-grow` and `flex-shrink`. 
+
+These properties are more or less to control the size of the flex-item in relationship to the other flex-items. Using these properties you can accurately control the size of your items in arbitrarily different sized windows. 
+
+When setting flex properties, the golden question is, 'how do I want these items to be laid out when I have extra or not-enough space?
+
+The names are telling of what the properties do:
+* `flex-basis` sets the base size for a flex-item. 
+* `flex-grow` dictates how much flex-items grow in relationship to eachother when the view port is larger than expected.
+* `flex-shrink` dictates how much flex-items shrink in relationship to eachother.
+
+---
 # Flex-Items: Flex-Basis
-# Flex-Items: Flex-Shrink (intro)
+
+`flex-basis` sets the starting width. The point of all the `flex-*` properties is to account for different sized containers, but `flex-basis` is used to account for the *ideal* situation. If you know exactly how much space you have, what should the size of this flex-item be? 
+
+`flex-basis` takes any value that you could pass to a value like width. ems, rems, px, % are all fair game.
+
+When you don't use `flex-basis` on your items, it falls back to `auto`, which is what you've seen throughout this guide.
+
+If you set the `flex-basis` on one or some (but not all) of your flex-items, the items with explicit basis will take up that much room, and all the other items are implicity set to 'auto', so they'll be distributed the remaining space by flexbox.
+
+
+<p data-height="400" data-theme-id="0" data-slug-hash="mMNpMZ" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-basis" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/mMNpMZ/">flex-basis</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+What if there isn't enough room for all explicit `flex-basis` declarations? That'll come together next, on `flex-grow`...
+
+---
 # Flex-Items: Flex-Grow (intro)
+
+`Flex-grow` dictates how much of the extra-space an individual item will be allotted. Remember that `flex-basis` is based on an 'ideal' situation where you know exactly how much space you have. `flex-grow` considers the situation where you have *more* space than you expected. 
+
+`flex-grow` properties are based on proportions. A item with `flex-grow: 2` will grow at twice the rate of an item with `flex-item: 1`.
+
+```css
+  .flex-item-1 {
+    flex-grow: 1;
+  }
+
+  .flex-item-2 {
+    flex-grow: 2
+  }
+```
+
+By default, all items have a `flex-grow` of 0, which means they don't grow when the container element is larger than expected. If you give a single item a `flex-grow` of 1, then it will grow, while everything else will remain unchanged:
+
+<p data-height="400" data-theme-id="0" data-slug-hash="prMpWe" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-grow" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/prMpWe/">flex-grow</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+That's the simplest way to use to `flex-grow` -- to make some items grow and some remain the same. But the sky's the limit when it comes to setting flex-grow.
+
+<p data-height="400" data-theme-id="0" data-slug-hash="VzoEOP" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-grow 2 (ratios)" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/VzoEOP/">flex-grow 2 (ratios)</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+---
+# Flex-Items: Flex-Shrink (intro)
+
+`flex-shrink` is essentially the opposite. What happens when you have *less* space than ideal?
+
+The default is `1`, and the values are proportion-based as they are in `flex-grow`
+
+```css
+  .flex-item-1 {
+    flex-shrink: 1;
+  }
+
+  .flex-item-2 {
+    flex-shrink: 2
+  }
+```
+
+This can be counter-intutive, because higher-numbers make for smaller elements. A good way to think about it is: 'How much of this element should I give up if we don't have enough space?" An item with a flex-shrink of `2` will give up twice as much of itself as an item with the flex-shrink of `1`.
+
+In this example, you can see that as as there is extra space, all the flex-items take the space evenly *except* for the item who's `flex-shrink` is 2. 
+
+
+<p data-height="400" data-theme-id="0" data-slug-hash="gxVQMe" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-shrink" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/gxVQMe/">flex-shrink</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script> 
+
+
+
+---
 # Flex-Items: Flex shorthand
-# Flex-Basis and Wrap together
-# Masonry Layout
-# Vertical Masonry!
-<!-- 
 
-IDEA: At the beginning of each property, give a quick API and image, then proceed with the explanation and codepen...
-points:
-* It's available in ALL browsers [http://caniuse.com/#feat=flexbox]
-* React-Native has their own implementation that's very similar. So if you're planning on being part of the mobile future, flex is a great thing to master.
-* 1d layouts
-* margins + width is important think about iwth flex!
+Let's get back to the `flex` property. This can be used short hand for `flex-grow`, `flex-shrink` and `flex-basis`.
 
+The flex property is pretty... flexible... in what it accepts as properties.
 
+```css 
+/* Explicitly set all three:
+  flex-grow | flex-shrink | flex-basis
+ */
+.flex-item {
+  flex: 1 2 10%;
+}
 
-  * this vision means that the overall lesson should be broken up into minii lessons:
+/* One value, unitless number: flex-grow */
+.flex-item {
+  flex: 1;
+}
 
-  ##Lessons
-  * one: set up and display: felx
-  * two: flex-direction / cross axis and main axis
-  * three: flex-wrap.
-  * five: alignment  justify content 
-  * sxc: align item
-  * four: flex ordering (maybe shift to later)
+/* One value, width/height number: flex-basis */
+.flex-item {
+  flex: 2.5em;
+}
 
+/* Two values: unitless number: flex-grow | unitless number: flex-shrink */
+.flex-item {
+  flex: 1 2;
+}
 
-
-  * masonry
-  * bonus: vertical masonry!
-
-
------ What the flexbox notes:
-
-vid 4: ADD TO END
-order: takes a number.
-- it works similarly to Z index (the way numbers work, anyway)
-    default order is 0 on ALL!
-* so, if you set box 3 to order: 1, its moved to the end.
-* this is useful for responsive design. It allows you to take things out of DOM order.
+/* Two values: unitless number: flex-grow | width/height number: flex-basis */
+.flex-item {
+  flex: 2 2.5em;
+}
+```
 
 
-vid 7: align content:
-default: stretch. 
-the difference between align content and justify content.
-same choices as justify content.
-align content takes the extra space on the cross axis.
-align content only works when there are multiple lines of elements. So essentially there has to be wrapping.
-
-vid 8: align self
-align self overwrites the align-items for individual items.
-
-vid 9: flex: 
-What qustion does this property answer? 
- *  what do I do when I have extra space or not enough space?
-flex: 1;
-
-the flex property works by ratio. So a box with flex 2 will take twice as much space as the boxes with flex 1
-
-* can take decimal points. all proportion. not pixels, percentages, etc.
-* important: flex works with **extra** space. 
-shorthand: 
-flex: 1 1 200px;
-grow, shrink, basis. 
-vid 10:
-flex: 1, flex-grow and flex-shrink to one.
-flex-grow
-  * if we have extra room.... do this.
-  * default: 0; When there's extra room, don't do anything....
-
-flex-shrink, 
-  * if we have less than the ideal width, then do this.... 
-  * default again is 0. 
-  * shrink sets how much of myself should I give up in proportion to the other one.
-
-flex basis.
-  * sets the 'starting' width. 
-  * 'in an ideal world, where we know exactly how much width we have, set it to this.'
+Remember that the default values for all three properties are set to (in `flex` terms) `1 0 auto`. So setting `flex: 1` is shorthand for `flex: 1 1 auto`. Another way to write that shorthand would be write `flex: auto`. There a handful of values that [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) refers to as 'basic values'. "For most purposes, authors should set flex to one of the following values: auto, initial, none, or a positive unitless number." - [MDN Web docks](https://developer.mozilla.org/en-US/docs/Web/CSS/flex). 
 
 
-  vid11:
-  wrap and basis totgether:
-  * when multiple rows exist (because wrap),
-  flex-grow, shrnik and basis only work on the row that they're on. 
-  Which is pretty insane and super helpful.
+```css
+.flex-item {
+  flex: auto;
+  /* Equivelent to 1 1 auto. 
+      The item is sized according to its height and width, but absorbs extra space when space is given by flex.*/
+}
 
-vid12:
-browser support:
+.flex-item {
+  flex: initial;
+  /* Default value. 
+    Equivelent to 0 1 auto. 
+    The item is sized according to its height and width, but doesn't grow. It wil shirnk to the size of it's inner conent if necessary*/
+}
+
+.flex-item {
+  flex: none;
+  /* Equivelent to 0 0 auto. 
+    The item is sized according to its height and width, but isn't flexible at all. */
+}
+
+.flex-item {
+  flex: <positive number>;
+  /* Equivelent to <positive number> 1 0.
+    The item starts off by receiving it's portion of the extra space.
+  */
+}
+
+```
+I personally most often use `flex: positive number`, but I do think it's incredibly valuable to know these `flex` values well. 
+
+--- 
+# The Flex Property and Flex-Wrap together
+
+When there are multiple rows (or columns) of flex items (because of `flex-wrap`), all three of the `flex` properties only work in relationship to the flex-items on the same row as them.
+
+This is one of the most powerful aspects of flexbox. Your flex layout will look good regardless of the viewport size (in theory, of course).
+
+In this simple codepen, you'll see that if you increase flex-grow, it only affects the row that the current element is on.
+
+<p data-height="400" data-theme-id="0" data-slug-hash="MvNzXa" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-wrap / flex" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/MvNzXa/">flex-wrap / flex</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<!-- ---
+# Practical Examples: Nav Bar
+# Practical Examples: Modal Positioning
+# Practical Examples: Responsive Ordering
+# Practical Examples: Forms -->
 
 ---  
 *Checkout the other guides in this series:*
 * [Layout Prereq: Display, Width, BoxModel](/blog/css-layout-0) 
-* [Layout 201: Intro to Flexbox](#) *coming soon*
+* [Layout 101: Floats, Tables, Position](/blog/css-layout-1)
 * [Layout 202: Intro to CSS Grid](#) *coming soon*
 * [Layout 301: Choosing the Right Tools](#) *coming soon*
 * [Layout 401: Combining the Tools for the Modern Layout](#) *coming soon*
- -->
+
+---
