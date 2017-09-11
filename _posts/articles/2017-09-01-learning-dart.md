@@ -4,7 +4,7 @@ title:  "Learning Dart from JavaScript"
 date:   2017-09-01 19:10:08 -0700
 categories: language dart
 type: article
-front-page: false
+front-page: true
 permalink: blog/dart 
 ---
 

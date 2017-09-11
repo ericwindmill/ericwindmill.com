@@ -4,18 +4,9 @@ title:  "The Power of No"
 date:   2017-07-28 12:10:08 -0700
 categories: productivity self
 type: article
+front-page: false
 permalink: blog/the-power-of-no
 ---
-
-<!--Taking on More is Dangerous-->
-<!--Why do I take on more?
-  -To Prove MySelf
-  -To beomce the best.
--->
-<!--The better way
-  -I have nothing to prove.
-  -Say no to take care of youself
--->
 
 Society rewards those of us who have the 'go it alone' and 'never stop grinding' mentalities. I struggle  with the feeling that I could always be doing more. 
 

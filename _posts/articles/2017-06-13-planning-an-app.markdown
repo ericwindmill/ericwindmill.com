@@ -4,7 +4,7 @@ title:  "Step By Step: Planning a Web Application"
 date:   2017-06-13 19:10:08 -0700
 categories: ux planning
 type: article
-front-page: true
+front-page: false
 external_url: https://medium.com/@ericwindmill/step-by-step-planning-a-web-application-ddaa010a8353
 external_site: Medium
 ---

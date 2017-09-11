@@ -4,6 +4,7 @@ title:  "July 2017 Goals"
 date:   2017-07-03 19:10:08 -0700
 categories: goals
 type: article
+front-page: false
 permalink: blog/july-2017-goals
 ---
 

@@ -4,7 +4,7 @@ title:  "A Free Bootcamp Interview Prep Resource"
 date:   2017-07-12 19:10:08 -0700
 categories: bootcamp algorithms
 type: article
-front-page: true
+front-page: false
 permalink: blog/bootcamp-prep
 ---
 #### The Exact Algorithm Practice That Will Get You Into App Academy or Hack Reactor
