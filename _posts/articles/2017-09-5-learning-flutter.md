@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An Intro (for me) to Flutter for Mobile Apps"
+title:  "Intro to Flutter for Mobile Apps pt 1: Flutter Technical Overview"
 date:   2017-09-05 09:10:08 -0700
 categories: flutter mobile google
 type: article
