@@ -8,19 +8,22 @@ front-page: true
 permalink: blog/intro-to-flutter-2
 ---
 
-This is the exact steps I took to start my first Flutter project. I'm completely new to native mobile development, so I'm going to do my best to understand everything, and explain everything. If you're looking for a quick start, here's the step by step without the low-level explanations. 
+This is the exact steps I took to start my first Flutter project. I'm completely new to native mobile development, so I'm going to do my best to understand everything, and explain everything. If you're looking for a quick start, here's the step by step without the low-level explanations.
 
-First, you have to install the Flutter SDK. It's made pretty easy for you, and I suggest just following [these steps]() from the Flutter docs.
+First, you have to install the Flutter SDK. It's made pretty easy for you, and I suggest just following [these steps](https://flutter.io/setup/) from the Flutter docs.
 
 This is what you're installing if you follow those steps:
 
-  * thing 1
-  * thing 2
+* Flutter Framework CLI
+* Flutter Framework SDK
+* Android toolchain
+* iOS toolchain
+* Android Studio
+* IntelliJ IDEA Community Edition
 
+Next, I followed these directions to make my first app. These are the steps and an indepth explanation of what you're doing.
 
-Next, I followed these directions to make my first app. These are the steps and an indepth explanation of what you're doing. 
-
-### 1. create your app 
+### 1. create your app
 
 ```bash
   create flutter first_project
@@ -28,7 +31,7 @@ Next, I followed these directions to make my first app. These are the steps and 
 
 ### 2. What's In the File Tree?
 
-Running create flutter first_project creates a file tree with 50 or so files. 
+Running create flutter first_project creates a file tree with 50 or so files.
 
 * this file
 * that file
@@ -38,15 +41,15 @@ For this first project, we'll stick with the main.dart file, as well as it's sib
 
 
 ### 3. Launch the Simulator
-for iOS: 
+for iOS:
 
 ```bash
 open -a Simulator run
 ```
 
-This will bring up a simple counter app. The first thing you should do is read through the `main.dart` file's comments. 
+This will bring up a simple counter app. The first thing you should do is read through the `main.dart` file's comments.
 
-r and p in the terminal for hotreload and the Widget grid.
+<!-- TODO: r and p in the terminal for hotreload and the Widget grid. -->
 
 ### 4. Main.dart
 
@@ -64,7 +67,7 @@ void main() {
 //...
 ```
 
-Next, theres the the root of your actual app (according to the inline comments provided by Flutter's team). This is the first time I've seen a Widget, and it's more or less a component if you're coming from literally any other front-end framework. 
+Next, theres the the root of your actual app (according to the inline comments provided by Flutter's team). This is the first time I've seen a Widget, and it's more or less a component if you're coming from literally any other front-end framework.
 
 `@override` is a Dart instance member that's used to override a class' super declaration of the same member. This is new to me, but I believe that because we're using Widget Build over and over, we'll be overriding it for each nested widget.
 
@@ -72,7 +75,7 @@ From here, there's the `Widget build(BuildContext context) {}` line. This is the
 
 `BuildContext` is an important part of this line. It's an object provided by Flutter that keeps track of where the widget is in the tree. In laymans terms, it gives us the ability to inherit from its super. There are some built in methods and properties that you can pass `context` to, that allows the current widget to inherit the properties of the parent. In this particular mini-app, `context` is passed  later on to a function called `Theme.of(context)`. It's inheriting the theme of its parents, which in this case makes the color `blue`.
 
-From there, it looks like we;re just passing in some basic meta data: the title of the App, the theme detail (using what I assume is a widget provided by the MaterialUI library), then of course, setting the primary color of the app and setting the title for the home page. 
+From there, it looks like we;re just passing in some basic meta data: the title of the App, the theme detail (using what I assume is a widget provided by the MaterialUI library), then of course, setting the primary color of the app and setting the title for the home page.
 
 **SCREEN SHOT HERE**
 
@@ -166,9 +169,9 @@ This Widget build call is nested in our `_myHomePageState()` (and therefor neste
 ///...
 ```
 
-This part is where something interesting happens that I've read about Flutter, that I (to be honest) don't like the idea of. 
+This part is where something interesting happens that I've read about Flutter, that I (to be honest) don't like the idea of.
 
-This cose is nested in the Widget above, and it's starting to build the actual layout. appBar is a Widget provided by MaterialUI that sets the top section. Its pulling in the title from up the chain of nested Widgets. That's cool, I'm into it. 
+This cose is nested in the Widget above, and it's starting to build the actual layout. appBar is a Widget provided by MaterialUI that sets the top section. Its pulling in the title from up the chain of nested Widgets. That's cool, I'm into it.
 
 Then we move onto the body, where we create a new Widget called `Center`.
 ```dart
@@ -204,7 +207,7 @@ Then, nested inside of Center, we have a `child` called `Column`. This is where 
 //...
 ```
 
-This comment further explains how to control layout in Flutter, as well as shows us how to add content to the Widgets. Here the ket `text` is used twice to add text to the widget. 
+This comment further explains how to control layout in Flutter, as well as shows us how to add content to the Widgets. Here the ket `text` is used twice to add text to the widget.
 
 The second time text is added, the app also passes a `style` attribute, and we see our call to `context`. This sheds some interesting light on `context`. `Context` is referring to the BuildContext of the widget all the way up the tree. It keeps looking to its parent Widget until it finally finds some properties (such as `primarySwatch`) in the App element. This property has been passed down many layers seemingly behind the scenes, with no work done by us. That's nice, particularly for mobile apps (where styling and design is cleaner and simpler).
 
@@ -248,3 +251,44 @@ Lastly in this mini app, we;re adding a button to the screen that will increment
 That's what's going on the simple app that's created when you run the `create flutter` command. But that's just the beginning. Let's dig in.
 
 ----
+
+## Building on the Foundation
+
+`create flutter` has given us this basic example, and we more or less understand what's going on now. The best way for us to learn from here is to build on this and creat a real app. Let's build the classic ToDo App.
+
+Everything is really a ToDo app, when you think about it... (add more here )
+
+---
+
+NOTES:
+
+* The root of any state dependent subtree is Stateful Widget.
+* The root of such a state-dependent subtree must be a StatefulWidget. Like any decent widget, a StatefulWidget is not mutable, but its subtree is built by a State object which is. Flutter retains State objects across tree rebuilds and attaches each to their respective widget in the new tree during building. They then determine how that widget’s subtree is built. -- Medium Article
+
+*Immutable widgets and state-dependent subtrees are the main tools that Flutter puts at our disposal to address the complexities of state management in elaborate UIs responding to asynchronous events such as button presses, timer ticks, or incoming data. From my desktop experience I’d say this complexity is very real. Assessing the strength of Flutter’s approach is — and should be — an exercise for the reader: try it out on something non-trivial.
+
+* Material App includes a number of useful widgets at the root of your app, including Navigator
+
+* Flutter uses a 'tree' system. It's similar to DOM, but they use the terminology 'tree'.
+
+**tweens**
+* a value
+* it represents the space between two values in an animation.
+* The jargon lerp comes from the field of computer graphics and is short for both linear interpolation (as a noun) and linearly interpolate (as a verb). The parameter t is the animation value, and a tween should thus lerp from begin (when t is zero) to end (when t is one). --- MD Article.,
+
+class BarTween extends Tween<Bar> {
+  BarTween(Bar begin, Bar end) : super(begin: begin, end: end); // constructor. <<-- whats up with the :
+}
+
+*@override is a Dart annotation that tells your code to override the build() method of the framework's abstract StatelessWidget class.
+
+* n Flutter, if you want to visually present stateful data in a widget, you should encapsulate this data in a State object. You can then associate your State object with a widget that extends the StatefulWidget class. -- codelabs tut
+
+*Only synchronous operations should be performed in setState(), because otherwise the framework could rebuild the widgets before the operation finishes.
+
+* It's good practice to dispose of your animation controllers to free up your resources when they are no longer needed.
+
+
+// Navigator:
+
+Mobile apps typically reveal their contents via full-screen elements called "screens" or "pages". In Flutter these elements are called routes and they're managed by a Navigator widget. The navigator manages a stack of Route objects and provides methods for managing the stack, like Navigator.push and Navigator.pop. - flutter docs

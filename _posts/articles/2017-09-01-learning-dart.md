@@ -7,6 +7,12 @@ type: article
 front-page: true
 permalink: blog/dart 
 ---
+<!-- 
+* an underscore makes a variable private
+* Fields
+* Ineracting with the DOM and CSS 
+* important libraries (i.e. Math)
+-->
 
 ## Contents:
 * <a href='#intro'>Intro</a>
@@ -34,15 +40,19 @@ permalink: blog/dart
 
 <div id='intro'></div>
 
-## Why Dart
-I've recently accepted a position with a company that's doing something challenging and also interesting. Most interesting is their stack. They're basically all in on Google (Go, Dart, Angular, and even flutter). So I'm studying Dart to prepare. 
+## Why I'm Learning Dart
+I've recently accepted a position with a company that has an interesting stack. They're basically all in on Google (Go, Dart, Angular, Polymer and even Flutter). I'm a huge victim of shiny object syndrom, so I was quick to accept a job that would force me to learn all new languages and technologies.
 
-My initial thoughts, having only read a few articles, is that Dart is basically TypeScript. It looks a lot like JavaScript, but its more opinionated. It also has quite a bit of features that backend languages have that JavaScript lacks. 
+## Why You Should Consider Learning Dart
+I don't know that I'm sold on wether anyone should learn Dart. JavaScript is such a massive force, that its certainly not going anywhere. However, Dart was created as an alternative to JavaScript, and its nice to have options.
 
-I can already tell that my desire to use JavaScript 'Standard' style as my syntax is going to be a big pain in the ass. Semicolons and extra spacing that I'm use to from Standard throws warnings in Dart. 
 
-# What is Dart?
-From WikiPedia:
+# What is Dart? (A Technical Overview)
+* Dart is being developed by Google, originally as an alternative to JavaScript. 
+* Dart is being designed for building large scale applications.
+* Dart was created to run on the Browser and on the Server. 
+
+From [WikiPedia](https://en.wikipedia.org/wiki/Dart_(programming_language):
 'Dart is a general-purpose programming language originally developed by Google and later approved as a standard by Ecma. It is used to build web, server and mobile applications, and for Internet of Things devices.
 
 Dart is an object-oriented, class defined, single inheritance language using a C-style syntax that transcompiles optionally into JavaScript. It supports interfaces, mixins, abstract classes, reified generics, optional typing, and a sound type system' 
@@ -50,14 +60,17 @@ Dart is an object-oriented, class defined, single inheritance language using a C
 ### In Laymans Terms
 It seems that Dart *can* compile into JavaScript, but doesn't have to. I'm not sure what the advantage of this, becuase JavaScript already can be run in browsers or server side. 
 
-Like TypeScript, Dart seems to be a language that combines the useability of JavaScript with the opinions of slightly-lower-level and application languages like Java. I'd assume that a lot of Dart users fancy it over JS because its Object Oriented and supports all the Object Oriented Programming features. (I think prototypes are superior to classical inheretence, but that's another conversation for another day...).
+Syntactically, Dart reminds me of TypeScript. It's like JavaScript by more opinionated, and of course typed.
 
-<div id='resources'></div>
+Like TypeScript, Dart seems to be a language that combines the useability of JavaScript with the opinions of slightly-lower-level and application languages like Java. I'd assume that a lot of Dart users fancy it over JS because its Object Oriented and supports all the Object Oriented Programming features. 
 
-## Resources
+Dart is currently in production at Google Fiber and Goodgle Ads Team to name a few.
+
+<h2 id='resources'>Resources</h2>
+
 The first resource I went through when looking into dart was [Dart Academy Boot Camp](https://da-bootcamp.firebaseapp.com/?course=start_programming_dart). This resource is probably meant for a brand new developer who's learning Dart as their first language. Nevertheless, there was some valuable insight into the basic syntax similarities and basic language functionality.
 
-The second resouce I ran into is [Dart by Example](http://jpryan.me/dartbyexample/). Funny enough, the creator of this is a Sr. Engineer at my new job. This definitely get's deeper into the language. I'm glad I started with the previous resource, but this is where the real learning happened.
+The second resouce I ran into is [Dart by Example](http://jpryan.me/dartbyexample/). Funny enough, the creator of this is a Sr. Engineer at my new company. This definitely get's deeper into the language. I'm glad I started with the previous resource, but this is where the real learning happened.
 
 There's a nifty tool that's similar to JSFiddle or CodePen, but for Dart called [DartPad](https://dartpad.dartlang.org/4ea67cfb5294c146a541).
 

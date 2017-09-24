@@ -8,12 +8,12 @@ front-page: true
 permalink: blog/css-layout-2
 ---
 
-# What is Flexbox ( and why use it)?
-Flexbox, introduced in CSS3 has become the go-to layout tool for web developers. The flex layout was the first layout tool introduced specifically to handle responsive layout design. It allows for responsive elements to be arranged based on screen size. 
+# What is Flexbox (and why use it)?
+Flexbox, introduced in CSS3 has become the go-to layout tool for web developers. The flex layout was the first layout tool introduced specifically to handle responsive layout design. It allows for responsive elements to be arranged based on screen size.
 
 It's also complicated, and can be a real source of pain if you don't take the time to understand it. The hour or two you'll spend now to take it all in will save you days in the future of tweaking CSS properties.
 
-Today, there is still plenty of arguments about which layout tool you should use. So *why* flexbox? Isn't it more trouble than it's worth? Is it supported in all browsers? How much of a learning curve is it, really? 
+Today, there is still plenty of arguments about which layout tool you should use. So *why* flexbox? Isn't it more trouble than it's worth? Is it supported in all browsers? How much of a learning curve is it, really?
 
 My arguments for learning flexbox:
 * It really is becoming *the* layout standard. You're bound to run into over and over again.
@@ -21,7 +21,7 @@ My arguments for learning flexbox:
 * It's so popular that it's the default display for all elements in React Native, which is probably going to be pave the way for the future of mobile development. If you're a new-ish developer today, you should have your eyes on mobile / React Native. It's the future (in my humble opinion).
 * Learning flexbox makes learning CSS Grid really easy, and combined they're all you need to build modern, responsive layouts.
 
-In order to use flexbox, you kind of have to take all your knowledge about floats, percentages and previous layout tools and disregard them for a minute. If you're newer to CSS and don;t have any knowledge about tables or floats, you're actually starting from a better place. 
+In order to use flexbox, you kind of have to take all your knowledge about floats, percentages and previous layout tools and disregard them for a minute. If you're newer to CSS and don;t have any knowledge about tables or floats, you're actually starting from a better place.
 
 Oh, and flexbox is available in [ALL browsers](http://caniuse.com/#feat=flexbox).
 
@@ -32,7 +32,7 @@ Before flex, the `display` property was pretty straight forward. You most likely
 
 First, let's just take a look at the basic set up and `display: flex` property. Flexbox requires a certain format when setting up.
 
-1. The basic set up is this: you have a parent HTML element, which is the 'container'.  
+1. The basic set up is this: you have a parent HTML element, which is the 'container'.
 2. Set the containers `display` to `flex`.
 3. All of the *immediate* children are the 'flex-items'. They don't need any specific properties.
 
@@ -73,13 +73,11 @@ As I mentioned, `display: inline-flex` also exists. It's the same as `flex`, exc
 -----
 # 2: Arranging Items in Rows or Columns with Flex-Direction
 
-This is perhaps the most important thing to understand to be able to work with flex effectively.
-
 Flex is based on the idea that layouts are 2d, and there are two axes. The main-axis, and the cross-axis. By default, the main-axis is horizontal, and the cross-axis is vertical.
 
 ![axes on flex-direction: row](http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_400/v1504824862/blog_posts/Artboard.png)
 
-This photo is hopefully pretty easy to digest. There are no tricks here. Until you change the axes' directions with `flex-direction`. 
+This photo is hopefully pretty easy to digest. There are no tricks here. Until you change the axes' directions with `flex-direction`.
 
 `flex-direction` is a property that allows you to switch the direction that flex items are laid out. By default, `flex-direction` is set to `row`. When set to row, the items are laid out side by side, forming... a row.
 
@@ -138,7 +136,7 @@ The directions of the axes is the base for all the flex properties. At anytime i
 -----
 # 2: Wrapping your Elements with Flex-Wrap
 
-The `wrap` property dictates whether the flex-items wrap within the container. I would argue that it's more important to understand how the elements behave when wrap is set to `nowrap`, which is the default. 
+The `wrap` property dictates whether the flex-items wrap within the container. I would argue that it's more important to understand how the elements behave when wrap is set to `nowrap`, which is the default.
 
 Wrap comes into play when the total width of your flex-items combined are wider than your flex-container. When `wrap` is set to `no-wrap`, the elements shrink to take up the width provided by the container, with the min-width being the width of the `border-box`. This is true even if you explicity set a width on your items!
 
@@ -147,9 +145,9 @@ Wrap comes into play when the total width of your flex-items combined are wider 
   * `wrap`
   * `wrap-reverse` (more on this later)
 
-When you set `flex-wrap: wrap`, the elements will respect their explicit widths, and wrap into as many rows as needed to fit all elements. 
+When you set `flex-wrap: wrap`, the elements will respect their explicit widths, and wrap into as many rows as needed to fit all elements.
 
-The wrap changes when you change `flex-direction` to `column`. As you'd expect, the flex-items now wrap into columns. 
+The wrap changes when you change `flex-direction` to `column`. As you'd expect, the flex-items now wrap into columns.
 
 <p data-height="400" data-theme-id="0" data-slug-hash="qXeBZr" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-wrap" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/qXeBZr/">flex-wrap</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -163,7 +161,7 @@ Finally, we have wrap-reverse. Go ahead and toggle Wrap/Wrap-Reverse on in this 
 <p data-height="400" data-theme-id="0" data-slug-hash="qXeBmj" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="qXeBmj" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/qXeBmj/">qXeBmj</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-`Wrap-reverse` reverses the *cross-axis*. If you toggle wrap and wrap-revese, you'll see that the items become 'backwords'. I like to think of it like a book. If `flex-direction` is set to `column`, and then you apply wrap-reverse, the pages will still read top to bottom, but you'll read from right to left. 
+`Wrap-reverse` reverses the *cross-axis*. If you toggle wrap and wrap-revese, you'll see that the items become 'backwords'. I like to think of it like a book. If `flex-direction` is set to `column`, and then you apply wrap-reverse, the pages will still read top to bottom, but you'll read from right to left.
 
 
 ### API
@@ -267,12 +265,12 @@ There's one other value, `baseline`, but it only applies to one property, so we'
 ---
 # 4: Alignment: Justify Content On the Main-Axis with Justify-Content
 
-Alignment in flex is really the main learning curve, and its mostly a matter of knowing your options. One of the properties you'll use almost every time you use flex is `justify-content`. 
+Alignment in flex is really the main learning curve, and its mostly a matter of knowing your options. One of the properties you'll use almost every time you use flex is `justify-content`.
 
-Justify-conent takes 5 possible values, which are all easy enough to work with in a basic case. 
+Justify-conent takes 5 possible values, which are all easy enough to work with in a basic case.
 
 * flex-start
-* center 
+* center
 * flex-end
 * space-around
 * space-between
@@ -283,13 +281,13 @@ Justify-conent takes 5 possible values, which are all easy enough to work with i
 
 Things can get hairy when we toss in other factors, like setting ` { flex-direction: column }`. Again, it all comes down to the axes switching. Every property in flexbox alignment works along a certain axis. Justify-content works along the **main-axis**. In the example above, when you have no choice in changing the axis, so you can see the changes it makes the contents justification.
 
-In this pen, though, you'll notice that when you toggle the direction to `column`, it just breaks. No matter which value you choose, the elements don't budge. 
+In this pen, though, you'll notice that when you toggle the direction to `column`, it just breaks. No matter which value you choose, the elements don't budge.
 
 <p data-height="400" data-theme-id="0" data-slug-hash="oeKZOr" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="justify-content w/ direction" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/oeKZOr/">justify-content w/ direction</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
-Let's think about what's actually happening here. 
+Let's think about what's actually happening here.
 * First, the axis is switching. That's the main idea behind switching the direction from row to column.
 * When the axis switches, the property `justify-content` is now dictating where the items are painted from top to bottom, rather than side to side.
 * Flex containers are *flexible*, so the container is resizing to fit all the content.
@@ -363,7 +361,7 @@ Another common 'gotcha' is that the parent container has to have height in order
 ```
 
 ---
-# 6: Alignment: Set Your Items By their Content with Align-Items: Baseline
+# 6: Alignment: Align Items By their Content with Align-Items: Baseline
 
 The value `baseline` for `align-items` isn't used often, but when you need it, it's a life-saver. It aligns all the items according the base of their content, rather than the base of border-box.
 
@@ -399,17 +397,17 @@ The bottom of the 'content' portion of an HTML element is how baseline aligns. A
 ---
 # 7: Alignment: Align the Collective Content Along the Cross-Axis
 
-`Align-content` is the true opposite `justify-content`. It takes the same five properties as `justify-content`, and distributes the items among the cross-axis. 
+`Align-content` is the true opposite `justify-content`. It takes the same five properties as `justify-content`, and distributes the items among the cross-axis.
 
 * flex-start
-* center 
+* center
 * flex-end
 * space-around
 * space-between
 
-For this exercise, forget about flex-direction. For the sake of simplifying explanation, we're only concerned with 'row', for now. 
+For this exercise, forget about flex-direction. For the sake of simplifying explanation, we're only concerned with 'row', for now.
 
-The difference between `align-content` and `align-items` is that `align-content` basically requires wrapping *and* that the container has a height greater than the total height of the rows. 
+The difference between `align-content` and `align-items` is that `align-content` basically requires wrapping *and* that the container has a height greater than the total height of the rows.
 
 Think about it like this: *align-content* implies that you're manipulating the entirety of the items as a group *and their relationship to eachother*, where *align-items* implies that you're manipulating the individual items.  The following Codepen already has `flex-flow` set to `wrap`and explicit height. If there was no wrapping, flexbox wouldn't know how to distribute the white-space, because the content *as a whole* is being manipulated. If there's only one row, then you're actually concerned with `align-items`.
 
@@ -443,11 +441,11 @@ If you did want to switch the `flex-direction` to `column`, align-items would wo
 
 
 ----
-# 8: Alignment: Align Individual Items Seperately with Align-Self
+# 8: Alignment: Align Individual Items with Align-Self
 
 Align-self is the first property that we'll explore which is on the flex-item, rather than the container.
 
-It's pretty simple. It overwrites the `align-items` property for the individual item you set it on. It takes the same possible values. 
+It's pretty simple. It overwrites the `align-items` property for the individual item you set it on. It takes the same possible values.
 
   * stretch (default)
   * center
@@ -487,17 +485,17 @@ It's pretty simple. It overwrites the `align-items` property for the individual 
 ---
 # 9: Change the Order of Items with Flex: Order
 
-We're moving onto properties that live completely on flex-items. 
+We're moving onto properties that live completely on flex-items.
 
-First we'll talk about `order`, something that isn't used terribly often (in my experince), but it's extremely useful when you need it. 
+First we'll talk about `order`, something that isn't used terribly often (in my experince), but it's extremely useful when you need it.
 
-Simply, giving a flex-item an `order` allows you to change the order that the flex-items appear to be painted onto the DOM (*without Javascript!*). 
+Simply, giving a flex-item an `order` allows you to change the order that the flex-items appear to be painted onto the DOM (*without Javascript!*).
 
 The word **appear** is important in the previous sentence. If you change the order of some items, and then pop open the dev-tools, you'll see that the items still appear in order in the DOM. There's only one thing that this affects that I'm aware of. If you try and copy and paste conten who's order is being maniputlated using `flex: order`, it will copy the content in their true (DOM) order.
 
 `Order` values work like z-index. By default, everything is set set to 0. Then, if you change a single item's `order` to 1, it will become the *last* item. The value of `order` matters only in relation to it's siblings.
 
-The best use of `order`, or the only one that I've ever needed it for, is when making pages responsive for mobile. Sometimes you'll want sections of text or images painted in a different order on mobile and desktop. (Or rather, sometimes your team's designer wants content to be in a different order on the page depending on the device.) This is now easily done without a bunch of hacks or JavaScript. 
+The best use of `order`, or the only one that I've ever needed it for, is when making pages responsive for mobile. Sometimes you'll want sections of text or images painted in a different order on mobile and desktop. (Or rather, sometimes your team's designer wants content to be in a different order on the page depending on the device.) This is now easily done without a bunch of hacks or JavaScript.
 
 <p data-height="400" data-theme-id="0" data-slug-hash="rzXYeV" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-item-count" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/rzXYeV/">flex-item-count</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -527,14 +525,14 @@ The best use of `order`, or the only one that I've ever needed it for, is when m
 ---
 # 10: Control the Responsive Size of Elements with the Flex Property
 
-Flex-items accept a property called `flex`. It's actually a shorthand for three properties: `flex-basis`, `flex-grow` and `flex-shrink`. 
+Flex-items accept a property called `flex`. It's actually a shorthand for three properties: `flex-basis`, `flex-grow` and `flex-shrink`.
 
-These properties control the size of the flex-item in relationship to it's sibling flex-items. By using these properties, you can accurately control the size of your items in arbitrarily different sized windows. 
+These properties control the size of the flex-item in relationship to it's sibling flex-items. By using these properties, you can accurately control the size of your items in arbitrarily different sized windows.
 
 When setting flex properties, the golden question to keep in mind is, 'How do I want these items to be laid out when I have extra space or not-enough space?'
 
 The names are telling of what the properties do:
-* `flex-basis` sets the base size for a flex-item. 
+* `flex-basis` sets the base size for a flex-item.
 * `flex-grow` dictates how much flex-items grow in relationship to eachother when the view port is larger than expected.
 * `flex-shrink` dictates how much flex-items shrink in relationship to eachother.
 
@@ -542,7 +540,7 @@ The names are telling of what the properties do:
 ---
 # 11: Set an Item's Starting Size with Flex-Basis
 
-`flex-basis` sets the starting size for the flex-item on it's main-axis (so `width` when direction is `row`). The point of all the `flex-*` properties is to account for different sized containers, but `flex-basis` is used to account for the *ideal* situation. 
+`flex-basis` sets the starting size for the flex-item on it's main-axis (so `width` when direction is `row`). The point of all the `flex-*` properties is to account for different sized containers, but `flex-basis` is used to account for the *ideal* situation.
 
 The question this property answers is, 'If you know exactly how much space you have, what should the size of this flex-item be?'
 
@@ -557,7 +555,6 @@ If you set the `flex-basis` on one or some (but not all) of your flex-items, the
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
-The head-scrather here is, 'What if there isn't enough room for all explicit `flex-basis` declarations?' That problem is solved with `flex-grow` and `flex-shrink`.
 
 
 ### API
@@ -584,7 +581,7 @@ The head-scrather here is, 'What if there isn't enough room for all explicit `fl
 ---
 # 12: Different Items can Grow in Different Proportions with Flex-Grow
 
-`Flex-grow` dictates how much of the extra-space an individual item will be allotted. Remember that `flex-basis` is based on an 'ideal' situation where you know exactly how much space you have. `flex-grow` considers the situation where you have *more* space than you expected. 
+`Flex-grow` dictates how much of the extra-space an individual item will be allotted. Remember that `flex-basis` is based on an 'ideal' situation where you know exactly how much space you have. `flex-grow` considers the situation where you have *more* space than you expected.
 
 `flex-grow` properties are based on proportions. A item with `flex-grow: 2` will grow at twice the rate of an item with `flex-item: 1`.
 
@@ -595,7 +592,7 @@ By default, all items have a `flex-grow` of 0, which means they don't grow when 
 
 That's the simplest way to use to `flex-grow`--to make some items grow and some retain their width. For example, you may want an image or table to remain the same size on all different laptop screen sizes, but the paragraph content could grow on large screens.
 
-But, the sky's the limit when it comes to setting flex-grow: 
+But, the sky's the limit when it comes to setting flex-grow:
 
 <p data-height="400" data-theme-id="0" data-slug-hash="VzoEOP" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-grow 2 (ratios)" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/VzoEOP/">flex-grow 2 (ratios)</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
@@ -631,12 +628,12 @@ The default value for `flex-grow` is `1`, and the values are proportion-based as
 
 This can be counter-intutive, because higher-numbers make for smaller elements. A good way to think about it is: 'How much of this element should I give up if we don't have enough space?" An item with a flex-shrink of `2` will give up twice as much of itself as an item with the flex-shrink of `1`.
 
-In this example, you can see that as there is extra space, all the flex-items take the space evenly *except* for the item who's `flex-shrink` is 2. 
+In this example, you can see that as there is extra space, all the flex-items take the space evenly *except* for the item who's `flex-shrink` is 2.
 
 You don't even have to move the slider. Because the elements take up more space than the container, the item with `flex-shrink` set to 2 is already taking up less space.
 
 <p data-height="400" data-theme-id="0" data-slug-hash="gxVQMe" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-shrink" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/gxVQMe/">flex-shrink</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script> 
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### API
 
@@ -667,7 +664,7 @@ Let's get back to the `flex` property. This can be used short hand for `flex-gro
 
 The flex property is pretty... flexible... in what it accepts as properties.
 
-```css 
+```css
 /* Explicitly set all three:
   flex-grow | flex-shrink | flex-basis
  */
@@ -697,28 +694,28 @@ The flex property is pretty... flexible... in what it accepts as properties.
 ```
 
 
-Remember that the default values for all three properties are set to (in `flex` terms) `0 1 auto`. So setting `flex: 1` is shorthand for `flex: 1 1 auto`. Another way to write that shorthand would be write `flex: auto`. 
+Remember that the default values for all three properties are set to (in `flex` terms) `0 1 auto`. So setting `flex: 1` is shorthand for `flex: 1 1 auto`. Another way to write that shorthand would be write `flex: auto`.
 
-There a handful of values that [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) refers to as 'basic values'. "For most purposes, authors should set flex to one of the following values: auto, initial, none, or a positive unitless number." - [MDN Web docks](https://developer.mozilla.org/en-US/docs/Web/CSS/flex). 
+There a handful of values that [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) refers to as 'basic values'. "For most purposes, authors should set flex to one of the following values: auto, initial, none, or a positive unitless number." - [MDN Web docks](https://developer.mozilla.org/en-US/docs/Web/CSS/flex).
 
 
 ```css
 .flex-item {
   flex: auto;
-  /* Equivelent to 1 1 auto. 
+  /* Equivelent to 1 1 auto.
       The item is sized according to its height and width, but absorbs extra space when space is given by flex.*/
 }
 
 .flex-item {
   flex: initial;
-  /* Default value. 
-    Equivelent to 0 1 auto. 
+  /* Default value.
+    Equivelent to 0 1 auto.
     The item is sized according to its height and width, but doesn't grow. It wil shirnk to the size of it's inner conent if necessary*/
 }
 
 .flex-item {
   flex: none;
-  /* Equivelent to 0 0 auto. 
+  /* Equivelent to 0 0 auto.
     The item is sized according to its height and width, but isn't flexible at all. */
 }
 
@@ -730,7 +727,7 @@ There a handful of values that [MDN](https://developer.mozilla.org/en-US/docs/We
 }
 ```
 
-I personally most often use `flex: <positive number>`, but I do think it's incredibly valuable to know all of the `flex` values well, as they can cause the biggest headaches.  
+I personally most often use `flex: <positive number>`, but I do think it's incredibly valuable to know all of the `flex` values well, as they can cause the biggest headaches.
 
 
 ### API
@@ -754,7 +751,7 @@ I personally most often use `flex: <positive number>`, but I do think it's incre
     flex: 1 1 auto;
   }
 ```
---- 
+---
 # 15: The Flex Property Affects Individual Rows when Using Flex-Wrap
 
 When there are multiple rows (or columns) of flex items (because of `flex-wrap`), all three of the `flex` properties only work in relationship to the flex-items on the same row as them.
@@ -766,7 +763,7 @@ In this simple codepen, you'll see that if you increase flex-grow, it only affec
 <p data-height="400" data-theme-id="0" data-slug-hash="MvNzXa" data-default-tab="result" data-user="ericwindmill" data-embed-version="2" data-pen-title="flex-wrap / flex" class="codepen">See the Pen <a href="https://codepen.io/ericwindmill/pen/MvNzXa/">flex-wrap / flex</a> by Eric Windmill (<a href="https://codepen.io/ericwindmill">@ericwindmill</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<!-- 
+<!--
 ---
 # Practical Examples: Nav Bar
 # Practical Examples: Modal Positioning
@@ -774,12 +771,12 @@ In this simple codepen, you'll see that if you increase flex-grow, it only affec
 # Practical Examples: Forms -->
 
 
---- 
-This seems like a lot of information to learn to use one tool. It is. But, it's based around just a few concepts, and when you learn it, your layout build time and quality will go up massively. 
+---
+This seems like a lot of information to learn to use one tool. It is. But, it's based around just a few concepts, and when you learn it, your layout build time and quality will go up massively.
 
----  
+---
 *Checkout the other guides in this series:*
-* [Layout Prereq: Display, Width, BoxModel](/blog/css-layout-0) 
+* [Layout Prereq: Display, Width, BoxModel](/blog/css-layout-0)
 * [Layout 101: Floats, Tables, Position](/blog/css-layout-1)
 * [Layout 202: Intro to CSS Grid](#) *coming soon*
 * [Layout 301: Choosing the Right Tools](#) *coming soon*
