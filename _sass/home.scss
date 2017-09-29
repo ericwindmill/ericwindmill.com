@@ -40,7 +40,16 @@
       max-width: 200px;
       max-height: 200px;
       margin: 0;
+
+      @media screen
+        and (min-width: 1050px) {
+          max-width: 300px;
+          max-height: 300px;
+        }
+      @media
     }
+
+
 
     &:after {
       min-width: 200px;
@@ -63,7 +72,7 @@
       right: 33%;
       z-index: 1;
     }
-// SOMM 
+// SOMM
     &:nth-of-type(3) {
       top:0px;
       right: 50%;
@@ -131,7 +140,7 @@
     display: inline-block;
     z-index: 5;
     padding: 20px;
-    
+
   }
   .about-content {
     position: relative;
