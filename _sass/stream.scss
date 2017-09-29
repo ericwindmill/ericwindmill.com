@@ -3,24 +3,25 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 2fr) );
+  grid-auto-flow: row dense;
   justify-items: space-around;
   justify-content: center;
-  
 
-  @media screen 
+
+  @media screen
     and (min-width: 1050px) {
     max-width: 1050px; }
-  @media screen 
+  @media screen
     and (min-width: 790px)
     and (max-width: 1049px) {
       max-width: 790px; }
-  
+
 }
 
 .stream-item {
   box-sizing: border-box;
   height: 250px;
-  min-width: 250px; 
+  min-width: 250px;
   background-color: white;
   text-decoration: none;
   transition: all 300ms ease-in-out;
@@ -35,7 +36,6 @@
     justify-content: space-between;
   }
 
-  // overflow: hidden;
 
   &:hover {
     box-shadow: 0 15px 20px -6px  rgba(0, 0, 0 , 0.3);
@@ -89,19 +89,20 @@
       text-align: center;
     }
   }
-  
+
   &:hover {
     .post-description {
       opacity: 1;
     }
   }
-  
+
   h1 {
     font-size: 16px;
   }
 }
 
-.stream-item.project {
+.stream-item.project,
+.stream-item.tool {
   border: none;
   grid-column: auto / span 2;
   width: 100%;
