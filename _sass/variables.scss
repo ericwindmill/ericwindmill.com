@@ -5,9 +5,37 @@ $laptop: 1000px !default;
 $pad: 600px !default;
 $on-palm: 400px !default;
 
+$spacing-unit: 30px;
+$padding-unit: 15px;
+$margin-unit: 15px;
+
+// Fonts
+$font: 'Inconsolata', 'Menlo', monospace;
+$font-sans: 'Helvetica Neue', sans-serif;
+$font-serif: 'EB Garamond', serif;
+$font-size: 16px;
+$line-height: 1.5;
+$font-weight: 400;
+$font-weight-bold: 700;
+
+$caption-size: 12px;
+
 
 
 // Colors:
-$brand: #3d04f7;
-$accent: #92d1a6;
+$brand: #4e00be;
+$ink: $brand;
+$accent-light: #93f4c5;
+$accent-dark: #009d51;
 
+$site-background: #e1e6f2;
+$card-main-background: white;
+$card-secondary-background: #edf0f7;
+$card-color-background: $brand;
+
+
+// Import partials.
+@import
+"base/base",
+"base/layout",
+"base/syntax-highlighting";

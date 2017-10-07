@@ -1,47 +1,75 @@
+/*************************
+* GRID SETUP
+**************************/
+
 .MainGrid {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 					"Hero Hero"
-					"DevTools Experience"
-					"AboutBlurb Contact"
-					"ToBlog Specialties";
+					"Experience Experience"
+					"AboutBlurb Picture "
+					"Specialties Contact"
+					"ToBlog DevTools";
 	margin: auto;
 	width: 1000px;
 
+	//TODO: Remove!
+	grid-gap: 5px;
+
 	section {
-		outline: 1px solid $brand;
+		padding: $padding-unit * 3;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
 	}
 }
 
 .MainGrid--Hero {
 	grid-area: Hero;
+	height: 75vh;
+	background: $card-color-background;
+	color: $accent-light;
+
+
+	p {
+		width: 60%;
+		font-size: 1.2rem;
+	}
+
 }
 
 .MainGrid--Experience {
 	grid-area: Experience;
-}
-
-.MainGrid--DeveloperTools {
-	grid-area: DevTools;
+	background: $card-main-background;
 }
 
 .MainGrid--AboutBlurb {
 	grid-area: AboutBlurb;
+	background: $card-main-background;
 }
 
-//
-//.MainGrid--PictureBlurb {
-//  grid-area: picture;
-//}
-
-.MainGrid--Contact {
-	grid-area: Contact;
-}
-
-.MainGrid--ToBlog {
-	grid-area: ToBlog;
+.MainGrid--PictureBlurb {
+  grid-area: Picture;
+	background: $card-main-background;
 }
 
 .MainGrid--Specialties {
 	grid-area: Specialties;
+	background: $card-main-background;
+}
+
+.MainGrid--Contact {
+	grid-area: Contact;
+	background: $card-main-background;
+}
+
+.MainGrid--ToBlog {
+	grid-area: ToBlog;
+	background: $card-main-background;
+}
+
+.MainGrid--DeveloperTools {
+	grid-area: DevTools;
+	background: $card-main-background;
 }
