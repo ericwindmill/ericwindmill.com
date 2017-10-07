@@ -1,132 +1,68 @@
-
 <!DOCTYPE html>
-  <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
     {% include head.html %}
     <body>
-      <div class='wrapper'>
+    <div class="wrapper">
         {% include header.html %}
-      </div>
-      
-        {% include title.html %}
-    
-    <section class='hero'>
-      <div class='square'>
-        <!-- CIVIC CENTER -->
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_250/v1502561770/portfolio_site/IMG_2841.jpg' />
-      </div>
-
-        <!-- RED ROCKS -->
-      <div class='square move-up-1'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_250/v1502561766/portfolio_site/IMG_1532.jpg' />
-      </div>
-
-      <!-- Somm -->
-      <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502571526/portfolio_site/Screen_Shot_2017-08-12_at_10.39.36_AM.png' />
-      </div>
-
-      <!-- CHIANG MAI -->
-      <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502561803/portfolio_site/Screen_Shot_2017-08-12_at_10.40.07_AM.png' />
-      </div>
-      <!-- MOMA -->
-      <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502561800/portfolio_site/IMG_1465.jpg' />
-      </div>
-      <!-- JIM -->
-      <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_250,w_250/v1502579742/portfolio_site/jim_rr_2011.png' />
-      </div>
-      <!-- REAPER -->
-      <div class='square'>
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_250/v1502561795/portfolio_site/Screen_Shot_2017-08-12_at_10.41.39_AM.png' />
-      </div>
-
-      <div class='square color-block'><!--red-->
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843602/edmodo/teal.png' />
-      </div>
-
-      <div class='square color-block'><!--yellow-->
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843595/edmodo/periwinkle.png' />
-      </div>
-
-      <div class='square color-block'><!--blue-->
-        <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1502843592/edmodo/Rectangle_3.png' />
-      </div>
-
-      <a class='hero-insta' href='https://www.instagram.com/ericwindmill/?hl=en'>Instagram Feed →</a>
-    </section>
-
-    <div class='wrapper'>
-      <section class='about'>
-        <div class='about-tag'>
-        <h3><strong>human-friendly</strong> software</h3>
-        </div>
-        <div class='about-content'>
-        <p>
-          Hi! I'm Eric. 
-        </p>
-        <p>
-        I'm currently an <em><strong>engineer</strong></em>. I'm big fan of layout design, user-interaction and data-visualization. I enjoy when my work meets at the intersection of engineering and design.  When developing, I like to think about how actual humans will experience the product. 
-        </p>
-        <p>
-          I'm a certified sommelier and chronic wine lover. I like to write, and I devour music. 
-        </p>
-      </div>
-      </section>
-
-      <span class='label-seperator'>Portfolio<div class='seperator'></div></span>
-      <section class='experience portfolio-section'>
-        <div class='experience-item'>
-          <h3> AppTree </h3>
-          <p> Building enterprise mobile software with Dart and Flutter.</p>
-        </div>
-        <div class='experience-item'>
-          <h3> Freelance Web Developer and Designer </h3>
-          <p> Sporadically taking on web development and front-end jobs since August 2016. I'm currently available for small projects.  </p>
-        </div>
-        <div class='experience-item'>
-          <h3>General Manager and Sommelier</h3>
-          <p> Starting a very young age, I spent many years in hospitality. There, I learned the importance of hospitality and radical empathy. By the time I left the restaurant scene for good, I had gained a passion for wine, became a certaified Sommelier, and worked with some of the best damn people I ever will.<p> 
-        </div>
-      </section>
-
-      <span class='label-seperator'><p>Side-Projects</p><div class='seperator'></div></span>
-      <section class='side-projects portfolio-section'>
-          <div class='experience-item'>
-            <h3><a href='https://github.com/ericwindmill/on-the-grid'>On the Grid</a></h3>
-            <p> This tool teaches web developers how to use the newest and most powerful layout tool in the CSS language: <strong>CSS Grid</strong>.<p> 
-          </div>
-          <div class='experience-item'>
-              <h3><a href='https://github.com/ericwindmill/nuggets'>Interview Nuggets</a></h3>
-              <p>A simple web application meant to help web developers with the pesky phone screen. Inspired by Interview Cake.
-          </div>
-          <div class='experience-item'>
-              <h3><a href='https://github.com/ericwindmill/firebase-react-redux-sass-boilerplate'>Web App Boilerplate</a></h3>
-              <p>My perferred stack for rapid prototyping. <strong>React/Redux/SCSS/Firebase/Webpack</strong></p>
-          </div>
-          </section>
-      </section>
-
-      <span class='label-seperator'><p>writing</p><div class='seperator'></div></span>
-      <section class='writing portfolio-section'>
-          <div>
-              {% for post in site.posts %}
-              {% unless post.hidden %}
-              {% if post.type == 'article' and post.front-page %}
-                {% if post.external_url %}
-                  <dt><a class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</a></dt> 
-                  <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time> {{ post.external_site }}</dd>
-                  {% else %}
-                  <dt><a class='post-link' href='{{ post.url}}'>{{ post.title }}</a></dt>
-                    <dd class='post-meta'><time>{{ post.date | date: "%d %b %y" }}</time></dd>
-                {% endif %}
-              {% endif %}
-              {% endunless %}
-            {% endfor %}
-          </div>
-      </section>
-      {% include footer.html %}
     </div>
-    <body>
-  </html>
+        <main class="MainGrid">
+            <section class="MainGrid--Hero">
+                <a href="#">Github</a>
+                <a href="#">Twitter</a>
+                <p>
+                    Spicy jalapeno bacon ipsum dolor amet drumstick pork belly exercitation, ut sint beef bresaola cupidatat. Culpa cupidatat kielbasa aliqua nostrud frankfurter prosciutto incididunt short loin. Short loin ea boudin pancetta minim ham hock strip steak cillum adipisicing prosciutto porchetta chicken. Capicola esse andouille jowl kielbasa, venison biltong proident meatball quis qui. Officia jowl picanha, pork kielbasa velit beef ribs meatball aliquip prosciutto consectetur kevin strip steak.
+                </p>
+            </section>
+
+            <section class="MainGrid--Experience">
+                <dl>
+                    <dt><h3>AppTree Software, Mobile and Web Developer</h3></dt>
+                    <dd>Building enterprise mobile software with Dart and Flutter.</dd>
+                    <dt><h3>Freelance, Web Developer and Designer</h3></dt>
+                    <dd>Sporadically taking on web development and front-end jobs since August 2016. I'm currently available for small projects.</dd>
+                    <dt><h3>Sommelier</h3></dt>
+                    <dd>Starting a very young age, I spent many years in hospitality. There, I learned the importance of hospitality and radical empathy. By the time I left the restaurant scene for good, I had gained a passion for wine, became a certaified Sommelier, and worked with some of the best damn people I ever will.</dd>
+                </dl>
+            </section>
+
+            <section class="MainGrid--DeveloperTools">
+                <h3>Developer Tools</h3>
+                <p>I like to create tools that help developers learn.</p>
+                <ul>
+                    <li>CSS Layout By Example</li>
+                    <li>On the Grid</li>
+                    <li>Flutter 101 (coming soon)</li>
+                </ul>
+            </section>
+            <section class="MainGrid--AboutBlurb">
+                <p>I'm a professionally trained developer, and I love web design. I'm happiest when I get to do both.</p>
+            </section>
+            <section class="MainGrid--PictureBlurb">
+
+            </section>
+            <section class="MainGrid--Contact">
+                <p>I'm currently available for small projects.</p>
+                <a href="mailto:eric@ericwindmill.com">eric@ericwindmill.com</a>
+                <a href="mailto:eric@ericwindmill.com">or, Say Hello</a>
+                <a>Twitter</a>
+                <a>Github</a>
+                <a>Email</a>
+                <a>Instagram</a>
+            </section>
+            <section class="MainGrid--ToBlog">
+                <a><h3>Articles / Stream →</h3></a>
+            </section>
+            <section class="MainGrid--BlurbThree">
+                <h3>Specialties</h3>
+                <ul>
+                    <li>User Experience Design and Development</li>
+                    <li>Mobile Development</li>
+                    <li>Consultation</li>
+                    <li>Progressive Web Applications</li>
+                    <li>Team Education</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

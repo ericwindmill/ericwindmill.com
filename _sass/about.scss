@@ -1,0 +1,47 @@
+.MainGrid {
+	display: grid;
+	grid-template-areas:
+					"Hero Hero"
+					"DevTools Experience"
+					"AboutBlurb Contact"
+					"ToBlog Specialties";
+	margin: auto;
+	width: 1000px;
+
+	section {
+		outline: 1px solid $brand;
+	}
+}
+
+.MainGrid--Hero {
+	grid-area: Hero;
+}
+
+.MainGrid--Experience {
+	grid-area: Experience;
+}
+
+.MainGrid--DeveloperTools {
+	grid-area: DevTools;
+}
+
+.MainGrid--AboutBlurb {
+	grid-area: AboutBlurb;
+}
+
+//
+//.MainGrid--PictureBlurb {
+//  grid-area: picture;
+//}
+
+.MainGrid--Contact {
+	grid-area: Contact;
+}
+
+.MainGrid--ToBlog {
+	grid-area: ToBlog;
+}
+
+.MainGrid--Specialties {
+	grid-area: Specialties;
+}
