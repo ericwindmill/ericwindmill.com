@@ -1,9 +1,5 @@
-
-
-
-
 $(() => {
-  //random background colors
+  // random background colors
   let projects = document.querySelectorAll('.stream-item.project')
   let tools = document.querySelectorAll('.stream-item.tool')
   let colors = ['#ED6D7D', '#4A90E2', '#F4EC87']
