@@ -1,0 +1,44 @@
+.Home {
+
+}
+
+.Stream--Grid {
+	// Grid / Layout
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, calc(50vw - 100px));
+	grid-auto-rows: calc(50vw - 100px);
+	grid-auto-flow: row dense;
+	justify-content: center;
+	align-items: stretch;
+
+	.Stream--GridItem {
+		list-style: none;
+		background: white;
+		&:nth-child(4n), &:nth-child(4n+1) {
+			background: $card-secondary-background;
+		}
+
+		// Layout
+		padding: 50px;
+
+		// Content
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+}
+
+
+.post-info {
+	h3 {
+		margin-bottom: 30px;
+	}
+}
+
+.font {
+	font-family: $font-sans;
+}
+
+// Stream(Home), About,

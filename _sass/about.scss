@@ -5,6 +5,7 @@
 .MainGrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: minmax(300px, 100%);
 	grid-template-areas:
 					"Hero Hero"
 					"Experience Experience"
@@ -12,10 +13,6 @@
 					"Specialties Contact"
 					"ToBlog DevTools";
 	margin: auto;
-	width: 1000px;
-
-	//TODO: Remove!
-	grid-gap: 5px;
 
 	section {
 		padding: $padding-unit * 3;
@@ -28,9 +25,7 @@
 .MainGrid--Hero {
 	grid-area: Hero;
 	height: 75vh;
-	background: $card-color-background;
-	color: $accent-light;
-
+	@extend .dark-background;
 
 	p {
 		width: 60%;
@@ -46,7 +41,7 @@
 
 .MainGrid--AboutBlurb {
 	grid-area: AboutBlurb;
-	background: $card-main-background;
+	background: $card-secondary-background;
 }
 
 .MainGrid--PictureBlurb {
@@ -61,15 +56,16 @@
 
 .MainGrid--Contact {
 	grid-area: Contact;
-	background: $card-main-background;
+	background: $card-secondary-background;
 }
 
 .MainGrid--ToBlog {
 	grid-area: ToBlog;
-	background: $card-main-background;
+	background: $card-color-background;
+	@extend .dark-background;
 }
 
 .MainGrid--DeveloperTools {
 	grid-area: DevTools;
-	background: $card-main-background;
+	background: $card-color-background;
 }

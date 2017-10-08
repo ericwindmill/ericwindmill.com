@@ -1,0 +1,17 @@
+.dark-background {
+	background: $card-color-background;
+	p {
+		color: $accent-light
+	}
+	a {
+		color: $tertiary;
+	}
+}
+
+.animate-bg {
+	transition: 1s all ease;
+}
+
+.black-bg {
+	background: black;
+}

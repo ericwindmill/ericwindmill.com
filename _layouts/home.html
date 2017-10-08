@@ -1,2 +1,42 @@
-<h1> HOME / STREAM </h1>
-<a href="{{site.baseurl}}/about"> ABOUT </a>
+---
+layout: default
+title: Stream
+permalink: /
+weight: 1
+description: My projects and articles.
+---
+
+<ul class="Stream--Grid">
+	{% for post in site.posts %}
+		<!--{% if post.external_url %}-->
+			<!--<li class="Stream&#45;&#45;GridItem">-->
+				<!--<h3 class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</h3>-->
+				<!--<p>{{post.description}}</p>-->
+				<!--<p class='post-meta'>-->
+					<!--<time>{{ post.date | date: "%d %b %y" }}</time>-->
+					<!--{{ post.external_site }}-->
+				<!--</p>-->
+			<!--</li>-->
+		<!--{% else %}-->
+			<li class="Stream--GridItem {{post.type}">
+				<time>{{ post.date | date: "%d %b %y" }}</time>
+				<div class="post-info">
+					<h3 href='{{ post.url}}'>{{ post.title }}</h3>
+					<p>{{post.description}}</p>
+				</div>
+				<div></div>
+			</li>
+		<!--{% endif %}-->
+	{% endfor %}
+</ul>
+
+<a href="{{site.baseurl}}/about"> TO ABOUT </a>
+<script>
+//  document.addEventListener('DOMContentLoaded', () => {
+//    let bg = document.querySelector('.animate-bg')
+//    setTimeout(() => {
+//      bg.classList.add('black-bg')
+//
+//    }, 1000)
+//  })
+</script>
