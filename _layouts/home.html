@@ -8,17 +8,8 @@ description: My projects and articles.
 
 <ul class="Stream--Grid">
 	{% for post in site.posts %}
-		<!--{% if post.external_url %}-->
-			<!--<li class="Stream&#45;&#45;GridItem">-->
-				<!--<h3 class='post-link' target='_blank' href='{{ post.external_url }}'>{{ post.title }}</h3>-->
-				<!--<p>{{post.description}}</p>-->
-				<!--<p class='post-meta'>-->
-					<!--<time>{{ post.date | date: "%d %b %y" }}</time>-->
-					<!--{{ post.external_site }}-->
-				<!--</p>-->
-			<!--</li>-->
-		<!--{% else %}-->
-			<li class="Stream--GridItem {{post.type}">
+		{% if post.external_url %}
+			<li class="Stream--GridItem {{ post.type }}">
 				<time>{{ post.date | date: "%d %b %y" }}</time>
 				<div class="post-info">
 					<h3 href='{{ post.url}}'>{{ post.title }}</h3>
@@ -26,17 +17,47 @@ description: My projects and articles.
 				</div>
 				<div></div>
 			</li>
-		<!--{% endif %}-->
+		{% else %}
+			<li class="Stream--GridItem {{ post.type }}">
+				<time>{{ post.date | date: "%d %b %y" }}</time>
+				<div class="post-info">
+					<h3 href='{{ post.url}}'>{{ post.title }}</h3>
+					<p>{{post.description}}</p>
+				</div>
+				<div></div>
+			</li>
+		{% endif %}
 	{% endfor %}
+	<li class="Stream--GridItem Nav">
+		<a href="{{site.baseurl}}/about"> TO ABOUT </a>
+	</li>
+	<li id='grid-nav-right' class="Stream--GridItem Nav">
+		<a href="{{site.baseurl}}/about"> TO ABOUT </a>
+	</li>
 </ul>
 
-<a href="{{site.baseurl}}/about"> TO ABOUT </a>
+<!--<a href="{{site.baseurl}}/about"> TO ABOUT </a>-->
 <script>
-//  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
 //    let bg = document.querySelector('.animate-bg')
 //    setTimeout(() => {
 //      bg.classList.add('black-bg')
 //
 //    }, 1000)
-//  })
+
+
+
+
+	  let streamItems = [...document.querySelectorAll('.Stream--GridItem')]
+
+	  // ensure there's always an even number of items
+	  if (streamItems.length % 2 !== 0) {
+      streamItems[streamItems.length - 3].style.display = 'none'
+	  }
+
+
+
+  })
+
+
 </script>

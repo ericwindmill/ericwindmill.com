@@ -3,7 +3,13 @@
 **************************/
 .page-content {
 	padding: 150px;
+
+	@media screen and (max-width: $on-palm) {
+		padding: 0;
+	}
 }
+
+
 
 
 ///**

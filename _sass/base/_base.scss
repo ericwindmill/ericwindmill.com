@@ -39,18 +39,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-sans;
   margin: $spacing-unit 0;
+	font-weight: 800;
 };
 
-h1 {
-  font-size: 4vw;
-}
-
-h2 {
-  font-size: 3vw;
-}
-
 h3 {
-  font-size: 2vw;
+	font-size: 2.2vmin;
 }
 
 a {color: $accent-dark;}

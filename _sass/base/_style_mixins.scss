@@ -1,10 +1,14 @@
 .dark-background {
 	background: $card-color-background;
+	color: $ink-on-dark;
 	p {
-		color: $accent-light
+		color: white;
 	}
 	a {
 		color: $tertiary;
+	}
+	h3 {
+		color: $accent-light;
 	}
 }
 
