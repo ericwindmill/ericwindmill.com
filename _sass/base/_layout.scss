@@ -10,11 +10,18 @@
 }
 
 
+/*************************
+* Site Header
+**************************/
+.site-header {
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 
-///**
-// * Site header
-// */
+
 //.site-header {
 //  min-height: $spacing-unit * 2;
 //  // margin-top: 5px;

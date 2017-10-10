@@ -2,7 +2,7 @@
 <header class="site-header" role="banner">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}"> {{ site.title | escape }}</a>
+    <!--<a class="site-title" href="{{ '/' | relative_url }}"> {{ site.title | escape }}</a>-->
     <nav class="site-nav">
       <a class="page-link {% if page.title == "Home" %}active {% endif %}" href="{{ site.baseurl }}/" aria-label="About Me.">Profile</a>
       <a class="page-link {% if page.title == "Stream" %}active {% endif %}" href="{{ site.baseurl }}/stream" aria-label="Posts, Pictures, and Projects.">Stream</a>

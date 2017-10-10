@@ -5,7 +5,7 @@
 	// Grid / Layout
 	display: grid;
 	grid-template-columns: repeat(2, calc(50vw - 100px));
-	//grid-auto-rows: calc(50vw - 100px);
+	grid-auto-rows: calc(50vw - 100px);
 	justify-content: center;
 	align-items: stretch;
 	@include Grid-On-Palm;

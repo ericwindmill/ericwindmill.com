@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-  {% include head.html %}
+  <!--{% include head.html %}-->
   <body>
+    <nav> {% include header.html %} </nav>
     <main class="page-content {{page.title}}" aria-label="Content">
         {{ content }}
     </main>
