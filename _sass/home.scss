@@ -1,6 +1,10 @@
 .Home {
 }
 
+.Hero {
+	//width:
+}
+
 .Stream--Grid {
 	// Grid / Layout
 	display: grid;
@@ -8,14 +12,14 @@
 	grid-auto-rows: calc(50vw - 100px);
 	justify-content: center;
 	align-items: stretch;
+
 	@include Grid-On-Palm;
 	@include Grid-Wide-Screen;
-
 
 	.Stream--GridItem {
 		list-style: none;
 		background: white;
-		height: calc(50vw - 100px);
+		padding: 50px;
 
 		&:hover {
 			background: darken(white, 2%);
@@ -51,8 +55,6 @@
 
 		}
 
-		// Layout
-		padding: 50px;
 
 		// Content
 		display: flex;
