@@ -1,64 +1,43 @@
-@charset "utf-8";
+// Sizing:
+$wide-screen: 1400px !default;
+$laptop: 1000px !default;
+$pad: 600px !default;
+$on-palm: 400px !default;
 
-// Font
-$sans:               'Avenir', Helvetica, Arial, sans-serif;
-$serif:              'Cardo', serif !default;
-$font-size:          16px !default;
-$font-weight:        400 !default;
-$small-font-size:    $font-size * 0.875 !default;
-$line-height:        1.7 !default;
-$post-line-height:   2;
-$post-padding:       10px;
-$ink:              #212B35 !default;
-/*Colors*/
-/*Brand Colors*/
-$brand:            #57a9ec; //rgb(87,169,236)
-$accent:           #e7ca49;
-/*Accents*/
-$cadet-blue:       #639da7; //rgb(99,157,167)
-$rosy-brown:       #a59588; //rgb(165,149,136)
-$medium-turquoise: #68d0d7; //rgb(104,208,215)
-$primary-blue: #4A90E2;
-$primary-yellow: #F4EC87;
-$primary-red: #ED6D7D;
-/*UI Colors*/
-/*Indigo (Interaction, Buttons)*/
-$indigo:           #5C6AC4;
-/*Teal  (Helpful Info, Secondary Color, Secondary Graph)*/
-$teal:             #47C1BF;
-/*Green (Success Tips)*/
-$green:            #50B83C;
-/*Blue (Text Links)*/
-$blue:             #007ACE;
-/*Red (Errors, Critical Tips)*/
-$red:              #ED6347;
-/*Purple (Graphing)*/
-$purple:           #9C6ADE;
-/*Greys (Shadows)*/
-$grey:             #DFE4E8;
+$spacing-unit: 30px;
+$padding-unit: 15px;
+$margin-unit: 15px;
+
+// Fonts
+$font: 'Inconsolata', 'Menlo', monospace;
+$font-sans: 'Helvetica Neue', sans-serif;
+$font-size: 16px;
+$line-height: 1.7;
+$header-line-height: 3;
+$font-weight: 400;
+$font-weight-bold: 700;
+
+$caption-size: 12px;
+
+// Colors:
+$brand: #4e00be;
+$accent-light: #77E4B5;
+$accent-dark: #00c069;
+$tertiary: #FFEB00;
+
+$site-background: #dce6f2;
+$card-main-background: white;
+$card-secondary-background: #d7e3f2;
+$card-color-background: $brand;
+
+$ink: $brand;
+$ink-on-dark: $site-background;
 
 
-/*Spacing*/
-$spacing-unit:     30px !default;
-
-// Width of the content area
-$content-width:    1000px !default;
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
-
-
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: $font-size * $ratio;
-}
 
 // Import partials.
-@import
-  "base/base",
-  "base/layout",
-  "base/syntax-highlighting"
+@import "base/base",
+"base/_media_mixins.scss",
+"base/_style_mixins.scss",
+"base/layout",
+"base/syntax-highlighting";

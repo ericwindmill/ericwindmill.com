@@ -1,0 +1,89 @@
+.Home {
+}
+
+.Hero {
+	//width:
+}
+
+.Stream--Grid {
+	// Grid / Layout
+	display: grid;
+	grid-template-columns: repeat(2, calc(50vw - 100px));
+	grid-auto-rows: calc(50vw - 100px);
+	justify-content: center;
+	align-items: stretch;
+
+	@include Grid-On-Palm;
+	@include Grid-Wide-Screen;
+
+	.Stream--GridItem {
+		list-style: none;
+		background: white;
+		padding: 50px;
+
+		&:hover {
+			background: darken(white, 2%);
+			cursor: e-resize;
+		}
+
+		&:nth-child(4n), &:nth-child(4n+1) {
+			background: $card-secondary-background;
+
+			&:hover {
+				background: darken($card-secondary-background, 2%);
+			}
+		}
+
+		// GridItem Types:
+		&.tool {
+			background: $brand;
+			@extend .dark-background;
+
+			&.tool:hover {
+				background: darken($brand, 2%);
+			}
+		}
+
+		&.Nav {
+			@extend .dark-background;
+			background: $brand;
+			height: calc(25vw - 100px);
+
+			&.Nav:hover {
+				background: darken($brand, 2%);
+			}
+
+		}
+
+
+		// Content
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+#grid-nav-right {
+	background: darken($brand, 5%);
+
+	&:hover {
+		background: darken($brand, 7%);
+	}
+}
+
+
+.post-info {
+	h3 {
+		margin-bottom: 30px;
+		width: 50%;
+	}
+	p {
+		width: 70%;
+	}
+}
+
+.font {
+	font-family: $font-sans;
+}
+
+// Stream(Home), About,

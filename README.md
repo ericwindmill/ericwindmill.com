@@ -14,4 +14,4 @@ Well, honestly, it's for me! I love trying new design and annimation tricks out 
 
 Right now, I'm going through a big color phase. So you'll see a lot of that. Every once in awhile, I'll come accross a website that's so beautiful it just makes me want to do whatever they're doing. Minimalistic and easy navigation are the constants.
 
-The current iteration of my site (v2.0 official, as of August 2017) is inspired by some sheets that brother had growing up. And I'm pretty sure most kids had in the 90s. They featured primary colors and geometric shapes. 
+The current iteration of my site (v2.0 official, as of August 2017) is inspired by some sheets that brother had growing up. (And I'm pretty sure most kids had in the 90s.) They featured primary colors and geometric shapes. 

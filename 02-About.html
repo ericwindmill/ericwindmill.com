@@ -1,10 +1,75 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+---
+layout: default
+title: About
+permalink: /about/
+weight: 1
+description: My life in list format.
+---
 
-{% include head.html %}
-<body>
- <!--
-    ---------- This is the Stream, it's the landing page
- -->
-</body>
-</html>
+<div class="MainGrid">
+ <section class="MainGrid--Hero MainGrid--grid-item">
+  <nav>
+   <a href="#">Github</a>
+   <a href="#">Twitter</a>
+  </nav>
+  <p>
+   Spicy jalapeno bacon ipsum dolor amet drumstick pork belly exercitation, ut sint beef bresaola cupidatat. Culpa cupidatat kielbasa aliqua nostrud frankfurter prosciutto incididunt short loin. Short loin ea boudin pancetta minim ham hock strip steak cillum adipisicing prosciutto porchetta chicken. Capicola esse andouille jowl kielbasa, venison biltong proident meatball quis qui. Officia jowl picanha, pork kielbasa velit beef ribs meatball aliquip prosciutto consectetur kevin strip steak.
+  </p>
+  <a href="#nav">Navigation</a>
+ </section>
+
+ <section class="MainGrid--Experience MainGrid--grid-item">
+  <dl>
+   <dt><h3>AppTree Software, Mobile and Web Developer</h3></dt>
+   <dd>Building enterprise mobile software with Dart and Flutter.</dd>
+   <dt><h3>Freelance, Web Developer and Designer</h3></dt>
+   <dd>Sporadically taking on web development and front-end jobs since August 2016. I'm currently available for small projects.</dd>
+   <dt><h3>Sommelier</h3></dt>
+   <dd>Starting a very young age, I spent many years in hospitality. There, I learned the importance of hospitality and radical empathy. By the time I left the restaurant scene for good, I had gained a passion for wine, became a certaified Sommelier, and worked with some of the best damn people I ever will.</dd>
+  </dl>
+ </section>
+
+ <section class="MainGrid--DeveloperTools MainGrid--grid-item">
+  <h3>Developer Tools</h3>
+  <p>I like to create tools that help developers learn.</p>
+  <ul>
+   <li>CSS Layout By Example</li>
+   <li>On the Grid</li>
+   <li>Flutter 101 (coming soon)</li>
+  </ul>
+ </section>
+
+ <section class="MainGrid--AboutBlurb MainGrid--grid-item">
+  <p>I'm a professionally trained developer, and I love web design. I'm happiest when I get to do both.</p>
+ </section>
+
+ <section class="MainGrid--PictureBlurb MainGrid--grid-item"></section>
+
+ <section class="MainGrid--Contact MainGrid--grid-item">
+  <p>I'm currently available for small projects.</p>
+  <a href="mailto:eric@ericwindmill.com">eric@ericwindmill.com</a>
+  <a href="mailto:eric@ericwindmill.com">or, Say Hello</a>
+  <a>Twitter</a>
+  <a>Github</a>
+  <a>Email</a>
+  <a>Instagram</a>
+ </section>
+
+ <section class="MainGrid--ToBlog MainGrid--grid-item">
+  <a href="{{site.baseurl}}/"><h3>Articles / Stream →</h3></a>
+ </section>
+
+ <section class="MainGrid--Specialties MainGrid--grid-item">
+  <h3>Specialties</h3>
+  <ul>
+   <li>User Experience Design and Development</li>
+   <li>Mobile Development</li>
+   <li>Consultation</li>
+   <li>Progressive Web Applications</li>
+   <li>Team Education</li>
+  </ul>
+ </section>
+</div>
+
+
+<div id="nav"></div>

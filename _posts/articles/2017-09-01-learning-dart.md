@@ -6,6 +6,7 @@ categories: language dart
 type: article
 front-page: true
 permalink: blog/dart 
+description: Dart is an optionally-typed, opinionated OOP Language built by Google. It can be used to develop the web, mobile applications, and on the server side. In other words, it's in competition with JavaScript.
 ---
 <!-- 
 * an underscore makes a variable private
@@ -41,10 +42,10 @@ permalink: blog/dart
 <div id='intro'></div>
 
 ## Why I'm Learning Dart
-I've recently accepted a position with a company that has an interesting stack. They're basically all in on Google (Go, Dart, Angular, Polymer and even Flutter). I'm a huge victim of shiny object syndrom, so I was quick to accept a job that would force me to learn all new languages and technologies.
+I've recently accepted a position with a company that has an interesting stack. They're basically all in on Google (Go, Dart, Angular, Polymer and even Flutter). I'm a huge victim of shiny object syndrome, so I was quick to accept a job that would force me to learn all new languages and technologies.
 
 ## Why You Should Consider Learning Dart
-I don't know that I'm sold on wether anyone should learn Dart. JavaScript is such a massive force, that its certainly not going anywhere. However, Dart was created as an alternative to JavaScript, and its nice to have options.
+I don't know that I'm sold on whether anyone should learn Dart. JavaScript is such a massive force, that its certainly not going anywhere. However, Dart was created as an alternative to JavaScript, and its nice to have options.
 
 
 # What is Dart? (A Technical Overview)
@@ -133,7 +134,7 @@ This is valid. But if you change the code to give `x` a type, it wouldn't work:
 ```dart
 void main() {
   int x = 5;
-  x = 'Dart'
+  x = 'Dart';
 }
 ```
 This is <strong> invalid </strong>. In Dart, this will throw a warning, but not an error. It the program will still run. In fact, when dart runs, all variables are dynamic. The types are for people. They make the code cleaner, but they don't effect the program. That's pretty neat, actually.
@@ -413,7 +414,7 @@ Maps seem to be more or less the same, too.
 var fruit = {
   'banana': 'yellow',
   'apple': 'red'
-}
+};
 ```
 
 You can use `for...in` loops to loop over Map in arbitrary order. More on loops soon.

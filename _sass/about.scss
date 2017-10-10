@@ -1,0 +1,71 @@
+/*************************
+* GRID SETUP
+**************************/
+
+.MainGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: minmax(300px, 100%);
+	grid-template-areas:
+					"Hero Hero"
+					"Experience Experience"
+					"AboutBlurb Picture "
+					"Specialties Contact"
+					"ToBlog DevTools";
+	margin: auto;
+
+	section {
+		padding: $padding-unit * 3;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+	}
+}
+
+.MainGrid--Hero {
+	grid-area: Hero;
+	height: 75vh;
+	@extend .dark-background;
+
+	p {
+		width: 60%;
+		font-size: 1.2rem;
+	}
+
+}
+
+.MainGrid--Experience {
+	grid-area: Experience;
+	background: $card-main-background;
+}
+
+.MainGrid--AboutBlurb {
+	grid-area: AboutBlurb;
+	background: $card-secondary-background;
+}
+
+.MainGrid--PictureBlurb {
+  grid-area: Picture;
+	background: $card-main-background;
+}
+
+.MainGrid--Specialties {
+	grid-area: Specialties;
+	background: $card-main-background;
+}
+
+.MainGrid--Contact {
+	grid-area: Contact;
+	background: $card-secondary-background;
+}
+
+.MainGrid--ToBlog {
+	grid-area: ToBlog;
+	background: $card-color-background;
+	@extend .dark-background;
+}
+
+.MainGrid--DeveloperTools {
+	grid-area: DevTools;
+	background: $card-color-background;
+}
