@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1d470b1f-3bdd-45e7-be2a-bce7363712ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/home.html" afterPath="$PROJECT_DIR$/_layouts/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/base/_base.scss" afterPath="$PROJECT_DIR$/_sass/base/_base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/base/_layout.scss" afterPath="$PROJECT_DIR$/_sass/base/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/base/_style_mixins.scss" afterPath="$PROJECT_DIR$/_sass/base/_style_mixins.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/home.scss" afterPath="$PROJECT_DIR$/_sass/home.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/variables.scss" afterPath="$PROJECT_DIR$/_sass/variables.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,14 +21,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.33333334">
+    <splitter split-orientation="horizontal" split-proportion="0.40389973">
       <split-first>
         <leaf>
-          <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/_sass/base/_layout.scss">
+          <file leaf-file-name="_base.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_sass/base/_base.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+                <state relative-caret-position="389">
+                  <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -36,14 +37,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.5630531">
+        <splitter split-orientation="horizontal" split-proportion="0.9">
           <split-first>
             <leaf>
               <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/_sass/home.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="150">
-                      <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="50" />
+                    <state relative-caret-position="850">
+                      <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
                       <folding />
                     </state>
                   </provider>
@@ -56,8 +57,8 @@
               <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/_layouts/default.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="75">
-                      <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+                    <state relative-caret-position="165">
+                      <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -85,6 +86,8 @@
       <find>%v</find>
       <find>class</find>
       <find>color</find>
+      <find>$accent</find>
+      <find>a</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -126,14 +129,14 @@
         <option value="$PROJECT_DIR$/_layouts/posts.html" />
         <option value="$PROJECT_DIR$/_sass/base/_media_mixins.scss" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
-        <option value="$PROJECT_DIR$/_sass/variables.scss" />
-        <option value="$PROJECT_DIR$/_sass/base/_style_mixins.scss" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/_sass/base/_base.scss" />
+        <option value="$PROJECT_DIR$/_sass/variables.scss" />
+        <option value="$PROJECT_DIR$/_sass/base/_style_mixins.scss" />
         <option value="$PROJECT_DIR$/_layouts/home.html" />
         <option value="$PROJECT_DIR$/_sass/home.scss" />
         <option value="$PROJECT_DIR$/_sass/base/_layout.scss" />
+        <option value="$PROJECT_DIR$/_sass/base/_base.scss" />
       </list>
     </option>
   </component>
@@ -151,9 +154,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="32" />
+    <option name="x" value="227" />
     <option name="y" value="22" />
-    <option name="width" value="1920" />
+    <option name="width" value="1615" />
     <option name="height" value="1174" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -174,52 +177,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="_drafts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="_drafts" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
@@ -232,17 +196,11 @@
               <item name="_sass" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ericwindmill.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ericwindmill.com" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +258,8 @@
       <workItem from="1507397130373" duration="2078000" />
       <workItem from="1507399250573" duration="10228000" />
       <workItem from="1507473266253" duration="18220000" />
-      <workItem from="1507602837914" duration="1590000" />
+      <workItem from="1507602837914" duration="1813000" />
+      <workItem from="1507768194738" duration="3280000" />
     </task>
     <task id="LOCAL-00001" summary="Save current site as version 3.0">
       <created>1507392934095</created>
@@ -337,21 +296,39 @@
       <option name="project" value="LOCAL" />
       <updated>1507480169134</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add more styling to main page">
+      <created>1507641821560</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1507641821561</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38598000" />
+    <option name="totallyTimeSpent" value="42101000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="22" width="1920" height="1174" extended-state="0" />
+    <frame x="227" y="22" width="1615" height="1174" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27239582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12198143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32940108" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5013624" sideWeight="0.502265" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24173912" sideWeight="0.497735" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2413793" sideWeight="0.497735" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17652173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -362,7 +339,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -379,7 +355,8 @@
     <MESSAGE value="Start Version 4.0 with About Page Grid" />
     <MESSAGE value="Layout Main Grid / Add Color to About Page" />
     <MESSAGE value="Build Basic Grid for Layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Build Basic Grid for Layout" />
+    <MESSAGE value="Add more styling to main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more styling to main page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -391,18 +368,19 @@
         <state relative-caret-position="150">
           <caret line="10" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="7" />
           <folding>
-            <marker date="1507604123000" expanded="true" signature="122:158" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="185:995" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="293:494" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="373:469" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="556:757" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="636:732" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="820:877" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="932:989" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="1060:1508" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="1116:1496" ph="{...}" />
-            <marker date="1507604123000" expanded="true" signature="1118:1250" ph="//..." />
-            <marker date="1507604123000" expanded="true" signature="1418:1489" ph="{...}" />
+            <marker date="1507776190000" expanded="true" signature="125:1028" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="161:201" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="321:522" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="401:497" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="584:785" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="664:760" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="848:904" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="959:1022" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="1093:1597" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="1149:1585" ph="{...}" />
+            <marker date="1507776190000" expanded="true" signature="1151:1283" ph="//..." />
+            <marker date="1507776190000" expanded="true" signature="1359:1480" ph="//..." />
+            <marker date="1507776190000" expanded="true" signature="1516:1581" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -413,18 +391,19 @@
         <state relative-caret-position="150">
           <caret line="10" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="7" />
           <folding>
-            <marker date="1507604123000" expanded="true" signature="122:158" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="185:995" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="293:494" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="373:469" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="556:757" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="636:732" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="820:877" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="932:989" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="1060:1508" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="1116:1496" ph="{...}" />
-            <marker date="1507604123000" expanded="true" signature="1118:1250" ph="//..." />
-            <marker date="1507604123000" expanded="true" signature="1418:1489" ph="{...}" />
+            <marker date="1507776190000" expanded="true" signature="125:1028" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="161:201" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="321:522" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="401:497" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="584:785" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="664:760" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="848:904" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="959:1022" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="1093:1597" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="1149:1585" ph="{...}" />
+            <marker date="1507776190000" expanded="true" signature="1151:1283" ph="//..." />
+            <marker date="1507776190000" expanded="true" signature="1359:1480" ph="//..." />
+            <marker date="1507776190000" expanded="true" signature="1516:1581" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -501,13 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -617,14 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -639,102 +603,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/base/_style_mixins.scss">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/base/_media_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state relative-caret-position="435">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding>
-            <marker date="1507482865000" expanded="true" signature="74:183" ph="{...}" />
-            <marker date="1507482865000" expanded="true" signature="119:180" ph="{...}" />
-            <marker date="1507482865000" expanded="true" signature="260:335" ph="{...}" />
+            <marker date="1502983552000" expanded="true" signature="791:804" ph="Eric Windmill" />
+            <marker date="1502983552000" expanded="true" signature="812:833" ph="eric@eric…ndmill.com" />
+            <marker date="1502983552000" expanded="true" signature="834:929" ph="description: ..." />
+            <marker date="1502983552000" expanded="true" signature="900:929" ph="2016 - Fu…c Windmill" />
+            <marker date="1502983552000" expanded="true" signature="939:941" ph="" />
+            <marker date="1502983552000" expanded="true" signature="986:988" ph="" />
+            <marker date="1502983552000" expanded="true" signature="1077:1089" ph="ericwindmill" />
+            <marker date="1502983552000" expanded="true" signature="1108:1120" ph="ericwindmill" />
+            <marker date="1502983552000" expanded="true" signature="1149:1157" ph="kramdown" />
+            <marker date="1502983552000" expanded="true" signature="1165:1171" ph="minima" />
+            <marker date="1502983552000" expanded="true" signature="1172:1193" ph="gems: &lt;1 item&gt;" />
+            <marker date="1502983552000" expanded="true" signature="1182:1193" ph="jekyll-feed" />
+            <marker date="1502983552000" expanded="true" signature="1194:1231" ph="exclude: &lt;2 items&gt;" />
+            <marker date="1502983552000" expanded="true" signature="1207:1214" ph="Gemfile" />
+            <marker date="1502983552000" expanded="true" signature="1219:1231" ph="Gemfile.lock" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/base/_base.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="345">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/base/_style_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
-            <marker date="1507603939000" expanded="true" signature="0:50" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="53:82" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="157:188" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="190:248" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="254:289" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="296:647" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="649:666" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="691:767" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="773:797" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="820:837" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="842:890" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="892:914" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="926:1155" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="1126:1153" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="1157:1183" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="1194:1326" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="1333:1356" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="1362:1480" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="1415:1478" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="1484:1502" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="2048:2067" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="2148:2164" ph="/*...*/" />
-            <marker date="1507603939000" expanded="true" signature="2177:2262" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="2238:2260" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="2283:2363" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="2293:2322" ph="{...}" />
-            <marker date="1507603939000" expanded="true" signature="2334:2361" ph="{...}" />
+            <marker date="1507770070000" expanded="true" signature="17:158" ph="{...}" />
+            <marker date="1507770070000" expanded="true" signature="81:101" ph="{...}" />
+            <marker date="1507770070000" expanded="true" signature="105:129" ph="{...}" />
+            <marker date="1507770070000" expanded="true" signature="134:156" ph="{...}" />
+            <marker date="1507770070000" expanded="true" signature="172:201" ph="{...}" />
+            <marker date="1507770070000" expanded="true" signature="213:236" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/base/_media_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <marker date="1507768178000" expanded="true" signature="74:178" ph="{...}" />
+            <marker date="1507768178000" expanded="true" signature="118:176" ph="{...}" />
+            <marker date="1507768178000" expanded="true" signature="206:327" ph="{...}" />
+            <marker date="1507768178000" expanded="true" signature="253:325" ph="{...}" />
+            <marker date="1507768178000" expanded="true" signature="362:434" ph="{...}" />
+            <marker date="1507768178000" expanded="true" signature="405:432" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="570">
+          <caret line="38" column="52" lean-forward="false" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
           <folding>
-            <marker date="1507604123000" expanded="true" signature="122:158" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="185:995" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="293:494" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="373:469" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="556:757" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="636:732" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="820:877" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="932:989" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="1060:1508" ph="..." />
-            <marker date="1507604123000" expanded="true" signature="1116:1496" ph="{...}" />
-            <marker date="1507604123000" expanded="true" signature="1118:1250" ph="//..." />
-            <marker date="1507604123000" expanded="true" signature="1418:1489" ph="{...}" />
+            <marker date="1507776190000" expanded="true" signature="125:1028" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="161:201" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="321:522" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="401:497" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="584:785" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="664:760" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="848:904" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="959:1022" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="1093:1597" ph="..." />
+            <marker date="1507776190000" expanded="true" signature="1149:1585" ph="{...}" />
+            <marker date="1507776190000" expanded="true" signature="1151:1283" ph="//..." />
+            <marker date="1507776190000" expanded="true" signature="1359:1480" ph="//..." />
+            <marker date="1507776190000" expanded="true" signature="1516:1581" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/base/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1507777194000" expanded="true" signature="0:73" ph="/*...*/" />
+            <marker date="1507777194000" expanded="true" signature="88:175" ph="{...}" />
+            <marker date="1507777194000" expanded="true" signature="155:173" ph="{...}" />
+            <marker date="1507777194000" expanded="true" signature="178:246" ph="/*...*/" />
+            <marker date="1507777194000" expanded="true" signature="260:343" ph="{...}" />
+            <marker date="1507777194000" expanded="true" signature="355:426" ph="{...}" />
+            <marker date="1507777194000" expanded="true" signature="360:386" ph="{...}" />
+            <marker date="1507777194000" expanded="true" signature="401:424" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="50" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="850">
+          <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/base/_layout.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="389">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
