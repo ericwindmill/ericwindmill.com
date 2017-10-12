@@ -8,8 +8,9 @@
 .Stream--Grid {
 	// Grid / Layout
 	display: grid;
-	grid-template-columns: repeat(2, calc(50vw - 100px));
-	grid-auto-rows: calc(50vw - 100px);
+	grid-template-columns: repeat(2, calc(50vw - 150px));
+	grid-template-rows: repeat(9, calc(50vw - 150px)) calc(25vw - 75px);
+	grid-auto-rows: calc(50vw - 150px);
 	justify-content: center;
 	align-items: stretch;
 
@@ -26,7 +27,7 @@
 			cursor: e-resize;
 		}
 
-		&:nth-child(4n), &:nth-child(4n+1) {
+		&:nth-child(4n), &:nth-child(4n-1) {
 			background: $card-secondary-background;
 
 			&:hover {
@@ -47,7 +48,6 @@
 		&.Nav {
 			@extend .dark-background;
 			background: $brand;
-			height: calc(25vw - 100px);
 
 			&.Nav:hover {
 				background: darken($brand, 2%);
@@ -61,6 +61,12 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
+}
+
+.Hero {
+	grid-column: span 2;
+	@include Single-Column-On-Mobile;
+	margin-bottom: 25px;
 }
 
 #grid-nav-right {

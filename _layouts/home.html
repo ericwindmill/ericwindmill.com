@@ -6,12 +6,12 @@ weight: 1
 description: My projects and articles.
 ---
 
-<section class="Hero">
-	<p>sdlkfjdskfljdsfj</p>
-</section>
-
 <ul class="Stream--Grid">
-	{% for post in site.posts %}
+	<li class='Stream--GridItem Hero'>
+		<p>eric windmill and stuff</p>
+	</li>
+	{% for post in site.posts limit:18 %}
+		
 		{% if post.external_url %}
 			<li class="Stream--GridItem {{ post.type }}">
 				<time>{{ post.date | date: "%d %b %y" }}</time>
@@ -49,18 +49,12 @@ description: My projects and articles.
 //
 //    }, 1000)
 
-
-
-
-	  let streamItems = [...document.querySelectorAll('.Stream--GridItem')]
-
-	  // ensure there's always an even number of items
-	  if (streamItems.length % 2 !== 0) {
-      streamItems[streamItems.length - 3].style.display = 'none'
-	  }
-
-
-
+	let streamItems = [...document.querySelectorAll('.Stream--GridItem')]
+	  // ensure there's always an odd number of items
+	  // Because of the first one that spans two columns, it needs to be odd
+	if (streamItems.length % 2 === 0) {
+		streamItems[streamItems.length - 3].style.display = 'none'
+	}
   })
 
 

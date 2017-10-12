@@ -2,7 +2,7 @@
 * DEFAULT TEMPLATE
 **************************/
 .page-content {
-	padding: 50px 100px;
+	padding: 100px 100px;
 
 	@media screen and (max-width: $on-palm) {
 		padding: 0;
@@ -18,9 +18,14 @@
 	top: 50px;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
 
+.site-nav {
 	a {
 		padding-right: 50px;
+	}
+	a:last-child {
+		padding-right: 0;
 	}
 }
 
