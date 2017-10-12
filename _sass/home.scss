@@ -9,7 +9,7 @@
 	// Grid / Layout
 	display: grid;
 	grid-template-columns: repeat(2, calc(50vw - 150px));
-	grid-template-rows: 75vh repeat(9, calc(50vw - 150px)) calc(25vw - 75px);
+	grid-template-rows: 75vh repeat(8, calc(50vw - 150px)) calc(25vw - 75px);
 	grid-auto-rows: calc(50vw - 150px);
 	justify-content: center;
 	align-items: stretch;
@@ -20,6 +20,7 @@
 	.Stream--GridItem {
 		list-style: none;
 		background: $card-main-background;
+		height: 100%;
 		padding: 50px;
 
 		&:hover {
@@ -47,21 +48,42 @@
 
 		&.Nav {
 			@extend .dark-background;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
 			background: $brand;
+			background-image: linear-gradient(120deg, $brand 0%, lighten($brand, 0%) 100%);
+			background-repeat: no-repeat;
+			background-size: 0% 100%;
+			transition: all 0.25s ease-in-out;
 
 			&.Nav:hover {
-				background: darken($brand, 2%);
+				background-image: linear-gradient(120deg, $brand 0%, lighten($brand, 2%) 100%);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+
+			> p {
+				color: $tertiary;
+				display: inline;
+				border-bottom: none;
 			}
 
 		}
-
 
 		// Content
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
+
+	.GridAnchor {
+		padding: 0;
+		margin: 0;
+	}
 }
+
+
 
 .Hero {
 	grid-column: span 2;
@@ -88,8 +110,32 @@
 	}
 }
 
-.font {
-	font-family: $font-sans;
+
+// Side nav Fade in-out
+.side-nav {
+	transition: all .5s ease-in;
+	opacity: 0; 
+	position: fixed;
 }
 
-// Stream(Home), About,
+.side-nav-left {
+	transform: rotate(-90deg);
+	top: 50%;
+	left: -5px; 
+}
+
+.side-nav-right {
+	transform: rotate(90deg);
+	top: 50%;
+	right: -5px; 
+}
+
+.side-nav.fade-in-right {
+	right: 50px; 
+	opacity: 1;
+}
+
+.side-nav.fade-in-left {
+	left: 50px;
+	opacity: 1;
+}

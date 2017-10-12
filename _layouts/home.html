@@ -6,6 +6,9 @@ weight: 1
 description: My projects and articles.
 ---
 
+<a class='side-nav side-nav-left'>Profile</a> 
+<a class='side-nav side-nav-right'>Courses</a> 
+
 <ul class="Stream--Grid">
 	<li class='Stream--GridItem Hero'>
 		<p>eric windmill and stuff</p>
@@ -32,30 +35,16 @@ description: My projects and articles.
 			</li>
 		{% endif %}
 	{% endfor %}
-	<li class="Stream--GridItem Nav">
-		<a href="{{site.baseurl}}/about"> Profile </a>
-	</li>
+	
+	<a class='GridAnchor' href="{{site.baseurl}}/about">
+		<li class="Stream--GridItem Nav">
+			<p> Profile </p>
+		</li>
+	</a>
+
 	<li id='grid-nav-right' class="Stream--GridItem Nav">
 		<a href="{{site.baseurl}}/about"> All Blog Posts </a>
 	</li>
 </ul>
 
-<!--<a href="{{site.baseurl}}/about"> TO ABOUT </a>-->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-//    let bg = document.querySelector('.animate-bg')
-//    setTimeout(() => {
-//      bg.classList.add('black-bg')
-//
-//    }, 1000)
 
-	let streamItems = [...document.querySelectorAll('.Stream--GridItem')]
-	  // ensure there's always an odd number of items
-	  // Because of the first one that spans two columns, it needs to be odd
-	if (streamItems.length % 2 === 0) {
-		streamItems[streamItems.length - 3].style.display = 'none'
-	}
-  })
-
-
-</script>
