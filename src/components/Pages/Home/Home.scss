@@ -1,0 +1,24 @@
+@import '../../../styles/variables.scss';
+
+.Home--Hero {
+	margin: 100px 0;
+	padding: $spacing-unit $spacing-unit $spacing-unit 10vw;
+	background: $card-background-black;
+	width: 60vw;
+	min-width: 600px;
+	color: $ink-on-black;
+	box-shadow: 5px 5px 5px rgba(214, 214, 214, 1);
+	h1 {
+		margin: 0;
+		max-width: 500px;
+	}
+}
+
+.Home--Content {
+	width: $content-width-laptop;
+	margin: auto;
+}
+
+.Home--About {
+	width: $paragraph-width-laptop;
+}

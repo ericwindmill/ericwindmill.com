@@ -1,0 +1,7 @@
+@import '../styles/variables.scss';
+@import '../styles/reset.scss';
+@import '../styles/base.scss';
+
+body {
+	background-image: $background-gradient;
+}
