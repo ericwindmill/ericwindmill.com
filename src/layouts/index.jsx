@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
-import "./index.scss";
+import "../main.scss";
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {

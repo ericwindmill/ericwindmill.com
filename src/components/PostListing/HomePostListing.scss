@@ -1,0 +1,22 @@
+.HomePostListing {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+	p {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.HomePostListing--Post {
+		display: flex;
+		.HomePostListing--DateMeta {
+
+			display: flex;
+			flex-direction: column;
+			p {
+				font-family: $mono;
+				font-size: .7em;
+			}
+		}
+	}
+}

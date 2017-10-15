@@ -7,7 +7,7 @@ $mono: 'Inconsolota', monospace;
 $line-height: 1.67;
 $font-size: 1.5rem;
 $header-weight: 700;
-$text-margin-bottom: 2em;
+$text-margin-bottom: 2rem;
 
 /*********
 ** COLORS **
@@ -22,6 +22,21 @@ $card-background-black: #222121;
 
 $purple: #734E9C;
 $blue: #179AAE;
+
+$divider: rgba(0, 0, 0, .2);
+
+
+/*********
+** Box Styles **
+**********/
+$material-shadow: 0 10px 20px rgba(0, 0, 0, .16);
+@mixin material-shadow {
+	box-shadow: $material-shadow;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	&:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	}
+}
 
 /*********
 ** Layout **

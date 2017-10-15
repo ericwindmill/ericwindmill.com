@@ -1,9 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
-import PostListing from "../components/PostListing/PostListing";
-import HomePage from './home';
+import Home from '../components/Pages/Home/Home'
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import MainNavigation from '../components/Nav/Nav'
 
 class Index extends React.Component {
   render() {
@@ -12,19 +12,20 @@ class Index extends React.Component {
       <div className="index-container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
-        {/*<PostListing postEdges={postEdges} />*/}
-        <HomePage />
+        <MainNavigation />
+        <Home postEdges={postEdges} />
       </div>
     );
   }
 }
+
 export default Index;
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 2000
+      limit: 10
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -39,6 +40,8 @@ export const pageQuery = graphql`
             tags
             cover
             date
+            year
+            month
           }
         }
       }

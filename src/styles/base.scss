@@ -23,8 +23,8 @@ a {
 	color: $link-ink;
 	display: inline-block;
 	position: relative;
-	padding-bottom: 3px;
-	text-align: center;
+	padding-bottom: 2px;
+	text-decoration: none;
 
 	&:before {
 		content: '';
@@ -45,12 +45,12 @@ a {
 		height: 1px;
 		width: 100%;
 		background: $link-ink;
-		transition: width .5s ease;
+		transition: width .2s ease;
 	}
 	&:hover:before {
 		width: 0;
 		background: $blue;
-		transition: width .5s ease;
+		transition: width .2s ease;
 	}
 	&:hover:after {
 		width: 0;
@@ -75,18 +75,16 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 }
-.sliding-u-l-r-l-inverse {
-	display: inline-block;
-	position: relative;
-	padding-bottom: 3px;
-}
-.sliding-u-l-r-l-inverse:before {
-	content: '';
+
+
+/*********
+** Divider **
+ ********/
+
+.Divider {
+	margin: $spacing-unit 0;
 	display: block;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 3px;
-	width: 100%;
-	transition: width 0s ease;
+	clear: both;
+	border-bottom: 1px solid $divider;
 }
+

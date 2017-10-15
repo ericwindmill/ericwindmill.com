@@ -1,0 +1,12 @@
+@import './styles/variables.scss';
+@import './styles/reset.scss';
+@import './styles/base.scss';
+
+// layouts
+@import './layouts/index.scss';
+
+// components
+@import './components/Nav/Nav.scss';
+@import  './components/Pages/Home/Home.scss';
+@import  './components/Pages/About/About.scss';
+@import  './components/PostListing/HomePostListing.scss';
