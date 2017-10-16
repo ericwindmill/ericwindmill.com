@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Implement rough Tab Nav functionality.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tabs/HomeTabs.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" afterPath="$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
+    <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/Nav.scss" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" afterPath="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.scss" afterPath="$PROJECT_DIR$/src/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/index.jsx" afterPath="$PROJECT_DIR$/src/pages/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/variables.scss" afterPath="$PROJECT_DIR$/src/styles/variables.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -292,7 +284,7 @@
       <updated>1507996911239</updated>
       <workItem from="1507996913082" duration="1447000" />
       <workItem from="1507998644587" duration="803000" />
-      <workItem from="1507999488375" duration="33696000" />
+      <workItem from="1507999488375" duration="33929000" />
     </task>
     <task id="LOCAL-00001" summary="Add Blogposts to main page">
       <created>1508097569303</created>
@@ -301,11 +293,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508097569303</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implement rough Tab Nav functionality.">
+      <created>1508162663716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1508162663716</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35946000" />
+    <option name="totallyTimeSpent" value="36179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1200" y="22" width="1200" height="1054" extended-state="0" />
