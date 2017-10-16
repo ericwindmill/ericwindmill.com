@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import Home from '../components/Pages/Home/Home'
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
-import MainNavigation from '../components/Nav/Nav'
+import MainNavigation from '../components/Nav/HomeNav'
 
 class Index extends React.Component {
   render() {

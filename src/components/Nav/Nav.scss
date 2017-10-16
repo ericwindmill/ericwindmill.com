@@ -2,12 +2,13 @@
 .MainNavigation {
 	position: fixed;
 	right: 0;
-	top: 15%;
+	top: 0px;
 	display: flex;
 	flex-flow: column;
 	align-content: center;
-	justify-content: space-between;
-	height: 70vh;
+	justify-content: space-around;
+	height: 100vh;
+	border-left: 1px solid $divider;
 
 	a {
 		transform: rotate(90deg);

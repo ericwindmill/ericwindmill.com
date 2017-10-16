@@ -25,9 +25,15 @@ class Home extends Component {
           </section>
           <div className='Divider' />
           <section>
-
+            <h2>Projects</h2>
+            {/*ProjectListing projectEdges={}  />*/}
           </section>
           <div className="Divider" />
+          <section>
+            <h2>
+              Get In Touch + Some buttons to elsewhere
+            </h2>
+          </section>
         </main>
       </div>
     );
