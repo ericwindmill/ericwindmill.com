@@ -1,0 +1,35 @@
+.ContactForm {
+	display: flex;
+	flex-direction: column;
+
+	input {
+			background: none;
+			border: none;
+			border-bottom: 2px solid black;
+			margin-bottom: 20px;
+			font-size: $font-size;
+			width: 40%;
+
+		}
+
+	textarea {
+		background: none;
+		border: none;
+		border-bottom: 2px solid black;
+		margin-bottom: 20px;
+		font-size: $font-size;
+		height: 50px;
+		overflow: hidden;
+		resize: none;
+		width: 60%;
+	}
+
+	button {
+		width: 150px;
+		text-align: center;
+		border: 2px solid black;
+		background: none;
+		border-radius: 0;
+		font-size: $font-size;
+	}
+}

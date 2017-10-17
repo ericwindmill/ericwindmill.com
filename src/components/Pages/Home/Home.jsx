@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./Home.scss"
 import PostListing from '../../PostListing/HomePostListing'
+import ContactForm from '../../Forms/ContactForm'
 
 class Home extends Component {
   render() {
@@ -31,9 +32,22 @@ class Home extends Component {
           <div className="Divider" />
           <section>
             <h2>
-              Get In Touch + Some buttons to elsewhere
+              Currently
             </h2>
+            <p>AppTree Software - Portland, OR</p>
+            <p>
+              I'm currently working for Enterprise SaaS company AppTree. I work on both the web client and the mobile app. This job is a blast because we're working in Dart with Flutter and Polymer. I'm the first employee hired solely for the Flutter team, where we're porting the app from native iOS and Android.  I spend most of my time implementing the front-end and UI.
+            </p>
           </section>
+          <div className="Divider" />
+          <section>
+            <h2>
+              Get In Touch
+            </h2>
+            <ContactForm />
+          </section>
+          <div className="Divider" />
+          <div className="Divider" />
         </main>
       </div>
     );
