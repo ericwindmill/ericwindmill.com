@@ -4,33 +4,13 @@ class ContactForm extends Component {
   constructor(props) {
     super(props)
 
-
+    this.resizeTextarea = this.resizeTextarea.bind(this)
 }
 
-  resizeTextarea () {
-    const observe = function(element, event, cb) {
-      element.addEventListener(event, cb)
-    }
-
-    function init() {
-     var text = document.querySelector('textarea')
-     function resize() {
-       text.style.height = 'auto'
-       text.style.height = `${text.scrollHeight}px`
-     }
-     function delayedResize () {
-       window.setTimeout(resize, 0)
-     }
-     observe(text, 'change', resize)
-     observe(text, 'cut', delayedResize)
-     observe(text, 'paste', delayedResize)
-     observe(text, 'drop', delayedResize)
-     observe(text, 'keydown', delayedResize)
-
-      text.focus()
-      text.select()
-      text.resize()
-    }
+  resizeTextarea (e) {
+    const textArea = e.target
+    textArea.style.height = 'auto';
+    textArea.style.height = `${textArea.scrollHeight}px`
   }
 
   render() {
