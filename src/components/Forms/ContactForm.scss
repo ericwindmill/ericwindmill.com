@@ -10,6 +10,11 @@
 			font-size: $font-size;
 			width: 40%;
 
+			&:focus{
+				outline: none;
+				background: lighten($blue, 50%);
+			}
+
 		}
 
 	textarea {
@@ -22,6 +27,11 @@
 		overflow: hidden;
 		resize: none;
 		width: 60%;
+
+		&:focus {
+			outline: none;
+			background: lighten($blue, 50%);
+		}
 	}
 
 	button {
@@ -31,5 +41,9 @@
 		background: none;
 		border-radius: 0;
 		font-size: $font-size;
+
+		&:hover {
+			background: lighten($blue, 50%);
+		}
 	}
 }
