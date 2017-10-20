@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./Home.scss"
 import PostListing from '../../PostListing/HomePostListing'
+import ProjectListing from '../../PostListing/HomeProjectListing'
 import ContactForm from '../../Forms/ContactForm'
 
 class Home extends Component {
@@ -26,8 +27,7 @@ class Home extends Component {
           </section>
           <div className='Divider' />
           <section>
-            <h2>Projects</h2>
-            {/*ProjectListing projectEdges={}  />*/}
+            <ProjectListing postEdges={this.props.postEdges} />
           </section>
           <div className="Divider" />
           <section>

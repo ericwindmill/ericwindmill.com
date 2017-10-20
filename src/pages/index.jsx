@@ -24,27 +24,28 @@ export default Index;
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      limit: 10
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-            year
-            month
+        allMarkdownRemark(
+          limit: 10
+          sort: { fields: [frontmatter___date], order: DESC }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              excerpt
+              timeToRead
+              frontmatter {
+                title
+                tags
+                cover
+                date
+                year
+                month
+                type
+              }
+            }
           }
         }
-      }
-    }
   }
 `;
