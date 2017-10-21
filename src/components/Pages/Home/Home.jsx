@@ -3,17 +3,17 @@ import "./Home.scss"
 import PostListing from '../../PostListing/HomePostListing'
 import ProjectListing from '../../PostListing/HomeProjectListing'
 import ContactForm from '../../Forms/ContactForm'
-// import UserLinks from '../../UserLinks/UserLinks'
+import UserLinks from '../../UserLinks/UserLinks'
+import config from '../../../../data/SiteConfig'
 
 class Home extends Component {
   render() {
-    // const { config } = this.props
 
     return (
       <div className="Home">
         <section className='Home--Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
-          {/*<UserLinks config={config} labeled />*/}
+          <div className='Hero--SocialLinks'><UserLinks config={config} /></div>
         </section>
         <main className='Home--Content'>
           <section className='Home--About'>

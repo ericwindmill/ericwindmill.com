@@ -5,6 +5,7 @@ import "./SocialLinks.css";
 
 class SocialLinks extends Component {
   render() {
+    console.log(config);
     const { postNode, postPath, mobile } = this.props;
     const post = postNode.frontmatter;
     const url = config.siteUrl + config.pathPrefix + postPath;

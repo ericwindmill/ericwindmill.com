@@ -23,27 +23,27 @@ module.exports = {
     {
       label: "GitHub",
       url: "https://github.com/Vagr9K/gatsby-advanced-starter",
-      iconClassName: "fa fa-github"
+      iconClassName: "fa-github-alt"
     },
     {
       label: "Twitter",
       url: "https://twitter.com/Vagr9K",
-      iconClassName: "fa fa-twitter"
+      iconClassName: "fa-twitter"
     },
     {
       label: "Email",
       url: "mailto:vagr9k@gmail.com",
-      iconClassName: "fa fa-envelope"
+      iconClassName: "fa-envelope"
     },
     {
       label: "Instagram",
       url: "https://www.instagram.com/ericwindmill/",
-      iconClassName: "fa fa-instagram"
+      iconClassName: "fa-instagram"
     },
     {
       label: "Messenger",
       url: "https://www.messenger.com/t/eric.windmill",
-      iconClassName: "fa fa-comments"
+      iconClassName: "fa-comments"
     }
   ],
   copyright: "Copyright © 2017. Eric Windmill", // Copyright string for the footer of the website and RSS feed.

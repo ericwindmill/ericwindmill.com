@@ -13,7 +13,12 @@
 		max-width: 500px;
 		line-height: 1;
 	}
+
+	.Hero--SocialLinks {
+		margin-top: $spacing-unit;
+	}
 }
+
 
 .Home--Content {
 	width: $content-width-laptop;
