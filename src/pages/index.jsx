@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import PostListing from "../components/PostListing/PostListing";
 import Home from '../components/Pages/Home/Home'
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -25,7 +26,7 @@ export default Index;
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 10
+      limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
