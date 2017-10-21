@@ -23,8 +23,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`crimson text:400, 400i, 700, 700i`,
-                `inconsolata:400, 700`,
-          ],
+          `inconsolata:400, 700`,
+        ],
       }
     },
     {
@@ -32,6 +32,13 @@ module.exports = {
       options: {
         name: "posts",
         path: `${__dirname}/content/${config.blogPostDir}`
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "projects",
+        path: `${__dirname}/content/${config.projectsDir}`
       }
     },
     {
@@ -132,7 +139,7 @@ module.exports = {
                 author: rssMetadata.author,
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }]
+                custom_elements: [{"content:encoded": edge.node.html}]
               }));
             },
             query: `
@@ -153,6 +160,7 @@ module.exports = {
                       date
                       category
                       tags
+                      type
                     }
                   }
                 }

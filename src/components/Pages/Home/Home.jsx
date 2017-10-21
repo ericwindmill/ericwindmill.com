@@ -1,13 +1,19 @@
 import React, { Component } from "react"
 import "./Home.scss"
 import PostListing from '../../PostListing/HomePostListing'
+import ProjectListing from '../../PostListing/HomeProjectListing'
+import ContactForm from '../../Forms/ContactForm'
+// import UserLinks from '../../UserLinks/UserLinks'
 
 class Home extends Component {
   render() {
+    // const { config } = this.props
+
     return (
       <div className="Home">
         <section className='Home--Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
+          {/*<UserLinks config={config} labeled />*/}
         </section>
         <main className='Home--Content'>
           <section className='Home--About'>
@@ -25,8 +31,26 @@ class Home extends Component {
           </section>
           <div className='Divider' />
           <section>
-
+            <ProjectListing postEdges={this.props.postEdges} />
           </section>
+          <div className="Divider" />
+          <section>
+            <h2>
+              Currently
+            </h2>
+            <p>AppTree Software - Portland, OR</p>
+            <p>
+              I'm currently working for Enterprise SaaS company AppTree. I work on both the web client and the mobile app. This job is a blast because we're working in Dart with Flutter and Polymer. I'm the first employee hired solely for the Flutter team, where we're porting the app from native iOS and Android.  I spend most of my time implementing the front-end and UI.
+            </p>
+          </section>
+          <div className="Divider" />
+          <section>
+            <h2>
+              Get In Touch
+            </h2>
+            <ContactForm />
+          </section>
+          <div className="Divider" />
           <div className="Divider" />
         </main>
       </div>

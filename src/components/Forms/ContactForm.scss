@@ -1,0 +1,49 @@
+.ContactForm {
+	display: flex;
+	flex-direction: column;
+
+	input {
+			background: none;
+			border: none;
+			border-bottom: 2px solid black;
+			margin-bottom: 20px;
+			font-size: $font-size;
+			width: 40%;
+
+			&:focus{
+				outline: none;
+				background: lighten($blue, 50%);
+			}
+
+		}
+
+	textarea {
+		background: none;
+		border: none;
+		border-bottom: 2px solid black;
+		margin-bottom: 20px;
+		font-size: $font-size;
+		height: 50px;
+		overflow: hidden;
+		resize: none;
+		width: 60%;
+
+		&:focus {
+			outline: none;
+			background: lighten($blue, 50%);
+		}
+	}
+
+	button {
+		width: 150px;
+		text-align: center;
+		border: 2px solid black;
+		background: none;
+		border-radius: 0;
+		font-size: $font-size;
+
+		&:hover {
+			background: lighten($blue, 50%);
+		}
+	}
+}
