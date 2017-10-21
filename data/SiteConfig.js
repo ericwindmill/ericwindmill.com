@@ -34,9 +34,19 @@ module.exports = {
       label: "Email",
       url: "mailto:vagr9k@gmail.com",
       iconClassName: "fa fa-envelope"
+    },
+    {
+      label: "Instagram",
+      url: "https://www.instagram.com/ericwindmill/",
+      iconClassName: "fa fa-instagram"
+    },
+    {
+      label: "Messenger",
+      url: "https://www.messenger.com/t/eric.windmill",
+      iconClassName: "fa fa-comments"
     }
   ],
-  copyright: "Copyright © 2017. Advanced User", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2017. Eric Windmill", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
