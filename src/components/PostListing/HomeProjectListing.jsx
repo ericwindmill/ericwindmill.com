@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-class PostListing extends React.Component {
+class ProjectListing extends React.Component {
   componentDidMount () {
     const posts = document.querySelectorAll('.HomePostListing--Post')
     posts.forEach(post => {
@@ -19,7 +19,7 @@ class PostListing extends React.Component {
   getPostList () {
     const postList = []
     this.props.postEdges.forEach(postEdge => {
-      if (postEdge.node.frontmatter.type !== 'project') {
+      if (postEdge.node.frontmatter.type === 'project') {
         postList.push({
           path: postEdge.node.fields.slug,
           tags: postEdge.node.frontmatter.tags,
@@ -40,7 +40,7 @@ class PostListing extends React.Component {
     const postList = this.getPostList()
     return (
       <div className="HomePostListing">
-        <h1>Articles</h1>
+        <h1>Projects</h1>
         {/* Your post list here. */
           postList.map(post =>
             (<div
@@ -61,4 +61,4 @@ class PostListing extends React.Component {
   }
 }
 
-export default PostListing
+export default ProjectListing

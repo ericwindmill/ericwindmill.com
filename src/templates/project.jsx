@@ -9,7 +9,7 @@ import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.css";
 
-export default class PostTemplate extends React.Component {
+export default class ProjectTemplate extends React.Component {
   render() {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
@@ -54,9 +54,9 @@ export default class PostTemplate extends React.Component {
 // first line just establishes the function that queries. No magic.
 // tje second line is creating a function of type query, and naming it BlogPostBySlug, and it takes a named argument called $slug.
 // third line is searching for a specific post which matches the slug.
-  // then we tell graphQL what information we actually want.
+// then we tell graphQL what information we actually want.
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query ProjectBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) { 
       html
       timeToRead

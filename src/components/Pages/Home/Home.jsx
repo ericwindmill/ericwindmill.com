@@ -1,14 +1,19 @@
 import React, { Component } from "react"
 import "./Home.scss"
 import PostListing from '../../PostListing/HomePostListing'
+import ProjectListing from '../../PostListing/HomeProjectListing'
 import ContactForm from '../../Forms/ContactForm'
+// import UserLinks from '../../UserLinks/UserLinks'
 
 class Home extends Component {
   render() {
+    // const { config } = this.props
+
     return (
       <div className="Home">
         <section className='Home--Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
+          {/*<UserLinks config={config} labeled />*/}
         </section>
         <main className='Home--Content'>
           <section className='Home--About'>
@@ -26,8 +31,7 @@ class Home extends Component {
           </section>
           <div className='Divider' />
           <section>
-            <h2>Projects</h2>
-            {/*ProjectListing projectEdges={}  />*/}
+            <ProjectListing postEdges={this.props.postEdges} />
           </section>
           <div className="Divider" />
           <section>
