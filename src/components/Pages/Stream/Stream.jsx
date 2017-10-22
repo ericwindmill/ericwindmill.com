@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Link from 'gatsby-link'
 
 class Stream extends Component {
 
@@ -10,21 +11,35 @@ class Stream extends Component {
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
-        month: postEdge.node.frontmatter.date,
+        month: postEdge.node.frontmatter.month,
         year: postEdge.node.frontmatter.year,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead,
       })
     })
 
+
     const postItems = postList.map(post => {
+      let tagList
+      if (post.tags) {
+        tagList = post.tags.map(tag => <p className="tag">{tag}</p>)
+      }
+
       if (post.type !== 'project') {
         return(
-          <li>
-            <h2>{post.title}</h2>
-            <time>{post.month} {post.year}</time>
-            <p>{post.excerpt}</p>
-          </li>
+          <Link to={post.path} key={post.title}>
+            <li>
+              <div className='StreamItem--PostMeta'>
+                <p>{post.month} {post.year}</p>
+                <p>Eric Windmill</p>
+              </div>
+              <div className='StreamItem--PostContent'>
+                <h2>{post.title}</h2>
+                <p>{post.excerpt}</p>
+                <span>{tagList}</span>
+              </div>
+            </li>
+          </Link>
         )
       }
     })

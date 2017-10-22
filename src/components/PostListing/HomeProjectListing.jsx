@@ -40,7 +40,7 @@ class ProjectListing extends React.Component {
     const postList = this.getPostList()
     return (
       <div className="HomePostListing">
-        <h1>Projects</h1>
+        <h2>Projects</h2>
         {/* Your post list here. */
           postList.map(post =>
             (<div

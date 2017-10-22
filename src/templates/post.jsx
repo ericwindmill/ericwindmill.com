@@ -21,7 +21,7 @@ export default class PostTemplate extends React.Component {
     const excerpt = postNode.excerpt
     const timeToRead = postNode.timeToRead
     return (
-      <div>
+      <div className='PostTemplate--Container'>
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>

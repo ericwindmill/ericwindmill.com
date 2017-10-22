@@ -6,7 +6,11 @@
 }
 
 .Home--Container,
-.Stream--Container {
+.Stream--Container,
+.About--Container,
+.Courses--Container,
+.PostTemplate--Container
+{
 	width: 100%;
 	overflow: scroll;
 }

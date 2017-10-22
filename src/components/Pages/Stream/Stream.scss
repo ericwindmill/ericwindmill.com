@@ -24,16 +24,40 @@
 
 
 	ul {
-		margin: $spacing-unit * 2;
+		margin: $spacing-unit;
+		& > a:hover {
+			color: black;
+		}
 	}
 
 	li {
-		margin: ($spacing-unit / 3) 0;
-		padding: 30px;
-		border-bottom: 1px solid $divider;
-
+		display: flex;
+		align-items: center;
+		padding: $spacing-unit;
 		&:hover {
 			@include material-shadow;
 		}
+
+		.StreamItem--PostMeta {
+			flex: 0 1;
+			padding-right: $spacing-unit;
+			p {
+				font-family: $mono;
+				font-size: 1.2rem;
+			}
+		}
+
+		.StreamItem--PostContent {
+			span {
+				display: flex;
+				.tag {
+					font-family: $mono;
+					font-size: 1.2rem;
+					padding-right: 10px;
+				}
+			}
+		}
+
+
 	}
 }
