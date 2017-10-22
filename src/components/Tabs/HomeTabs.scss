@@ -1,15 +1,54 @@
 .HomeTabs {
-
 	section {
-		width: 300px;
-		height: 300px;
-		background: cornflowerblue;
+		z-index: 5;
+		width: 80vw;
+		height: 80vh;
 		position: fixed;
-		right: -300px;
-		transition: all .3s ease;
+		right: -100vw;
+		top: $spacing-unit;
+		transition: all .7s ease;
+		padding: $spacing-unit;
+		@include material-shadow;
+		header {
+			display: flex;
+			justify-content: space-between;
+
+		}
+
+		.closeIcon {
+			width: 30px;
+			height: 30px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
 
 		&.reveal-tab {
 			right: 0;
 		}
+	}
+
+	.TabDetail--Header {
+		border-bottom: 1px solid black;
+		margin-bottom: $spacing-unit;
+	}
+	.HomeTabs--About {
+		background: lighten($purple, 15%);
+	}
+
+	.HomeTabs--Contact {
+		background: lighten($blue, 15%);
+
+		 p {
+			width: 60%;
+		}
+	}
+
+	.HomeTabs--Courses {
+		background: lighten($turquoise, 15%);
+	}
+	.HomeTabs--Stream {
+		background: lighten($peachy, 15%);
 	}
 }

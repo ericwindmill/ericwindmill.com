@@ -34,16 +34,25 @@
 		}
 	}
 
-	button {
-		width: 150px;
-		text-align: center;
-		border: 2px solid black;
-		background: none;
-		border-radius: 0;
-		font-size: $font-size;
+	.SubmitRegion {
+		width: 60%;
+		max-width: 600px;
+		display: flex;
+		justify-content: space-between;
+		p {
+			margin: 0;
+		}
+		button {
+			width: 150px;
+			text-align: center;
+			border: 2px solid black;
+			background: none;
+			border-radius: 0;
+			font-size: $font-size;
 
-		&:hover {
-			background: lighten($blue, 50%);
+			&:hover {
+				background: lighten($blue, 50%);
+			}
 		}
 	}
 }

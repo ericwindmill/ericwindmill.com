@@ -48,10 +48,8 @@ class Home extends Component {
             <h2>
               Get In Touch
             </h2>
-            <ContactForm />
+            <ContactForm isTab={false} />
           </section>
-          <div className="Divider" />
-          <div className="Divider" />
         </main>
       </div>
     );

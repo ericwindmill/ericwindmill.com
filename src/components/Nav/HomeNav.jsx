@@ -17,17 +17,14 @@ class MainNavigation extends Component {
     tab.classList.add('reveal-tab')
   }
 
-
-
   render () {
     return (
       <div>
         <nav className='MainNavigation'>
-          {/*<p onClick={this.handleHover}>Stream</p>*/}
           <Link onClick={this.handleHover} className='to-Stream' to='/'>Stream</Link>
-          <Link className='to-Contact' to='/'>Contact</Link>
+          <Link onClick={this.handleHover} className='to-Contact' to='/'>Contact</Link>
           <Link onClick={this.handleHover} className='to-Courses' to='/'>Courses</Link>
-          <Link className='toAbout' to='/'>About</Link>
+          <Link onClick={this.handleHover} className='to-About' to='/'>About</Link>
         </nav>
         <HomeTabs />
       </div>

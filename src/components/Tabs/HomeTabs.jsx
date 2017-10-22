@@ -1,29 +1,22 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import TabDetail from './TabDetail'
 
 class HomeTabs extends Component {
-  handleClose(e) {
-    e.preventDefault()
-    const tabName = e.target.classList[0].split('--')[1]
-    const tab = document.querySelector(`.HomeTabs--${tabName}`)
-    tab.classList.remove('reveal-tab')
-  }
   render() {
+
     return (
       <div className='HomeTabs'>
         <section className="HomeTabs--Stream">
-          <h1>Stream Tab</h1>
-          <p onClick={this.handleClose} className="close-tab--Stream">❌</p>
+          <TabDetail head={"Stream"}/>
         </section>
         <section className="HomeTabs--Courses">
-          <h1>Courses Tab</h1>
-          <p onClick={this.handleClose} className="close-tab--Courses">❌</p>
+          <TabDetail head={"Courses"}/>
         </section>
-        <section>
-          <h1>Contact Tab</h1>
+        <section className="HomeTabs--Contact">
+          <TabDetail head={"Contact"}/>
         </section>
-        <section>
-          <h1>About Tab</h1>
+        <section className="HomeTabs--About">
+          <TabDetail head={"About"}/>
         </section>
       </div>
     )
