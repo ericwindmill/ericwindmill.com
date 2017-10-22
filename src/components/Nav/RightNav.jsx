@@ -13,15 +13,6 @@ class WideSideNavigation extends Component {
     tab.classList.add('reveal-tab')
   }
 
-  // navWidth() {
-  //   const nav = document.querySelector('WideNavigation');
-  //   if (this.props.path === '/') {
-  //     nav.style.width = '3.5vw'
-  //   } else {
-  //     nav.style.width = '20vw'
-  //   }
-  // }
-
   whichNav() {
     if (this.props.path === '/') {
       return (
