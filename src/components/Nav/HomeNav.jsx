@@ -18,6 +18,7 @@ class MainNavigation extends Component {
   }
 
   render () {
+    const { postEdges } = this.props
     return (
       <div>
         <nav className='MainNavigation'>
@@ -26,7 +27,7 @@ class MainNavigation extends Component {
           <Link onClick={this.handleHover} className='to-Courses' to='/'>Courses</Link>
           <Link onClick={this.handleHover} className='to-About' to='/'>About</Link>
         </nav>
-        <HomeTabs />
+        <HomeTabs postEdges={postEdges} />
       </div>
     )
   }

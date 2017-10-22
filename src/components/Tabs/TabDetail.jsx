@@ -9,6 +9,7 @@ class TabDetail extends Component {
     super(props)
 
     this.handleClose = this.handleClose.bind(this)
+    this.postEdges = this.props.postEdges
   }
 
   handleClose(e) {
@@ -29,7 +30,7 @@ class TabDetail extends Component {
         case 'Contact':
           return <ContactTab />
         case 'Stream':
-          return <StreamTab />
+          return <StreamTab postEdges={this.postEdges} />
       default:
         return <h1>Default</h1>
     }
