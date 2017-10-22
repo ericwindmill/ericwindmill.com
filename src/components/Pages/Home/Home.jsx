@@ -34,7 +34,7 @@ class Home extends Component {
             <ProjectListing postEdges={this.props.postEdges} />
           </section>
           <div className="Divider" />
-          <section>
+          <section className='Home--Currently'>
             <h2>
               Currently
             </h2>

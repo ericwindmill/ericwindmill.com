@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
 import "../main.scss";
+import WideSideNavigation from '../components/Nav/RightNav'
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
@@ -39,15 +40,50 @@ export default class MainLayout extends React.Component {
     return title;
   }
   render() {
-    const { children } = this.props;
+    const { children, data, location } = this.props;
     return (
       <div className='IndexTemplate--Container'>
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        {children()}
+        <div className='IndexTemplate--Page'>
+          {children()}
+          <WideSideNavigation
+            path={location.pathname}
+            postEdges={data.allMarkdownRemark.edges}
+          />
+        </div>
       </div>
     );
   }
 }
+
+/* eslint no-undef: "off" */
+export const pageQuery = graphql`
+  query PostsQuery {
+        allMarkdownRemark(
+          limit: 10
+          sort: { fields: [frontmatter___date], order: DESC }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              excerpt
+              timeToRead
+              frontmatter {
+                title
+                tags
+                cover
+                date
+                year
+                month
+                type
+              }
+            }
+          }
+        }
+  }
+`

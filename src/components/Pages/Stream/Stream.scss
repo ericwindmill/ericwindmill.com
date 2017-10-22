@@ -1,0 +1,39 @@
+// From the stream page container
+.Stream-Page {
+	display: flex;
+
+}
+// from the stream page component
+.Stream {
+
+	.Stream--Hero {
+		margin: 100px 0;
+		padding: $spacing-unit $spacing-unit $spacing-unit 10vw;
+		background: $card-background-black;
+		width: 60%;
+		min-width: 600px;
+		color: $ink-on-black;
+		position: relative;
+		@include material-shadow;
+		h1 {
+			margin: 0;
+			max-width: 500px;
+			line-height: 1;
+		}
+	}
+
+
+	ul {
+		margin: $spacing-unit * 2;
+	}
+
+	li {
+		margin: ($spacing-unit / 3) 0;
+		padding: 30px;
+		border-bottom: 1px solid $divider;
+
+		&:hover {
+			@include material-shadow;
+		}
+	}
+}

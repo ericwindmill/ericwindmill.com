@@ -30,38 +30,6 @@ a {
 	padding-bottom: 2px;
 	text-decoration: none;
 
-	&:before {
-		content: '';
-		display: block;
-		position: absolute;
-		left: 0;
-		bottom: 5px;
-		height: 1px;
-		width: 100%;
-		transition: width 0s ease;
-	}
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		right: 0;
-		bottom: 5px;
-		height: 1px;
-		width: 100%;
-		background: $link-ink;
-		transition: width .2s ease;
-	}
-	&:hover:before {
-		width: 0;
-		background: $blue;
-		transition: width .2s ease;
-	}
-	&:hover:after {
-		width: 0;
-		background: transparent;
-		transition: width 0s ease;
-	}
-
 	&:hover {
 		color: $blue;
 		cursor: e-resize;

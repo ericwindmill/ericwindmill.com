@@ -1,8 +1,10 @@
 @import '../../styles/variables';
+nav {transition: all .5s ease;}
 .MainNavigation {
+	flex: 0 0;
 	position: fixed;
 	right: 0;
-	top: 0px;
+	top: 0;
 	display: flex;
 	flex-flow: column;
 	align-content: center;
@@ -10,11 +12,34 @@
 	height: 100vh;
 	border-left: 1px solid $divider;
 
+
 	a {
 		transform: rotate(90deg);
-		font-size: 1rem;
+		font-size: 1.6rem;
 		font-family: $mono;
 		font-weight: 400;
 		text-decoration: none;
 	}
+}
+
+.WideNavigation {
+	flex: 1 0 300px;
+	padding: ($spacing-unit * 2) $spacing-unit $spacing-unit $spacing-unit;
+	border-left: 1px solid $divider;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	nav {
+		display: flex;
+		flex-direction: column;
+		a {
+			 &:hover {
+				 color: darken($peachy, 5%);
+			 }
+		 }
+	}
+	footer {
+
+	}
+
 }
