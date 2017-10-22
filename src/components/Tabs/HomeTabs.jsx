@@ -3,11 +3,11 @@ import TabDetail from './TabDetail'
 
 class HomeTabs extends Component {
   render() {
-
+    const { postEdges } = this.props;
     return (
       <div className='HomeTabs'>
         <section className="HomeTabs--Stream">
-          <TabDetail head={"Stream"}/>
+          <TabDetail head={"Stream"} postEdges={postEdges} />
         </section>
         <section className="HomeTabs--Courses">
           <TabDetail head={"Courses"}/>

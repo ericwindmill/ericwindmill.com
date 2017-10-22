@@ -9,6 +9,9 @@ class TabDetail extends Component {
     super(props)
 
     this.handleClose = this.handleClose.bind(this)
+    this.postEdges = this.props.postEdges
+    this.header = this.props.head
+
   }
 
   handleClose(e) {
@@ -29,9 +32,24 @@ class TabDetail extends Component {
         case 'Contact':
           return <ContactTab />
         case 'Stream':
-          return <StreamTab />
+          return <StreamTab postEdges={this.postEdges} />
       default:
         return <h1>Default</h1>
+    }
+  }
+
+  getHeader() {
+    switch(this.props.head) {
+      case 'Stream':
+        return 'Recent Posts'
+      case 'Contact':
+        return 'Say hello!'
+      case 'About':
+        return 'About Me'
+      case 'Courses':
+        return 'Developer Tools and Resources'
+      default:
+        return this.props.head;
     }
   }
 
@@ -39,7 +57,7 @@ class TabDetail extends Component {
     return(
       <div>
         <header className='TabDetail--Header'>
-          <h2>{this.props.head}</h2>
+          <h2>{this.getHeader()}</h2>
           <div onClick={this.handleClose} className={`close-tab--${this.props.head}`} >
             <TiDelete className='closeIcon' onClick={this.handleClose} />
           </div>

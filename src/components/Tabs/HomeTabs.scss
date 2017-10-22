@@ -2,7 +2,7 @@
 	section {
 		z-index: 5;
 		width: 80vw;
-		height: 80vh;
+		//height: 80vh;
 		position: fixed;
 		right: -100vw;
 		top: $spacing-unit;
@@ -49,6 +49,56 @@
 		background: lighten($turquoise, 15%);
 	}
 	.HomeTabs--Stream {
-		background: lighten($peachy, 15%);
+		background: $peachy;
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		ul {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			.StreamTab--Post {
+				width: calc(26.6666666667vw - 50px);
+				height: calc(26.666666667vw - 50px);
+				padding: $spacing-unit / 2;
+
+				h2 {
+					font-family: $serif;
+					font-size: 2.8rem;
+				}
+
+				p {
+					font-family: $mono;
+					font-size: 1.6rem;
+				}
+			}
+			li {
+				&:first-child {
+					background: darken($peachy, 3%);
+				}
+				&:nth-child(2) {
+					background: darken($peachy, 2%);
+				}
+				&:last-child {
+					background: darken($peachy, 1%);
+				}
+			}
+		}
+
+		a {
+			font-size: 2.5rem;
+			align-self: flex-end;
+			padding-top: $spacing-unit;
+
+			&:hover {
+				color: lighten($peachy, 25%);
+			}
+
+			&:hover:before {
+				background-color: lighten($peachy, 25%);
+			}
+		}
 	}
 }
