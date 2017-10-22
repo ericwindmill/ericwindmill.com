@@ -3,6 +3,7 @@ import TiDelete from 'react-icons/lib/ti/delete'
 import AboutTab from './AboutTab'
 import ContactTab from './ContactTab'
 import StreamTab from './StreamTab'
+import CoursesTab from './CoursesTab'
 
 class TabDetail extends Component {
   constructor(props) {
@@ -33,8 +34,10 @@ class TabDetail extends Component {
           return <ContactTab />
         case 'Stream':
           return <StreamTab postEdges={this.postEdges} />
+        case 'Courses':
+          return <CoursesTab />
       default:
-        return <h1>Default</h1>
+        return <p>Uh oh! I couldn't find what you were looking for!</p>
     }
   }
 
