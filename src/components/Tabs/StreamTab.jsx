@@ -23,8 +23,8 @@ class StreamTab extends Component {
       return (
         <li>
           <div className='StreamTab--Post'>
-            <h2>{post.title}</h2>
             <p>{post.date}</p>
+            <h2>{post.title}</h2>
           </div>
         </li>
       )

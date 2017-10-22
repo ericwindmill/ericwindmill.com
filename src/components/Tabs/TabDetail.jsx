@@ -10,6 +10,8 @@ class TabDetail extends Component {
 
     this.handleClose = this.handleClose.bind(this)
     this.postEdges = this.props.postEdges
+    this.header = this.props.head
+
   }
 
   handleClose(e) {
@@ -36,11 +38,26 @@ class TabDetail extends Component {
     }
   }
 
+  getHeader() {
+    switch(this.props.head) {
+      case 'Stream':
+        return 'Recent Posts'
+      case 'Contact':
+        return 'Say hello!'
+      case 'About':
+        return 'About Me'
+      case 'Courses':
+        return 'Developer Tools and Resources'
+      default:
+        return this.props.head;
+    }
+  }
+
   render() {
     return(
       <div>
         <header className='TabDetail--Header'>
-          <h2>{this.props.head}</h2>
+          <h2>{this.getHeader()}</h2>
           <div onClick={this.handleClose} className={`close-tab--${this.props.head}`} >
             <TiDelete className='closeIcon' onClick={this.handleClose} />
           </div>

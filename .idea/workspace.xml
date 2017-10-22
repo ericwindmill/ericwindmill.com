@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" afterPath="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tabs/StreamTab.jsx" afterPath="$PROJECT_DIR$/src/components/Tabs/StreamTab.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tabs/TabDetail.jsx" afterPath="$PROJECT_DIR$/src/components/Tabs/TabDetail.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +27,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.46382055">
       <split-first>
         <leaf>
-          <file leaf-file-name="StreamTab.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Tabs/StreamTab.jsx">
+          <file leaf-file-name="TabDetail.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Tabs/TabDetail.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="554">
-                  <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+                <state relative-caret-position="668">
+                  <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -45,8 +46,8 @@
           <file leaf-file-name="HomeTabs.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1096">
-                  <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
+                <state relative-caret-position="572">
+                  <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -110,9 +111,9 @@
         <option value="$PROJECT_DIR$/src/pages/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Tabs/TabDetail.jsx" />
         <option value="$PROJECT_DIR$/src/components/Tabs/StreamTab.jsx" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
+        <option value="$PROJECT_DIR$/src/components/Tabs/TabDetail.jsx" />
       </list>
     </option>
   </component>
@@ -272,7 +273,7 @@
       <updated>1508598520752</updated>
       <workItem from="1508598522481" duration="16000" />
       <workItem from="1508598547053" duration="90000" />
-      <workItem from="1508598647541" duration="25639000" />
+      <workItem from="1508598647541" duration="26291000" />
     </task>
     <task id="LOCAL-00001" summary="Finish Contact Tab">
       <created>1508636443738</created>
@@ -295,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508684290350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Style Parent Component (StreamTab)">
+      <created>1508686745567</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508686745567</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25745000" />
+    <option name="totallyTimeSpent" value="26397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="134" y="22" width="1737" height="1174" extended-state="0" />
@@ -337,7 +345,8 @@
     <MESSAGE value="Finish Contact Tab" />
     <MESSAGE value="Good stopping point on stream and stuff." />
     <MESSAGE value="Pull in data (recent posts)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pull in data (recent posts)" />
+    <MESSAGE value="Style Parent Component (StreamTab)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style Parent Component (StreamTab)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4790,45 +4799,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tabs/TabDetail.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="43" column="25" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-          <folding>
-            <marker date="1508686084000" expanded="true" signature="7:196" ph="..." />
-            <marker date="1508686084000" expanded="true" signature="232:1334" ph="{...}" />
-            <marker date="1508686084000" expanded="true" signature="255:371" ph="{...}" />
-            <marker date="1508686084000" expanded="true" signature="390:663" ph="{...}" />
-            <marker date="1508686084000" expanded="true" signature="431:475" ph="{...}" />
-            <marker date="1508686084000" expanded="true" signature="682:960" ph="{...}" />
-            <marker date="1508686084000" expanded="true" signature="713:956" ph="{...}" />
-            <marker date="1508686084000" expanded="true" signature="736:766" ph="..." />
-            <marker date="1508686084000" expanded="true" signature="790:822" ph="..." />
-            <marker date="1508686084000" expanded="true" signature="845:903" ph="..." />
-            <marker date="1508686084000" expanded="true" signature="918:950" ph="..." />
-            <marker date="1508686084000" expanded="true" signature="973:1332" ph="{...}" />
-            <marker date="1508686084000" expanded="true" signature="993:1322" ph="&lt;div/&gt;" />
-            <marker date="1508686084000" expanded="true" signature="1007:1279" ph="&lt;header/&gt;" />
-            <marker date="1508686084000" expanded="true" signature="1093:1261" ph="&lt;div/&gt;" />
-          </folding>
+        <state relative-caret-position="572">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Tabs/StreamTab.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="495">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1508686930000" expanded="true" signature="7:70" ph="..." />
+            <marker date="1508686930000" expanded="true" signature="107:858" ph="{...}" />
+            <marker date="1508686930000" expanded="true" signature="138:361" ph="{...}" />
+            <marker date="1508686930000" expanded="true" signature="197:337" ph="{...}" />
+            <marker date="1508686930000" expanded="true" signature="219:330" ph="{...}" />
+            <marker date="1508686930000" expanded="true" signature="374:856" ph="{...}" />
+            <marker date="1508686930000" expanded="true" signature="506:689" ph="{...}" />
+            <marker date="1508686930000" expanded="true" signature="531:675" ph="&lt;li/&gt;" />
+            <marker date="1508686930000" expanded="true" signature="546:661" ph="&lt;div/&gt;" />
+            <marker date="1508686930000" expanded="true" signature="735:846" ph="&lt;div/&gt;" />
+            <marker date="1508686930000" expanded="true" signature="749:788" ph="&lt;ul/&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Tabs/TabDetail.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1096">
-          <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="668">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
