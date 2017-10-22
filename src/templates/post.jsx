@@ -1,13 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
 import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
-import "./post.css";
+import WideSideNavigation from '../components/Nav/WideNav'
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -29,21 +28,23 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <div>
-          <h1>
-            {post.title}
-          </h1>
-          <p>post id: {post.id}</p>
-          <p>post excerpt: {excerpt}</p>
-          <p>time to read: {timeToRead}</p>
-          <img src={post.cover}  alt="cactus" />
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          <div className="post-meta">
-            <PostTags tags={post.tags} />
-            <SocialLinks postPath={slug} postNode={postNode} />
+        <div className="Post--Page">
+          <div className="Post">
+            <h1>
+              {post.title}
+            </h1>
+            <p>post id: {post.id}</p>
+            <p>post excerpt: {excerpt}</p>
+            <p>time to read: {timeToRead}</p>
+            <img src={post.cover}  alt="cactus" />
+            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            <div className="post-meta">
+              <PostTags tags={post.tags} />
+              <SocialLinks postPath={slug} postNode={postNode} />
+            </div>
+            <UserInfo config={config} />
           </div>
-          <UserInfo config={config} />
-          <Disqus postNode={postNode} />
+          <WideSideNavigation />
         </div>
       </div>
     );

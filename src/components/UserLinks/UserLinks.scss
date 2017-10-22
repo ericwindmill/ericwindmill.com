@@ -1,0 +1,52 @@
+.user-links {
+    display: flex;
+    max-width: 100%;
+}
+
+.icon-container {
+	border-radius: 5px;
+	width: 33px;
+	height: 33px;
+	margin-right: $spacing-unit / 3;
+	padding: 5px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	& > a {
+		margin: 0;
+		padding: 0;
+		color: inherit;
+		line-height: inherit;
+		font-size: inherit;
+		position: static;
+		text-decoration: none;
+
+		&:after {
+			content: none;
+		}
+	}
+
+	.social-icons {
+		color: white;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.github {
+	background: $purple;
+}
+
+.twitter {
+	background:deepskyblue;
+}
+
+.instagram {
+	background: $peachy;
+}
+
+.message {
+	background: dodgerblue;
+}

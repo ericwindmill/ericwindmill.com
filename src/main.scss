@@ -4,11 +4,14 @@
 
 // layouts
 @import './layouts/index.scss';
+@import './templates/post.scss';
 
 // components
 @import './components/Nav/Nav.scss';
+@import './components/Nav/WideNav.scss';
 @import  './components/Pages/Home/Home.scss';
 @import  './components/Pages/About/About.scss';
 @import  './components/PostListing/HomePostListing.scss';
 @import './components/Tabs/HomeTabs.scss';
 @import './components/Forms/ContactForm.scss';
+@import './components/UserLinks/UserLinks.scss';

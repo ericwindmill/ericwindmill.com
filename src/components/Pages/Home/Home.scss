@@ -1,4 +1,8 @@
 @import '../../../styles/variables.scss';
+.Home {
+	margin-bottom: $spacing-unit * 3;
+}
+
 
 .Home--Hero {
 	margin: 100px 0;
@@ -7,13 +11,19 @@
 	width: 60vw;
 	min-width: 600px;
 	color: $ink-on-black;
+	position: relative;
 	@include material-shadow;
 	h1 {
 		margin: 0;
 		max-width: 500px;
 		line-height: 1;
 	}
+
+	.Hero--SocialLinks {
+		margin-top: $spacing-unit;
+	}
 }
+
 
 .Home--Content {
 	width: $content-width-laptop;
