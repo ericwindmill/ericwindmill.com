@@ -2,6 +2,7 @@ import React, {Component} from  'react'
 import TiDelete from 'react-icons/lib/ti/delete'
 import AboutTab from './AboutTab'
 import ContactTab from './ContactTab'
+import StreamTab from './StreamTab'
 
 class TabDetail extends Component {
   constructor(props) {
@@ -27,6 +28,8 @@ class TabDetail extends Component {
           return <AboutTab />
         case 'Contact':
           return <ContactTab />
+        case 'Stream':
+          return <StreamTab />
       default:
         return <h1>Default</h1>
     }
