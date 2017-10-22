@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50c4aff1-1686-44a3-ae7d-3361819e07a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Nav/WideNav.jsx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Nav/WideNav.scss" afterPath="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" afterPath="$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/Nav.scss" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" afterPath="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" afterPath="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.jsx" afterPath="$PROJECT_DIR$/src/layouts/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.scss" afterPath="$PROJECT_DIR$/src/layouts/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.scss" afterPath="$PROJECT_DIR$/src/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/about.jsx" afterPath="$PROJECT_DIR$/src/pages/about.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/courses.jsx" afterPath="$PROJECT_DIR$/src/pages/courses.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/index.jsx" afterPath="$PROJECT_DIR$/src/pages/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/stream.jsx" afterPath="$PROJECT_DIR$/src/pages/stream.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/base.scss" afterPath="$PROJECT_DIR$/src/styles/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/post.jsx" afterPath="$PROJECT_DIR$/src/templates/post.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/project.jsx" afterPath="$PROJECT_DIR$/src/templates/project.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.md" afterPath="$PROJECT_DIR$/todo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" afterPath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,8 +29,8 @@
           <file leaf-file-name="RightNav.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="652">
-                  <caret line="51" column="7" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="51" selection-end-column="7" />
+                <state relative-caret-position="1334">
+                  <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="59" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -62,8 +45,8 @@
           <file leaf-file-name="Nav.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="604">
-                  <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+                <state relative-caret-position="627">
+                  <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -290,7 +273,7 @@
       <updated>1508598520752</updated>
       <workItem from="1508598522481" duration="16000" />
       <workItem from="1508598547053" duration="90000" />
-      <workItem from="1508598647541" duration="41074000" />
+      <workItem from="1508598647541" duration="41804000" />
     </task>
     <task id="LOCAL-00001" summary="Finish Contact Tab">
       <created>1508636443738</created>
@@ -334,11 +317,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508692099241</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Complete Nav Refactor">
+      <created>1508711004246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1508711004246</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41180000" />
+    <option name="totallyTimeSpent" value="41910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -379,7 +369,8 @@
     <MESSAGE value="Style Parent Component (StreamTab)" />
     <MESSAGE value="Finish Stream Tab" />
     <MESSAGE value="Style CoursesTab and more Stream Tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Style CoursesTab and more Stream Tab" />
+    <MESSAGE value="Complete Nav Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Nav Refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5047,16 +5038,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="627">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="51" selection-end-column="7" />
+        <state relative-caret-position="1334">
+          <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="59" selection-end-column="1" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

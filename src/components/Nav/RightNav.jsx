@@ -47,6 +47,7 @@ class WideSideNavigation extends Component {
           <footer>
             <h2>Elsewhere</h2>
             <div className='Hero--SocialLinks'><UserLinks config={config} /></div>
+            <p>I'm currently available for small projects.</p>
           </footer>
         </div>
       )
