@@ -22,8 +22,8 @@ class StreamTab extends Component {
     postList = postList.map(post => {
       return (
         <li>
-          <div>
-            <h1>{post.title}</h1>
+          <div className='StreamTab--Post'>
+            <h2>{post.title}</h2>
             <p>{post.date}</p>
           </div>
         </li>
@@ -32,11 +32,10 @@ class StreamTab extends Component {
     console.log(postList)
     return(
       <div>
-        <h1>Recent Posts</h1>
         <ul>
           {postList}
         </ul>
-        <Link to='/'>All Blog Posts</Link>
+        <Link to='/'>All Blog Posts →</Link>
       </div>
     )
   }
