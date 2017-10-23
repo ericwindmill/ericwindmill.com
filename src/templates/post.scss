@@ -1,11 +1,10 @@
-.post-meta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.Post--Page {
-	display: flex;
-}
-.Post {
+.Hero.Post-Hero {
+	position: relative;
+	.PostDate {
+		position: absolute;
+		top: -20px;
+		color: grey;
+		font-family: $mono;
+		font-size: 1.2rem;
+	}
 }

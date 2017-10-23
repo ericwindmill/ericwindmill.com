@@ -50,7 +50,7 @@ class Stream extends Component {
   render() {
     return (
       <div className="Stream">
-        <section className='Stream--Hero'>
+        <section className='Hero'>
           <h1>Stream</h1>
           <h2>Articles, Projects and Client Work</h2>
         </section>

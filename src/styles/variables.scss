@@ -46,6 +46,29 @@ $spacing-unit: 50px;
 $content-width-laptop: 80vw;
 $paragraph-width-laptop: 45vw;
 
+/*********
+** Hero Styles **
+**********/
+
+.Hero {
+	margin: 100px 0;
+	padding: $spacing-unit $spacing-unit $spacing-unit 10vw;
+	background: $card-background-black;
+	width: 60%;
+	min-width: 600px;
+	color: $ink-on-black;
+	position: relative;
+	@include material-shadow;
+	h1 {
+		margin: 0;
+		max-width: 500px;
+		line-height: 1;
+	}
+
+	.Hero--SocialLinks {
+		margin-top: $spacing-unit;
+	}
+}
 
 /*********
 ** Transitions **

@@ -2,10 +2,12 @@
 
 ##MVP
 ### Style
-* Create non-Home Nav
+* Create non-Home Nav --> Add recent posts if reading a post.
 * Style Blog posts
-* Create Stream Page
-* Create Projects Page
+* Create Courses Page
+* Make a home button somewhere --> no about page, instead make a home link.
+* Make a contact page
+
 
 
 ### Content 
