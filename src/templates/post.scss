@@ -1,3 +1,6 @@
+.Post--Page {
+}
+
 .Hero.Post-Hero {
 	position: relative;
 	.PostDate {
@@ -7,4 +10,22 @@
 		font-family: $mono;
 		font-size: 1.2rem;
 	}
+}
+
+.PostBody {
+	margin: $spacing-unit * 2 $spacing-unit * 3;
+}
+.PostCover {
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	max-width: 100%;
+}
+.PostMeta {
+	border-top: 1px solid black;
+	margin: 0 $spacing-unit * 3;
+}
+
+.post-tag-container {
+	margin: auto;
 }
