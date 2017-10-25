@@ -9,8 +9,10 @@
 .Stream--Container,
 .About--Container,
 .Courses--Container,
+.tag-container,
 .PostTemplate--Container
 {
 	width: 100%;
+	min-width: 80vw;
 	overflow: scroll;
 }

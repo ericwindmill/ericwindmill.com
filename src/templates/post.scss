@@ -1,6 +1,3 @@
-.Post--Page {
-}
-
 .Hero.Post-Hero {
 	position: relative;
 	.PostDate {
@@ -13,7 +10,8 @@
 }
 
 .PostBody {
-	margin: $spacing-unit * 2 $spacing-unit * 3;
+	margin: $spacing-unit * 2 auto;
+	max-width: 50vw;
 }
 .PostCover {
 	margin: auto;
@@ -25,6 +23,7 @@
 	border-top: 1px solid black;
 	margin: 0 $spacing-unit * 3;
 }
+
 
 .post-tag-container {
 	display: flex;
@@ -41,9 +40,20 @@
 		outline: none;
 		border: none;
 		text-decoration: underline;
+		background: transparent;
 
 		&:hover {
 			cursor: pointer;
 		}
 	}}
+}
+
+.TagListingBody {
+	margin: $spacing-unit * 2 $spacing-unit * 3;
+	display: flex;
+	flex-direction: column;
+
+	.PostListing--Post {
+		display: block;
+	}
 }

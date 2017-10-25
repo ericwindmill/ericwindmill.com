@@ -4,8 +4,7 @@
 
 }
 // from the stream page component
-.Stream {
-
+.Stream, .PostListing {
 	ul {
 		margin: $spacing-unit;
 		& > a:hover {
@@ -40,7 +39,5 @@
 				}
 			}
 		}
-
-
 	}
 }

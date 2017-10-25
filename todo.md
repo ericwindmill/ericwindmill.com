@@ -3,19 +3,16 @@
 ##MVP
 ### Style
 * Create non-Home Nav --> Add recent posts if reading a post.
-* Style Blog posts
-* tags page
 * Create Courses Page
 * Make a home button somewhere --> no about page, instead make a home link.
 * Make a contact page
-
+* update all links to correct paths
 
 
 ### Content 
 * Upload posts
 * Upload Projects
 * Write all copy
-* update all links to correct paths
 
 ### Deployment
 * Netlify
@@ -32,3 +29,5 @@
 
 ## Done-zo
 * Main Nav Tabs (Cant do well until you've pulled in everything else?)
+* Style Blog posts
+* tags page

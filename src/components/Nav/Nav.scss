@@ -23,7 +23,7 @@ nav {transition: all .5s ease;}
 }
 
 .WideNavigation {
-	flex: 1 0 300px;
+	flex: 0 0 300px;
 	padding: ($spacing-unit * 2) $spacing-unit $spacing-unit $spacing-unit;
 	border-left: 1px solid $divider;
 	display: flex;
