@@ -4,6 +4,7 @@
 ### Style
 * Create non-Home Nav --> Add recent posts if reading a post.
 * Style Blog posts
+* tags page
 * Create Courses Page
 * Make a home button somewhere --> no about page, instead make a home link.
 * Make a contact page
