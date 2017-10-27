@@ -1,0 +1,34 @@
+.CoursesStream {
+	margin: auto;
+	width: 60%;
+
+	.CourseItem--Title {
+		display: grid;
+		grid-column-gap: 20px;
+		grid-template-areas:
+			'img title'
+			'img about';
+		@include material-shadow;
+
+		img {
+			height: 15vw;
+			width: 15vw;
+			grid-area: img;
+		}
+
+		h2 {
+			grid-area: title;
+		}
+
+		p {
+			grid-area: about;
+		}
+	}
+}
+
+// Item specific non-reusable
+.item-1 {
+	ul {
+
+	}
+}

@@ -4,8 +4,8 @@
 ### Style
 * Create Courses Page
 * Make a contact page? 
-* Make a home button somewhere --> no about page, instead make a home link.
 * update all links to correct paths
+* Read me
 
 
 ### Content 
@@ -16,7 +16,7 @@
 ### Deployment
 * Netlify
 * Contact Form func
-* Email list
+* Email list -> Definitely on courses page. Also a seperate page thats linked too from everywhere.
 
 ## After Deploy (Bells and Whistles)
 * Create non-Home Nav --> Add recent posts if reading a post.
