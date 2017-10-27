@@ -1,14 +1,16 @@
 import React, {Component} from  'react'
+import Link from 'gatsby-link'
 
 class CoursesTab extends Component {
   render() {
     return(
+      <div>
       <ul>
         <a href='#'>
           <li className='CourseItem item-1 CoursesTab--Layout'>
             <img className='CourseItem-Image' alt='layout by example cover' src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_400/v1502561798/portfolio_site/IMG_1464.jpg' />
             <h2>CSS Layout By Example</h2>
-            <p>Everything you need to know to make beautiful layouts in 2017 - in about an hour.</p>
+            <p>As developers, our goals for good CSS should never be 'good enough'. Stand out--Learn everything you need to know to make beautiful layouts in 2017 - in about an hour.</p>
           </li>
         </a>
         <a href='#'>
@@ -19,6 +21,8 @@ class CoursesTab extends Component {
           </li>
         </a>
       </ul>
+        <Link className='link-out' to='/courses'>All Developer Tools →</Link>
+      </div>
     )
   }
 }

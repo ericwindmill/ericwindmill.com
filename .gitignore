@@ -52,11 +52,10 @@ jspm_packages
 # Build Files
 public/
 .cache/
+todo.md
 
 # Gatsby context
 .gatsby-context.js
 
 # Bundle stats
 bundle-stats.json
-
-todo.md

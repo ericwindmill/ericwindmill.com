@@ -47,6 +47,12 @@
 
 	.HomeTabs--Courses {
 		background: $turquoise;
+		top: -25px;
+		.link-out {
+			font-size: 2.5rem;
+			float: right;
+			padding-top: $spacing-unit;
+		}
 
 		ul {
 			a {
@@ -71,8 +77,8 @@
 				grid-template-areas:
 					'image title title'
 					'image about about';
-				width: 100%;
 				padding: $spacing-unit / 2;
+				width: 100%;
 				h2 {
 					font-size: 2.8rem;
 					grid-area: title;
@@ -84,8 +90,8 @@
 				}
 
 				img {
-					width: 20vw;
-					height: 20vw;
+					max-width: 15vw;
+					max-height: 15vw;
 					grid-area: image;
 				}
 
@@ -95,9 +101,8 @@
 						'about about image';
 					justify-items: end;
 					text-align: right;
+					width: 100%;
 				}
-
-
 			}
 			.item-1 {background: darken($turquoise, 2%);}
 			.item-2 {background: darken($turquoise, 4%);}

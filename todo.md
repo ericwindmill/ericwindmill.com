@@ -2,10 +2,9 @@
 
 ##MVP
 ### Style
-* Create non-Home Nav --> Add recent posts if reading a post.
 * Create Courses Page
+* Make a contact page? 
 * Make a home button somewhere --> no about page, instead make a home link.
-* Make a contact page
 * update all links to correct paths
 
 
@@ -19,7 +18,8 @@
 * Contact Form func
 * Email list
 
-## Future
+## After Deploy (Bells and Whistles)
+* Create non-Home Nav --> Add recent posts if reading a post.
 * responsive
 * Click anywhere to close tabs.
 * Disqus

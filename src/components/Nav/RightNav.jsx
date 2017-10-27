@@ -30,10 +30,10 @@ class WideSideNavigation extends Component {
       return (
         <div className='WideNavigation'>
           <nav>
-            <Link onClick={this.handleHover} className='to-Stream' to='/'>Stream</Link>
-            <Link onClick={this.handleHover} className='to-Contact' to='/'>Contact</Link>
-            <Link onClick={this.handleHover} className='to-Courses' to='/'>Courses</Link>
-            <Link onClick={this.handleHover} className='to-About' to='/'>About</Link>
+            <Link className='to-Stream' to='/stream'>Stream</Link>
+            <Link className='to-Contact' to='/'>Contact</Link>
+            <Link className='to-Courses' to='/courses'>Courses</Link>
+            <Link className='to-About' to='/'>Home</Link>
           </nav>
           <footer>
             <h2>Elsewhere</h2>
