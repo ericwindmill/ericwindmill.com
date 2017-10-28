@@ -3,8 +3,9 @@ import "./Home.scss"
 import PostListing from '../../PostListing/HomePostListing'
 import ProjectListing from '../../PostListing/HomeProjectListing'
 import ContactForm from '../../Forms/ContactForm'
-import Footer from '../../Footer/Footer'
-// import UserLinks from '../../UserLinks/UserLinks'
+// import Footer from '../../Footer/Footer'
+import UserLinks from '../../UserLinks/UserLinks'
+import config from "../../../../data/SiteConfig";
 
 class Home extends Component {
   render() {

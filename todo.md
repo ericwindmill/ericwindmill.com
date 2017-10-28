@@ -2,11 +2,9 @@
 
 ##MVP
 ### Style
-* Create Courses Page
 * Make a contact page? 
 * update all links to correct paths
 * Read me
-
 
 ### Content 
 * Upload posts
