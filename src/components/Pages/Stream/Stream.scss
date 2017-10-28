@@ -1,0 +1,43 @@
+// From the stream page container
+.Stream-Page {
+	display: flex;
+
+}
+// from the stream page component
+.Stream, .PostListing {
+	ul {
+		margin: $spacing-unit;
+		& > a:hover {
+			color: black;
+		}
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		padding: $spacing-unit;
+		&:hover {
+			@include material-shadow;
+		}
+
+		.StreamItem--PostMeta {
+			flex: 0 1;
+			padding-right: $spacing-unit;
+			p {
+				font-family: $mono;
+				font-size: 1.2rem;
+			}
+		}
+
+		.StreamItem--PostContent {
+			span {
+				display: flex;
+				.tag {
+					font-family: $mono;
+					font-size: 1.2rem;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+}

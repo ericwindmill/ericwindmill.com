@@ -1,0 +1,180 @@
+.HomeTabs {
+	section {
+		z-index: 5;
+		width: 80vw;
+		//height: 80vh;
+		position: fixed;
+		right: -100vw;
+		top: $spacing-unit;
+		transition: all .7s ease;
+		padding: $spacing-unit;
+		@include material-shadow;
+		header {
+			display: flex;
+			justify-content: space-between;
+
+		}
+
+		.closeIcon {
+			width: 30px;
+			height: 30px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		&.reveal-tab {
+			right: 0;
+		}
+	}
+
+	.TabDetail--Header {
+		border-bottom: 1px solid black;
+		margin-bottom: $spacing-unit;
+	}
+	.HomeTabs--About {
+		background: lighten($purple, 15%);
+	}
+
+	.HomeTabs--Contact {
+		background: lighten($blue, 15%);
+
+		 p {
+			width: 60%;
+		}
+	}
+
+	.HomeTabs--Courses {
+		background: $turquoise;
+		top: -25px;
+		.link-out {
+			font-size: 2.5rem;
+			float: right;
+			padding-top: $spacing-unit;
+		}
+
+		ul {
+			a {
+				padding-bottom: 0;
+				&:hover {
+					color: black;
+					@include material-shadow;
+					cursor: pointer;
+				}
+
+				&:after {
+					height: 0%;
+				}
+				&:before {
+					height: 0%;
+				}
+			}
+
+			.CourseItem {
+				display: grid;
+				grid-column-gap: $spacing-unit / 2;
+				grid-template-areas:
+					'image title title'
+					'image about about';
+				padding: $spacing-unit / 2;
+				width: 100%;
+				h2 {
+					font-size: 2.8rem;
+					grid-area: title;
+				}
+
+				p {
+					font-size: 2.4rem;
+					grid-area: about;
+				}
+
+				img {
+					max-width: 15vw;
+					max-height: 15vw;
+					grid-area: image;
+				}
+
+				&.item-2 {
+					grid-template-areas:
+						'title title image'
+						'about about image';
+					justify-items: end;
+					text-align: right;
+					width: 100%;
+				}
+			}
+			.item-1 {background: darken($turquoise, 2%);}
+			.item-2 {background: darken($turquoise, 4%);}
+		}
+	}
+
+	.HomeTabs--Stream {
+		background: $peachy;
+		div {
+			display: flex;
+			flex-direction: column;
+		}
+
+		ul {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			a {
+				&:first-child > li {background: darken($peachy, 3%)}
+				&:nth-child(2) > li {background: darken($peachy, 2%)}
+				&:last-child > li {background: darken($peachy, 1%)}
+				padding-top: 0;
+				&:after {
+					height: 0%;
+				}
+				&:before {
+					height: 0%;
+				}
+			}
+
+			li {
+				&:hover {
+					color: black;
+					@include material-shadow;
+					cursor: pointer;
+				}
+			}
+
+			.StreamTab--Post {
+				width: calc(26.6666666667vw - 50px);
+				height: calc(26.666666667vw - 50px);
+				padding: $spacing-unit / 2;
+
+				h2 {
+					font-family: $serif;
+					font-size: 2.8rem;
+				}
+
+				.StreamTab--PostMeta {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					time, p {
+						font-family: $mono;
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+
+		a {
+			font-size: 2.5rem;
+			align-self: flex-end;
+			padding-top: $spacing-unit;
+
+			&:hover {
+				color: lighten($peachy, 25%);
+			}
+
+			&:hover:before {
+				background-color: lighten($peachy, 25%);
+			}
+		}
+	}
+}

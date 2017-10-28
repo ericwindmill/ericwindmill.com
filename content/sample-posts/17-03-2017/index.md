@@ -5,6 +5,7 @@ category: "tech"
 date: "17/03/2017"
 year: "2017"
 month: "March"
+type: "post"
 tags:
     - programming
     - more tags

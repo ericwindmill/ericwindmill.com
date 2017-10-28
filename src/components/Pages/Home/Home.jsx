@@ -8,13 +8,11 @@ import Footer from '../../Footer/Footer'
 
 class Home extends Component {
   render() {
-    // const { config } = this.props
-
     return (
       <div className="Home">
         <section className='Home--Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
-          {/*<UserLinks config={config} labeled />*/}
+          <div className='Hero--SocialLinks'><UserLinks config={config} /></div>
         </section>
         <main className='Home--Content'>
           <section className='Home--About'>
@@ -35,7 +33,7 @@ class Home extends Component {
             <ProjectListing postEdges={this.props.postEdges} />
           </section>
           <div className="Divider" />
-          <section>
+          <section className='Home--Currently'>
             <h2>
               Currently
             </h2>
@@ -49,9 +47,8 @@ class Home extends Component {
             <h2>
               Get In Touch
             </h2>
-            <ContactForm />
+            <ContactForm isTab={false} />
           </section>
-          <Footer />
         </main>
       </div>
     );

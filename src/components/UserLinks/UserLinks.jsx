@@ -1,27 +1,35 @@
-import React, { Component } from "react";
-import "./UserLinks.css";
+import React, { Component } from 'react'
+import { FaGithubAlt, FaTwitter, FaInstagram } from 'react-icons/lib/fa'
+import MdMessage from 'react-icons/lib/md/message'
 
 class UserLinks extends Component {
-  getLinkElements() {
-    const { userLinks } = this.props.config;
-    const { labeled } = this.props;
-    return userLinks.map(link =>
-      <button key={link.label} href={link.url}>
-        {labeled ? link.label : ""}
-      </button>
-    );
-  }
-  render() {
-    const { userLinks } = this.props.config;
-    if (!userLinks) {
-      return null;
-    }
+
+  render () {
     return (
       <div className="user-links">
-        {this.getLinkElements()}
+        <a href='https://github.com/ericwindmill'>
+          <div className='github icon-container'>
+            <FaGithubAlt className='social-icons'/>
+          </div>
+        </a>
+        <a href='https://twitter.com/ericwindmill?lang=en'>
+          <div className='twitter icon-container'>
+            <FaTwitter className='social-icons'/>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/ericwindmill/">
+          <div className='instagram icon-container'>
+            <FaInstagram className='social-icons'/>
+          </div>
+        </a>
+        <a href="https://www.messenger.com/t/eric.windmill">
+          <div className='message icon-container'>
+            <MdMessage className='social-icons'/>
+          </div>
+        </a>
       </div>
-    );
+    )
   }
 }
 
-export default UserLinks;
+export default UserLinks

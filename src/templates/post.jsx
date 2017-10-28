@@ -1,13 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
 import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
-import "./post.css";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -21,39 +19,53 @@ export default class PostTemplate extends React.Component {
       post.category_id = config.postDefaultCategoryID;
     }
     return (
-      <div>
+      <div className='PostTemplate--Container'>
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <div>
-          <h1>
-            {post.title}
-          </h1>
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          <div className="post-meta">
+        {/*Content*/}
+        <div className="Post--Page">
+          {/*hero*/}
+          <section className='Hero Post-Hero'>
+            <p className="PostDate">{post.month} {post.year}</p>
+            <h1>{post.title}</h1>
+            <h3>in {post.category}</h3>
+          </section>
+          {/*body*/}
+          <img src={post.cover} className='PostCover' alt='cover'/>
+          <section className='PostBody'>
+            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          </section>
+          {/*Footer -- Meta*/}
+          <div className="PostMeta">
             <PostTags tags={post.tags} />
             <SocialLinks postPath={slug} postNode={postNode} />
           </div>
           <UserInfo config={config} />
-          <Disqus postNode={postNode} />
         </div>
+
       </div>
     );
   }
 }
 
 /* eslint no-undef: "off"*/
+// first line just establishes the function that queries. No magic.
+// tje second line is creating a function of type query, and naming it BlogPostBySlug, and it takes a named argument called $slug.
+// third line is searching for a specific post which matches the slug.
+  // then we tell graphQL what information we actually want.
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) { 
       html
       timeToRead
-      excerpt
+      excerpt(pruneLength: 250)
       frontmatter {
         title
         cover
-        date
+        month
+        year
         category
         tags
       }

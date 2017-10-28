@@ -3,8 +3,9 @@ import { ShareButtons, ShareCounts, generateShareIcon } from "react-share";
 import config from "../../../data/SiteConfig";
 import "./SocialLinks.css";
 
-class SocialLinks extends Component {
+class   SocialLinks extends Component {
   render() {
+    console.log(config);
     const { postNode, postPath, mobile } = this.props;
     const post = postNode.frontmatter;
     const url = config.siteUrl + config.pathPrefix + postPath;
@@ -29,7 +30,7 @@ class SocialLinks extends Component {
     const GooglePlusIcon = generateShareIcon("google");
     const LinkedinIcon = generateShareIcon("linkedin");
     const RedditIcon = generateShareIcon("reddit");
-    const iconSize = mobile ? 36 : 48;
+    const iconSize = 36;
     const filter = count => (count > 0 ? count : "");
 
     return (
