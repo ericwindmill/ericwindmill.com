@@ -1,0 +1,73 @@
+.CoursesStream {
+	margin: auto;
+	width: 80%;
+	//TODO: Remove
+	height: 200vh;
+
+	.CourseItem {
+		margin-bottom: $spacing-unit;
+		padding: $spacing-unit / 2;
+		&:hover {
+			@include material-shadow;
+
+			& p, li, h2 {
+				color: black;
+			}
+		}
+	}
+
+	.CourseItem--Title {
+		width: 100%;
+		display: grid;
+		padding-bottom: $spacing-unit / 3;
+		grid-column-gap: 20px;
+		grid-template-areas:
+			'img title'
+			'img about';
+
+		img {
+			height: 15vw;
+			width: 15vw;
+			grid-area: img;
+		}
+
+		h2 {
+			grid-area: title;
+		}
+
+		p {
+			grid-area: about;
+		}
+	}
+
+	.CourseItem--Description {
+		width: 100%;
+
+		p {
+			width: 80%;
+			float: right;
+		}
+
+		ul {
+			font-size: $font-size;
+			line-height: $line-height;
+		}
+	}
+}
+
+section {
+	clear: both;
+}
+// Item specific non-reusable
+.item-1, .item-3 {
+	ul {
+		width: 80%;
+		float: right;
+		clear: both;
+
+		li {
+			margin-left: $spacing-unit;
+			list-style: disc;
+		}
+	}
+}

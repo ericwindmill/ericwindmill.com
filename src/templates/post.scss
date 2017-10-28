@@ -1,11 +1,59 @@
-.post-meta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.Hero.Post-Hero {
+	position: relative;
+	.PostDate {
+		position: absolute;
+		top: -20px;
+		color: grey;
+		font-family: $mono;
+		font-size: 1.2rem;
+	}
 }
 
-.Post--Page {
-	display: flex;
+.PostBody {
+	margin: $spacing-unit * 2 auto;
+	max-width: 50vw;
 }
-.Post {
+.PostCover {
+	margin: auto;
+	display: block;
+	overflow: hidden;
+	max-width: 100%;
+}
+.PostMeta {
+	border-top: 1px solid black;
+	margin: 0 $spacing-unit * 3;
+}
+
+
+.post-tag-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		font-size: 1.2rem;
+		margin: 8px 0 0 0;
+	}
+
+	a { button {
+		line-height: 0;
+		outline: none;
+		border: none;
+		text-decoration: underline;
+		background: transparent;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}}
+}
+
+.TagListingBody {
+	margin: $spacing-unit * 2 $spacing-unit * 3;
+	display: flex;
+	flex-direction: column;
+
+	.PostListing--Post {
+		display: block;
+	}
 }

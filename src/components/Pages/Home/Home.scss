@@ -8,7 +8,7 @@
 	margin: 100px 0;
 	padding: $spacing-unit $spacing-unit $spacing-unit 10vw;
 	background: $card-background-black;
-	width: 60vw;
+	width: 60%;
 	min-width: 600px;
 	color: $ink-on-black;
 	position: relative;
@@ -30,6 +30,6 @@
 	margin: auto;
 }
 
-.Home--About {
+.Home--About, .Home--Currently {
 	width: $paragraph-width-laptop;
 }

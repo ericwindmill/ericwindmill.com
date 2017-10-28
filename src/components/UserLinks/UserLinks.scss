@@ -1,6 +1,10 @@
 .user-links {
     display: flex;
     max-width: 100%;
+
+		a:last-child > div {
+			margin-right: 0;
+		}
 }
 
 .icon-container {
@@ -9,24 +13,7 @@
 	height: 33px;
 	margin-right: $spacing-unit / 3;
 	padding: 5px;
-
-	&:last-child {
-		margin-right: 0;
-	}
-
-	& > a {
-		margin: 0;
-		padding: 0;
-		color: inherit;
-		line-height: inherit;
-		font-size: inherit;
-		position: static;
-		text-decoration: none;
-
-		&:after {
-			content: none;
-		}
-	}
+	display: flex;
 
 	.social-icons {
 		color: white;

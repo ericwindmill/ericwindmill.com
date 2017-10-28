@@ -11,7 +11,7 @@ class Home extends Component {
 
     return (
       <div className="Home">
-        <section className='Home--Hero'>
+        <section className='Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
           <div className='Hero--SocialLinks'><UserLinks config={config} /></div>
         </section>
@@ -34,7 +34,7 @@ class Home extends Component {
             <ProjectListing postEdges={this.props.postEdges} />
           </section>
           <div className="Divider" />
-          <section>
+          <section className='Home--Currently'>
             <h2>
               Currently
             </h2>

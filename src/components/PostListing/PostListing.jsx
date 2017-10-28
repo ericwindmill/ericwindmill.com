@@ -10,9 +10,10 @@ class PostListing extends React.Component {
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
-        date: postEdge.node.frontmatter.date,
+        month: postEdge.node.frontmatter.month,
+        year: postEdge.node.frontmatter.year,
         excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead
+        timeToRead: postEdge.node.timeToRead,
       });
     });
     return postList;
@@ -20,17 +21,23 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div>
+      <ul className="PostListing">
         {/* Your post list here. */
         postList.map(post =>
-          <Link to={post.path} key={post.title}>
-            <h1>
-              {post.title}
-            </h1>
-            <p>{post.tags}</p>
-          </Link>
+            <Link to={post.path} key={post.title}>
+              <li>
+                <div className='StreamItem--PostMeta'>
+                  <p>{post.month} {post.year}</p>
+                  <p>Eric Windmill</p>
+                </div>
+                <div className='StreamItem--PostContent'>
+                  <h2>{post.title}</h2>
+                  <p>{post.excerpt}</p>
+                </div>
+              </li>
+            </Link>
         )}
-      </div>
+      </ul>
     );
   }
 }

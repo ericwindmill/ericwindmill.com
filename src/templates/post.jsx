@@ -6,7 +6,6 @@ import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
-import WideSideNavigation from '../components/Nav/WideNav'
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -19,32 +18,33 @@ export default class PostTemplate extends React.Component {
     if (!post.id) {
       post.category_id = config.postDefaultCategoryID;
     }
-    const excerpt = postNode.excerpt
-    const timeToRead = postNode.timeToRead
     return (
-      <div>
+      <div className='PostTemplate--Container'>
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
+        {/*Content*/}
         <div className="Post--Page">
-          <div className="Post">
-            <h1>
-              {post.title}
-            </h1>
-            <p>post id: {post.id}</p>
-            <p>post excerpt: {excerpt}</p>
-            <p>time to read: {timeToRead}</p>
-            <img src={post.cover}  alt="cactus" />
+          {/*hero*/}
+          <section className='Hero Post-Hero'>
+            <p className="PostDate">{post.month} {post.year}</p>
+            <h1>{post.title}</h1>
+            <h3>in {post.category}</h3>
+          </section>
+          {/*body*/}
+          <img src={post.cover} className='PostCover' alt='cover'/>
+          <section className='PostBody'>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-            <div className="post-meta">
-              <PostTags tags={post.tags} />
-              <SocialLinks postPath={slug} postNode={postNode} />
-            </div>
-            <UserInfo config={config} />
+          </section>
+          {/*Footer -- Meta*/}
+          <div className="PostMeta">
+            <PostTags tags={post.tags} />
+            <SocialLinks postPath={slug} postNode={postNode} />
           </div>
-          <WideSideNavigation />
+          <UserInfo config={config} />
         </div>
+
       </div>
     );
   }
@@ -64,7 +64,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         cover
-        date
+        month
+        year
         category
         tags
       }

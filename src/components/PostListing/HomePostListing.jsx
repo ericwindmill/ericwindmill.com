@@ -40,7 +40,7 @@ class PostListing extends React.Component {
     const postList = this.getPostList()
     return (
       <div className="HomePostListing">
-        <h1>Articles</h1>
+        <h2>Articles</h2>
         {/* Your post list here. */
           postList.map(post =>
             (<div
