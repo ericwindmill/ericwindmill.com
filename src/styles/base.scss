@@ -12,13 +12,14 @@ html {
 h1, h2, h3 {
 	font-family: $sans;
 	font-weight: $header-weight;
+	margin-bottom: 0;
 }
 
-p, h1, h2, h3 {
+p, ul {
 	margin-bottom: $text-margin-bottom;
 	line-height: $line-height;
 }
-p, a {
+p, a, ul {
 	font-size: $font-size;
 	line-height: $line-height;
 }
@@ -38,14 +39,17 @@ a {
 
 h1 {
 	font-size: 3.5rem;
+	margin-bottom: $text-margin-bottom;
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 3rem;
+	margin-bottom: $text-margin-bottom;
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 2.5rem;
+	margin-bottom: $text-margin-bottom / 4;
 }
 
 .subtext {
@@ -54,11 +58,41 @@ h3 {
 
 
 /*********
+** Blockquote **
+ ********/
+
+blockquote {
+	width: calc(100% + 33px);
+	color: black;
+	border-left: 8px solid darken($peachy, 20%);
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: $spacing-unit /2;
+	margin: ($spacing-unit * 2) 0;
+	font-style: italic;
+	quotes: "\0022""\0022""\2018""\2019";
+	position: relative;
+	left: -(8px + ($spacing-unit/2));
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/*********
 ** Divider **
  ********/
 
 .Divider {
 	margin: $spacing-unit 0;
+	display: block;
+	clear: both;
+	border-bottom: 1px solid $divider;
+}
+
+.Mini-Divider {
+	width: 100px;
+	margin: $spacing-unit auto;
 	display: block;
 	clear: both;
 	border-bottom: 1px solid $divider;
