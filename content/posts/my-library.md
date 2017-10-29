@@ -1,11 +1,11 @@
 ---
 title: "My Library"
 cover: "https://unsplash.it/1152/300/?random?MyLibrary"
-category: "life"
-date: “05/11/2016”
-year:  2016
-month: “November” 
 type: “Post”
+category: "Life"
+date: “05/11/2016”
+year: 2016
+month: November
 tags:
     - books
     - reading

@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`crimson text:400, 400i, 700, 700i`,
-          `inconsolata:400, 700`,
+                `space mono:400,700`,
         ],
       }
     },
@@ -158,6 +158,8 @@ module.exports = {
                       title
                       cover
                       date
+                      month
+                      year
                       category
                       tags
                       type
