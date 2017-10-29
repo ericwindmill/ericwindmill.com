@@ -52,7 +52,7 @@ class Stream extends Component {
       <div className="Stream">
         <section className='Hero'>
           <h1>Stream</h1>
-          <h2>Articles, Projects and Client Work</h2>
+          <h2>Articles, Tutorials, Projects and Client Work</h2>
         </section>
         <ul>
           {this.getPostListing()}

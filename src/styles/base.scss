@@ -16,7 +16,10 @@ p, ul, table{
 	margin-bottom: $text-margin-bottom;
 	line-height: $line-height;
 }
-p, a, ul, table, caption, tbody, tfoot, thead, tr, th, td {
+
+p, a, ul,
+table, caption, tbody, tfoot, thead, tr, th, td,
+input, textarea, button {
 	font-size: $font-size;
 	line-height: $line-height;
 	font-family: $serif;
@@ -34,6 +37,8 @@ a {
 		cursor: pointer;
 	}
 }
+
+p > a {text-decoration: underline;}
 
 h1 {
 	font-size: 3.5rem;
@@ -53,6 +58,11 @@ h3 {
 .subtext {
 	font-size: 1.25rem;
 }
+/*********
+** Forms **
+ ********/
+
+
 /*********
 ** Blockquote **
  ********/

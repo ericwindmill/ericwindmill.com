@@ -1,6 +1,6 @@
 ---
-title: Step By Step: Planning a Web Application
-category: Programming
+title: "Step By Step: Planning a Web Application"
+category: "Programming"
 type: Post
 date: 06/13/2017
 year: 2010

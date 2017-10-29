@@ -50,7 +50,7 @@ class StreamTab extends Component {
         <ul>
           {postList}
         </ul>
-        <Link to='/stream'>All Blog Posts →</Link>
+        <Link className='link-out' to='/stream'>All Blog Posts →</Link>
       </div>
     )
   }

@@ -1,8 +1,8 @@
 ---
-title: Learning Dart from JavaScript
-cover: https://unsplash.it/1152/300/?random?MyLibrary
-type: Post
-category: Programming
+title: "Learning Dart from JavaScript"
+cover: "https://unsplash.it/1152/300/?random?MyLibrary"
+type: "Post"
+category: "Programming"
 date: 09/01/2017
 year: 2015
 month: September
@@ -13,8 +13,6 @@ tags:
     - flutter
     - tech
 ---
-
-
 ## Why I'm Learning Dart
 I've recently accepted a position with a company that has an interesting stack. They're basically all in on Google (Go, Dart, Angular, Polymer and even Flutter). I'm a huge victim of shiny object syndrom, so I was quick to accept a job that would force me to learn all new languages and technologies.
 

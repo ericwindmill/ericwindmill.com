@@ -12,7 +12,6 @@
 		header {
 			display: flex;
 			justify-content: space-between;
-
 		}
 
 		.closeIcon {
@@ -43,16 +42,15 @@
 		 p {
 			width: 60%;
 		}
+
+		a {
+			float: right;
+		}
 	}
 
 	.HomeTabs--Courses {
 		background: $turquoise;
 		top: -25px;
-		.link-out {
-			font-size: 2.5rem;
-			float: right;
-			padding-top: $spacing-unit;
-		}
 
 		ul {
 			a {
@@ -177,4 +175,11 @@
 			}
 		}
 	}
+}
+
+.link-out {
+	font-size: 2.5rem;
+	float: right;
+	padding-top: $spacing-unit;
+	text-decoration: underline;
 }
