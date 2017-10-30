@@ -14,6 +14,7 @@
 .Contact--Container
 {
 	width: 100%;
-	min-width: 80vw;
+	//min-width: 80vw;
 	overflow: scroll;
+	padding-bottom: $spacing-unit * 2;
 }

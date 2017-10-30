@@ -1,4 +1,5 @@
 import React, {Component} from  'react'
+import Link from 'gatsby-link'
 
 class AboutTab extends Component {
   render() {
@@ -8,6 +9,7 @@ class AboutTab extends Component {
          I’m currently design tinkering on Google Lens, previously Maps.
          I also write and speak about design.</em></p>
        <img src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,h_200/v1501186620/portfolio_site/bw_clinton_photography.png' />
+       <Link className='link-out' to='/about'>To Full Bio →</Link>
      </div>
     )
   }

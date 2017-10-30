@@ -8,15 +8,21 @@
 	}
 
 	.HomePostListing--Post {
-		display: flex;
-		.HomePostListing--DateMeta {
+		display: grid;
+		grid-template-columns: 100px 50px 1fr;
+		padding-bottom: $spacing-unit / 4;
 
+		.HomePostListing--DateMeta {
 			display: flex;
 			flex-direction: column;
 			p {
 				font-family: $mono;
-				font-size: .7em;
+				font-size: 1.5em;
 			}
+		}
+		.HomePostListing--Category {
+			font-family: $mono;
+			font-size: 1.5em;
 		}
 	}
 }

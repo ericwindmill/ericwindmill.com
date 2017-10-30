@@ -12,7 +12,7 @@ class ContactPage extends Component {
           <p>Feel free to reach out if you wanna chat about work, or just say 'hi'!</p>
           <p>Fill out the form below, email me at <a href='mailto:eric@ericwindmill.com'>eric@ericwindmill.com</a>, or give me a call at <b>502-608-2287</b>.</p>
           <div className='Contact--FormContainer'>
-          <ContactForm />
+          <ContactForm isTab />
           </div>
         </section>
 

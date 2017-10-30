@@ -6,7 +6,7 @@ import config from "../../data/SiteConfig";
 class AboutPage extends Component {
   render() {
     return (
-      <div className="Courses--Container">
+      <div className="About--Container">
         <Helmet title={`About | ${config.siteTitle}`} />
         <About />
       </div>
