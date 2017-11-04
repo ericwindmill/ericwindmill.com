@@ -1,14 +1,13 @@
 .About--Body {
 	margin: auto;
-	width: 60%;
-
-	p:nth-child(3) {
-		width: 60%;
-	}
+	width: 45vw;
 
 	img {
-		position: fixed;
-		right: 250px;
-		bottom: -5px;
+		width: 300px;
+		float: right;
+		outline: 5px solid black;
+		outline-offset: -5px;
+		position: relative;
+		right: -100px;
 	}
 }

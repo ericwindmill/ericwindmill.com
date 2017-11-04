@@ -9,6 +9,7 @@
 			margin-bottom: 20px;
 			font-size: $font-size;
 			width: 40%;
+			min-width: 400px;
 			transition: all .3s ease;
 			&::-webkit-input-placeholder {
 				color: lighten($link-ink, 20%);
@@ -32,6 +33,7 @@
 		overflow: hidden;
 		resize: none;
 		width: 60%;
+		min-width: 500px;
 		transition: all .3s ease;
 		&::-webkit-input-placeholder {
 			color: lighten($link-ink, 20%);

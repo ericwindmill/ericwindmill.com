@@ -2,9 +2,6 @@
 
 ##MVP
 ### Content 
-* Upload posts
-* Upload Projects
-* Write all copy
 
 ### Deployment
 * Netlify
@@ -21,13 +18,5 @@
 * Disqus
 * SEO
 * Style Blog Posts super interestingly like Primer
-
-
-## Done-zo
-* Main Nav Tabs (Cant do well until you've pulled in everything else?)
-* Style Blog posts
-* tags page
-* style code / tables / posts
-* make a contact page
-* Make an about page 
-* update all links to correct paths
+* Create 'more info pages' for projects/courses (aka sales pages).
+* Now Playing / Now Reading at bottom of home page. 

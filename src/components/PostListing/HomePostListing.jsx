@@ -19,7 +19,7 @@ class PostListing extends React.Component {
   getPostList () {
     const postList = []
     this.props.postEdges.forEach(postEdge => {
-      if (postEdge.node.frontmatter.type !== 'project') {
+      if (postEdge.node.frontmatter.type !== 'Project') {
         postList.push({
           path: postEdge.node.fields.slug,
           tags: postEdge.node.frontmatter.tags,

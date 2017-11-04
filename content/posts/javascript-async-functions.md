@@ -3,17 +3,16 @@ title:  "Javascript Async Functions"
 cover: "https://unsplash.it/1152/300/?random?Async"
 type: "Post" 
 category: "Programming"
-date: 02/01/2017
+date: 08/01/2017
 year: 2015
 month: February
 tags:
     - javascript
     - career
-    - algorithms
     - study
 ---
-# Using Async and Await in JavaScript
 *I originally published this article on [CSS Tricks](http://csstricks.com).*
+
 ES2017 was finalized in June, and with it came wide support for my new favorite JavaScript feature: async functions! If you've ever struggled with reasoning about asynchronous JavaScript, this is for you. If you haven't, then, well, you're probably a super-genius.
 
 Async functions more or less let you write sequenced JavaScript code, without wrapping all your logic in callbacks, generators, or promises. Consider this:

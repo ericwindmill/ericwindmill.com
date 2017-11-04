@@ -3,7 +3,7 @@ title: "My Library"
 cover: "https://unsplash.it/1152/300/?random?MyLibrary"
 type: “Post”
 category: "Life"
-date: 05/11/2016
+date: 01/11/2016
 year: 2016
 month: November
 tags:

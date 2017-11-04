@@ -5,7 +5,7 @@ html {
 /*********
 ** Font **
  ********/
-p, ul, table{
+p, ul, ol, table{
 	margin-bottom: $text-margin-bottom;
 	line-height: $line-height;
 }
