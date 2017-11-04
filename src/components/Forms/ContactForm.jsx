@@ -26,7 +26,7 @@ class ContactForm extends Component {
     return (
 
 
-      <form className='ContactForm'>
+      <form netlify className='ContactForm'>
         <input type="hidden" name="form-name" value="contact" />
         <input type='text' name='email' placeholder='Your Email' />
         <textarea type='text' onChange={this.resizeTextarea} name='message' placeholder='Your Message' />
