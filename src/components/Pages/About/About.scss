@@ -2,7 +2,13 @@
 	margin: auto;
 	width: 60%;
 
+	p:nth-child(3) {
+		width: 60%;
+	}
+
 	img {
-		float: right;
+		position: fixed;
+		right: 250px;
+		bottom: -5px;
 	}
 }

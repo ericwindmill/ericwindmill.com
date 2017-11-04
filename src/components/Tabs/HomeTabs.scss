@@ -31,10 +31,19 @@
 
 
 	.HomeTabs--About {
-		background: lighten($purple, 15%);
+		background: $purple;
+		.AboutTab--Container {
 
-		img, p {
-			clear: both;
+		}
+		img {
+			//border: 3px solid $turquoise;
+			width: 300px;
+			height: 100%;
+			float: left;
+			margin-right: $spacing-unit;
+		}
+		p {
+			width: 60%;
 		}
 	}
 

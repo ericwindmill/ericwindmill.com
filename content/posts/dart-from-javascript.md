@@ -1,10 +1,10 @@
 ---
 title: "Learning Dart from JavaScript"
-cover: "https://unsplash.it/1152/300/?random?MyLibrary"
+cover: "https://unsplash.it/1152/300/?random?Dart"
 type: "Post"
 category: "Programming"
 date: 09/01/2017
-year: 2015
+year: 2017
 month: September
 tags:
     - dart
