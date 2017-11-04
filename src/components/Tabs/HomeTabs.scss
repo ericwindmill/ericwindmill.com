@@ -2,19 +2,19 @@
 	section {
 		z-index: 5;
 		width: 80vw;
-		//height: 80vh;
 		position: fixed;
 		right: -100vw;
 		top: $spacing-unit;
 		transition: all .7s ease;
 		padding: $spacing-unit;
 		@include material-shadow;
+
 		header {
 			display: flex;
 			justify-content: space-between;
-
+			border-bottom: 1px solid black;
+			margin-bottom: $spacing-unit;
 		}
-
 		.closeIcon {
 			width: 30px;
 			height: 30px;
@@ -29,13 +29,21 @@
 		}
 	}
 
-	.TabDetail--Header {
-		border-bottom: 1px solid black;
-		margin-bottom: $spacing-unit;
-	}
+
 	.HomeTabs--About {
-		background: lighten($purple, 15%);
+		background: $purple;
+		.AboutTab--Container {
+
+		}
+		img {
+			//border: 3px solid $turquoise;
+			width: 300px;
+			height: 100%;
+			float: left;
+			margin-right: $spacing-unit;
+		}
 	}
+
 
 	.HomeTabs--Contact {
 		background: lighten($blue, 15%);
@@ -43,16 +51,15 @@
 		 p {
 			width: 60%;
 		}
+
+		a {
+			float: right;
+		}
 	}
 
 	.HomeTabs--Courses {
 		background: $turquoise;
 		top: -25px;
-		.link-out {
-			font-size: 2.5rem;
-			float: right;
-			padding-top: $spacing-unit;
-		}
 
 		ul {
 			a {
@@ -79,14 +86,13 @@
 					'image about about';
 				padding: $spacing-unit / 2;
 				width: 100%;
-				h2 {
-					font-size: 2.8rem;
+				h3 {
 					grid-area: title;
 				}
 
 				p {
-					font-size: 2.4rem;
 					grid-area: about;
+					margin-bottom: 0;
 				}
 
 				img {
@@ -111,10 +117,6 @@
 
 	.HomeTabs--Stream {
 		background: $peachy;
-		div {
-			display: flex;
-			flex-direction: column;
-		}
 
 		ul {
 			display: grid;
@@ -148,7 +150,7 @@
 
 				h2 {
 					font-family: $serif;
-					font-size: 2.8rem;
+					font-size: 2.4rem;
 				}
 
 				.StreamTab--PostMeta {
@@ -157,24 +159,19 @@
 					justify-content: space-between;
 					time, p {
 						font-family: $mono;
-						font-size: 1.4rem;
+						font-size: 1.2rem;
 					}
 				}
 			}
 		}
+	}
+}
 
-		a {
-			font-size: 2.5rem;
-			align-self: flex-end;
-			padding-top: $spacing-unit;
+.link-out {
+	float: right;
+	text-decoration: underline;
 
-			&:hover {
-				color: lighten($peachy, 25%);
-			}
-
-			&:hover:before {
-				background-color: lighten($peachy, 25%);
-			}
-		}
+	&:hover {
+		color: black;
 	}
 }

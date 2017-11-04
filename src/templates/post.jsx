@@ -18,6 +18,7 @@ export default class PostTemplate extends React.Component {
     if (!post.id) {
       post.category_id = config.postDefaultCategoryID;
     }
+    // const coverImg = (post.cover) ? <img src={post.cover} className='PostCover' alt='cover' /> : <div />
     return (
       <div className='PostTemplate--Container'>
         <Helmet>
@@ -33,7 +34,7 @@ export default class PostTemplate extends React.Component {
             <h3>in {post.category}</h3>
           </section>
           {/*body*/}
-          <img src={post.cover} className='PostCover' alt='cover'/>
+          {/*{coverImg}*/}
           <section className='PostBody'>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
           </section>

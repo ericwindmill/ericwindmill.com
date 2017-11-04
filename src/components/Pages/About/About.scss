@@ -1,0 +1,13 @@
+.About--Body {
+	margin: auto;
+	width: 45vw;
+
+	img {
+		width: 300px;
+		float: right;
+		outline: 5px solid black;
+		outline-offset: -5px;
+		position: relative;
+		right: -100px;
+	}
+}

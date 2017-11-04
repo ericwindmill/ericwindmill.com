@@ -13,6 +13,7 @@ class Stream extends Component {
         title: postEdge.node.frontmatter.title,
         month: postEdge.node.frontmatter.month,
         year: postEdge.node.frontmatter.year,
+        type: postEdge.node.frontmatter.type,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead,
       })
@@ -24,8 +25,7 @@ class Stream extends Component {
       if (post.tags) {
         tagList = post.tags.map(tag => <p className="tag">{tag}</p>)
       }
-
-      if (post.type !== 'project') {
+      if (post.type !== "Project") {
         return(
           <Link to={post.path} key={post.title}>
             <li>
@@ -41,9 +41,22 @@ class Stream extends Component {
             </li>
           </Link>
         )
-      }
-    })
-
+      } else {
+      return(
+        <Link to={post.path} key={post.title}>
+          <li className='Stream--ProjectLi'>
+            <div className='StreamItem--PostMeta'>
+            </div>
+            <div className='StreamItem--PostContent'>
+              <h2>{post.title}</h2>
+              <p>{post.excerpt}</p>
+              <span>{tagList}</span>
+            </div>
+          </li>
+        </Link>
+      )
+    }
+  })
     return postItems
   }
 
@@ -52,7 +65,7 @@ class Stream extends Component {
       <div className="Stream">
         <section className='Hero'>
           <h1>Stream</h1>
-          <h2>Articles, Projects and Client Work</h2>
+          <h2>Articles, Tutorials, Projects and Client Work</h2>
         </section>
         <ul>
           {this.getPostListing()}

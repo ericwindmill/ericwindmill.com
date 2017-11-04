@@ -1,7 +1,6 @@
 // From the stream page container
 .Stream-Page {
 	display: flex;
-
 }
 // from the stream page component
 .Stream, .PostListing {
@@ -40,4 +39,9 @@
 			}
 		}
 	}
+}
+
+.Stream--ProjectLi {
+	border: 5px solid $peachy;
+	width: 100%;
 }

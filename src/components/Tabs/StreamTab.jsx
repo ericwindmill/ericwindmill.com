@@ -5,7 +5,6 @@ import Link from 'gatsby-link'
 class StreamTab extends Component {
 
   getRecentPosts(postEdges) {
-    console.log(this.props);
     const postList = [];
     for (let i = 0; i < 3; i++) {
       postList.push({
@@ -36,7 +35,7 @@ class StreamTab extends Component {
           <li>
             <div className='StreamTab--Post'>
               <div className='StreamTab--PostMeta'>
-                <time>{post.month}{post.year}</time>
+                <time>{post.month} {post.year}</time>
                 <p>{this.getTags(post)}</p>
               </div>
               <h2>{post.title}</h2>
@@ -50,7 +49,7 @@ class StreamTab extends Component {
         <ul>
           {postList}
         </ul>
-        <Link to='/stream'>All Blog Posts →</Link>
+        <Link className='link-out' to='/stream'>All Blog Posts →</Link>
       </div>
     )
   }

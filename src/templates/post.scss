@@ -11,7 +11,11 @@
 
 .PostBody {
 	margin: $spacing-unit * 2 auto;
-	max-width: 50vw;
+	min-width: 600px;
+	max-width: 40vw;
+	p > img, img {
+		width: 100%;
+	}
 }
 .PostCover {
 	margin: auto;
@@ -57,3 +61,4 @@
 		display: block;
 	}
 }
+

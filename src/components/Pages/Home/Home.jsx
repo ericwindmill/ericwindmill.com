@@ -4,26 +4,20 @@ import PostListing from '../../PostListing/HomePostListing'
 import ProjectListing from '../../PostListing/HomeProjectListing'
 import ContactForm from '../../Forms/ContactForm'
 import UserLinks from '../../UserLinks/UserLinks'
-import config from '../../../../data/SiteConfig'
+import config from "../../../../data/SiteConfig";
 
 class Home extends Component {
   render() {
-
     return (
       <div className="Home">
-        <section className='Hero'>
+        <section className='Home--Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
           <div className='Hero--SocialLinks'><UserLinks config={config} /></div>
         </section>
         <main className='Home--Content'>
           <section className='Home--About'>
-            <h2>About Me</h2>
-            <p><em>Hi! I’m Eric Windmill. I’m a designer, writer, speaker and coffee enthusiast currently residing in beautiful Zurich, Switzerland. I help companies create memorable experiences through user centered design.
-            I’m currently design tinkering on Google Lens, previously Maps.
-              I also write and speak about design.</em></p>
-            <p>Hi! I’m Eric Windmill. I’m a <a>designer</a>, writer, speaker and coffee enthusiast currently residing in beautiful Zurich, Switzerland. I help companies create memorable experiences through user centered design.
-              I’m currently design tinkering on Google Lens, previously Maps.
-              I also write and speak about design.</p>
+            <h2>Welcome!</h2>
+            <p><em>Hi! I’m Eric Windmill. I’m a front-end developer, UI designer, and writer working to make the web a better place. I help companies create killer user-centered experiences on web (and now, mobile!) and I implement the code it needs to work. You can hire me to work with your team with deign or development. I'm current available for small projects.</em></p>
           </section>
           <div className='Divider' />
           <section className={'Home--PostList'}>
@@ -38,10 +32,8 @@ class Home extends Component {
             <h2>
               Currently
             </h2>
-            <p>AppTree Software - Portland, OR</p>
-            <p>
-              I'm currently working for Enterprise SaaS company AppTree. I work on both the web client and the mobile app. This job is a blast because we're working in Dart with Flutter and Polymer. I'm the first employee hired solely for the Flutter team, where we're porting the app from native iOS and Android.  I spend most of my time implementing the front-end and UI.
-            </p>
+            <h4>AppTree Software - Portland, OR</h4>
+            <p>I'm currently working for Enterprise SaaS company AppTree. I work on both the web client and the mobile app. This job is a blast because we're working in Dart with Flutter and Polymer. I'm the first employee hired solely for the Flutter team, where we're porting the app from native iOS and Android.  I spend most of my time implementing the front-end and UI.</p>
           </section>
           <div className="Divider" />
           <section>

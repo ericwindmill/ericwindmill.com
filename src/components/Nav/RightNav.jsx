@@ -31,9 +31,11 @@ class WideSideNavigation extends Component {
         <div className='WideNavigation'>
           <nav>
             <Link className='to-Stream' to='/stream'>Stream</Link>
-            <Link className='to-Contact' to='/'>Contact</Link>
             <Link className='to-Courses' to='/courses'>Courses</Link>
+            <Link className='to-Contact' to='/contact'>Contact</Link>
+            <Link className='to-Courses' to='/about'>About</Link>
             <Link className='to-About' to='/'>Home</Link>
+            <Link to='/opt-in'>Mailing List</Link>
           </nav>
           <footer>
             <h2>Elsewhere</h2>

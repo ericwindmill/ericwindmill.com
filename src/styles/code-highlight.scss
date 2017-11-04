@@ -1,0 +1,148 @@
+
+/*********
+** Code Blocks ``` **
+ ********/
+$turq: #00D0D0;
+$peach: #FF8080;
+$skin: #EFC090;
+$light-blue: #BED6FF;
+$yellow: #CCDF32;
+$pink: #DC78DC;
+code {
+	font-family: $mono;
+}
+
+.gatsby-highlight {
+	margin: $spacing-unit 0;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	padding: $spacing-unit;
+	color: #f8f8f2;
+	background: transparent;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: $mono;
+	font-size: $code-text-size;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code -- Don't actualy know if this is used*/
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+/*Inline MarkdownCode*/
+:not(pre) > code {
+	background: lighten($card-background-black, 70%);
+	font-size: $code-text-size;
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: lighten($card-background-black, 50%);
+}
+
+.token.class-name {
+	color: $peach;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: $skin;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted,
+.token.variable {
+	color: $pink;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string{
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+	color: $light-blue;
+}
+
+.token.keyword {
+	color: $turq;
+}
+
+.token.regex,
+.token.important {
+	color: $yellow;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
