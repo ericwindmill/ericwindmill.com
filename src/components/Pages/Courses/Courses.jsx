@@ -63,11 +63,11 @@ class CoursesPage extends Component {
                   control and an incredible take on layout.</p>
               </div>
               <div className='coming-soon'>
-                <a href='http://google.com'>
+                <Link to='/opt-in'>
                 <h1>Coming Soon</h1>
                   <p>Click here to be notified when the course is ready for
               beta users.</p>
-                </a>
+                </Link>
               </div>
               <div className='CourseItem--Description'>
                 <p>This is the future, people. Build your next mobile app in no time using Google's newest tool. Without
