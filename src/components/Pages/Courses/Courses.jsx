@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import cssLogo from '../../../assets/css3_unofficial_shaped.png'
+import flutterLogo from '../../../assets/flutter-logo.png'
+import onTheGridLogo from '../../../assets/on-the-grid-logo.png'
 
 class CoursesPage extends Component {
   render () {
@@ -13,8 +16,11 @@ class CoursesPage extends Component {
           <li className='CourseItem item-1'>
             <a href='http://layoutbyexample.com'>
               <div className='CourseItem--Title'>
-                <img className='CourseItem-Image' alt='layout by example cover'
-                     src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_400/v1509824174/portfolio_site/css3_unofficial_shaped.png'/>
+                <img
+                  className='CourseItem-Image'
+                  alt='layout by example cover'
+                  src={cssLogo}
+                />
                 <h2>CSS Layout By Example</h2>
                 <p>As developers, our goals for good CSS should never be 'good enough'. Stand out--Learn everything you
                   need to know to make beautiful layouts in 2017 - in about an hour.</p>
@@ -39,7 +45,7 @@ class CoursesPage extends Component {
             <a href='https://ericwindmill.github.io/on-the-grid/'>
               <div className='CourseItem--Title'>
                 <img className='CourseItem-Image' alt='layout by example cover'
-                     src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_400/v1509824905/portfolio_site/on-the-grid-logo.png'/>
+                     src={onTheGridLogo}/>
                 <h2>On the Grid</h2>
                 <p>A CSS Grid Sandbox. Test the properties in in real time. Master CSS Grid in an interactive
                   environment.</p>
@@ -56,7 +62,7 @@ class CoursesPage extends Component {
             <a href='#'>
               <div className='CourseItem--Title'>
                 <img className='CourseItem-Image' alt='layout by example cover'
-                     src='http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_400/v1509825046/portfolio_site/flutter-logo.png'/>
+                     src={flutterLogo} />
                 <h2>Flutter By Example</h2>
                 <p>Flutter is the newest (and best) 'write once, deploy anywhere' mobile framework, brought to you by
                   Google. Flutter boasts the hottest hot reload I've ever seen, blazing speed, complete developer
@@ -64,9 +70,9 @@ class CoursesPage extends Component {
               </div>
               <div className='coming-soon'>
                 <Link to='/opt-in'>
-                <h1>Coming Soon</h1>
+                  <h1>Coming Soon</h1>
                   <p>Click here to be notified when the course is ready for
-              beta users.</p>
+                    beta users.</p>
                 </Link>
               </div>
               <div className='CourseItem--Description'>

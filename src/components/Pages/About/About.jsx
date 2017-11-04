@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './About.scss'
+import cartoonNoBackground from '../../../assets/no-bg-cartoon.png'
 
 class About extends Component {
   render () {
@@ -10,7 +11,7 @@ class About extends Component {
         </section>
         <section className='About--Body'>
           <div className='About--Content'>
-          <img src='http://res.cloudinary.com/ericwindmill/image/upload/v1509817350/portfolio_site/no-bg-cartoon.png'/>
+          <img src={cartoonNoBackground} />
           <p><em>Hi! I’m Eric Windmill. </em></p>
           <p>I’m a front-end developer, writer, UI designer and Sommelier. I I currently live in rainy and beautiful
             Portland, Oregon, USA. I help clients and comapnies design killer user-centered experiences on mobile and
