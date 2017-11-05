@@ -6,6 +6,8 @@ Here you'll find [my website](http://ericwindmill.com)
 
 The latest redesign of my site was done with [GatbsyJs](http://gatsbyjs.org), which has been an absolute joy to build with. If you like React, check it out. 😎
 
+If you aren't familiar, Gatsby is a static site generator built in React. So this site is a SPA, built in React, and my preferred CSS pre-processor is SCSS. I host using Netlify.
+
 
 ## Who's this website for?
 
