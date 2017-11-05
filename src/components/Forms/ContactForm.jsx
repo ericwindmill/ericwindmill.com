@@ -26,8 +26,16 @@ class ContactForm extends Component {
     return (
 
 
-      <form netlify netlify-honeypot className='ContactForm'>
+      <form
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        className='ContactForm'
+        method='post'
+        action='thank-you'
+        name='contact'
+      >
         <input type="hidden" name="form-name" value="contact" />
+        <p hidden><label>Don’t fill this out: <input name="bot-field" /></label></p>
         <input type='text' name='email' placeholder='Your Email' />
         <textarea type='text' onChange={this.resizeTextarea} name='message' placeholder='Your Message' />
         {submitRegion}
