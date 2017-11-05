@@ -2,11 +2,7 @@
 
 ##MVP
 ### Content 
-
 ### Deployment
-* Netlify
-* Contact Form func
-
 ### Style
 * Read me
 
