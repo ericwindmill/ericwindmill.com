@@ -4,10 +4,10 @@
 ### Content 
 ### Deployment
 ### Style
-* Read me
+
+FIN 🤙🤠🌶
 
 ## After Deploy (Bells and Whistles)
-* Create non-Home Nav --> Add recent posts if reading a post.
 * responsive
 * Click anywhere to close tabs
 * Disqus

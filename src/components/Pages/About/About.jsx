@@ -13,7 +13,7 @@ class About extends Component {
           <div className='About--Content'>
           <img src={cartoonNoBackground} />
           <p><em>Hi! I’m Eric Windmill. </em></p>
-          <p>I’m a front-end developer, writer, UI designer and Sommelier. I I currently live in rainy and beautiful
+          <p>I’m a front-end developer, writer, UI designer and Sommelier. I currently live in dreamy
             Portland, Oregon, USA. I help clients and comapnies design killer user-centered experiences on mobile and
             web and implement the code it needs to work.
             I also write about development and design and my opinions here, at Huffington Post, and CSS Tricks.</p>
