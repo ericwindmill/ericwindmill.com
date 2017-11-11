@@ -7,14 +7,14 @@ class StreamTab extends Component {
   getRecentPosts(postEdges) {
     const postList = [];
     for (let i = 0; i < 3; i++) {
-      postList.push({
-        slug: postEdges[i].node.fields.slug,
-        title: postEdges[i].node.frontmatter.title,
-        date: postEdges[i].node.frontmatter.date,
-        month: postEdges[i].node.frontmatter.month,
-        year: postEdges[i].node.frontmatter.year,
-        tags: postEdges[i].node.frontmatter.tags
-      })
+      // postList.push({
+      //   slug: postEdges[i].node.fields.slug,
+      //   title: postEdges[i].node.frontmatter.title,
+      //   date: postEdges[i].node.frontmatter.date,
+      //   month: postEdges[i].node.frontmatter.month,
+      //   year: postEdges[i].node.frontmatter.year,
+      //   tags: postEdges[i].node.frontmatter.tags
+      // })
     }
     return postList
   }

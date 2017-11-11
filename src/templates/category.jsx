@@ -6,7 +6,7 @@ import config from "../../data/SiteConfig";
 export default class CategoryTemplate extends React.Component {
   render() {
     const category = this.props.pathContext.category;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    // const postEdges = this.props.data.wordpr;
     return (
       <div className="category-container">
         <Helmet
@@ -23,28 +23,19 @@ export default class CategoryTemplate extends React.Component {
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
-  query CategoryPage($category: String) {
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { category: { eq: $category } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
-          frontmatter {
+    query CategoryPage($category: String) {
+      allWordpressPost {
+        edges{
+          node{
+            excerpt
             title
-            tags
-            cover
             date
+            tags{
+              name
+              count
+            }
           }
         }
       }
     }
-  }
-`;
+`

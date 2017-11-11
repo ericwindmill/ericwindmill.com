@@ -40,7 +40,7 @@ export default class MainLayout extends React.Component {
     return title;
   }
   render() {
-    const { children, data, location } = this.props;
+    const { children, data, location } = this.props
     return (
       <div className='IndexTemplate--Container'>
         <Helmet>
@@ -48,10 +48,11 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <div className='IndexTemplate--Page'>
+          <h1> YEAH </h1>
           {children()}
           <WideSideNavigation
             path={location.pathname}
-            postEdges={data.allMarkdownRemark.edges}
+            postEdges={data.allWordpressPost.edges}
           />
         </div>
       </div>
@@ -59,31 +60,35 @@ export default class MainLayout extends React.Component {
   }
 }
 
-/* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query PostsQuery {
-        allMarkdownRemark(
-          limit: 10
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              excerpt
-              timeToRead
-              frontmatter {
-                title
-                tags
-                cover
-                date
-                year
-                month
-                type
-              }
-            }
-          }
-        }
-  }
-`
+// /* eslint no-undef: "off" */
+// export const pageQuery = graphql`
+//  query indexQuery {
+//   allWordpressPost(
+//   limit: 10
+//   ) {
+//     edges {
+//       node {
+//         id
+//         slug
+//         title
+//         content
+//         excerpt
+//         date
+//         modified
+//         author {
+//           name
+//         }
+//         template
+//         categories {
+//           name
+//         }
+//         tags{
+//           name
+//         }
+//         acf {
+// 					project
+//         }
+//       }
+//     }
+//   }
+// }`;

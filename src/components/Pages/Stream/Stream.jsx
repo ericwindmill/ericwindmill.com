@@ -5,19 +5,19 @@ class Stream extends Component {
 
   getPostListing() {
     const postList = [];
-    this.props.posts.forEach(postEdge => {
-      postList.push({
-        path: postEdge.node.fields.slug,
-        tags: postEdge.node.frontmatter.tags,
-        cover: postEdge.node.frontmatter.cover,
-        title: postEdge.node.frontmatter.title,
-        month: postEdge.node.frontmatter.month,
-        year: postEdge.node.frontmatter.year,
-        type: postEdge.node.frontmatter.type,
-        excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead,
-      })
-    })
+    // this.props.posts.forEach(postEdge => {
+    //   postList.push({
+    //     path: postEdge.node.fields.slug,
+    //     tags: postEdge.node.frontmatter.tags,
+    //     cover: postEdge.node.frontmatter.cover,
+    //     title: postEdge.node.frontmatter.title,
+    //     month: postEdge.node.frontmatter.month,
+    //     year: postEdge.node.frontmatter.year,
+    //     type: postEdge.node.frontmatter.type,
+    //     excerpt: postEdge.node.excerpt,
+    //     timeToRead: postEdge.node.timeToRead,
+    //   })
+    // })
 
 
     const postItems = postList.map(post => {

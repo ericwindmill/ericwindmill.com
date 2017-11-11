@@ -6,12 +6,12 @@ import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    // const postEdges = this.props.data.wordpressPost;
     return (
       <div className="Home--Container">
         <Helmet title={config.siteTitle} />
-        <SEO postEdges={postEdges} />
-        <Home postEdges={postEdges} config={config} />
+        {/*<SEO postEdges={postEdges} />*/}
+        {/*<Home postEdges={postEdges} config={config} />*/}
       </div>
     );
   }
@@ -19,31 +19,36 @@ class Index extends React.Component {
 
 export default Index;
 
-/* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query IndexQuery {
-        allMarkdownRemark(
-          limit: 10
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-          edges {
+    /* eslint no-undef: "off" */
+    export const pageQuery = graphql`
+query indexPageQuery {
+    allWordpressPost(
+        sort: {fields: [date], order: DESC}
+) {
+        edges {
             node {
-              fields {
+                id
                 slug
-              }
-              excerpt
-              timeToRead
-              frontmatter {
                 title
-                tags
-                cover
+                content
+                excerpt
                 date
-                year
-                month
-                type
-              }
+                modified
+                author {
+                    name
+                }
+                template
+                categories {
+                    name
+                }
+                tags{
+                    name
+                }
+                acf {
+                    project
+                }
             }
-          }
         }
-  }
-`;
+    }
+}
+`
