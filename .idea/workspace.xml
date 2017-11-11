@@ -4,6 +4,9 @@
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gatsby-config.js" afterPath="$PROJECT_DIR$/gatsby-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" afterPath="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,18 +25,36 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="gatsby-node.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gatsby-node.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.3638814">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="HomePostListing.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="112">
+                  <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="gatsby-config.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="595">
+                  <caret line="127" column="16" lean-forward="false" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,7 +130,6 @@
         <option value="$PROJECT_DIR$/content/projects/on-the-grid.md" />
         <option value="$PROJECT_DIR$/content/posts/javascript-async-functions.md" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
-        <option value="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/SignUp/SignUp.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
@@ -120,7 +140,6 @@
         <option value="$PROJECT_DIR$/src/components/Forms/OptInForm/OptInForm.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Contact/Contact.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Forms/ContactForm.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx" />
         <option value="$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.scss" />
         <option value="$PROJECT_DIR$/src/main.scss" />
@@ -136,6 +155,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/todo.md" />
         <option value="$PROJECT_DIR$/src/components/Pages/About/About.jsx" />
+        <option value="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Forms/ContactForm.scss" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
       </list>
     </option>
@@ -152,9 +173,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1920" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -211,6 +231,13 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Forms" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="PostListing" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -228,7 +255,7 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Asp" />
   </component>
   <component name="RecentsManager">
@@ -278,12 +305,15 @@
       <workItem from="1509736926314" duration="19730000" />
       <workItem from="1509906115222" duration="33000" />
       <workItem from="1509906208805" duration="49000" />
-      <workItem from="1509926889623" duration="1027000" />
+      <workItem from="1509926889623" duration="1145000" />
+      <workItem from="1509984003639" duration="1581000" />
+      <workItem from="1509985633215" duration="127000" />
+      <workItem from="1510413408462" duration="819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83729000" />
+    <option name="totallyTimeSpent" value="86374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -295,20 +325,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44147584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44147584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23372781" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27297795" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -336,21 +366,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/reset.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.cache/json/your-problem-is-as-bad-as-you-think.json" />
     <entry file="file://$PROJECT_DIR$/content/posts/planning-a-web-app.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -436,13 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/javascript-async-functions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -514,13 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -630,13 +631,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -661,18 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <marker date="1509898134000" expanded="true" signature="7:130" ph="..." />
-            <marker date="1509898134000" expanded="true" signature="162:2041" ph="{...}" />
-            <marker date="1509898134000" expanded="true" signature="176:2039" ph="{...}" />
-            <marker date="1509898134000" expanded="true" signature="197:2029" ph="&lt;main/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="212:285" ph="&lt;section/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="294:2015" ph="&lt;section/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="338:1996" ph="&lt;div/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="475:857" ph="&lt;p/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="868:1314" ph="&lt;p/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="1314:1701" ph="&lt;p/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,16 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding>
-            <marker date="1509838990000" expanded="true" signature="17:2676" ph="{&quot;blogPostDir&quot;: &quot;posts&quot;...}" />
-            <marker date="1509838990000" expanded="true" signature="1627:1777" ph="//..." />
-            <marker date="1509838990000" expanded="true" signature="1791:2404" ph="[...]" />
-            <marker date="1509838990000" expanded="true" signature="1797:1910" ph="{&quot;label&quot;: &quot;GitHub&quot;...}" />
-            <marker date="1509838990000" expanded="true" signature="1916:2028" ph="{&quot;label&quot;: &quot;Twitter&quot;...}" />
-            <marker date="1509838990000" expanded="true" signature="2034:2141" ph="{&quot;label&quot;: &quot;Email&quot;...}" />
-            <marker date="1509838990000" expanded="true" signature="2147:2270" ph="{&quot;label&quot;: &quot;Instagram&quot;...}" />
-            <marker date="1509838990000" expanded="true" signature="2276:2400" ph="{&quot;label&quot;: &quot;Messenger&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -698,7 +670,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="324">
             <caret line="17" column="134" lean-forward="false" selection-start-line="17" selection-start-column="134" selection-end-line="17" selection-end-column="134" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -709,50 +680,86 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="2286">
             <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="44" />
-            <folding>
-              <marker date="1509835425000" expanded="true" signature="4818:4847" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="30" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding>
-            <marker date="1509929859000" expanded="true" signature="135:6030" ph="{&quot;pathPrefix&quot;: config.pathPrefix...}" />
-            <marker date="1509929859000" expanded="true" signature="186:574" ph="{...}" />
-            <marker date="1509929859000" expanded="true" signature="247:570" ph="{&quot;title&quot;: config.siteTitle...}" />
-            <marker date="1509929859000" expanded="true" signature="587:6028" ph="[...]" />
-            <marker date="1509929859000" expanded="true" signature="653:832" ph="{&quot;resolve&quot;: `gatsby-plugin-google-fonts`...}" />
-            <marker date="1509929859000" expanded="true" signature="715:826" ph="{...}" />
-            <marker date="1509929859000" expanded="true" signature="732:817" ph="[...]" />
-            <marker date="1509929859000" expanded="true" signature="838:1791" ph="{&quot;resolve&quot;: `gatsby-source-wordpress`...}" />
-            <marker date="1509929859000" expanded="true" signature="897:1784" ph="{&quot;baseUrl&quot;: `ericwindmill.host`...}" />
-            <marker date="1509929859000" expanded="true" signature="907:1107" ph="/*...*/" />
-            <marker date="1509929859000" expanded="true" signature="1232:1548" ph="//..." />
-            <marker date="1509929859000" expanded="true" signature="1586:1754" ph="//..." />
-            <marker date="1509929859000" expanded="true" signature="1797:2669" ph="//..." />
-            <marker date="1509929859000" expanded="true" signature="2674:2800" ph="{&quot;resolve&quot;: &quot;gatsby-plugin-google-analytics&quot;...}" />
-            <marker date="1509929859000" expanded="true" signature="2740:2794" ph="{&quot;trackingId&quot;: config.googleAnalyticsID...}" />
-            <marker date="1509929859000" expanded="true" signature="2806:2913" ph="{&quot;resolve&quot;: &quot;gatsby-plugin-nprogress&quot;...}" />
-            <marker date="1509929859000" expanded="true" signature="2865:2907" ph="{&quot;color&quot;: config.themeColor...}" />
-            <marker date="1509929859000" expanded="true" signature="3037:3668" ph="{&quot;resolve&quot;: &quot;gatsby-plugin-manifest&quot;...}" />
-            <marker date="1509929859000" expanded="true" signature="3095:3662" ph="{&quot;name&quot;: config.siteTitle...}" />
-            <marker date="1509929859000" expanded="true" signature="3386:3654" ph="[...]" />
-            <marker date="1509929859000" expanded="true" signature="3398:3515" ph="{&quot;src&quot;: &quot;/logos/logo-192x192.png&quot;...}" />
-            <marker date="1509929859000" expanded="true" signature="3527:3644" ph="{&quot;src&quot;: &quot;/logos/logo-512x512.png&quot;...}" />
-            <marker date="1509929859000" expanded="true" signature="3703:6024" ph="//..." />
+            <marker date="1509985492000" expanded="true" signature="13:1168" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="64:423" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="286:328" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="340:418" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="435:829" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="700:740" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="752:826" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="846:1166" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="937:956" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="966:1163" ph="{...}" />
+            <marker date="1509985492000" expanded="true" signature="1116:1159" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507996688000" expanded="true" signature="0:444" ph="{&quot;compileOnSave&quot;: true...}" />
+            <marker date="1507996688000" expanded="true" signature="25:230" ph="{&quot;target&quot;: &quot;ES6&quot;...}" />
+            <marker date="1507996688000" expanded="true" signature="181:224" ph="{...}" />
+            <marker date="1507996688000" expanded="true" signature="255:285" ph="{&quot;enable&quot;: true...}" />
+            <marker date="1507996688000" expanded="true" signature="308:351" ph="{&quot;enableAutoDiscovery&quot;: true...}" />
+            <marker date="1507996688000" expanded="true" signature="416:442" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="127" column="16" lean-forward="false" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
           <folding />
         </state>
       </provider>
