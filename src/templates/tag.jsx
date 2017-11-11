@@ -5,7 +5,7 @@ import config from '../../data/SiteConfig'
 
 export default class TagTemplate extends React.Component {
   render () {
-    const tag = this.props.pathContext.tag
+    // const tag = this.props.pathContext.tag
     // const postEdges = this.props.data.allMarkdownRemark.edges
     return (
       <div className="tag-container">
@@ -21,49 +21,3 @@ export default class TagTemplate extends React.Component {
     )
   }
 }
-
-/* eslint no-undef: "off"*/
-export const pageQuery = graphql`
-    query TagPage($category: String) {
-      allWordpressPost {
-        edges{
-          node{
-            excerpt
-            title
-            date
-            tags{
-              name
-              count
-            }
-          }
-        }
-      }
-    }
-`
-//
-// export const pageQuery = graphql`
-//   query TagPage($tag: String) {
-//     allMarkdownRemark(
-//       limit: 1000
-//       sort: { fields: [frontmatter___date], order: DESC }
-//       filter: { frontmatter: { tags: { in: [$tag] } } }
-//     ) {
-//       totalCount
-//       edges {
-//         node {
-//           fields {
-//             slug
-//           }
-//           excerpt
-//           timeToRead
-//           frontmatter {
-//             title
-//             tags
-//             cover
-//             date
-//           }
-//         }
-//       }
-//     }
-//   }
-// `

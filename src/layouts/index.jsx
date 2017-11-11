@@ -48,7 +48,6 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <div className='IndexTemplate--Page'>
-          <h1> YEAH </h1>
           {children()}
           <WideSideNavigation
             path={location.pathname}
@@ -60,35 +59,35 @@ export default class MainLayout extends React.Component {
   }
 }
 
-// /* eslint no-undef: "off" */
-// export const pageQuery = graphql`
-//  query indexQuery {
-//   allWordpressPost(
-//   limit: 10
-//   ) {
-//     edges {
-//       node {
-//         id
-//         slug
-//         title
-//         content
-//         excerpt
-//         date
-//         modified
-//         author {
-//           name
-//         }
-//         template
-//         categories {
-//           name
-//         }
-//         tags{
-//           name
-//         }
-//         acf {
-// 					project
-//         }
-//       }
-//     }
-//   }
-// }`;
+ /* eslint no-undef: "off" */
+export const pageQuery = graphql`
+ query indexQuery {
+  allWordpressPost(
+  limit: 10
+  ) {
+    edges {
+      node {
+        id
+        slug
+        title
+        content
+        excerpt
+        date
+        modified
+        author {
+          name
+        }
+        template
+        categories {
+          name
+        }
+        tags{
+          name
+        }
+        acf {
+					project
+        }
+      }
+    }
+  }
+}`;

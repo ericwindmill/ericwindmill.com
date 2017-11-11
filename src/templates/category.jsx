@@ -3,10 +3,10 @@ import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
 import config from "../../data/SiteConfig";
 
-export default class CategoryTemplate extends React.Component {
+class CategoryTemplate extends React.Component {
   render() {
     const category = this.props.pathContext.category;
-    // const postEdges = this.props.data.wordpr;
+    const postEdges = this.props.data.allWordPressPost.edges;
     return (
       <div className="category-container">
         <Helmet
@@ -21,21 +21,4 @@ export default class CategoryTemplate extends React.Component {
   }
 }
 
-/* eslint no-undef: "off"*/
-export const pageQuery = graphql`
-    query CategoryPage($category: String) {
-      allWordpressPost {
-        edges{
-          node{
-            excerpt
-            title
-            date
-            tags{
-              name
-              count
-            }
-          }
-        }
-      }
-    }
-`
+export default CategoryTemplate

@@ -6,12 +6,13 @@ import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
-    // const postEdges = this.props.data.wordpressPost;
+    console.log(this.props)
+    const postEdges = this.props.data.allWordpressPost.edges
     return (
       <div className="Home--Container">
         <Helmet title={config.siteTitle} />
-        {/*<SEO postEdges={postEdges} />*/}
-        {/*<Home postEdges={postEdges} config={config} />*/}
+        <SEO postEdges={postEdges} />
+        <Home postEdges={postEdges} config={config} />
       </div>
     );
   }

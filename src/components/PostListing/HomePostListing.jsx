@@ -18,20 +18,15 @@ class PostListing extends React.Component {
 
 
   getPostList () {
-    const postList = []
+    const postList = [];
     this.props.postEdges.forEach(postEdge => {
-      if (postEdge.node.frontmatter.type !== 'Project') {
-        postList.push({
-          path: postEdge.node.fields.slug,
-          tags: postEdge.node.frontmatter.tags,
-          cover: postEdge.node.frontmatter.cover,
-          title: postEdge.node.frontmatter.title,
-          date: postEdge.node.frontmatter.date,
-          year: postEdge.node.frontmatter.year,
-          month: postEdge.node.frontmatter.month,
-          excerpt: postEdge.node.excerpt,
-          timeToRead: postEdge.node.timeToRead
-        })}
+      postList.push({
+        path: postEdge.node.slug,
+        tags: postEdge.node.tags,
+        title: postEdge.node.title,
+        date: postEdge.node.date,
+        excerpt: postEdge.node.excerpt,
+      })
     })
     return postList
   }
@@ -48,8 +43,7 @@ class PostListing extends React.Component {
               key={post.title}
               className='HomePostListing--Post'>
                 <span className='HomePostListing--DateMeta'>
-                    <p>{post.month}</p>
-                    <p>{post.year}</p>
+                    <p>{post.date}</p>
                 </span>
               <p className='PostIcon'>&nbsp; →  &nbsp;</p>
               <Link to={post.path}>
