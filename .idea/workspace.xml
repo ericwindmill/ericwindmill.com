@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.jsx" afterPath="$PROJECT_DIR$/src/layouts/index.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +28,8 @@
           <file leaf-file-name="gatsby-config.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/gatsby-config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                  <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+                <state relative-caret-position="-99">
+                  <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -154,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/gatsby-node.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
         <option value="$PROJECT_DIR$/src/templates/post.jsx" />
         <option value="$PROJECT_DIR$/src/main.scss" />
         <option value="$PROJECT_DIR$/src/styles/crayon/base.scss" />
@@ -163,6 +163,7 @@
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/styles/code-highlight.scss" />
         <option value="$PROJECT_DIR$/src/styles/crayon/feeldesign.scss" />
+        <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
       </list>
     </option>
   </component>
@@ -326,12 +327,12 @@
       <workItem from="1510413408462" duration="1070000" />
       <workItem from="1510414720215" duration="8295000" />
       <workItem from="1510426201677" duration="13140000" />
-      <workItem from="1510451880959" duration="18100000" />
+      <workItem from="1510451880959" duration="19099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126160000" />
+    <option name="totallyTimeSpent" value="127159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,7 +354,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31630436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8119565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998162" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -386,13 +387,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -1054,32 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <marker date="1510511466000" expanded="true" signature="7:297" ph="..." />
-            <marker date="1510511466000" expanded="true" signature="356:2129" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="376:1464" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="410:480" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="706:735" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="770:799" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="840:875" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="911:941" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="982:1014" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="1055:1222" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="1269:1442" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="1476:2127" ph="{...}" />
-            <marker date="1510511466000" expanded="true" signature="1676:2116" ph="&lt;div/&gt;" />
-            <marker date="1510511466000" expanded="true" signature="1727:1900" ph="&lt;Helmet/&gt;" />
-            <marker date="1510511466000" expanded="true" signature="1909:2103" ph="&lt;div/&gt;" />
-            <marker date="1510511466000" expanded="true" signature="1980:2088" ph="&lt;WideSideNavigation/&gt;" />
-            <marker date="1510511466000" expanded="true" signature="2132:2160" ph="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1172,18 +1140,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/crayon/feeldesign.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="171" column="14" lean-forward="false" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+          <folding>
+            <marker date="1510520147000" expanded="true" signature="7:297" ph="..." />
+            <marker date="1510520147000" expanded="true" signature="356:2129" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="376:1464" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="410:480" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="706:735" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="770:799" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="840:875" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="911:941" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="982:1014" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="1055:1222" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="1269:1442" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="1476:2127" ph="{...}" />
+            <marker date="1510520147000" expanded="true" signature="1676:2116" ph="&lt;div/&gt;" />
+            <marker date="1510520147000" expanded="true" signature="1727:1900" ph="&lt;Helmet/&gt;" />
+            <marker date="1510520147000" expanded="true" signature="1909:2103" ph="&lt;div/&gt;" />
+            <marker date="1510520147000" expanded="true" signature="1980:2088" ph="&lt;WideSideNavigation/&gt;" />
+            <marker date="1510520147000" expanded="true" signature="2132:2160" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding />
         </state>
       </provider>
