@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/crayon/base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/crayon/feeldesign.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gatsby-config.js" afterPath="$PROJECT_DIR$/gatsby-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gatsby-node.js" afterPath="$PROJECT_DIR$/gatsby-node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" afterPath="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.jsx" afterPath="$PROJECT_DIR$/src/layouts/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.scss" afterPath="$PROJECT_DIR$/src/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripts/helper_methods.js" afterPath="$PROJECT_DIR$/src/scripts/helper_methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/code-highlight.scss" afterPath="$PROJECT_DIR$/src/styles/code-highlight.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/post.jsx" afterPath="$PROJECT_DIR$/src/templates/post.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +28,7 @@
             <entry file="file://$PROJECT_DIR$/gatsby-config.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="268">
-                  <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+                  <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -53,7 +41,7 @@
           <file leaf-file-name="feeldesign.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/styles/crayon/feeldesign.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
+                <state relative-caret-position="729">
                   <caret line="171" column="14" lean-forward="false" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
                   <folding />
                 </state>
@@ -338,12 +326,12 @@
       <workItem from="1510413408462" duration="1070000" />
       <workItem from="1510414720215" duration="8295000" />
       <workItem from="1510426201677" duration="13140000" />
-      <workItem from="1510451880959" duration="17733000" />
+      <workItem from="1510451880959" duration="18100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125793000" />
+    <option name="totallyTimeSpent" value="126160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,7 +344,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1890" y="22" width="1890" height="1054" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15817985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -366,7 +353,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31630436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31630436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998162" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1188,14 +1175,14 @@
     <entry file="file://$PROJECT_DIR$/gatsby-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/crayon/feeldesign.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
+        <state relative-caret-position="729">
           <caret line="171" column="14" lean-forward="false" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
           <folding />
         </state>
