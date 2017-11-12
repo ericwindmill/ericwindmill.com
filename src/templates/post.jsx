@@ -7,10 +7,10 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
 export default class PostTemplate extends React.Component {
+
   render() {
     const { slug } = this.props.pathContext;
-    const postNode = this.props.data.allWordpressPost;
-    const post = postNode;
+    const post = this.props.data.wordpressPost;
     if (!post.id) {
       post.id = slug;
     }
@@ -22,24 +22,24 @@ export default class PostTemplate extends React.Component {
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
-        <SEO postPath={slug} postNode={postNode} postSEO />
+        {/*<SEO postPath={slug} postNode={postNode} postSEO />*/}
         {/*Content*/}
         <div className="Post--Page">
           {/*hero*/}
           <section className='Hero Post-Hero'>
             <p className="PostDate">{post.month} {post.year}</p>
             <h1>{post.title}</h1>
-            <h3>in {post.category}</h3>
+            <h3>in {post.categories[0].name}</h3>
           </section>
           {/*body*/}
           {/*{coverImg}*/}
           <section className='PostBody'>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </section>
           {/*Footer -- Meta*/}
           <div className="PostMeta">
             <PostTags tags={post.tags} />
-            <SocialLinks postPath={slug} postNode={postNode} />
+            <SocialLinks postPath={slug} postNode={post} />
           </div>
           <UserInfo config={config} />
         </div>
@@ -48,3 +48,25 @@ export default class PostTemplate extends React.Component {
     );
   }
 }
+
+/* eslint no-undef: "off" */
+export const pageQuery = graphql`
+  query currentPageQuery($id: String!) {
+    wordpressPost(id: { eq: $id }) {
+      title
+      content
+      excerpt
+      date
+      modified
+      author {
+        name
+      }
+      template
+      categories {
+        name
+      }
+      tags{
+        name
+      }
+    }
+  }`

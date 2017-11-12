@@ -3,16 +3,18 @@ import Helmet from "react-helmet";
 import Home from '../components/Pages/Home/Home'
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import {PostDataHelpers} from "../scripts/helper_methods";
 
 class Index extends React.Component {
   render() {
-    console.log(this.props)
     const postEdges = this.props.data.allWordpressPost.edges
+    const util = new PostDataHelpers()
+    const formattedPosts = util.formatDatesForMultiplePost(this.props.data.allWordpressPost.edges)
     return (
       <div className="Home--Container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
-        <Home postEdges={postEdges} config={config} />
+        <Home postEdges={formattedPosts} config={config} />
       </div>
     );
   }

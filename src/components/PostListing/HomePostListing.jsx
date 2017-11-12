@@ -26,6 +26,8 @@ class PostListing extends React.Component {
         title: postEdge.node.title,
         date: postEdge.node.date,
         excerpt: postEdge.node.excerpt,
+        month: postEdge.node.month,
+        year: postEdge.node.year
       })
     })
     return postList
@@ -34,6 +36,7 @@ class PostListing extends React.Component {
 
   render () {
     const postList = this.getPostList()
+
     return (
       <div className="HomePostListing">
         <h2>Articles</h2>
@@ -43,7 +46,7 @@ class PostListing extends React.Component {
               key={post.title}
               className='HomePostListing--Post'>
                 <span className='HomePostListing--DateMeta'>
-                    <p>{post.date}</p>
+                    <p>{post.month} {post.year}</p>
                 </span>
               <p className='PostIcon'>&nbsp; →  &nbsp;</p>
               <Link to={post.path}>

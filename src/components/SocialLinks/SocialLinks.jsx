@@ -5,9 +5,8 @@ import "./SocialLinks.css";
 
 class   SocialLinks extends Component {
   render() {
-    console.log(config);
-    const { postNode, postPath, mobile } = this.props;
-    const post = postNode.frontmatter;
+    const { postNode, postPath } = this.props;
+    const post = postNode;
     const url = config.siteUrl + config.pathPrefix + postPath;
     const {
       FacebookShareButton,
@@ -32,7 +31,6 @@ class   SocialLinks extends Component {
     const RedditIcon = generateShareIcon("reddit");
     const iconSize = 36;
     const filter = count => (count > 0 ? count : "");
-
     return (
       <div className="social-links">
         <RedditShareButton url={url} title={post.title}>

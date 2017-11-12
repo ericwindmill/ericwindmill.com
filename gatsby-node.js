@@ -2,21 +2,13 @@ const _ = require(`lodash`)
 const Promise = require(`bluebird`)
 const path = require(`path`)
 const slash = require(`slash`)
+const webpackLodashPlugin = require("lodash-webpack-plugin")
 
-// Implement the Gatsby API “createPages”. This is
-// called after the Gatsby bootstrap is finished so you have
-// access to any information necessary to programmatically
-// create pages.
 // Will create pages for Wordpress pages (route : /{slug})
-// Will create pages for Wordpress posts (route : /post/{slug})
+// Will create pages for Wordpress posts (route : /{slug})
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   return new Promise((resolve, reject) => {
-    // The “graphql” function allows us to run arbitrary
-    // queries against the local Wordpress graphql schema. Think of
-    // it like the site has a built-in database constructed
-    // from the fetched data that you can run queries against.
-
     // ==== PAGES (WORDPRESS NATIVE) ====
     graphql(
       `
@@ -42,18 +34,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create Page pages.
         const pageTemplate = path.resolve(`./src/templates/wp_page.jsx`)
-        // We want to create a detailed page for each
-        // page node. We'll just use the Wordpress Slug for the slug.
-        // The Page ID is prefixed with 'PAGE_'
         _.each(result.data.allWordpressPage.edges, edge => {
-          // Gatsby uses Redux to manage its internal state.
-          // Plugins and sites can use functions like "createPage"
-          // to interact with Gatsby.
           createPage({
-            // Each page is required to have a `path` as well
-            // as a template component. The `context` is
-            // optional but is often necessary so the template
-            // can query data specific to each page.
             path: `/${edge.node.slug}/`,
             component: slash(pageTemplate),
             context: {
@@ -74,9 +56,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   node {
                     id
                     slug
-                    status
-                    template
-                    format
+                    modified
                   }
                 }
               }
@@ -92,8 +72,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           // post node. We'll just use the Wordpress Slug for the slug.
           // The Post ID is prefixed with 'POST_'
           _.each(result.data.allWordpressPost.edges, edge => {
+            console.log('UP IN HERE')
             createPage({
-              path: edge.node.slug,
+              path: `/${edge.node.slug}`,
               component: slash(postTemplate),
               context: {
                 id: edge.node.id,
@@ -105,4 +86,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       })
     // ==== END POSTS ====
   })
+}
+
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  if (stage === "build-javascript") {
+    config.plugin("Lodash", webpackLodashPlugin, null)
+  }
 }

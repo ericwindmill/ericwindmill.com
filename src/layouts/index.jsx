@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import config from "../../data/SiteConfig";
+import config from "../../data/SiteConfig"
+import { PostDataHelpers } from '../scripts/helper_methods'
 import "../main.scss";
 import WideSideNavigation from '../components/Nav/RightNav'
 
@@ -41,6 +42,8 @@ export default class MainLayout extends React.Component {
   }
   render() {
     const { children, data, location } = this.props
+    const util = new PostDataHelpers()
+    const formattedPosts = util.formatDatesForMultiplePost(data.allWordpressPost.edges)
     return (
       <div className='IndexTemplate--Container'>
         <Helmet>
@@ -51,7 +54,7 @@ export default class MainLayout extends React.Component {
           {children()}
           <WideSideNavigation
             path={location.pathname}
-            postEdges={data.allWordpressPost.edges}
+            postEdges={formattedPosts}
           />
         </div>
       </div>
