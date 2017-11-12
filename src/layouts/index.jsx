@@ -1,8 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
-import config from "../../data/SiteConfig";
+import 'prismjs/themes/prism-solarizedlight.css';
+import config from "../../data/SiteConfig"
+import { PostDataHelpers } from '../scripts/helper_methods'
 import "../main.scss";
 import WideSideNavigation from '../components/Nav/RightNav'
+
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
@@ -40,7 +43,9 @@ export default class MainLayout extends React.Component {
     return title;
   }
   render() {
-    const { children, data, location } = this.props;
+    const { children, data, location } = this.props
+    const util = new PostDataHelpers()
+    const formattedPosts = util.formatDatesForMultiplePost(data.allWordpressPost.edges)
     return (
       <div className='IndexTemplate--Container'>
         <Helmet>
@@ -51,7 +56,7 @@ export default class MainLayout extends React.Component {
           {children()}
           <WideSideNavigation
             path={location.pathname}
-            postEdges={data.allMarkdownRemark.edges}
+            postEdges={formattedPosts}
           />
         </div>
       </div>
@@ -59,31 +64,33 @@ export default class MainLayout extends React.Component {
   }
 }
 
-/* eslint no-undef: "off" */
+ /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query PostsQuery {
-        allMarkdownRemark(
-          limit: 10
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              excerpt
-              timeToRead
-              frontmatter {
-                title
-                tags
-                cover
-                date
-                year
-                month
-                type
-              }
-            }
-          }
+ query indexQuery {
+  allWordpressPost{
+    edges {
+      node {
+        id
+        slug
+        title
+        content
+        excerpt
+        date
+        modified
+        author {
+          name
         }
+        template
+        categories {
+          name
+        }
+        tags{
+          name
+        }
+        acf {
+					project
+        }
+      }
+    }
   }
-`
+}`;

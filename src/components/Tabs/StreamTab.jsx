@@ -7,21 +7,23 @@ class StreamTab extends Component {
   getRecentPosts(postEdges) {
     const postList = [];
     for (let i = 0; i < 3; i++) {
+      if (postEdges[i] === undefined) {break};
       postList.push({
-        slug: postEdges[i].node.fields.slug,
-        title: postEdges[i].node.frontmatter.title,
-        date: postEdges[i].node.frontmatter.date,
-        month: postEdges[i].node.frontmatter.month,
-        year: postEdges[i].node.frontmatter.year,
-        tags: postEdges[i].node.frontmatter.tags
+        path: postEdges[i].node.slug,
+        tags: postEdges[i].node.tags,
+        title: postEdges[i].node.title,
+        date: postEdges[i].node.date,
+        excerpt: postEdges[i].node.excerpt,
+        year: postEdges[i].node.year,
+        month: postEdges[i].node.month
       })
     }
-    return postList
+    return postList;
   }
 
   getTags(post) {
     if (post.tags) {
-      return post.tags[0]
+      return post.tags[0].name
     }
   }
 
@@ -31,7 +33,7 @@ class StreamTab extends Component {
 
     postList = postList.map((post) => {
       return (
-        <Link key={post.title} to={post.slug} >
+        <Link key={post.title} to={post.path} >
           <li>
             <div className='StreamTab--Post'>
               <div className='StreamTab--PostMeta'>

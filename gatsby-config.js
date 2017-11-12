@@ -6,19 +6,17 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
-    rssMetadata: {
-      site_url: config.siteUrl + pathPrefix,
-      feed_url: config.siteUrl + pathPrefix + config.siteRss,
-      title: config.siteTitle,
-      description: config.siteDescription,
-      image_url: `${config.siteUrl + pathPrefix}/logos/logo-512.png`,
-      author: config.userName,
-      copyright: config.copyright
-    }
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/src/pages/`
+      }
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -28,37 +26,35 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-wordpress',
       options: {
-        name: "posts",
-        path: `${__dirname}/content/${config.blogPostDir}`
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "projects",
-        path: `${__dirname}/content/${config.projectsDir}`
-      }
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 690
-            }
-          },
-          {
-            resolve: "gatsby-remark-responsive-iframe"
-          },
-          "gatsby-remark-prismjs",
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers"
-        ]
-      }
+        baseUrl: 'ericwindmill.host',
+        // The protocol. This can be http or https.
+        protocol: 'http',
+        // If your site is hosted on wordpress.org, then set this to false.
+        hostingWPCOM: false,
+        // If useACF is true, then the source plugin will try to import the Wordpress ACF Plugin contents.
+        // Defaults to true.
+        useACF: true,
+        auth: {
+          // If auth.user and auth.pass are filled, then the source plugin will be allowed
+          // to access endpoints that are protected with .htaccess.
+          // htaccess_user: 'your-htaccess-username',
+          // htaccess_pass: 'your-htaccess-password',
+          // htaccess_sendImmediately: false,
+
+          // If hostingWPCOM is true then you will need to communicate with wordpress.com API
+          // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
+          // then add your clientId, clientSecret, username, and password here
+          // wpcom_app_clientSecret: 'NMPnXYFtj2gKas7V1kZyMxr7oLry9V5ZxIyBQGu2txjVHg0GhFz6RYcKopkHICYg',
+          // wpcom_app_clientId: '54793',
+          // wpcom_user: 'gatsbyjswpexample@gmail.com',
+          // wpcom_pass: 'very-secured-password',
+        },
+        // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
+        // It can help you debug specific API Endpoints problems
+        verboseOutput: true,
+      },
     },
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -101,78 +97,5 @@ module.exports = {
       }
     },
     "gatsby-plugin-offline",
-    {
-      resolve: "gatsby-plugin-feed",
-      options: {
-        setup(ref) {
-          const ret = ref.query.site.siteMetadata.rssMetadata;
-          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
-          ret.generator = "GatsbyJS Material Starter";
-          return ret;
-        },
-        query: `
-        {
-          site {
-            siteMetadata {
-              rssMetadata {
-                site_url
-                feed_url
-                title
-                description
-                image_url
-                author
-                copyright
-              }
-            }
-          }
-        }
-      `,
-        feeds: [
-          {
-            serialize(ctx) {
-              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
-              return ctx.query.allMarkdownRemark.edges.map(edge => ({
-                categories: edge.node.frontmatter.tags,
-                date: edge.node.frontmatter.date,
-                title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
-                author: rssMetadata.author,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{"content:encoded": edge.node.html}]
-              }));
-            },
-            query: `
-            {
-              allMarkdownRemark(
-                limit: 1000,
-                sort: { order: DESC, fields: [frontmatter___date] },
-              ) {
-                edges {
-                  node {
-                    excerpt
-                    html
-                    timeToRead
-                    fields { slug }
-                    frontmatter {
-                      title
-                      cover
-                      date
-                      month
-                      year
-                      category
-                      tags
-                      type
-                    }
-                  }
-                }
-              }
-            }
-          `,
-            output: config.siteRss
-          }
-        ]
-      }
-    }
   ]
 };

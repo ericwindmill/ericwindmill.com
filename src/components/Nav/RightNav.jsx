@@ -9,7 +9,7 @@ class WideSideNavigation extends Component {
     e.preventDefault()
     const tabName = e.target.classList[0].split('-')[1]
     const tabClassLookup = `.HomeTabs--${tabName}`
-    let tab = document.querySelector(tabClassLookup)
+    const tab = document.querySelector(tabClassLookup)
     tab.classList.add('reveal-tab')
   }
 

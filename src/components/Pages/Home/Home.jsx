@@ -5,6 +5,7 @@ import ProjectListing from '../../PostListing/HomeProjectListing'
 import ContactForm from '../../Forms/ContactForm'
 import UserLinks from '../../UserLinks/UserLinks'
 import config from "../../../../data/SiteConfig";
+import UserInfo from "../../UserInfo/UserInfo";
 
 class Home extends Component {
   render() {
@@ -18,6 +19,7 @@ class Home extends Component {
           <section className='Home--About'>
             <h2>Welcome!</h2>
             <p><em>Hi! I’m Eric Windmill. I’m a front-end developer, UI designer, and writer working to make the web a better place. I help companies create killer user-centered experiences on web (and now, mobile!) and I implement the code it needs to work. You can hire me to work with your team with deign or development. I'm current available for small projects.</em></p>
+            <UserInfo config={config} />
           </section>
           <div className='Divider' />
           <section className={'Home--PostList'}>

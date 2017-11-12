@@ -2,37 +2,38 @@ import React from "react";
 import Link from "gatsby-link";
 
 class PostListing extends React.Component {
-  getPostList() {
+
+  getPostList () {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
-        postList.push({
-          path: postEdge.node.fields.slug,
-          tags: postEdge.node.frontmatter.tags,
-          cover: postEdge.node.frontmatter.cover,
-          title: postEdge.node.frontmatter.title,
-          month: postEdge.node.frontmatter.month,
-          year: postEdge.node.frontmatter.year,
-          excerpt: postEdge.node.excerpt,
-          timeToRead: postEdge.node.timeToRead,
-        });
-    });
-    return postList;
+      postList.push({
+        path: postEdge.node.slug,
+        tags: postEdge.node.tags,
+        title: postEdge.node.title,
+        date: postEdge.node.date,
+        excerpt: postEdge.node.excerpt,
+        month: postEdge.node.month,
+        year: postEdge.node.year,
+        category: postEdge.node.categories[0].name
+      })
+    })
+    return postList
   }
   render() {
+    console.log(this.props.postEdges)
     const postList = this.getPostList();
     return (
       <ul className="PostListing">
-        {/* Your post list here. */
+        {
         postList.map(post =>
             <Link to={post.path} key={post.title}>
               <li>
                 <div className='StreamItem--PostMeta'>
                   <p>{post.month} {post.year}</p>
-                  <p>Eric Windmill</p>
+                  <p>{post.category}</p>
                 </div>
                 <div className='StreamItem--PostContent'>
                   <h2>{post.title}</h2>
-                  <p>{post.excerpt}</p>
                 </div>
               </li>
             </Link>

@@ -3,45 +3,33 @@
 	display: flex;
 }
 // from the stream page component
-.Stream, .PostListing {
-	ul {
-		margin: $spacing-unit;
-		& > a:hover {
-			color: black;
-		}
-	}
+.PostListing {
+  margin: $spacing-unit;
+  display: flex;
+  flex-direction: column;
 
-	li {
-		display: flex;
-		align-items: center;
-		padding: $spacing-unit;
-		&:hover {
-			@include material-shadow;
-		}
+  li {
+    padding: $spacing-unit / 3;
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
 
-		.StreamItem--PostMeta {
-			flex: 0 1;
-			padding-right: $spacing-unit;
-			p {
-				font-family: $mono;
-				font-size: 1.2rem;
-			}
-		}
+    .StreamItem--PostMeta {
+      padding-right: $spacing-unit;
+      display: flex;
+      flex-direction: row;
+      p {
+        margin: 0 ($spacing-unit / 2) 0 0;
+        font-family: $mono;
+        font-size: 1.2rem;
+      }
+    }
 
-		.StreamItem--PostContent {
-			span {
-				display: flex;
-				.tag {
-					font-family: $mono;
-					font-size: 1.2rem;
-					padding-right: 10px;
-				}
-			}
-		}
-	}
-}
-
-.Stream--ProjectLi {
-	border: 5px solid $peachy;
-	width: 100%;
+    .StreamItem--PostContent {
+      h2 {
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
 }

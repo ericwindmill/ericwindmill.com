@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Link from 'gatsby-link'
+// import config from "../../../../data/SiteConfig";
+import PostListing from "../../PostListing/PostListing";
 
 class Stream extends Component {
 
@@ -7,15 +9,13 @@ class Stream extends Component {
     const postList = [];
     this.props.posts.forEach(postEdge => {
       postList.push({
-        path: postEdge.node.fields.slug,
-        tags: postEdge.node.frontmatter.tags,
-        cover: postEdge.node.frontmatter.cover,
-        title: postEdge.node.frontmatter.title,
-        month: postEdge.node.frontmatter.month,
-        year: postEdge.node.frontmatter.year,
-        type: postEdge.node.frontmatter.type,
+        path: postEdge.node.slug,
+        tags: postEdge.node.tags,
+        title: postEdge.node.title,
+        date: postEdge.node.date,
+        year: postEdge.node.year,
+        month: postEdge.node.month,
         excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead,
       })
     })
 
@@ -23,7 +23,7 @@ class Stream extends Component {
     const postItems = postList.map(post => {
       let tagList
       if (post.tags) {
-        tagList = post.tags.map(tag => <p className="tag">{tag}</p>)
+        tagList = post.tags.map(tag => <p className="tag">{tag.name}</p>)
       }
       if (post.type !== "Project") {
         return(
@@ -31,12 +31,10 @@ class Stream extends Component {
             <li>
               <div className='StreamItem--PostMeta'>
                 <p>{post.month} {post.year}</p>
-                <p>Eric Windmill</p>
               </div>
+              <div>→</div>
               <div className='StreamItem--PostContent'>
-                <h2>{post.title}</h2>
-                <p>{post.excerpt}</p>
-                <span>{tagList}</span>
+                <p>{post.title}</p>
               </div>
             </li>
           </Link>
@@ -49,8 +47,6 @@ class Stream extends Component {
             </div>
             <div className='StreamItem--PostContent'>
               <h2>{post.title}</h2>
-              <p>{post.excerpt}</p>
-              <span>{tagList}</span>
             </div>
           </li>
         </Link>
@@ -68,7 +64,8 @@ class Stream extends Component {
           <h2>Articles, Tutorials, Projects and Client Work</h2>
         </section>
         <ul>
-          {this.getPostListing()}
+          {/*{this.getPostListing()}*/}
+          <div className='StreamPostListing'><PostListing postEdges={this.props.posts} /></div>
         </ul>
       </div>
     );
