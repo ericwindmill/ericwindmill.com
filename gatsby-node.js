@@ -85,6 +85,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         })
       })
     // ==== END POSTS ====
+
+
+    // === Tags Page ===
   })
 }
 

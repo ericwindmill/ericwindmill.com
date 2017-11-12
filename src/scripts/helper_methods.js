@@ -27,7 +27,6 @@ class PostDataHelpers {
   }
 }
 
-
 class Formatters {
   formatDate(date) {
     console.log(date)

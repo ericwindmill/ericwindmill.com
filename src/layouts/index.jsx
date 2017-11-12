@@ -1,9 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
+import 'prismjs/themes/prism-solarizedlight.css';
 import config from "../../data/SiteConfig"
 import { PostDataHelpers } from '../scripts/helper_methods'
 import "../main.scss";
 import WideSideNavigation from '../components/Nav/RightNav'
+
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {

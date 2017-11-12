@@ -11,6 +11,7 @@ export default class PostTemplate extends React.Component {
   render() {
     const { slug } = this.props.pathContext;
     const post = this.props.data.wordpressPost;
+    console.log(post);
     if (!post.id) {
       post.id = slug;
     }
@@ -32,18 +33,15 @@ export default class PostTemplate extends React.Component {
             <h3>in {post.categories[0].name}</h3>
           </section>
           {/*body*/}
-          {/*{coverImg}*/}
           <section className='PostBody'>
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </section>
           {/*Footer -- Meta*/}
           <div className="PostMeta">
-            <PostTags tags={post.tags} />
+            {/*<PostTags tags={post.tags} />*/}
             <SocialLinks postPath={slug} postNode={post} />
           </div>
-          <UserInfo config={config} />
         </div>
-
       </div>
     );
   }
