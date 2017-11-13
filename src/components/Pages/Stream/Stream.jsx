@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from 'gatsby-link'
+import PostListing from "../../PostListing/PostListing";
 
 class Stream extends Component {
 
@@ -16,60 +17,21 @@ class Stream extends Component {
         type: postEdge.node.frontmatter.type,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead,
+        category: postEdge.node.frontmatter.category,
       })
     })
-
-
-    const postItems = postList.map(post => {
-      let tagList
-      if (post.tags) {
-        tagList = post.tags.map(tag => <p className="tag">{tag}</p>)
-      }
-      if (post.type !== "Project") {
-        return(
-          <Link to={post.path} key={post.title}>
-            <li>
-              <div className='StreamItem--PostMeta'>
-                <p>{post.month} {post.year}</p>
-                <p>Eric Windmill</p>
-              </div>
-              <div className='StreamItem--PostContent'>
-                <h2>{post.title}</h2>
-                <p>{post.excerpt}</p>
-                <span>{tagList}</span>
-              </div>
-            </li>
-          </Link>
-        )
-      } else {
-      return(
-        <Link to={post.path} key={post.title}>
-          <li className='Stream--ProjectLi'>
-            <div className='StreamItem--PostMeta'>
-            </div>
-            <div className='StreamItem--PostContent'>
-              <h2>{post.title}</h2>
-              <p>{post.excerpt}</p>
-              <span>{tagList}</span>
-            </div>
-          </li>
-        </Link>
-      )
-    }
-  })
-    return postItems
+    return postList
   }
 
   render() {
+    const posts =  this.getPostListing();
     return (
       <div className="Stream">
         <section className='Hero'>
           <h1>Stream</h1>
           <h2>Articles, Tutorials, Projects and Client Work</h2>
         </section>
-        <ul>
-          {this.getPostListing()}
-        </ul>
+          <div className='StreamPostListing'><PostListing postEdges={posts} /></div>
       </div>
     );
   }

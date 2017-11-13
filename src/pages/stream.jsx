@@ -41,6 +41,7 @@ export const pageQuery = graphql`
                 year
                 month
                 type
+                category
               }
             }
           }

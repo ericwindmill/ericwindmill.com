@@ -6,37 +6,62 @@ class PostListing extends React.Component {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
         postList.push({
-          path: postEdge.node.fields.slug,
-          tags: postEdge.node.frontmatter.tags,
-          cover: postEdge.node.frontmatter.cover,
-          title: postEdge.node.frontmatter.title,
-          month: postEdge.node.frontmatter.month,
-          year: postEdge.node.frontmatter.year,
-          excerpt: postEdge.node.excerpt,
-          timeToRead: postEdge.node.timeToRead,
+          path: postEdge.path,
+          tags: postEdge.tags,
+          cover: postEdge.cover,
+          title: postEdge.title,
+          type: postEdge.type,
+          month: postEdge.month,
+          year: postEdge.year,
+          excerpt: postEdge.excerpt,
+          timeToRead: postEdge.timeToRead,
+          category: postEdge.category
         });
     });
-    return postList;
+
+    const postItems = new Array();
+    postList.forEach(post => {
+      if (post.type !== "Project") {
+        postItems.push(
+          <Link to={post.path} key={post.title}>
+            <li>
+              <div className='StreamItem--PostMeta'>
+                <p>{post.month} {post.year}</p>
+                <p>{post.category}</p>
+              </div>
+              <div className='StreamItem--PostContent'>
+                <h2>{post.title}</h2>
+              </div>
+            </li>
+          </Link>
+        )
+      } else {
+        postItems.push(
+          <Link to={post.path} key={post.title}>
+            <li>
+              <div className='StreamItem--PostMeta'>
+                <p>{post.month} {post.year}</p>
+                <p>{post.category}</p>
+              </div>
+              <div className='StreamItem--PostContent'>
+                <h2>{post.title}</h2>
+              </div>
+            </li>
+          </Link>
+        )
+      }
+    })
+    return postItems;
   }
   render() {
-    const postList = this.getPostList();
+    const posts = this.getPostList();
     return (
       <ul className="PostListing">
-        {/* Your post list here. */
-        postList.map(post =>
-            <Link to={post.path} key={post.title}>
-              <li>
-                <div className='StreamItem--PostMeta'>
-                  <p>{post.month} {post.year}</p>
-                  <p>Eric Windmill</p>
-                </div>
-                <div className='StreamItem--PostContent'>
-                  <h2>{post.title}</h2>
-                  <p>{post.excerpt}</p>
-                </div>
-              </li>
-            </Link>
-        )}
+        {
+          posts.map(post => (
+            <li>{post}</li>
+          ))
+        }
       </ul>
     );
   }
