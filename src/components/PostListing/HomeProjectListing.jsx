@@ -3,17 +3,17 @@ import Link from 'gatsby-link'
 
 class ProjectListing extends React.Component {
   componentDidMount () {
-    const posts = document.querySelectorAll('.HomePostListing--Post')
-    posts.forEach(post => {
-      post.addEventListener('mouseover', () => {
-        const icon = post.querySelector('.PostIcon')
-        icon.innerHTML = '&nbsp; 👓  &nbsp;'
-      })
-      post.addEventListener('mouseout', () => {
-        const icon = post.querySelector('.PostIcon')
-        icon.innerHTML = '&nbsp; →  &nbsp;'
-      })
-    })
+    // const posts = document.querySelectorAll('.HomePostListing--Post')
+    // posts.forEach(post => {
+    //   post.addEventListener('mouseover', () => {
+    //     const icon = post.querySelector('.PostIcon')
+    //     icon.innerHTML = '&nbsp; 👓  &nbsp;'
+    //   })
+    //   post.addEventListener('mouseout', () => {
+    //     const icon = post.querySelector('.PostIcon')
+    //     icon.innerHTML = '&nbsp; →  &nbsp;'
+    //   })
+    // })
   }
 
   getPostList () {
