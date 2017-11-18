@@ -5,10 +5,6 @@ import UserLinks from '../UserLinks/UserLinks'
 import config from '../../../data/SiteConfig'
 
 class WideSideNavigation extends Component {
-  // constructor(props) {
-    // super(props)
-    // this.addBackgroundEventHandler = this.addBackgroundEventHandler.bind(this)
-  // }
 
   handleClick (e) {
     e.preventDefault()
@@ -17,12 +13,12 @@ class WideSideNavigation extends Component {
     const tab = document.querySelector(tabClassLookup)
     tab.classList.add('reveal-tab')
     const background = document.querySelector(".Home--Container")
-    background.classList.add('tab-revealed')
+    background.classList.add('cover-background')
 
     // add an event listener to the background to click out.
     background.addEventListener("click", () => {
       tab.classList.remove('reveal-tab')
-      background.classList.remove('tab-revealed')
+      background.classList.remove('cover-background')
     })
   }
 
