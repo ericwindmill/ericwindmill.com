@@ -26,13 +26,15 @@ class Stream extends Component {
   render() {
     const posts =  this.getPostListing();
     return (
-      <div className="Stream">
+      <main className="Stream">
         <section className='Hero'>
           <h1>Stream</h1>
           <h2>Articles, Tutorials, Projects and Client Work</h2>
         </section>
+        <section className='Stream--Body'>
           <div className='StreamPostListing'><PostListing postEdges={posts} /></div>
-      </div>
+        </section>
+      </main>
     );
   }
 }

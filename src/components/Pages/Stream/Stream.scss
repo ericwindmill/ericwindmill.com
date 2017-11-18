@@ -1,36 +1,38 @@
 // From the stream page container
 .Stream-Page {
-	display: flex;
+  display: flex;
 }
+
 // from the stream page component
 .PostListing {
-	margin: $spacing-unit;
-	display: flex;
-	flex-direction: column;
+  //margin: $spacing-unit;
+  display: flex;
+  flex-direction: column;
 
-	li {
-		padding: $spacing-unit / 5;
-		&:hover {
-			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-		}
+  li {
+    margin: 0 0 0 -20px;
+    padding: $spacing-unit / 5;
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
 
-		.StreamItem--PostMeta {
-			padding-right: $spacing-unit;
-			display: flex;
-			flex-direction: row;
-			p {
-				margin: 0 ($spacing-unit / 2) 0 0;
-				font-family: $mono;
-				font-size: 1.2rem;
-			}
-		}
+    .StreamItem--PostMeta {
+      padding-right: $spacing-unit;
+      display: flex;
+      flex-direction: row;
+      p {
+        margin: 0 ($spacing-unit / 2) 0 0;
+        font-family: $mono;
+        font-size: 1.2rem;
+      }
+    }
 
-		.StreamItem--PostContent {
-			h2 {
-				font-weight: 400;
-				font-size: 2rem;
-				margin: 0;
-			}
-		}
-	}
+    .StreamItem--PostContent {
+      h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 0;
+      }
+    }
+  }
 }

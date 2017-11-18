@@ -32,7 +32,7 @@
 		height: 50px;
 		overflow: hidden;
 		resize: none;
-		width: 60%;
+		width: 90%;
 		min-width: 500px;
 		transition: all .3s ease;
 		&::-webkit-input-placeholder {
@@ -47,7 +47,6 @@
 	}
 
 	.SubmitRegion {
-		width: 60%;
 		max-width: 600px;
 		display: flex;
 		justify-content: space-between;

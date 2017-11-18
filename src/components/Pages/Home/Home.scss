@@ -1,31 +1,30 @@
 @import '../../../styles/variables.scss';
 
 .Home--Hero {
-	margin: 100px 0;
-	padding: $spacing-unit $spacing-unit $spacing-unit 10vw;
-	background: $card-background-black;
-	width: 60%;
-	min-width: 600px;
-	color: $ink-on-black;
-	position: relative;
-	@include material-shadow;
-	h1 {
-		margin: 0;
-		max-width: 500px;
-		line-height: 1;
-	}
+  margin: 100px 0;
+  padding: $spacing-unit $spacing-unit $spacing-unit 150px;
+  background: $card-background-black;
+  width: 60%;
+  min-width: 600px;
+  color: $ink-on-black;
+  position: relative;
+  @include material-shadow;
+  h1 {
+    margin: 0;
+    max-width: 500px;
+    line-height: 1;
+  }
 
-	.Hero--SocialLinks {
-		margin-top: $spacing-unit;
-	}
+  .Hero--SocialLinks {
+    margin-top: $spacing-unit;
+  }
 }
 
-
-.Home--Content {
-	width: $content-width-laptop;
-	margin: auto;
-}
+//.Home-Body {
+//	width: $content-width-laptop;
+//	margin: auto;
+//}
 
 .Home--About, .Home--Currently {
-	width: $paragraph-width-laptop;
+  width: $paragraph-width-laptop;
 }
