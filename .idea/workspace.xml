@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" afterPath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" afterPath="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.scss" afterPath="$PROJECT_DIR$/src/layouts/index.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +28,8 @@
           <file leaf-file-name="HomeTabs.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="468">
-                  <caret line="179" column="17" lean-forward="false" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+                <state relative-caret-position="157">
+                  <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -43,8 +42,8 @@
           <file leaf-file-name="RightNav.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+                <state relative-caret-position="200">
+                  <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -88,6 +87,7 @@
       <find>OptInPage</find>
       <find>ul</find>
       <find>handleHover</find>
+      <find>tab-revea</find>
     </findStrings>
     <replaceStrings>
       <replace>CoursesPage</replace>
@@ -151,15 +151,15 @@
         <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
         <option value="$PROJECT_DIR$/content/posts/dart-for-web-developers.md" />
-        <option value="$PROJECT_DIR$/todo.md" />
         <option value="$PROJECT_DIR$/content/posts/null-aware-operators.md" />
         <option value="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
         <option value="$PROJECT_DIR$/src/components/PostListing/HomeProjectListing.jsx" />
         <option value="$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/index.scss" />
-        <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
         <option value="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
+        <option value="$PROJECT_DIR$/todo.md" />
+        <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
       </list>
     </option>
   </component>
@@ -350,12 +350,12 @@
       <workItem from="1510533362689" duration="4934000" />
       <workItem from="1510674325273" duration="1364000" />
       <workItem from="1510716934448" duration="3798000" />
-      <workItem from="1510930475879" duration="2925000" />
+      <workItem from="1510930475879" duration="3011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96750000" />
+    <option name="totallyTimeSpent" value="96836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -733,17 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="320">
-            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Nav/HomeNav.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -838,21 +827,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="179" column="17" lean-forward="false" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        <state relative-caret-position="200">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="220">
+            <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
