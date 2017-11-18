@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created." />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,36 +19,18 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="ContactForm.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="620">
-                  <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Stream.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/styles/reset.scss" />
         <option value="$PROJECT_DIR$/src/styles/base.scss" />
         <option value="$PROJECT_DIR$/content/posts/planning-a-web-app.md" />
         <option value="$PROJECT_DIR$/content/posts/my-library.md" />
@@ -157,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" />
         <option value="$PROJECT_DIR$/src/components/Forms/ContactForm.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -172,8 +152,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="height" value="1174" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -368,12 +349,12 @@
       <workItem from="1510533362689" duration="4934000" />
       <workItem from="1510674325273" duration="1364000" />
       <workItem from="1510716934448" duration="3798000" />
-      <workItem from="1510930475879" duration="5402000" />
+      <workItem from="1510930475879" duration="5649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99227000" />
+    <option name="totallyTimeSpent" value="99474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,13 +406,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Tabs/AboutTab.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/logos/logo-1024.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -543,21 +517,21 @@
         <state relative-caret-position="628">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
-            <marker date="1511023553000" expanded="true" signature="18:62" ph="{...}" />
-            <marker date="1511023553000" expanded="false" signature="70:317" ph="..." />
-            <marker date="1511023553000" expanded="true" signature="449:1778" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="514:851" ph="/** Service Workers are persistent by nature. They stick around, ...*/" />
-            <marker date="1511023553000" expanded="true" signature="888:1061" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="959:1056" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="1007:1050" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="1174:1203" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="1249:1302" ph="&lt;HotContainer/&gt;" />
-            <marker date="1511023553000" expanded="true" signature="1335:1387" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="1417:1776" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="1457:1771" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="1526:1571" ph="{...}" />
-            <marker date="1511023553000" expanded="true" signature="1603:1664" ph="&lt;HotContainer/&gt;" />
-            <marker date="1511023553000" expanded="true" signature="1701:1757" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="18:62" ph="{...}" />
+            <marker date="1511026922000" expanded="false" signature="70:317" ph="..." />
+            <marker date="1511026922000" expanded="true" signature="449:1778" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="514:851" ph="/** Service Workers are persistent by nature. They stick around, ...*/" />
+            <marker date="1511026922000" expanded="true" signature="888:1061" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="959:1056" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="1007:1050" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="1174:1203" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="1249:1302" ph="&lt;HotContainer/&gt;" />
+            <marker date="1511026922000" expanded="true" signature="1335:1387" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="1417:1776" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="1457:1771" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="1526:1571" ph="{...}" />
+            <marker date="1511026922000" expanded="true" signature="1603:1664" ph="&lt;HotContainer/&gt;" />
+            <marker date="1511026922000" expanded="true" signature="1701:1757" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1192,14 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -1223,7 +1189,32 @@
     <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <marker date="1511026683000" expanded="true" signature="47:67" ph="{...}" />
+            <marker date="1511026683000" expanded="true" signature="116:724" ph="{...}" />
+            <marker date="1511026683000" expanded="true" signature="194:722" ph="{...}" />
+            <marker date="1511026683000" expanded="true" signature="265:356" ph="{...}" />
+            <marker date="1511026683000" expanded="true" signature="384:591" ph="{...}" />
+            <marker date="1511026683000" expanded="true" signature="478:585" ph="{...}" />
+            <marker date="1511026683000" expanded="true" signature="622:718" ph="{...}" />
+            <marker date="1511026683000" expanded="true" signature="633:712" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
