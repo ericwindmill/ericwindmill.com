@@ -1,4 +1,11 @@
 .HomeTabs {
+
+    .tab-revealed {
+      height: 100vh;
+      width: 100vw;
+      background: rgba(.3,.3,.3,.3);
+    }
+
 	section {
 		z-index: 5;
 		width: 80vw;
