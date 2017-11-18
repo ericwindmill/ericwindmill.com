@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/content/posts/dart-for-web-developers.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" afterPath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" afterPath="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +25,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="PostListing.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
+          <file leaf-file-name="HomePostListing.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="128">
-                  <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+                <state relative-caret-position="260">
+                  <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -147,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
         <option value="$PROJECT_DIR$/content/posts/dart-for-web-developers.md" />
         <option value="$PROJECT_DIR$/content/posts/null-aware-operators.md" />
-        <option value="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
         <option value="$PROJECT_DIR$/src/components/PostListing/HomeProjectListing.jsx" />
         <option value="$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.jsx" />
@@ -159,6 +157,7 @@
         <option value="$PROJECT_DIR$/src/layouts/index.scss" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.scss" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
+        <option value="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
       </list>
     </option>
   </component>
@@ -224,28 +223,6 @@
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Nav" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Stream" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -337,12 +314,12 @@
       <workItem from="1510533362689" duration="4934000" />
       <workItem from="1510674325273" duration="1364000" />
       <workItem from="1510716934448" duration="3798000" />
-      <workItem from="1510930475879" duration="3479000" />
+      <workItem from="1510930475879" duration="3572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97304000" />
+    <option name="totallyTimeSpent" value="97397000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -875,29 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <marker date="1510763324000" expanded="false" signature="7:56" ph="..." />
-            <marker date="1510763324000" expanded="true" signature="100:1895" ph="{...}" />
-            <marker date="1510763324000" expanded="true" signature="125:578" ph="{...}" />
-            <marker date="1510763324000" expanded="true" signature="131:574" ph="//..." />
-            <marker date="1510763324000" expanded="true" signature="597:1220" ph="{...}" />
-            <marker date="1510763324000" expanded="true" signature="668:1195" ph="{...}" />
-            <marker date="1510763324000" expanded="true" signature="726:1189" ph="{...}" />
-            <marker date="1510763324000" expanded="true" signature="750:1187" ph="{&quot;path&quot;: postEdge.node.fields.slug...}" />
-            <marker date="1510763324000" expanded="true" signature="1235:1893" ph="{...}" />
-            <marker date="1510763324000" expanded="true" signature="1296:1883" ph="&lt;div/&gt;" />
-            <marker date="1510763324000" expanded="true" signature="1365:1391" ph="/*...*/" />
-            <marker date="1510763324000" expanded="true" signature="1436:1856" ph="&lt;div/&gt;" />
-            <marker date="1510763324000" expanded="true" signature="1537:1684" ph="&lt;span/&gt;" />
-            <marker date="1510763324000" expanded="true" signature="1758:1837" ph="&lt;Link/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -979,8 +933,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="880">
           <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding>
+            <marker date="1511024907000" expanded="false" signature="7:58" ph="..." />
+            <marker date="1511024907000" expanded="true" signature="102:1707" ph="{...}" />
+            <marker date="1511024907000" expanded="true" signature="120:1492" ph="{...}" />
+            <marker date="1511024907000" expanded="true" signature="192:576" ph="{...}" />
+            <marker date="1511024907000" expanded="true" signature="216:568" ph="{&quot;path&quot;: postEdge.path...}" />
+            <marker date="1511024907000" expanded="true" signature="644:1465" ph="{...}" />
+            <marker date="1511024907000" expanded="true" signature="681:1067" ph="{...}" />
+            <marker date="1511024907000" expanded="true" signature="717:1049" ph="&lt;Link/&gt;" />
+            <marker date="1511024907000" expanded="true" signature="770:916" ph="&lt;div/&gt;" />
+            <marker date="1511024907000" expanded="true" signature="931:1031" ph="&lt;div/&gt;" />
+            <marker date="1511024907000" expanded="true" signature="1073:1459" ph="{...}" />
+            <marker date="1511024907000" expanded="true" signature="1109:1441" ph="&lt;Link/&gt;" />
+            <marker date="1511024907000" expanded="true" signature="1162:1308" ph="&lt;div/&gt;" />
+            <marker date="1511024907000" expanded="true" signature="1323:1423" ph="&lt;div/&gt;" />
+            <marker date="1511024907000" expanded="true" signature="1504:1705" ph="{...}" />
+            <marker date="1511024907000" expanded="true" signature="1563:1694" ph="&lt;ul/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding />
         </state>
       </provider>
