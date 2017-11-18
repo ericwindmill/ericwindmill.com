@@ -24,7 +24,6 @@ class PostListing extends React.Component {
       if (post.type !== "Project") {
         postItems.push(
           <Link to={post.path} key={post.title}>
-            <li>
               <div className='StreamItem--PostMeta'>
                 <p>{post.month} {post.year}</p>
                 <p>{post.category}</p>
@@ -32,13 +31,11 @@ class PostListing extends React.Component {
               <div className='StreamItem--PostContent'>
                 <h2>{post.title}</h2>
               </div>
-            </li>
           </Link>
         )
       } else {
         postItems.push(
           <Link to={post.path} key={post.title}>
-            <li>
               <div className='StreamItem--PostMeta'>
                 <p>{post.month} {post.year}</p>
                 <p>{post.category}</p>
@@ -46,7 +43,6 @@ class PostListing extends React.Component {
               <div className='StreamItem--PostContent'>
                 <h2>{post.title}</h2>
               </div>
-            </li>
           </Link>
         )
       }

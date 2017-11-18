@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/b16-tomorrow-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/content/posts/dart-for-web-developers.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.scss" afterPath="$PROJECT_DIR$/src/layouts/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/post.jsx" afterPath="$PROJECT_DIR$/src/templates/post.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/project.jsx" afterPath="$PROJECT_DIR$/src/templates/project.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" afterPath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +26,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="HomeTabs.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
+          <file leaf-file-name="PostListing.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1240">
-                  <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+                <state relative-caret-position="128">
+                  <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -42,11 +40,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
+          <file leaf-file-name="HomeTabs.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40">
-                  <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+                <state relative-caret-position="650">
+                  <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -143,12 +141,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/Pages/About/About.jsx" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
-        <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss" />
         <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/stream.jsx" />
         <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
-        <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
         <option value="$PROJECT_DIR$/content/posts/dart-for-web-developers.md" />
         <option value="$PROJECT_DIR$/content/posts/null-aware-operators.md" />
         <option value="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
@@ -161,6 +157,8 @@
         <option value="$PROJECT_DIR$/src/templates/post.jsx" />
         <option value="$PROJECT_DIR$/src/templates/project.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.scss" />
+        <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
       </list>
     </option>
   </component>
@@ -339,12 +337,12 @@
       <workItem from="1510533362689" duration="4934000" />
       <workItem from="1510674325273" duration="1364000" />
       <workItem from="1510716934448" duration="3798000" />
-      <workItem from="1510930475879" duration="3239000" />
+      <workItem from="1510930475879" duration="3479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97064000" />
+    <option name="totallyTimeSpent" value="97304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,12 +361,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13486141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44147584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3648897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3648897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -397,13 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/OptInForm/OptInForm.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -537,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
@@ -563,16 +547,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="-23">
             <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="226" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/dart-for-web-developers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="420">
-            <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
@@ -683,36 +657,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1240">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <marker date="1511024323000" expanded="true" signature="7:204" ph="..." />
-            <marker date="1511024323000" expanded="true" signature="249:2179" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="270:824" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="717:819" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="839:2130" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="874:1403" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="899:1389" ph="&lt;div/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="915:1318" ph="&lt;nav/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="1409:2126" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="1434:2112" ph="&lt;div/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="1477:1881" ph="&lt;nav/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="1892:2097" ph="&lt;footer/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="2144:2177" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,33 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="860">
-          <caret line="44" column="20" lean-forward="true" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <marker date="1510538178000" expanded="false" signature="7:58" ph="..." />
-            <marker date="1510538178000" expanded="true" signature="102:1777" ph="{...}" />
-            <marker date="1510538178000" expanded="true" signature="120:1562" ph="{...}" />
-            <marker date="1510538178000" expanded="true" signature="192:576" ph="{...}" />
-            <marker date="1510538178000" expanded="true" signature="216:568" ph="{&quot;path&quot;: postEdge.path...}" />
-            <marker date="1510538178000" expanded="true" signature="644:1535" ph="{...}" />
-            <marker date="1510538178000" expanded="true" signature="681:1102" ph="{...}" />
-            <marker date="1510538178000" expanded="true" signature="717:1084" ph="&lt;Link/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="768:1066" ph="&lt;li/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="787:933" ph="&lt;div/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="948:1048" ph="&lt;div/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="1108:1529" ph="{...}" />
-            <marker date="1510538178000" expanded="true" signature="1144:1511" ph="&lt;Link/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="1195:1493" ph="&lt;li/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="1214:1360" ph="&lt;div/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="1375:1475" ph="&lt;div/&gt;" />
-            <marker date="1510538178000" expanded="true" signature="1574:1775" ph="{...}" />
-            <marker date="1510538178000" expanded="true" signature="1633:1764" ph="&lt;ul/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomeProjectListing.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -983,8 +900,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="240">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <marker date="1511024638000" expanded="true" signature="22:128" ph="{...}" />
+            <marker date="1511024638000" expanded="true" signature="289:381" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/dart-for-web-developers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <marker date="1511024323000" expanded="true" signature="7:204" ph="..." />
+            <marker date="1511024323000" expanded="true" signature="249:2179" ph="{...}" />
+            <marker date="1511024323000" expanded="true" signature="270:824" ph="{...}" />
+            <marker date="1511024323000" expanded="true" signature="717:819" ph="{...}" />
+            <marker date="1511024323000" expanded="true" signature="839:2130" ph="{...}" />
+            <marker date="1511024323000" expanded="true" signature="874:1403" ph="{...}" />
+            <marker date="1511024323000" expanded="true" signature="899:1389" ph="&lt;div/&gt;" />
+            <marker date="1511024323000" expanded="true" signature="915:1318" ph="&lt;nav/&gt;" />
+            <marker date="1511024323000" expanded="true" signature="1409:2126" ph="{...}" />
+            <marker date="1511024323000" expanded="true" signature="1434:2112" ph="&lt;div/&gt;" />
+            <marker date="1511024323000" expanded="true" signature="1477:1881" ph="&lt;nav/&gt;" />
+            <marker date="1511024323000" expanded="true" signature="1892:2097" ph="&lt;footer/&gt;" />
+            <marker date="1511024323000" expanded="true" signature="2144:2177" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1511024833000" expanded="true" signature="13:57" ph="{...}" />
+            <marker date="1511024833000" expanded="true" signature="18:55" ph="{...}" />
+            <marker date="1511024833000" expanded="true" signature="30:52" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509835425000" expanded="true" signature="17:476" ph="{...}" />
+            <marker date="1509835425000" expanded="true" signature="82:131" ph="{...}" />
+            <marker date="1509835425000" expanded="true" signature="157:474" ph="{...}" />
+            <marker date="1509835425000" expanded="true" signature="284:392" ph="{...}" />
+            <marker date="1509835425000" expanded="true" signature="336:388" ph="{...}" />
+            <marker date="1509835425000" expanded="true" signature="422:471" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
           <folding />
         </state>
       </provider>
