@@ -5,17 +5,22 @@
 
 // from the stream page component
 .PostListing {
-  //margin: $spacing-unit;
   display: flex;
   flex-direction: column;
 
   li {
-    margin: 0 0 0 -20px;
-    padding: $spacing-unit / 5;
+    //padding: $spacing-unit / 5;
     &:hover {
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      cursor: pointer;
+      h2 {
+        color: $red;
+      }
     }
 
+    a {
+      padding: 20px 0;
+    }
     .StreamItem--PostMeta {
       padding-right: $spacing-unit;
       display: flex;

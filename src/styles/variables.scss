@@ -53,22 +53,12 @@ $paragraph-width-laptop: 750px;
 **********/
 
 .Hero {
-	margin: 100px 0;
-	padding: $spacing-unit $spacing-unit $spacing-unit 10vw;
-	background: $card-background-black;
-	width: 60%;
-	min-width: 600px;
-	color: $ink-on-black;
+	margin: 200px 0 100px;
 	position: relative;
-	@include material-shadow;
 	h1 {
 		margin: 0;
-		max-width: 500px;
+		max-width: 450px;
 		line-height: 1;
-	}
-
-	.Hero--SocialLinks {
-		margin-top: $spacing-unit;
 	}
 }
 

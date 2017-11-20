@@ -9,7 +9,7 @@ class Home extends Component {
   render() {
     return (
       <main className="Home">
-        <section className='Home--Hero'>
+        <section className='Home--Hero Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
         </section>
         <section className='Home--Body'>

@@ -2,7 +2,7 @@
 title: "CSS Layout By Example"
 cover: "https://unsplash.it/400/300/?random?AngelsofMist"
 type: "Project"
-category: "Project"
+category: "Course"
 date: 08/03/2017
 year: 2017
 month: August

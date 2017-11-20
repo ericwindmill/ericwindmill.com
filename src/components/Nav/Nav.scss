@@ -1,51 +1,54 @@
 @import '../../styles/variables';
-nav {transition: all .5s ease;}
+
+nav {
+  transition: all .5s ease;
+}
+
 .MainNavigation {
-	flex: 0 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	display: flex;
-	flex-flow: column;
-	align-content: center;
-	justify-content: space-around;
-	height: 100vh;
-	border-left: 1px solid $divider;
-	//transition: all .5s ease;
+  flex: 0 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: space-around;
+  height: 100vh;
+  border-left: 1px solid $divider;
+  //transition: all .5s ease;
 
-
-	a {
-		transform: rotate(90deg);
-		font-size: 1.6rem;
-		font-family: $serif;
-		font-weight: 400;
-		text-decoration: none;
-	}
+  a {
+    transform: rotate(90deg);
+    font-size: 1.6rem;
+    font-family: $serif;
+    font-weight: 400;
+    text-decoration: none;
+  }
 }
 
 .WideNavigation {
-	flex: 0 0 300px;
-	padding: ($spacing-unit * 2) $spacing-unit $spacing-unit $spacing-unit;
-	border-left: 1px solid $divider;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  flex: 0 0 300px;
+  padding: ($spacing-unit * 2) $spacing-unit $spacing-unit $spacing-unit;
+  border-left: 1px solid $divider;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-	//transition: all .5s ease;
-	nav {
-		display: flex;
-		flex-direction: column;
-		a {
-			 &:hover {
-				 color: darken($peachy, 5%);
-			 }
-		 }
-	}
-	footer {
-		p {
-			padding-top: 10px;
-			font-size: 1.2rem;
-		}
-	}
+  transition: all .5s ease;
+  nav {
+    display: flex;
+    flex-direction: column;
+    a {
+      &:hover {
+        color: darken($peachy, 5%);
+      }
+    }
+  }
+  footer {
+    p {
+      padding-top: 10px;
+      font-size: 1.2rem;
+    }
+  }
 
 }
