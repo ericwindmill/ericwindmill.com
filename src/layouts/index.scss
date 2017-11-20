@@ -1,6 +1,6 @@
 
 .IndexTemplate--Page {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: space-between;
 }
@@ -15,18 +15,8 @@
 .OptIn--Container
 {
 	width: 100%;
-	//min-width: 80vw;
 	overflow: scroll;
+	margin: auto;
+	width: $content-width-laptop;
+	padding-bottom: $spacing-unit * 2;
 }
-
-.About--Body,
-.Contact--Body,
-.Courses--Body,
-.Home--Body,
-.OptIn--Body,
-.Stream--Body {
-  	width: $paragraph-width-laptop;
-    margin: 0 0 0 150px;
-    padding-bottom: $spacing-unit * 2;
-}
-

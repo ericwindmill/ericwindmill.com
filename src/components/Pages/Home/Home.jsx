@@ -3,8 +3,7 @@ import "./Home.scss"
 import PostListing from '../../PostListing/HomePostListing'
 import ProjectListing from '../../PostListing/HomeProjectListing'
 import ContactForm from '../../Forms/ContactForm'
-import UserLinks from '../../UserLinks/UserLinks'
-import config from "../../../../data/SiteConfig";
+import OptInForm from '../../Forms/OptInForm/HomeOptIn'
 
 class Home extends Component {
   render() {
@@ -12,7 +11,6 @@ class Home extends Component {
       <main className="Home">
         <section className='Home--Hero'>
           <h1>Eric Windmill. Front-end & UI Developer</h1>
-          <div className='Hero--SocialLinks'><UserLinks config={config} /></div>
         </section>
         <section className='Home--Body'>
           <section className='Home--About'>
@@ -22,12 +20,17 @@ class Home extends Component {
           <div className='Divider' />
           <section className={'Home--PostList'}>
             <PostListing postEdges={this.props.postEdges} />
+            <section className='OptIn'>
+              <h3>Monday Morning Update</h3>
+              <p>Sign up to receive updates from me about free courses and the best development and design news from around the web.</p>
+              <OptInForm />
+            </section>
           </section>
           <div className='Divider' />
           <section>
             <ProjectListing postEdges={this.props.postEdges} />
           </section>
-          <div className="Divider" />
+          <div className='Divider' />
           <section className='Home--Currently'>
             <h2>
               Currently
