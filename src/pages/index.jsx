@@ -8,7 +8,7 @@ class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div className="Home--Container">
+      <div className="Home--Container ss-container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
         <Home postEdges={postEdges} config={config} />

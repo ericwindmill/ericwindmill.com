@@ -2,7 +2,7 @@
 title: "On the Grid"
 cover: "https://unsplash.it/400/300/?random?AngelsofMist"
 type: "Project"
-category: "Project"
+category: "Tool"
 date: 01/03/2017
 year: 2017
 month: April

@@ -22,11 +22,10 @@ a {
 	color: $link-ink;
 	display: inline-block;
 	position: relative;
-	padding-bottom: 2px;
 	text-decoration: none;
 
 	&:hover {
-		color: $blue;
+		color: $red;
 		cursor: pointer;
 	}
 }

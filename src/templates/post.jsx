@@ -25,13 +25,14 @@ export default class PostTemplate extends React.Component {
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         {/*Content*/}
-        <div className="Post--Page">
+        <main className="Post--Page">
           {/*hero*/}
-          <section className='Hero Post-Hero'>
+          <section className='Post-Hero'>
             <p className="PostDate">{post.month} {post.year}</p>
             <h1>{post.title}</h1>
             <h3>in {post.category}</h3>
           </section>
+          <div className='Divider' />
           {/*body*/}
           {/*{coverImg}*/}
           <section className='PostBody'>
@@ -43,7 +44,7 @@ export default class PostTemplate extends React.Component {
             <SocialLinks postPath={slug} postNode={postNode} />
           </div>
           <UserInfo config={config} />
-        </div>
+        </main>
 
       </div>
     );

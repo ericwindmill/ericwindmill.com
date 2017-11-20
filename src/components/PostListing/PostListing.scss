@@ -1,7 +1,12 @@
 .PostListing {
-	a {
-		&:hover {
-			color: black;
-		}
-	}
+  a {
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.Project-Identifier {
+  color: $red;
 }

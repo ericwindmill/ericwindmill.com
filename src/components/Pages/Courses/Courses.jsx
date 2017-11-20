@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import cssLogo from '../../../assets/css3_unofficial_shaped.png'
 import flutterLogo from '../../../assets/flutter-logo.png'
 import onTheGridLogo from '../../../assets/on-the-grid-logo.png'
+import OptInForm from '../../Forms/OptInForm/HomeOptIn'
 
 class CoursesPage extends Component {
   render() {
@@ -97,6 +98,11 @@ class CoursesPage extends Component {
               </a>
             </li>
           </ul>
+          <section className='OptIn'>
+            <h3>Course Updates</h3>
+            <p>Sign up to be updated when new courses are available, as well as receive the best design and development news from the web weekly.</p>
+            <OptInForm />
+          </section>
         </section>
       </main>
     )
