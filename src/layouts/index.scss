@@ -12,6 +12,7 @@
 .Contact--Container,
 .OptIn--Container {
   width: calc(100% - 300px);
+  transition: all 1s ease;
   > main {
     width: $paragraph-width-laptop;
     margin: auto;

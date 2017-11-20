@@ -7,6 +7,7 @@ import OptInForm from '../../Forms/OptInForm/HomeOptIn'
 
 class Home extends Component {
   render() {
+
     return (
       <main className="Home">
         <section className='Home--Hero Hero'>
@@ -15,16 +16,11 @@ class Home extends Component {
         <section className='Home--Body'>
           <section className='Home--About'>
             <h2>Welcome!</h2>
-            <p><em>Hi! I’m Eric Windmill. I’m a front-end developer, UI designer, and writer working to make the web a better place. I help companies create killer user-centered experiences on web (and now, mobile!) and I implement the code it needs to work. You can hire me to work with your team with deign or development. I'm current available for small projects.</em></p>
+            <p><em>Hi! I’m Eric Windmill. I’m a front-end developer, UI designer, and writer working to make the web a better place. I help companies create killer user-centered experiences on web (and now, mobile!) and I implement the code it needs to work. You can hire me to work with your team with deign or development. I'm currently available for small projects.</em></p>
           </section>
           <div className='Divider' />
           <section className={'Home--PostList'}>
             <PostListing postEdges={this.props.postEdges} />
-            <section className='OptIn'>
-              <h3>Monday Morning Update</h3>
-              <p>Sign up to receive updates from me about free courses and the best development and design news from around the web.</p>
-              <OptInForm />
-            </section>
           </section>
           <div className='Divider' />
           <section>

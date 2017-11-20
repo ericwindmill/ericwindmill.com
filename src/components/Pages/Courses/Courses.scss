@@ -1,10 +1,10 @@
 .CoursesStream {
+  margin-bottom: $spacing-unit * 2;
   .CourseItem {
     margin: 0 -25px $spacing-unit;
     padding: $spacing-unit / 2;
     position: relative;
     &:hover {
-      @include material-shadow;
       & p, li, h2 {
         color: black;
       }
