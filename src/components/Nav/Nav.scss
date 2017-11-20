@@ -1,56 +1,59 @@
 @import '../../styles/variables';
 
-nav {
-  transition: all .5s ease;
-}
 
-.MainNavigation {
-  flex: 0 0;
+.navigation {
   position: fixed;
   right: 0;
   top: 0;
-  display: flex;
-  flex-flow: column;
-  align-content: center;
-  justify-content: space-around;
-  height: 100vh;
   border-left: 1px solid $divider;
-  a {
-    transform: rotate(90deg);
-    font-size: 1.6rem;
-    font-family: $serif;
-    font-weight: 400;
-    text-decoration: none;
-  }
-}
-
-.WideNavigation {
-  flex: 0 0 300px;
-  position: fixed;
-  right: 0;
   height: 100vh;
-  top: 0;
-  padding: ($spacing-unit * 2) $spacing-unit $spacing-unit $spacing-unit;
-  border-left: 1px solid $divider;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  transition: all .5s ease;
-  nav {
-    display: flex;
-    flex-direction: column;
-    a {
-      &:hover {
-        color: darken($peachy, 5%);
-      }
-    }
-  }
+  transition: all 1s ease;
+  width: 55px;
   footer {
+    margin-left: 50px;
     p {
-      padding-top: 10px;
+      padding: 10px;
       font-size: 1.2rem;
     }
   }
+}
 
+.navEl {
+  position: absolute;
+}
+
+.permalink {
+  transition: transform .5s ease;
+  transform: rotate(90deg);
+}
+
+.to-Home {
+  transition: all .65s ease;
+  left: 1500px;
+}
+
+.to-Stream {
+  transition: all .8s ease;
+  top: 20%;
+
+}
+.to-Courses {
+  transition: all .7s ease;
+  top: 40%;
+}
+.to-About {
+  transition: all .79s ease;
+  top: 60%;
+}
+.to-OptIn {
+  transition: all .7s ease;
+  left: 1500px;
+}
+.to-Contact {
+  transition: all .9s ease;
+  top: 80%;
+}
+footer {
+  transition: all .75s ease;
+  bottom: -400px;
 }

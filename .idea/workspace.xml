@@ -4,14 +4,8 @@
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/Nav.scss" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/About/About.scss" afterPath="$PROJECT_DIR$/src/components/Pages/About/About.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Courses/Courses.jsx" afterPath="$PROJECT_DIR$/src/components/Pages/Courses/Courses.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Courses/Courses.scss" afterPath="$PROJECT_DIR$/src/components/Pages/Courses/Courses.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" afterPath="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx" afterPath="$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.jsx" afterPath="$PROJECT_DIR$/src/layouts/index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" afterPath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.scss" afterPath="$PROJECT_DIR$/src/layouts/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/index.jsx" afterPath="$PROJECT_DIR$/src/pages/index.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,14 +24,14 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.61320174">
       <split-first>
         <leaf>
-          <file leaf-file-name="About.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Pages/About/About.scss">
+          <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+                <state relative-caret-position="100">
+                  <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -47,14 +41,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="OptInPage.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx">
+          <file leaf-file-name="Nav.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="363">
+                  <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -98,6 +90,8 @@
       <find>tab-revea</find>
       <find>divi</find>
       <find>width</find>
+      <find>navLink</find>
+      <find>getElementsByClassName</find>
     </findStrings>
     <replaceStrings>
       <replace>CoursesPage</replace>
@@ -106,6 +100,8 @@
       <replace>className</replace>
       <replace>OptInForm</replace>
       <replace>handleClick</replace>
+      <replace>navEl</replace>
+      <replace>querySelector</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -151,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/components/Forms/ContactForm.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/styles/variables.scss" />
-        <option value="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
         <option value="$PROJECT_DIR$/content/projects/layout-by-example.md" />
         <option value="$PROJECT_DIR$/content/projects/on-the-grid.md" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
@@ -163,13 +158,14 @@
         <option value="$PROJECT_DIR$/src/pages/index.jsx" />
         <option value="$PROJECT_DIR$/src/html.jsx" />
         <option value="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" />
-        <option value="$PROJECT_DIR$/src/components/Nav/Nav.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
         <option value="$PROJECT_DIR$/src/components/Pages/Courses/Courses.jsx" />
         <option value="$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx" />
-        <option value="$PROJECT_DIR$/src/layouts/index.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Courses/Courses.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/About/About.scss" />
+        <option value="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Nav/Nav.scss" />
+        <option value="$PROJECT_DIR$/src/layouts/index.scss" />
       </list>
     </option>
   </component>
@@ -298,12 +294,12 @@
       <workItem from="1510674325273" duration="1364000" />
       <workItem from="1510716934448" duration="3798000" />
       <workItem from="1510930475879" duration="5649000" />
-      <workItem from="1511138990962" duration="9299000" />
+      <workItem from="1511138990962" duration="17919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108773000" />
+    <option name="totallyTimeSpent" value="117393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,14 +315,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1359275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44147584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3648897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3648897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -335,7 +332,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -351,7 +347,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -756,26 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <marker date="1511192111000" expanded="true" signature="7:204" ph="..." />
-            <marker date="1511192111000" expanded="true" signature="249:1521" ph="{...}" />
-            <marker date="1511192111000" expanded="true" signature="264:1472" ph="{...}" />
-            <marker date="1511192111000" expanded="true" signature="299:745" ph="{...}" />
-            <marker date="1511192111000" expanded="true" signature="324:731" ph="&lt;div/&gt;" />
-            <marker date="1511192111000" expanded="true" signature="340:660" ph="&lt;nav/&gt;" />
-            <marker date="1511192111000" expanded="true" signature="751:1468" ph="{...}" />
-            <marker date="1511192111000" expanded="true" signature="776:1454" ph="&lt;div/&gt;" />
-            <marker date="1511192111000" expanded="true" signature="819:1223" ph="&lt;nav/&gt;" />
-            <marker date="1511192111000" expanded="true" signature="1234:1439" ph="&lt;footer/&gt;" />
-            <marker date="1511192111000" expanded="true" signature="1486:1519" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/projects/layout-by-example.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -998,24 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <marker date="1511195248000" expanded="true" signature="39:70" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="88:430" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="296:428" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="448:956" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="748:874" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="803:870" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="819:864" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="884:953" ph="{...}" />
-            <marker date="1511195248000" expanded="true" signature="892:949" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Pages/Home/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -1113,28 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <marker date="1511195632000" expanded="true" signature="22:26" ph="{...}" />
-            <marker date="1511195632000" expanded="true" signature="187:289" ph="{...}" />
-            <marker date="1511195632000" expanded="true" signature="228:287" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Pages/Courses/Courses.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-603">
@@ -1165,8 +1101,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Pages/About/About.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1511195813000" expanded="true" signature="13:149" ph="{...}" />
+            <marker date="1511195813000" expanded="true" signature="20:147" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <marker date="1511195453000" expanded="true" signature="7:195" ph="..." />
+            <marker date="1511195453000" expanded="true" signature="231:1057" ph="{...}" />
+            <marker date="1511195453000" expanded="true" signature="245:1055" ph="{...}" />
+            <marker date="1511195453000" expanded="true" signature="266:1045" ph="&lt;main/&gt;" />
+            <marker date="1511195453000" expanded="true" signature="281:358" ph="&lt;section/&gt;" />
+            <marker date="1511195453000" expanded="true" signature="367:1031" ph="&lt;main/&gt;" />
+            <marker date="1511195453000" expanded="true" signature="408:1015" ph="&lt;div/&gt;" />
+            <marker date="1511195453000" expanded="true" signature="451:646" ph="&lt;p/&gt;" />
+            <marker date="1511195453000" expanded="true" signature="657:974" ph="&lt;p/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <marker date="1511204587000" expanded="true" signature="0:38" ph="/*...*/" />
+            <marker date="1511204587000" expanded="true" signature="46:201" ph="..." />
+            <marker date="1511204587000" expanded="true" signature="246:5163" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="269:354" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="425:1717" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="509:1713" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="1148:1203" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="1721:1844" ph="//..." />
+            <marker date="1511204587000" expanded="true" signature="1863:3164" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="1884:3154" ph="&lt;nav/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="1921:2068" ph="&lt;Link/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="2077:2232" ph="&lt;Link/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="2241:2399" ph="&lt;Link/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="2408:2560" ph="&lt;Link/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="2569:2729" ph="&lt;Link/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="2738:2894" ph="&lt;Link/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="2903:3141" ph="&lt;footer/&gt;" />
+            <marker date="1511204587000" expanded="true" signature="3189:5110" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="3753:4428" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="3862:3917" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="4434:5104" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="4541:4597" ph="{...}" />
+            <marker date="1511204587000" expanded="true" signature="5123:5161" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
           <folding />
         </state>
       </provider>
