@@ -1,8 +1,6 @@
 
 .IndexTemplate--Page {
-	min-height: 100vh;
-	display: flex;
-	justify-content: space-between;
+
 }
 
 .Home--Container,
@@ -12,11 +10,11 @@
 .tag-container,
 .PostTemplate--Container,
 .Contact--Container,
-.OptIn--Container
-{
-	width: 100%;
-	overflow: scroll;
-	margin: auto;
-	width: $content-width-laptop;
-	padding-bottom: $spacing-unit * 2;
+.OptIn--Container {
+  width: calc(100% - 300px);
+
+  > main {
+    width: $paragraph-width-laptop;
+    margin: auto;
+  }
 }

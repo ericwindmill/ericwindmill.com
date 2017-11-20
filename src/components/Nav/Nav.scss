@@ -15,8 +15,6 @@ nav {
   justify-content: space-around;
   height: 100vh;
   border-left: 1px solid $divider;
-  //transition: all .5s ease;
-
   a {
     transform: rotate(90deg);
     font-size: 1.6rem;
@@ -28,6 +26,10 @@ nav {
 
 .WideNavigation {
   flex: 0 0 300px;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  top: 0;
   padding: ($spacing-unit * 2) $spacing-unit $spacing-unit $spacing-unit;
   border-left: 1px solid $divider;
   display: flex;

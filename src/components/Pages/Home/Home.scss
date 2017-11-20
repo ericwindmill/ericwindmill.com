@@ -1,5 +1,9 @@
 @import '../../../styles/variables.scss';
 
+.Home--Body {
+  padding-bottom: $spacing-unit * 2;
+}
+
 .Home--Hero {
   h1 {
     font-size: 6rem;

@@ -6,8 +6,8 @@ import config from '../../../../data/SiteConfig'
 class OptInPage extends Component {
   render () {
     return (
-      <div>
-        <section className='Home--Hero'>
+      <main>
+        <section className='Hero'>
           <h1>Mailing List</h1>
         </section>
         <main className='OptIn--Body'>
@@ -21,7 +21,7 @@ class OptInPage extends Component {
           <OptInForm />
           </div>
         </main>
-      </div>
+      </main>
     )
   }
 }

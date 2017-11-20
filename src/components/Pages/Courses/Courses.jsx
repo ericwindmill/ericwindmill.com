@@ -7,7 +7,7 @@ import onTheGridLogo from '../../../assets/on-the-grid-logo.png'
 class CoursesPage extends Component {
   render() {
     return (
-      <main>
+      <main className=''>
         <section className='Hero'>
           <h1>Developer Tools</h1>
           <h2>Resources, Courses and Tools for developers</h2>
