@@ -37,12 +37,12 @@ class PostListing extends React.Component {
         postItems.push(
           <div className='Project-Identifier'>
             <Link to={post.path} key={post.title}>
-              <div className='StreamItem--PostMeta Project-Identifier'>
+              <div className='StreamItem--PostMeta'>
                 <p>{post.month} {post.year}</p>
                 <p>{post.type}</p>
               </div>
               <div className='StreamItem--PostContent'>
-                <h2>{post.category}: {post.title}</h2>
+                <h2><span className='Project-Identifier'>{post.category}:</span> {post.title}</h2>
               </div>
             </Link>
           </div>
