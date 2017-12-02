@@ -1,8 +1,6 @@
 
 .IndexTemplate--Page {
-	height: 100vh;
-	display: flex;
-	justify-content: space-between;
+
 }
 
 .Home--Container,
@@ -12,21 +10,11 @@
 .tag-container,
 .PostTemplate--Container,
 .Contact--Container,
-.OptIn--Container
-{
-	width: 100%;
-	//min-width: 80vw;
-	overflow: scroll;
+.OptIn--Container {
+  width: calc(100% - 300px);
+  transition: all 1s ease;
+  > main {
+    width: $paragraph-width-laptop;
+    margin: auto;
+  }
 }
-
-.About--Body,
-.Contact--Body,
-.Courses--Body,
-.Home--Body,
-.OptIn--Body,
-.Stream--Body {
-  	width: $paragraph-width-laptop;
-    margin: 0 0 0 150px;
-    padding-bottom: $spacing-unit * 2;
-}
-

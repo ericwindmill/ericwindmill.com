@@ -47,7 +47,7 @@ export default class MainLayout extends React.Component {
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        <div className='IndexTemplate--Page'>
+        <div className='IndexTemplate--Page ss-container'>
           {children()}
           <WideSideNavigation
             path={location.pathname}

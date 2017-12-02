@@ -5,18 +5,18 @@ class PostListing extends React.Component {
   getPostList() {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
-        postList.push({
-          path: postEdge.path,
-          tags: postEdge.tags,
-          cover: postEdge.cover,
-          title: postEdge.title,
-          type: postEdge.type,
-          month: postEdge.month,
-          year: postEdge.year,
-          excerpt: postEdge.excerpt,
-          timeToRead: postEdge.timeToRead,
-          category: postEdge.category
-        });
+      postList.push({
+        path: postEdge.path,
+        tags: postEdge.tags,
+        cover: postEdge.cover,
+        title: postEdge.title,
+        type: postEdge.type,
+        month: postEdge.month,
+        year: postEdge.year,
+        excerpt: postEdge.excerpt,
+        timeToRead: postEdge.timeToRead,
+        category: postEdge.category
+      });
     });
 
     const postItems = new Array();
@@ -24,31 +24,34 @@ class PostListing extends React.Component {
       if (post.type !== "Project") {
         postItems.push(
           <Link to={post.path} key={post.title}>
-              <div className='StreamItem--PostMeta'>
-                <p>{post.month} {post.year}</p>
-                <p>{post.category}</p>
-              </div>
-              <div className='StreamItem--PostContent'>
-                <h2>{post.title}</h2>
-              </div>
+            <div className='StreamItem--PostMeta'>
+              <p>{post.month} {post.year}</p>
+              <p>{post.category}</p>
+            </div>
+            <div className='StreamItem--PostContent'>
+              <h2>{post.title}</h2>
+            </div>
           </Link>
         )
       } else {
         postItems.push(
-          <Link to={post.path} key={post.title}>
+          <div className='Project-Identifier'>
+            <Link to={post.path} key={post.title}>
               <div className='StreamItem--PostMeta'>
                 <p>{post.month} {post.year}</p>
-                <p>{post.category}</p>
+                <p>{post.type}</p>
               </div>
               <div className='StreamItem--PostContent'>
-                <h2>{post.title}</h2>
+                <h2><span className='Project-Identifier'>{post.category}:</span> {post.title}</h2>
               </div>
-          </Link>
+            </Link>
+          </div>
         )
       }
     })
     return postItems;
   }
+
   render() {
     const posts = this.getPostList();
     return (

@@ -1,5 +1,10 @@
-.Hero.Post-Hero {
+.Post-Hero {
+	margin: 200px 0 100px;
 	position: relative;
+	h1 {
+		margin: 0;
+		line-height: 1.2;
+	}
 	.PostDate {
 		position: absolute;
 		top: -20px;
@@ -12,7 +17,6 @@
 .PostBody {
 	margin: $spacing-unit * 2 auto;
 	min-width: 600px;
-	max-width: 40vw;
 	p > img, img {
 		width: 100%;
 	}

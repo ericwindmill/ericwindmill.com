@@ -1,98 +1,91 @@
 .CoursesStream {
-	margin: auto;
-	width: 80%;
-	//TODO: Remove
-	height: 200vh;
+  margin-bottom: $spacing-unit * 2;
+  .CourseItem {
+    margin: 0 -25px $spacing-unit;
+    padding: $spacing-unit / 2;
+    position: relative;
+    &:hover {
+      & p, li, h2 {
+        color: black;
+      }
+    }
+  }
 
-	.CourseItem {
-		margin-bottom: $spacing-unit;
-		padding: $spacing-unit / 2;
-		position: relative;
-		&:hover {
-			@include material-shadow;
+  .CourseItem--Title {
+    width: 100%;
+    display: grid;
+    padding-bottom: $spacing-unit / 3;
+    grid-column-gap: 20px;
+    grid-template-areas: 'img title' 'img about';
 
-			& p, li, h2 {
-				color: black;
-			}
-		}
-	}
+    img {
+      height: 15vw;
+      width: 15vw;
+      grid-area: img;
+    }
 
-	.CourseItem--Title {
-		width: 100%;
-		display: grid;
-		padding-bottom: $spacing-unit / 3;
-		grid-column-gap: 20px;
-		grid-template-areas:
-			'img title'
-			'img about';
+    h2 {
+      grid-area: title;
+    }
 
-		img {
-			height: 15vw;
-			width: 15vw;
-			grid-area: img;
-		}
+    p {
+      grid-area: about;
+    }
+  }
 
-		h2 {
-			grid-area: title;
-		}
+  .CourseItem--Description {
+    width: 100%;
 
-		p {
-			grid-area: about;
-		}
-	}
+    p {
+      width: 80%;
+      float: right;
+    }
 
-	.CourseItem--Description {
-		width: 100%;
-
-		p {
-			width: 80%;
-			float: right;
-		}
-
-		ul {
-			font-size: $font-size;
-			line-height: $line-height;
-		}
-	}
+    ul {
+      font-size: $font-size;
+      line-height: $line-height;
+    }
+  }
 }
 
 .coming-soon {
-	bottom: -10%;
-	right: -20%;
-	transform: rotate(-4deg);
-	position: absolute;
-	background: rgba(255,255,255,.8);
-	z-index: 5;
-	border-radius: 10px;
-	padding: $spacing-unit;
-	width: 500px;
-	@include material-shadow;
-	h1{
-		color: darkred;
-		font-size: 6rem;
-		opacity: 1;
-	}
-	h1, p {
-		margin-bottom: 10px;
-	}
-	p {
-		font-size: 2.5rem;
-	}
+  bottom: -10%;
+  right: -20%;
+  transform: rotate(-4deg);
+  position: absolute;
+  background: rgba(255, 255, 255, .8);
+  z-index: 5;
+  border-radius: 10px;
+  padding: $spacing-unit;
+  width: 500px;
+  @include material-shadow;
+  h1 {
+    color: darkred;
+    font-size: 6rem;
+    opacity: 1;
+  }
+  h1, p {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 2.5rem;
+  }
 }
 
 section {
-	clear: both;
+  clear: both;
 }
+
 // Item specific non-reusable
 .item-1, .item-3 {
-	ul {
-		width: 80%;
-		float: right;
-		clear: both;
+  ul {
+    width: 80%;
+    float: right;
+    clear: both;
 
-		li {
-			margin-left: $spacing-unit;
-			list-style: disc;
-		}
-	}
+    li {
+      margin-left: $spacing-unit;
+      list-style: disc;
+    }
+  }
 }
