@@ -33,12 +33,9 @@ export default class PostTemplate extends React.Component {
             <h3>in {post.category}</h3>
           </section>
           <div className='Divider' />
-          {/*body*/}
-          {/*{coverImg}*/}
           <section className='PostBody'>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
           </section>
-          {/*Footer -- Meta*/}
           <div className="PostMeta">
             <PostTags tags={post.tags} />
             <SocialLinks postPath={slug} postNode={postNode} />

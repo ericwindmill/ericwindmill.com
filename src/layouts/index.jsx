@@ -63,7 +63,7 @@ export default class MainLayout extends React.Component {
 export const pageQuery = graphql`
   query PostsQuery {
         allMarkdownRemark(
-          limit: 10
+          limit: 6
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {

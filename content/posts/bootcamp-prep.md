@@ -12,7 +12,6 @@ tags:
     - algorithms
     - study
 ---
-#### The Exact Algorithm Practice That Will Get You Into App Academy or Hack Reactor
 The greatest benefit of attending a bootcamp was being surrounded by brilliant people everyday. I was constantly humbled and pushed to work harder to keep up.  And, to be straight, I don’t think this would’ve happened a bootcamp that doesn’t have a competitive admissions process. 
 
 When I decided to go to a bootcamp, I was dead set on going to HackReactor or App Academy.  If I was going to make this commitment, I needed to know that I was going somewhere that I had to prove myself to get to. 

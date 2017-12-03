@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created." />
+    <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/posts/google-maps-flutter-2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/posts/google-maps-flutter.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/posts/bootcamp-prep.md" afterPath="$PROJECT_DIR$/content/posts/bootcamp-prep.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.jsx" afterPath="$PROJECT_DIR$/src/layouts/index.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/post.jsx" afterPath="$PROJECT_DIR$/src/templates/post.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/post.scss" afterPath="$PROJECT_DIR$/src/templates/post.scss" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,12 +28,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="google-maps-flutter.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="704">
+                <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+                <folding>
+                  <marker date="1512330045000" expanded="true" signature="3629:4084" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="3803:4079" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="6538:6632" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="6701:6908" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="6754:6905" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="7037:7202" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="9017:9216" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="9017:9624" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="9155:9215" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="9234:9624" ph="{...}" />
+                  <marker date="1512330045000" expanded="true" signature="9406:9622" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -86,12 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/styles/base.scss" />
-        <option value="$PROJECT_DIR$/content/posts/planning-a-web-app.md" />
-        <option value="$PROJECT_DIR$/content/posts/my-library.md" />
-        <option value="$PROJECT_DIR$/content/posts/your-profile-is-bad-as-you-think.md" />
-        <option value="$PROJECT_DIR$/content/projects/layout-by-example.md" />
-        <option value="$PROJECT_DIR$/src/components/Pages/Courses/Courses.scss" />
         <option value="$PROJECT_DIR$/content/projects/on-the-grid.md" />
         <option value="$PROJECT_DIR$/content/posts/javascript-async-functions.md" />
         <option value="$PROJECT_DIR$/src/components/Pages/SignUp/SignUp.jsx" />
@@ -112,7 +129,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/Pages/About/About.jsx" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
-        <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/stream.jsx" />
         <option value="$PROJECT_DIR$/content/posts/dart-for-web-developers.md" />
         <option value="$PROJECT_DIR$/content/posts/null-aware-operators.md" />
@@ -122,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
         <option value="$PROJECT_DIR$/todo.md" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
-        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
         <option value="$PROJECT_DIR$/src/templates/project.jsx" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.scss" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
@@ -137,6 +152,14 @@
         <option value="$PROJECT_DIR$/src/components/Forms/ContactForm.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/content/posts/bootcamp-prep.md" />
+        <option value="$PROJECT_DIR$/content/posts/drafts/google-maps-flutter.md" />
+        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
+        <option value="$PROJECT_DIR$/src/templates/post.scss" />
+        <option value="$PROJECT_DIR$/content/posts/google-maps-flutter-2.md" />
+        <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
+        <option value="$PROJECT_DIR$/content/posts/google-maps-flutter.md" />
       </list>
     </option>
   </component>
@@ -152,9 +175,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1174" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -162,7 +184,7 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
-      <showMembers />
+      <showMembers ProjectPane="true" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
@@ -174,7 +196,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scratches">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,81 +234,13 @@
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="About" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Contact" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Courses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="OptIn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Stream" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="PostListing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,16 +263,16 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Asp" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/components/Pages" />
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/posts/life" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/components/Pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,11 +314,15 @@
       <workItem from="1510674325273" duration="1364000" />
       <workItem from="1510716934448" duration="3798000" />
       <workItem from="1510930475879" duration="5649000" />
+      <workItem from="1512229311051" duration="119000" />
+      <workItem from="1512229456342" duration="31000" />
+      <workItem from="1512229491258" duration="10082000" />
+      <workItem from="1512321232962" duration="7233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99474000" />
+    <option name="totallyTimeSpent" value="116871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,17 +335,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13486141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44147584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3648897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2389706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -386,6 +354,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -406,69 +375,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/logos/logo-1024.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/logos/logo-48.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/favicon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/bootcamp-prep.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="324">
-            <caret line="17" column="134" lean-forward="false" selection-start-line="17" selection-start-column="134" selection-end-line="17" selection-end-column="134" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gatsby-node.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/dart-from-javascript.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-23">
-            <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="226" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -482,57 +392,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/null-aware-operators.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="587">
-            <caret line="97" column="2" lean-forward="true" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-            <folding>
-              <marker date="1510763254000" expanded="true" signature="733:779" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="785:814" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="2358:2451" ph="//..." />
-              <marker date="1510763254000" expanded="true" signature="2358:2467" ph="//..." />
-              <marker date="1510763254000" expanded="true" signature="2796:3127" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="2796:3130" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="2814:3090" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="2814:3127" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="3285:3493" ph="//..." />
-              <marker date="1510763254000" expanded="true" signature="3512:3747" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/HomeNav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
     <entry file="file://$PROJECT_DIR$/.cache/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <marker date="1511026922000" expanded="true" signature="18:62" ph="{...}" />
-            <marker date="1511026922000" expanded="false" signature="70:317" ph="..." />
-            <marker date="1511026922000" expanded="true" signature="449:1778" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="514:851" ph="/** Service Workers are persistent by nature. They stick around, ...*/" />
-            <marker date="1511026922000" expanded="true" signature="888:1061" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="959:1056" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="1007:1050" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="1174:1203" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="1249:1302" ph="&lt;HotContainer/&gt;" />
-            <marker date="1511026922000" expanded="true" signature="1335:1387" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="1417:1776" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="1457:1771" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="1526:1571" ph="{...}" />
-            <marker date="1511026922000" expanded="true" signature="1603:1664" ph="&lt;HotContainer/&gt;" />
-            <marker date="1511026922000" expanded="true" signature="1701:1757" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,40 +404,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <marker date="1510931109000" expanded="true" signature="7:76" ph="..." />
-            <marker date="1510931109000" expanded="true" signature="111:695" ph="{...}" />
-            <marker date="1510931109000" expanded="true" signature="124:693" ph="{...}" />
-            <marker date="1510931109000" expanded="true" signature="183:683" ph="&lt;div/&gt;" />
-            <marker date="1510931109000" expanded="true" signature="231:350" ph="&lt;section/&gt;" />
-            <marker date="1510931109000" expanded="true" signature="359:458" ph="&lt;section/&gt;" />
-            <marker date="1510931109000" expanded="true" signature="467:566" ph="&lt;section/&gt;" />
-            <marker date="1510931109000" expanded="true" signature="575:670" ph="&lt;section/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="220">
-            <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.md" />
     <entry file="file://$PROJECT_DIR$/src/pages/contact.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509835425000" expanded="true" signature="7:175" ph="..." />
-            <marker date="1509835425000" expanded="true" signature="213:386" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="226:384" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="247:373" ph="&lt;div/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,15 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510533342000" expanded="true" signature="7:166" ph="..." />
-            <marker date="1510533342000" expanded="true" signature="225:688" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="239:686" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="365:676" ph="&lt;div/&gt;" />
-            <marker date="1510533342000" expanded="true" signature="480:556" ph="&lt;section/&gt;" />
-            <marker date="1510533342000" expanded="true" signature="565:662" ph="&lt;main/&gt;" />
-            <marker date="1510533342000" expanded="true" signature="690:717" ph="/*...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,71 +433,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <marker date="1508090200000" expanded="false" signature="0:39" ph="/*...*/" />
-            <marker date="1508090200000" expanded="true" signature="40:76" ph="/*...*/" />
-            <marker date="1508090200000" expanded="true" signature="77:110" ph="/*...*/" />
-            <marker date="1508090200000" expanded="false" signature="118:196" ph="..." />
-            <marker date="1508090200000" expanded="true" signature="265:469" ph="{...}" />
-            <marker date="1508090200000" expanded="true" signature="273:397" ph="{...}" />
-            <marker date="1508090200000" expanded="true" signature="279:328" ph="/*...*/" />
-            <marker date="1508090200000" expanded="true" signature="408:467" ph="{...}" />
-            <marker date="1508090200000" expanded="true" signature="414:443" ph="/*...*/" />
-            <marker date="1508090200000" expanded="true" signature="521:1296" ph="{...}" />
-            <marker date="1508090200000" expanded="true" signature="534:1294" ph="{...}" />
-            <marker date="1508090200000" expanded="true" signature="596:748" ph="{...}" />
-            <marker date="1508090200000" expanded="true" signature="620:733" ph="&lt;style/&gt;" />
-            <marker date="1508090200000" expanded="true" signature="768:1283" ph="&lt;html/&gt;" />
-            <marker date="1508090200000" expanded="true" signature="793:1075" ph="&lt;head/&gt;" />
-            <marker date="1508090200000" expanded="true" signature="845:951" ph="&lt;meta/&gt;" />
-            <marker date="1508090200000" expanded="true" signature="1084:1269" ph="&lt;body/&gt;" />
-            <marker date="1508090200000" expanded="true" signature="1101:1211" ph="&lt;div/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/b16-tomorrow-dark.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1995">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1511024559000" expanded="true" signature="7:323" ph="..." />
-            <marker date="1511024559000" expanded="true" signature="383:1733" ph="{...}" />
-            <marker date="1511024559000" expanded="true" signature="396:1731" ph="{...}" />
-            <marker date="1511024559000" expanded="true" signature="553:582" ph="{...}" />
-            <marker date="1511024559000" expanded="true" signature="601:663" ph="{...}" />
-            <marker date="1511024559000" expanded="true" signature="791:1720" ph="&lt;div/&gt;" />
-            <marker date="1511024559000" expanded="true" signature="841:932" ph="&lt;Helmet/&gt;" />
-            <marker date="1511024559000" expanded="true" signature="1002:1013" ph="/*...*/" />
-            <marker date="1511024559000" expanded="true" signature="1023:1706" ph="&lt;div/&gt;" />
-            <marker date="1511024559000" expanded="true" signature="1063:1071" ph="/*...*/" />
-            <marker date="1511024559000" expanded="true" signature="1083:1279" ph="&lt;section/&gt;" />
-            <marker date="1511024559000" expanded="true" signature="1291:1299" ph="/*...*/" />
-            <marker date="1511024559000" expanded="true" signature="1312:1326" ph="/*...*/" />
-            <marker date="1511024559000" expanded="true" signature="1338:1461" ph="&lt;section/&gt;" />
-            <marker date="1511024559000" expanded="true" signature="1473:1491" ph="/*...*/" />
-            <marker date="1511024559000" expanded="true" signature="1503:1652" ph="&lt;div/&gt;" />
-            <marker date="1511024559000" expanded="true" signature="1735:1762" ph="/*...*/" />
-            <marker date="1511024559000" expanded="true" signature="1763:2093" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/b16-tomorrow-dark.css" />
     <entry file="file://$PROJECT_DIR$/src/templates/project.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <marker date="1511024559000" expanded="true" signature="0:2537" ph="//..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,15 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510533342000" expanded="true" signature="7:170" ph="..." />
-            <marker date="1510533342000" expanded="true" signature="234:684" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="247:682" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="385:671" ph="&lt;div/&gt;" />
-            <marker date="1510533342000" expanded="true" signature="430:522" ph="&lt;Helmet/&gt;" />
-            <marker date="1510533342000" expanded="true" signature="531:612" ph="&lt;section/&gt;" />
-            <marker date="1510533342000" expanded="true" signature="686:713" ph="/*...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,26 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509835425000" expanded="true" signature="7:177" ph="..." />
-            <marker date="1509835425000" expanded="true" signature="213:384" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="226:382" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="247:371" ph="&lt;div/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <marker date="1510533342000" expanded="false" signature="7:195" ph="..." />
-            <marker date="1510533342000" expanded="true" signature="233:526" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="246:524" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="330:513" ph="&lt;div/&gt;" />
-            <marker date="1510533342000" expanded="true" signature="551:579" ph="/*...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,12 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510533342000" expanded="true" signature="7:179" ph="..." />
-            <marker date="1510533342000" expanded="true" signature="217:392" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="230:390" ph="{...}" />
-            <marker date="1510533342000" expanded="true" signature="251:379" ph="&lt;div/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,55 +469,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <marker date="1510763359000" expanded="true" signature="7:56" ph="..." />
-            <marker date="1510763359000" expanded="true" signature="103:1898" ph="{...}" />
-            <marker date="1510763359000" expanded="true" signature="128:581" ph="{...}" />
-            <marker date="1510763359000" expanded="true" signature="134:577" ph="//..." />
-            <marker date="1510763359000" expanded="true" signature="600:1223" ph="{...}" />
-            <marker date="1510763359000" expanded="true" signature="671:1198" ph="{...}" />
-            <marker date="1510763359000" expanded="true" signature="729:1192" ph="{...}" />
-            <marker date="1510763359000" expanded="true" signature="753:1190" ph="{&quot;path&quot;: postEdge.node.fields.slug...}" />
-            <marker date="1510763359000" expanded="true" signature="1238:1896" ph="{...}" />
-            <marker date="1510763359000" expanded="true" signature="1299:1886" ph="&lt;div/&gt;" />
-            <marker date="1510763359000" expanded="true" signature="1368:1394" ph="/*...*/" />
-            <marker date="1510763359000" expanded="true" signature="1439:1859" ph="&lt;div/&gt;" />
-            <marker date="1510763359000" expanded="true" signature="1540:1687" ph="&lt;span/&gt;" />
-            <marker date="1510763359000" expanded="true" signature="1761:1840" ph="&lt;Link/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/dart-for-web-developers.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="28" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/dart-for-web-developers.md" />
     <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-82">
           <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <marker date="1511024323000" expanded="true" signature="7:204" ph="..." />
-            <marker date="1511024323000" expanded="true" signature="249:2179" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="270:824" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="717:819" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="839:2130" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="874:1403" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="899:1389" ph="&lt;div/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="915:1318" ph="&lt;nav/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="1409:2126" ph="{...}" />
-            <marker date="1511024323000" expanded="true" signature="1434:2112" ph="&lt;div/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="1477:1881" ph="&lt;nav/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="1892:2097" ph="&lt;footer/&gt;" />
-            <marker date="1511024323000" expanded="true" signature="2144:2177" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -789,11 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <marker date="1511024833000" expanded="true" signature="13:57" ph="{...}" />
-            <marker date="1511024833000" expanded="true" signature="18:55" ph="{...}" />
-            <marker date="1511024833000" expanded="true" signature="30:52" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,14 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509835425000" expanded="true" signature="17:476" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="82:131" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="157:474" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="284:392" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="336:388" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="422:471" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,31 +498,224 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/stream.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/Courses/Courses.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/Contact/Contact.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/OptInForm/OptInForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/about.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/About/About.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/Home/Home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1966">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <marker date="1511024907000" expanded="false" signature="7:58" ph="..." />
-            <marker date="1511024907000" expanded="true" signature="102:1707" ph="{...}" />
-            <marker date="1511024907000" expanded="true" signature="120:1492" ph="{...}" />
-            <marker date="1511024907000" expanded="true" signature="192:576" ph="{...}" />
-            <marker date="1511024907000" expanded="true" signature="216:568" ph="{&quot;path&quot;: postEdge.path...}" />
-            <marker date="1511024907000" expanded="true" signature="644:1465" ph="{...}" />
-            <marker date="1511024907000" expanded="true" signature="681:1067" ph="{...}" />
-            <marker date="1511024907000" expanded="true" signature="717:1049" ph="&lt;Link/&gt;" />
-            <marker date="1511024907000" expanded="true" signature="770:916" ph="&lt;div/&gt;" />
-            <marker date="1511024907000" expanded="true" signature="931:1031" ph="&lt;div/&gt;" />
-            <marker date="1511024907000" expanded="true" signature="1073:1459" ph="{...}" />
-            <marker date="1511024907000" expanded="true" signature="1109:1441" ph="&lt;Link/&gt;" />
-            <marker date="1511024907000" expanded="true" signature="1162:1308" ph="&lt;div/&gt;" />
-            <marker date="1511024907000" expanded="true" signature="1323:1423" ph="&lt;div/&gt;" />
-            <marker date="1511024907000" expanded="true" signature="1504:1705" ph="{...}" />
-            <marker date="1511024907000" expanded="true" signature="1563:1694" ph="&lt;ul/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="5:26" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="28:60" ph="/*...*/" />
+            <marker date="1512228964000" expanded="true" signature="77:145" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="234:311" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="315:455" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="415:453" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="509:582" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="587:647" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="652:710" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="715:779" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="784:848" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="858:882" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="883:916" ph="/*...*/" />
+            <marker date="1512228964000" expanded="true" signature="919:957" ph="/*...*/" />
+            <marker date="1512228964000" expanded="true" signature="970:1340" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="1314:1338" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="1342:1376" ph="/*...*/" />
+            <marker date="1512228964000" expanded="true" signature="1383:1454" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="1462:1550" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="1558:1601" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="1605:1640" ph="/*...*/" />
+            <marker date="1512228964000" expanded="true" signature="1651:1747" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="1763:1877" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/post.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <marker date="1512323056000" expanded="true" signature="11:231" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="65:107" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="120:229" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="243:532" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="315:358" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="369:470" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="435:466" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="477:530" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="545:621" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="633:698" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="720:1055" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="794:845" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="851:1053" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="864:1049" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="1009:1043" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="1073:1214" ph="{...}" />
+            <marker date="1512323056000" expanded="true" signature="1187:1212" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.cache/json/faking-google-maps-in-a-flutter-app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1512328130000" expanded="true" signature="0:0" ph="{...}" />
+            <marker date="1512328130000" expanded="true" signature="14:25476" ph="{...}" />
+            <marker date="1512328130000" expanded="true" signature="42:25470" ph="{&quot;html&quot;: &quot;&lt;p&gt;Flutter's core team is working on supporting a feature that is super necessary in modern applications: Google Maps. But it isn't here yet. For the time being, it's easy to fake Google Maps in your app. &lt;/p&gt;\n&lt;p&gt;Hopefully, by the time you're reading this, Google Maps support will be implemented and this will be irrelevant.&lt;/p&gt;\n&lt;h3 id=\&quot;what-were-building\&quot;&gt;&lt;a href=\&quot;##what-were-building\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What We're Building&lt;/h3&gt;\n&lt;p&gt;I'll walk you through building &lt;a href=\&quot;https://github.com/ericwindmill/flutter-static-maps-demo\&quot;&gt;this map demo app&lt;/a&gt; that I made. &lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_300/v1512320238/flutter-static-maps/Simulator_Screen_Shot_-_iPhone_6_-_2017-12-03_at_08.56.35.png\&quot; alt=\&quot;Demo Screenshot\&quot;&gt;&lt;/p&gt;\n&lt;h3 id=\&quot;google-static-maps-api\&quot;&gt;&lt;a href=\&quot;##google-static-maps-api\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Google Static Maps API&lt;/h3&gt;\n&lt;p&gt;Google Static Maps simply serves up images. While not ideal, because it's not interactive, it can give you a temporary solution and its &lt;em&gt;easy&lt;/em&gt;.&lt;/p&gt;\n&lt;p&gt;My favorite thing about the API is how easy it is use. The url that you create renders the image on the fly. You don't have to make a request with a body and a method and headers. The url that you create to make the request &lt;em&gt;is the url you render.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;In other words, on the web you would use Static Maps like this:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-html\&quot;&gt;&lt;code&gt;&lt;span class=\&quot;token tag\&quot;&gt;&lt;span class=\&quot;token tag\&quot;&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=\&quot;token attr-name\&quot;&gt;scr&lt;/span&gt;&lt;span class=\&quot;token attr-value\&quot;&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;&amp;apos;&lt;/span&gt;https://maps.googleapis.com/maps/api/staticmap?center&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;37.0902%2C-95.7192&amp;amp;zoom&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;4&amp;amp;size&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;600x400&amp;amp;API_KEY&lt;span class=\&quot;token punctuation\&quot;&gt;&amp;apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;\n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;Which renders this &lt;em&gt;on the fly.&lt;/em&gt;&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;img src=\&quot;https://maps.googleapis.com/maps/api/staticmap?center=37.0902%2C-95.7192&amp;amp;zoom=4&amp;amp;size=600x400&amp;amp;AIzaSyCzxj6UFfx8uvDaaE9OSSPkjJXdou3jD9I\&quot; style=\&quot;width:300px;text-align:center;\&quot;&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;This is pretty awesome. You don't even have to fiddle with asynchronous programming. There's no trying and catching of errors. You simply construct your URL and use it as if it's an image.&lt;/p&gt;\n&lt;h3 id=\&quot;static-maps-in-flutter\&quot;&gt;&lt;a href=\&quot;##static-maps-in-flutter\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Static Maps in Flutter&lt;/h3&gt;\n&lt;p&gt;The tl;dr steps you need to take:&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;Get a Static Maps Api Key &lt;/li&gt;\n&lt;li&gt;Construct your URL using user input or location.&lt;/li&gt;\n&lt;li&gt;Render the map in the Flutter. &lt;/li&gt;\n&lt;/ol&gt;\n&lt;h3 id=\&quot;first-get-an-api-key\&quot;&gt;&lt;a href=\&quot;##first-get-an-api-key\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;First, Get an API Key&lt;/h3&gt;\n&lt;p&gt;Luckily, Google has made this extremely easy on us. Just go to &lt;a href=\&quot;https://developers.google.com/maps/\&quot;&gt;Google Maps Api&lt;/a&gt; page, select 'Get Started', and then select 'Google Static Maps Api'. Follow the steps from there.&lt;/p&gt;\n&lt;h3 id=\&quot;build-your-flutter-app\&quot;&gt;&lt;a href=\&quot;##build-your-flutter-app\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build Your Flutter App&lt;/h3&gt;\n&lt;p&gt;Actually rendering a map in Flutter is dead simple. Just use the Image widget.&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-dart\&quot;&gt;&lt;code&gt;&lt;span class=\&quot;token keyword\&quot;&gt;import&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;package:flutter/material.dart&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n\n\n&lt;span class=\&quot;token keyword\&quot;&gt;class&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;StaticMap&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;extends&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;StatelessWidget&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n  &lt;span class=\&quot;token metadata symbol\&quot;&gt;@override&lt;/span&gt;\n  Widget &lt;span class=\&quot;token function\&quot;&gt;build&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;BuildContext context&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n    &lt;span class=\&quot;token keyword\&quot;&gt;return&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;Container&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;\n      child&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;Image&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;network&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token string\&quot;&gt;&amp;apos;https://maps.googleapis.com/maps/api/staticmap?center=37.0902%2C-95.7192&amp;amp;zoom=4&amp;amp;size=600x400&amp;amp;YOUR_API_KEY&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n    &lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n  &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;\n&lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;\n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;This renders a map of the United States.\n&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;If you already know how about building URI's, Static Maps API, and you're pretty comfortable with Flutter, you should stop reading now. That's all there is to rendering a static map in Flutter.&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;But this isn't entirely useful. We probably want to render a map based on a users location, and possibly provide a marker based on some input or data.&lt;/p&gt;\n&lt;p&gt;The best way to build the URL is with the &lt;code&gt;dart:uri&lt;/code&gt; library. This library will allow us to build a URI by passing variables. &lt;/p&gt;\n&lt;h3 id=\&quot;build-your-url-constructor\&quot;&gt;&lt;a href=\&quot;##build-your-url-constructor\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build Your URL Constructor&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: I don't know the difference between a URI and a URL, but I'll be using the terms interchangably.&lt;/p&gt;\n&lt;p&gt;In order to make any sort of real us of Static Maps, you're going to want to build URLs dynamically, not use hardcoded URLs. First lets take a look at what information we need for the static map, and the format expectation.&lt;/p&gt;\n&lt;p&gt;This is what you'll need to consider when implementing your URI builder.\n(&lt;strong&gt;Note&lt;/strong&gt;: Query params are seperated by &lt;code&gt;&amp;##x26;&lt;/code&gt;)&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;A base url + the static maps api path:\n&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?&lt;/code&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Required query params:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;size&lt;/strong&gt;: size in pixels passed in as a string &lt;code&gt;size={horizontal_value_pixels}x{vertical_value_pixels}&lt;/code&gt;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;zoom&lt;/strong&gt;: an integer (between &lt;code&gt;0&lt;/code&gt; (to view Earth) and &lt;code&gt;20&lt;/code&gt; (down to Building views)). &lt;code&gt;zoom=6&lt;/code&gt;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;center&lt;/strong&gt;: either a pair of coordinates &lt;code&gt;{latitude,longitude}&lt;/code&gt; or a string address &lt;code&gt;center=\&quot;moscone center, san francisco, CA\&quot;&lt;/code&gt;. &lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt;: Zoom and center are only required if there are no markers.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;This is a totally valid map URL:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-text\&quot;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?size=600X400&amp;amp;zoom=6&amp;##xA2;er=&amp;quot;moscone center, san francisco, CA&amp;quot;&amp;amp;API_KEY&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Optional Query Parameters&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;maptype&lt;/strong&gt;: The visual style of the map. &lt;code&gt;roadmap&lt;/code&gt;, &lt;code&gt;satelite&lt;/code&gt;, &lt;code&gt;hybrid&lt;/code&gt;, &lt;code&gt;terrain&lt;/code&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;markers&lt;/strong&gt;: where to display markers on the map. Covered below.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;path&lt;/strong&gt;: provides connected points on the map. Covered below.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Note: there are more optional params, but these are the ones that I find useful.&lt;/em&gt; &lt;a href=\&quot;https://developers.google.com/maps/documentation/static-maps/intro\&quot;&gt;All Params&lt;/a&gt;&lt;/p&gt;\n&lt;h3 id=\&quot;markers--path\&quot;&gt;&lt;a href=\&quot;##markers--path\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markers &amp;##x26; Path&lt;/h3&gt;\n&lt;p&gt;The markers and path parameters give you a bit of customization options. For the purpose of this Flutter demo, we'll take a look at the basics.&lt;/p&gt;\n&lt;p&gt;Markers and paths are similar in format, in the fact that you separate the entire &lt;code&gt;markers&lt;/code&gt; section of the URL with &lt;code&gt;&amp;##x26;&lt;/code&gt;s.&lt;/p&gt;\n&lt;p&gt;However, you can have multiple markers, as well as style properties. Within the &lt;code&gt;markers&lt;/code&gt; section, separate the markers with &lt;code&gt;|&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;For example &lt;code&gt;...&amp;##x26;markers=45.678,43.899|45.987,42.345&amp;##x26;...&lt;/code&gt;&lt;/p&gt;\n&lt;p&gt;That will give you two markers. You can also add style decisions, such as marker color, by passing in parameters, also seperated by &lt;code&gt;|&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;Using the example above: &lt;code&gt;...&amp;##x26;markers=color:blue|45.678,43.899|45.987,42.345&amp;##x26;...&lt;/code&gt;&lt;/p&gt;\n&lt;p&gt;Paths work similarly: &lt;code&gt;path=color:0x0000ff|40.737102,-73.990318|40.749825,-73.987963|40.752946,-73.987384|40.755823,-73.986397&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;That will draw a path between 3 locations as a red line. &lt;em&gt;These paths do not follow roads.&lt;/em&gt;&lt;/p&gt;\n&lt;h3 id=\&quot;dart-uri-library\&quot;&gt;&lt;a href=\&quot;##dart-uri-library\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dart Uri Library&lt;/h3&gt;\n&lt;p&gt;The Dart Uri Library is super handy in this situation because we can build formatted Static Map Uris based on device location or user input.&lt;/p&gt;\n&lt;p&gt;Suppose we want this result:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-text\&quot;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?size=600x400&amp;amp;markers=color:red|45.512,-122.67|46.512,-122.67&amp;amp;AIzaSyCzxj6UFfx8uvDaaE9OSSPkjJXdou3jD9I&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;We can use the library to build that uri with no worry about formatting.&lt;/p&gt;\n&lt;p&gt;First, establish a UriBuilder class, and add the information to build the base URL without the parameters.&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-dart\&quot;&gt;&lt;code&gt;    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// the locations, wdth and height depend on the users device, don&amp;apos;t worry about it yet.&lt;/span&gt;\n  String &lt;span class=\&quot;token function\&quot;&gt;_buildUrl&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;List&lt;span class=\&quot;token operator\&quot;&gt;&amp;lt;&lt;/span&gt;Location&lt;span class=\&quot;token operator\&quot;&gt;&amp;gt;&lt;/span&gt; locations&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt; int width&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt; int height&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n    &lt;span class=\&quot;token keyword\&quot;&gt;var&lt;/span&gt; finalUri &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;UriBuilder&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;scheme &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;https&amp;apos;&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;host &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;maps.googleapis.com&amp;apos;&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;port &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token number\&quot;&gt;443&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;path &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;/maps/api/staticmap&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n      \n  &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// ... continued below&lt;/span&gt;\n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;Now, with every request we make, we'll have this:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-text\&quot;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;From here, your implementation may be different depending on your needs. For my needs, I wanted to render a default map if there was no relevant location in the work order, but if there was location information, load up the proper map. This is the code:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-dart\&quot;&gt;&lt;code&gt;    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// continue from previous code block&lt;/span&gt;\n    \n    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// Our state will always have a location, which is the default location if no location is passed in.&lt;/span&gt;\n    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// If there aren&amp;apos;t multiple locations, then there are no markers.&lt;/span&gt;\n    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// With no markers, you must specify `center`, `zoom`.&lt;/span&gt;\n    &lt;span class=\&quot;token keyword\&quot;&gt;if&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;locations&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;length &lt;span class=\&quot;token operator\&quot;&gt;==&lt;/span&gt; &lt;span class=\&quot;token number\&quot;&gt;1&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n          finalUri&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;queryParameters &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;center&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;${locations[0].latitude},${locations[0].longitude}&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;zoom&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; defaultZoomLevel&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;toString&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;size&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;${width ?? defaultWidth}x${height ?? defaultHeight}&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;$googleMapsApiKey&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;&amp;apos;&lt;/span&gt;\n          &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n     &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// Otherwise, there is location data passed in.&lt;/span&gt;\n     &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// If there are multiple locations, then we need to display some markers.&lt;/span&gt;\n     \n    &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;else&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n          List&lt;span class=\&quot;token operator\&quot;&gt;&amp;lt;&lt;/span&gt;String&lt;span class=\&quot;token operator\&quot;&gt;&amp;gt;&lt;/span&gt; markers &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;List&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          locations&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;forEach&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;location&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n            num lat &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; location&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;latitude&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n            num lng &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; location&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;longitude&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n            String marker &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;$lat,$lng&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n            markers&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;add&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;marker&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          String markersString &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; markers&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;join&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token string\&quot;&gt;&amp;apos;|&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          finalUri&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;queryParameters &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;markers&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; markersString&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;size&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;${width ?? defaultWidth}x${height ?? defaultHeight}&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;$googleMapsApiKey&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;&amp;apos;&lt;/span&gt;\n          &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n        &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;\n    \n        &lt;span class=\&quot;token keyword\&quot;&gt;return&lt;/span&gt; finalUri&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;toString&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;      \n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;That's our uri building function. It's pretty simple! Now we just need to be able to pass it user information.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; I also have default variables set to handle lack of information from the user.&lt;/p&gt;\n&lt;h4 id=\&quot;getting-the-device-location\&quot;&gt;&lt;a href=\&quot;##getting-the-device-location\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the device location&lt;/h4&gt;&quot;...}" />
+            <marker date="1512328130000" expanded="true" signature="24933:25358" ph="{&quot;title&quot;: &quot;Faking Google Maps in a Flutter App&quot;...}" />
+            <marker date="1512328130000" expanded="true" signature="25207:25344" ph="[...]" />
+            <marker date="1512328130000" expanded="true" signature="25382:25460" ph="{&quot;slug&quot;: &quot;/faking-google-maps-in-a-flutter-app&quot;...}" />
+            <marker date="1512328130000" expanded="true" signature="25497:25559" ph="{&quot;slug&quot;: &quot;/faking-google-maps-in-a-flutter-app&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/dart-from-javascript.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="20">
+            <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="226" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="20">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding>
             <marker date="1511024963000" expanded="false" signature="7:56" ph="..." />
             <marker date="1511024963000" expanded="true" signature="100:1862" ph="{...}" />
@@ -862,360 +737,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/Home/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="39" column="9" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="20">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding>
-            <marker date="1511024411000" expanded="true" signature="10:2612" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="22:459" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="203:329" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="343:421" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="390:417" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="438:456" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="480:666" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="528:534" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="541:663" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="689:783" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="732:752" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="758:780" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="805:1707" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="839:1704" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="846:1043" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="883:962" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="976:1000" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1014:1038" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1060:1602" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1253:1283" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1291:1344" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1354:1429" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1444:1597" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1728:2610" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1759:2607" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="1827:2099" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2032:2056" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2070:2094" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2107:2205" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2121:2200" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2227:2603" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2351:2408" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2435:2598" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2533:2592" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2624:2702" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2680:2700" ph="{...}" />
-            <marker date="1511024411000" expanded="true" signature="2722:2791" ph="{...}" />
+            <marker date="1512228964000" expanded="false" signature="7:293" ph="..." />
+            <marker date="1512228964000" expanded="true" signature="324:2182" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="337:2180" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="359:2169" ph="&lt;main/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="391:506" ph="&lt;section/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="515:2155" ph="&lt;section/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="558:1020" ph="&lt;section/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="1069:1189" ph="&lt;section/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="1238:1332" ph="&lt;section/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="1381:1953" ph="&lt;section/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="1431:1477" ph="&lt;h2/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="2002:2136" ph="&lt;section/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="2024:2073" ph="&lt;h2/&gt;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <marker date="1512228964000" expanded="false" signature="7:195" ph="..." />
+            <marker date="1512228964000" expanded="true" signature="233:539" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="246:537" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="330:526" ph="&lt;div/&gt;" />
+            <marker date="1512228964000" expanded="true" signature="564:592" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/null-aware-operators.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="100">
+            <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            <folding>
+              <marker date="1510763254000" expanded="true" signature="2358:2467" ph="//..." />
+              <marker date="1510763254000" expanded="true" signature="2796:3130" ph="{...}" />
+              <marker date="1510763254000" expanded="true" signature="2814:3090" ph="{...}" />
+              <marker date="1510763254000" expanded="true" signature="3285:3493" ph="//..." />
+              <marker date="1510763254000" expanded="true" signature="3512:3747" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/bootcamp-prep.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-28">
+            <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            <folding>
+              <marker date="1512328888000" expanded="true" signature="1004:1279" ph="//..." />
+              <marker date="1512328888000" expanded="true" signature="1606:1732" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1146">
-          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="88" selection-end-column="3" />
+        <state relative-caret-position="480">
+          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding>
-            <marker date="1510535105000" expanded="false" signature="7:188" ph="..." />
-            <marker date="1510535105000" expanded="true" signature="246:1907" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="266:1354" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="300:370" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="596:625" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="660:689" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="730:765" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="801:831" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="872:904" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="945:1112" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="1159:1332" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="1366:1905" ph="{...}" />
-            <marker date="1510535105000" expanded="true" signature="1440:1894" ph="&lt;div/&gt;" />
-            <marker date="1510535105000" expanded="true" signature="1491:1664" ph="&lt;Helmet/&gt;" />
-            <marker date="1510535105000" expanded="true" signature="1673:1881" ph="&lt;div/&gt;" />
-            <marker date="1510535105000" expanded="true" signature="1744:1866" ph="&lt;WideSideNavigation/&gt;" />
-            <marker date="1510535105000" expanded="true" signature="1909:1937" ph="/*...*/" />
+            <marker date="1512328900000" expanded="false" signature="7:188" ph="..." />
+            <marker date="1512328900000" expanded="true" signature="246:1920" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="266:1354" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="300:370" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="596:625" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="660:689" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="730:765" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="801:831" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="872:904" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="945:1112" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="1159:1332" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="1366:1918" ph="{...}" />
+            <marker date="1512328900000" expanded="true" signature="1440:1907" ph="&lt;div/&gt;" />
+            <marker date="1512328900000" expanded="true" signature="1491:1664" ph="&lt;Helmet/&gt;" />
+            <marker date="1512328900000" expanded="true" signature="1673:1894" ph="&lt;div/&gt;" />
+            <marker date="1512328900000" expanded="true" signature="1757:1879" ph="&lt;WideSideNavigation/&gt;" />
+            <marker date="1512328900000" expanded="true" signature="1922:1950" ph="/*...*/" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/stream.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding>
-            <marker date="1510536436000" expanded="false" signature="7:216" ph="..." />
-            <marker date="1510536436000" expanded="true" signature="253:545" ph="{...}" />
-            <marker date="1510536436000" expanded="true" signature="266:543" ph="{...}" />
-            <marker date="1510536436000" expanded="true" signature="350:532" ph="&lt;div/&gt;" />
-            <marker date="1510536436000" expanded="true" signature="575:603" ph="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/Courses/Courses.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <marker date="1511025618000" expanded="false" signature="7:258" ph="..." />
-            <marker date="1511025618000" expanded="true" signature="296:5016" ph="{...}" />
-            <marker date="1511025618000" expanded="true" signature="309:5014" ph="{...}" />
-            <marker date="1511025618000" expanded="true" signature="330:5004" ph="&lt;main/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="345:488" ph="&lt;section/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="497:4990" ph="&lt;section/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="543:4971" ph="&lt;ul/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="586:2065" ph="&lt;li/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="635:2047" ph="&lt;a/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="689:1206" ph="&lt;div/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="743:901" ph="&lt;img/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="969:1183" ph="&lt;p/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="1223:2028" ph="&lt;div/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="1283:1699" ph="&lt;p/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="1790:2005" ph="&lt;ul/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="2078:3105" ph="&lt;li/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="2127:3087" ph="&lt;a/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="2198:2571" ph="&lt;div/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="2252:2360" ph="&lt;img/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="2418:2548" ph="&lt;p/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="2588:3068" ph="&lt;div/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="2648:3045" ph="&lt;p/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3118:4955" ph="&lt;li/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3167:4937" ph="&lt;a/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3196:3727" ph="&lt;div/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3250:3356" ph="&lt;img/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3421:3704" ph="&lt;p/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3744:4017" ph="&lt;div/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3792:3994" ph="&lt;Link/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="3873:3968" ph="&lt;p/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="4034:4918" ph="&lt;div/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="4094:4314" ph="&lt;p/&gt;" />
-            <marker date="1511025618000" expanded="true" signature="4432:4895" ph="&lt;ul/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/Contact/Contact.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding>
-            <marker date="1511025722000" expanded="true" signature="7:90" ph="..." />
-            <marker date="1511025722000" expanded="true" signature="128:763" ph="{...}" />
-            <marker date="1511025722000" expanded="true" signature="142:761" ph="{...}" />
-            <marker date="1511025722000" expanded="true" signature="163:751" ph="&lt;main/&gt;" />
-            <marker date="1511025722000" expanded="true" signature="178:261" ph="&lt;section/&gt;" />
-            <marker date="1511025722000" expanded="true" signature="270:736" ph="&lt;section/&gt;" />
-            <marker date="1511025722000" expanded="true" signature="316:717" ph="&lt;div/&gt;" />
-            <marker date="1511025722000" expanded="true" signature="611:700" ph="&lt;div/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/OptInForm/OptInForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <marker date="1509835425000" expanded="true" signature="76:1908" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="90:1906" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="111:1896" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="125:1883" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="162:1868" ph="&lt;form/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="468:1850" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="516:806" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="565:785" ph="&lt;input/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="821:1096" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="870:1075" ph="&lt;input/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="1111:1322" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="1337:1557" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="1378:1536" ph="&lt;input/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="1572:1830" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="1612:1809" ph="&lt;input/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/OptIn/OptInPage.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <marker date="1509835425000" expanded="true" signature="7:195" ph="..." />
-            <marker date="1509835425000" expanded="true" signature="231:1061" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="245:1059" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="266:1049" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="280:363" ph="&lt;section/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="372:1036" ph="&lt;main/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="413:1020" ph="&lt;div/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="456:651" ph="&lt;p/&gt;" />
-            <marker date="1509835425000" expanded="true" signature="662:979" ph="&lt;p/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <marker date="1511025793000" expanded="false" signature="7:129" ph="..." />
-            <marker date="1511025793000" expanded="true" signature="162:1198" ph="{...}" />
-            <marker date="1511025793000" expanded="true" signature="184:778" ph="{...}" />
-            <marker date="1511025793000" expanded="true" signature="252:753" ph="{...}" />
-            <marker date="1511025793000" expanded="true" signature="274:746" ph="{&quot;path&quot;: postEdge.node.fields.slug...}" />
-            <marker date="1511025793000" expanded="true" signature="791:1196" ph="{...}" />
-            <marker date="1511025793000" expanded="true" signature="854:1185" ph="&lt;main/&gt;" />
-            <marker date="1511025793000" expanded="true" signature="888:1024" ph="&lt;section/&gt;" />
-            <marker date="1511025793000" expanded="true" signature="1033:1171" ph="&lt;section/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <marker date="1511026105000" expanded="true" signature="0:32" ph="/*...*/" />
-            <marker date="1511026105000" expanded="true" signature="272:307" ph="/*...*/" />
-            <marker date="1511026105000" expanded="true" signature="601:640" ph="/*...*/" />
-            <marker date="1511026105000" expanded="true" signature="714:886" ph="{...}" />
-            <marker date="1511026105000" expanded="true" signature="806:884" ph="{...}" />
-            <marker date="1511026105000" expanded="true" signature="888:923" ph="/*...*/" />
-            <marker date="1511026105000" expanded="true" signature="1008:1048" ph="/*...*/" />
-            <marker date="1511026105000" expanded="true" signature="1056:1390" ph="{...}" />
-            <marker date="1511026105000" expanded="true" signature="1278:1333" ph="{...}" />
-            <marker date="1511026105000" expanded="true" signature="1355:1388" ph="{...}" />
-            <marker date="1511026105000" expanded="true" signature="1392:1432" ph="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <marker date="1511026206000" expanded="true" signature="22:90" ph="{...}" />
-            <marker date="1511026206000" expanded="true" signature="251:307" ph="{...}" />
-            <marker date="1511026206000" expanded="true" signature="396:498" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/about.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <marker date="1509835425000" expanded="true" signature="7:173" ph="..." />
-            <marker date="1509835425000" expanded="true" signature="209:378" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="222:376" ph="{...}" />
-            <marker date="1509835425000" expanded="true" signature="243:365" ph="&lt;div/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/About/About.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-          <folding>
-            <marker date="1509898134000" expanded="false" signature="7:130" ph="..." />
-            <marker date="1509898134000" expanded="true" signature="162:2041" ph="{...}" />
-            <marker date="1509898134000" expanded="true" signature="176:2039" ph="{...}" />
-            <marker date="1509898134000" expanded="true" signature="197:2029" ph="&lt;main/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="212:285" ph="&lt;section/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="294:2015" ph="&lt;section/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="338:1996" ph="&lt;div/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="475:857" ph="&lt;p/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="868:1314" ph="&lt;p/&gt;" />
-            <marker date="1509898134000" expanded="true" signature="1314:1701" ph="&lt;p/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/Home/Home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <marker date="1511026314000" expanded="true" signature="55:410" ph="{...}" />
-            <marker date="1511026314000" expanded="true" signature="287:349" ph="{...}" />
-            <marker date="1511026314000" expanded="true" signature="372:408" ph="{...}" />
-            <marker date="1511026314000" expanded="true" signature="513:550" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/Home/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding>
-            <marker date="1511025512000" expanded="true" signature="7:337" ph="..." />
-            <marker date="1511025512000" expanded="true" signature="368:2276" ph="{...}" />
-            <marker date="1511025512000" expanded="true" signature="381:2274" ph="{...}" />
-            <marker date="1511025512000" expanded="true" signature="402:2263" ph="&lt;main/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="434:625" ph="&lt;section/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="634:2249" ph="&lt;section/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="677:1137" ph="&lt;section/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="1186:1306" ph="&lt;section/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="1355:1449" ph="&lt;section/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="1498:2047" ph="&lt;section/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="1548:1594" ph="&lt;h2/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="2096:2230" ph="&lt;section/&gt;" />
-            <marker date="1511025512000" expanded="true" signature="2118:2167" ph="&lt;h2/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <marker date="1511026495000" expanded="true" signature="13:1154" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="64:423" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="286:328" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="340:418" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="435:829" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="700:740" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="752:826" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="846:1152" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="923:942" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="952:1149" ph="{...}" />
-            <marker date="1511026495000" expanded="true" signature="1102:1145" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <marker date="1511026683000" expanded="true" signature="47:67" ph="{...}" />
-            <marker date="1511026683000" expanded="true" signature="116:724" ph="{...}" />
-            <marker date="1511026683000" expanded="true" signature="194:722" ph="{...}" />
-            <marker date="1511026683000" expanded="true" signature="265:356" ph="{...}" />
-            <marker date="1511026683000" expanded="true" signature="384:591" ph="{...}" />
-            <marker date="1511026683000" expanded="true" signature="478:585" ph="{...}" />
-            <marker date="1511026683000" expanded="true" signature="622:718" ph="{...}" />
-            <marker date="1511026683000" expanded="true" signature="633:712" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Forms/ContactForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="704">
+            <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+            <folding>
+              <marker date="1512330045000" expanded="true" signature="3629:4084" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="3803:4079" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="6538:6632" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="6701:6908" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="6754:6905" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="7037:7202" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="9017:9216" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="9017:9624" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="9155:9215" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="9234:9624" ph="{...}" />
+              <marker date="1512330045000" expanded="true" signature="9406:9622" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
