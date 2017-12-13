@@ -32,13 +32,13 @@ class Stream extends Component {
           <h1>Stream</h1>
           <h2>Articles, Tutorials, Projects and Client Work</h2>
         </section>
+        <section className='Stream--Body'>
+          <div className='StreamPostListing'><PostListing postEdges={posts} /></div>
+        </section>
         <section className='OptIn Stream--OptIn'>
           <h3>Monday Morning Updates</h3>
           <p>Sign up to be updated when new courses are available, as well as receive the best design and development news from the web weekly.</p>
           <OptInForm />
-        </section>
-        <section className='Stream--Body'>
-          <div className='StreamPostListing'><PostListing postEdges={posts} /></div>
         </section>
       </main>
     );

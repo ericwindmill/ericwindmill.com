@@ -49,7 +49,7 @@ class WideSideNavigation extends Component {
       optInLink.style.top = '380px'
       optInLink.style.left = '50px'
 
-      contactLink.style.top = '350px'
+      contactLink.style.top = '420px'
       contactLink.style.left = '50px'
 
       footer.style.bottom = "0px"
@@ -122,22 +122,22 @@ class WideSideNavigation extends Component {
       })
 
       // position links
-      homeLink.style.top = '225px'
+      homeLink.style.top = '220px'
       homeLink.style.left = '50px'
 
-      streamLink.style.top = '250px'
+      streamLink.style.top = '260px'
       streamLink.style.left = '50px'
 
-      courseLink.style.top = '275px'
+      courseLink.style.top = '300px'
       courseLink.style.left = '50px'
 
-      aboutLink.style.top = '300px'
+      aboutLink.style.top = '340px'
       aboutLink.style.left = '50px'
 
-      optInLink.style.top = '325px'
+      optInLink.style.top = '380px'
       optInLink.style.left = '50px'
 
-      contactLink.style.top = '350px'
+      contactLink.style.top = '420px'
       contactLink.style.left = '50px'
 
       footer.style.bottom = "0px"

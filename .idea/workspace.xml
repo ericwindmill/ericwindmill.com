@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/posts/google-maps-flutter-2.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/posts/google-maps-flutter.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/posts/bootcamp-prep.md" afterPath="$PROJECT_DIR$/content/posts/bootcamp-prep.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/index.jsx" afterPath="$PROJECT_DIR$/src/layouts/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/post.jsx" afterPath="$PROJECT_DIR$/src/templates/post.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" afterPath="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" afterPath="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/post.scss" afterPath="$PROJECT_DIR$/src/templates/post.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,27 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="google-maps-flutter.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="704">
-                <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
-                <folding>
-                  <marker date="1512330045000" expanded="true" signature="3629:4084" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="3803:4079" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="6538:6632" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="6701:6908" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="6754:6905" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="7037:7202" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="9017:9216" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="9017:9624" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="9155:9215" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="9234:9624" ph="{...}" />
-                  <marker date="1512330045000" expanded="true" signature="9406:9622" ph="{...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="Stream.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,8 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/content/projects/on-the-grid.md" />
-        <option value="$PROJECT_DIR$/content/posts/javascript-async-functions.md" />
         <option value="$PROJECT_DIR$/src/components/Pages/SignUp/SignUp.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Forms/OptInForm/OptInForm.jsx" />
@@ -135,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/components/PostListing/HomeProjectListing.jsx" />
         <option value="$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
         <option value="$PROJECT_DIR$/todo.md" />
         <option value="$PROJECT_DIR$/src/components/Tabs/HomeTabs.scss" />
         <option value="$PROJECT_DIR$/src/templates/project.jsx" />
@@ -145,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/components/Pages/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/components/Pages/Courses/Courses.jsx" />
         <option value="$PROJECT_DIR$/src/components/Pages/Contact/Contact.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
         <option value="$PROJECT_DIR$/src/styles/variables.scss" />
         <option value="$PROJECT_DIR$/src/layouts/index.scss" />
         <option value="$PROJECT_DIR$/src/components/Pages/Home/Home.scss" />
@@ -160,6 +138,10 @@
         <option value="$PROJECT_DIR$/content/posts/google-maps-flutter-2.md" />
         <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
         <option value="$PROJECT_DIR$/content/posts/google-maps-flutter.md" />
+        <option value="$PROJECT_DIR$/content/posts/drafts/flutter-transitions.md" />
+        <option value="$PROJECT_DIR$/content/posts/flutter-transitions.md" />
+        <option value="$PROJECT_DIR$/src/components/Nav/RightNav.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx" />
       </list>
     </option>
   </component>
@@ -174,9 +156,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2181" />
+    <option name="y" value="-92" />
     <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="height" value="1174" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -207,6 +191,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,6 +209,13 @@
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
               <item name="posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+              <item name="drafts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -246,7 +238,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,16 +254,16 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Asp" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/content/posts/life" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts/drafts" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components/Pages" />
-      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/content/posts/life" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -317,12 +308,15 @@
       <workItem from="1512229311051" duration="119000" />
       <workItem from="1512229456342" duration="31000" />
       <workItem from="1512229491258" duration="10082000" />
-      <workItem from="1512321232962" duration="7233000" />
+      <workItem from="1512321232962" duration="7703000" />
+      <workItem from="1512489063474" duration="419000" />
+      <workItem from="1513175578285" duration="376000" />
+      <workItem from="1513175959468" duration="547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116871000" />
+    <option name="totallyTimeSpent" value="118683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,20 +328,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="2181" y="-92" width="1920" height="1174" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15298508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44147584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44147584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2389706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2951923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -375,24 +369,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/javascript-async-functions.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/HomeNav.jsx" />
     <entry file="file://$PROJECT_DIR$/.cache/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
@@ -473,13 +449,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/dart-for-web-developers.md" />
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -508,13 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/stream.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Pages/Courses/Courses.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -540,13 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
           <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -624,31 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1966">
           <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <marker date="1512228964000" expanded="true" signature="5:26" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="28:60" ph="/*...*/" />
-            <marker date="1512228964000" expanded="true" signature="77:145" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="234:311" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="315:455" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="415:453" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="509:582" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="587:647" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="652:710" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="715:779" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="784:848" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="858:882" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="883:916" ph="/*...*/" />
-            <marker date="1512228964000" expanded="true" signature="919:957" ph="/*...*/" />
-            <marker date="1512228964000" expanded="true" signature="970:1340" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="1314:1338" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="1342:1376" ph="/*...*/" />
-            <marker date="1512228964000" expanded="true" signature="1383:1454" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="1462:1550" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="1558:1601" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="1605:1640" ph="/*...*/" />
-            <marker date="1512228964000" expanded="true" signature="1651:1747" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="1763:1877" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,25 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <marker date="1512323056000" expanded="true" signature="11:231" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="65:107" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="120:229" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="243:532" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="315:358" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="369:470" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="435:466" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="477:530" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="545:621" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="633:698" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="720:1055" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="794:845" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="851:1053" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="864:1049" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="1009:1043" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="1073:1214" ph="{...}" />
-            <marker date="1512323056000" expanded="true" signature="1187:1212" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,15 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1512328130000" expanded="true" signature="0:0" ph="{...}" />
-            <marker date="1512328130000" expanded="true" signature="14:25476" ph="{...}" />
-            <marker date="1512328130000" expanded="true" signature="42:25470" ph="{&quot;html&quot;: &quot;&lt;p&gt;Flutter's core team is working on supporting a feature that is super necessary in modern applications: Google Maps. But it isn't here yet. For the time being, it's easy to fake Google Maps in your app. &lt;/p&gt;\n&lt;p&gt;Hopefully, by the time you're reading this, Google Maps support will be implemented and this will be irrelevant.&lt;/p&gt;\n&lt;h3 id=\&quot;what-were-building\&quot;&gt;&lt;a href=\&quot;##what-were-building\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What We're Building&lt;/h3&gt;\n&lt;p&gt;I'll walk you through building &lt;a href=\&quot;https://github.com/ericwindmill/flutter-static-maps-demo\&quot;&gt;this map demo app&lt;/a&gt; that I made. &lt;/p&gt;\n&lt;p&gt;&lt;img src=\&quot;http://res.cloudinary.com/ericwindmill/image/upload/c_scale,w_300/v1512320238/flutter-static-maps/Simulator_Screen_Shot_-_iPhone_6_-_2017-12-03_at_08.56.35.png\&quot; alt=\&quot;Demo Screenshot\&quot;&gt;&lt;/p&gt;\n&lt;h3 id=\&quot;google-static-maps-api\&quot;&gt;&lt;a href=\&quot;##google-static-maps-api\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Google Static Maps API&lt;/h3&gt;\n&lt;p&gt;Google Static Maps simply serves up images. While not ideal, because it's not interactive, it can give you a temporary solution and its &lt;em&gt;easy&lt;/em&gt;.&lt;/p&gt;\n&lt;p&gt;My favorite thing about the API is how easy it is use. The url that you create renders the image on the fly. You don't have to make a request with a body and a method and headers. The url that you create to make the request &lt;em&gt;is the url you render.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;In other words, on the web you would use Static Maps like this:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-html\&quot;&gt;&lt;code&gt;&lt;span class=\&quot;token tag\&quot;&gt;&lt;span class=\&quot;token tag\&quot;&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=\&quot;token attr-name\&quot;&gt;scr&lt;/span&gt;&lt;span class=\&quot;token attr-value\&quot;&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;&amp;apos;&lt;/span&gt;https://maps.googleapis.com/maps/api/staticmap?center&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;37.0902%2C-95.7192&amp;amp;zoom&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;4&amp;amp;size&lt;span class=\&quot;token punctuation\&quot;&gt;=&lt;/span&gt;600x400&amp;amp;API_KEY&lt;span class=\&quot;token punctuation\&quot;&gt;&amp;apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;\n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;Which renders this &lt;em&gt;on the fly.&lt;/em&gt;&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;img src=\&quot;https://maps.googleapis.com/maps/api/staticmap?center=37.0902%2C-95.7192&amp;amp;zoom=4&amp;amp;size=600x400&amp;amp;AIzaSyCzxj6UFfx8uvDaaE9OSSPkjJXdou3jD9I\&quot; style=\&quot;width:300px;text-align:center;\&quot;&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;This is pretty awesome. You don't even have to fiddle with asynchronous programming. There's no trying and catching of errors. You simply construct your URL and use it as if it's an image.&lt;/p&gt;\n&lt;h3 id=\&quot;static-maps-in-flutter\&quot;&gt;&lt;a href=\&quot;##static-maps-in-flutter\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Static Maps in Flutter&lt;/h3&gt;\n&lt;p&gt;The tl;dr steps you need to take:&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;Get a Static Maps Api Key &lt;/li&gt;\n&lt;li&gt;Construct your URL using user input or location.&lt;/li&gt;\n&lt;li&gt;Render the map in the Flutter. &lt;/li&gt;\n&lt;/ol&gt;\n&lt;h3 id=\&quot;first-get-an-api-key\&quot;&gt;&lt;a href=\&quot;##first-get-an-api-key\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;First, Get an API Key&lt;/h3&gt;\n&lt;p&gt;Luckily, Google has made this extremely easy on us. Just go to &lt;a href=\&quot;https://developers.google.com/maps/\&quot;&gt;Google Maps Api&lt;/a&gt; page, select 'Get Started', and then select 'Google Static Maps Api'. Follow the steps from there.&lt;/p&gt;\n&lt;h3 id=\&quot;build-your-flutter-app\&quot;&gt;&lt;a href=\&quot;##build-your-flutter-app\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build Your Flutter App&lt;/h3&gt;\n&lt;p&gt;Actually rendering a map in Flutter is dead simple. Just use the Image widget.&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-dart\&quot;&gt;&lt;code&gt;&lt;span class=\&quot;token keyword\&quot;&gt;import&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;package:flutter/material.dart&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n\n\n&lt;span class=\&quot;token keyword\&quot;&gt;class&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;StaticMap&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;extends&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;StatelessWidget&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n  &lt;span class=\&quot;token metadata symbol\&quot;&gt;@override&lt;/span&gt;\n  Widget &lt;span class=\&quot;token function\&quot;&gt;build&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;BuildContext context&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n    &lt;span class=\&quot;token keyword\&quot;&gt;return&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;Container&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;\n      child&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;Image&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;network&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token string\&quot;&gt;&amp;apos;https://maps.googleapis.com/maps/api/staticmap?center=37.0902%2C-95.7192&amp;amp;zoom=4&amp;amp;size=600x400&amp;amp;YOUR_API_KEY&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n    &lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n  &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;\n&lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;\n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;This renders a map of the United States.\n&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;If you already know how about building URI's, Static Maps API, and you're pretty comfortable with Flutter, you should stop reading now. That's all there is to rendering a static map in Flutter.&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;But this isn't entirely useful. We probably want to render a map based on a users location, and possibly provide a marker based on some input or data.&lt;/p&gt;\n&lt;p&gt;The best way to build the URL is with the &lt;code&gt;dart:uri&lt;/code&gt; library. This library will allow us to build a URI by passing variables. &lt;/p&gt;\n&lt;h3 id=\&quot;build-your-url-constructor\&quot;&gt;&lt;a href=\&quot;##build-your-url-constructor\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build Your URL Constructor&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: I don't know the difference between a URI and a URL, but I'll be using the terms interchangably.&lt;/p&gt;\n&lt;p&gt;In order to make any sort of real us of Static Maps, you're going to want to build URLs dynamically, not use hardcoded URLs. First lets take a look at what information we need for the static map, and the format expectation.&lt;/p&gt;\n&lt;p&gt;This is what you'll need to consider when implementing your URI builder.\n(&lt;strong&gt;Note&lt;/strong&gt;: Query params are seperated by &lt;code&gt;&amp;##x26;&lt;/code&gt;)&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;A base url + the static maps api path:\n&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?&lt;/code&gt;&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Required query params:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;size&lt;/strong&gt;: size in pixels passed in as a string &lt;code&gt;size={horizontal_value_pixels}x{vertical_value_pixels}&lt;/code&gt;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;zoom&lt;/strong&gt;: an integer (between &lt;code&gt;0&lt;/code&gt; (to view Earth) and &lt;code&gt;20&lt;/code&gt; (down to Building views)). &lt;code&gt;zoom=6&lt;/code&gt;&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;center&lt;/strong&gt;: either a pair of coordinates &lt;code&gt;{latitude,longitude}&lt;/code&gt; or a string address &lt;code&gt;center=\&quot;moscone center, san francisco, CA\&quot;&lt;/code&gt;. &lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Note&lt;/strong&gt;: Zoom and center are only required if there are no markers.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;This is a totally valid map URL:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-text\&quot;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?size=600X400&amp;amp;zoom=6&amp;##xA2;er=&amp;quot;moscone center, san francisco, CA&amp;quot;&amp;amp;API_KEY&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Optional Query Parameters&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;maptype&lt;/strong&gt;: The visual style of the map. &lt;code&gt;roadmap&lt;/code&gt;, &lt;code&gt;satelite&lt;/code&gt;, &lt;code&gt;hybrid&lt;/code&gt;, &lt;code&gt;terrain&lt;/code&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;markers&lt;/strong&gt;: where to display markers on the map. Covered below.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;path&lt;/strong&gt;: provides connected points on the map. Covered below.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;em&gt;Note: there are more optional params, but these are the ones that I find useful.&lt;/em&gt; &lt;a href=\&quot;https://developers.google.com/maps/documentation/static-maps/intro\&quot;&gt;All Params&lt;/a&gt;&lt;/p&gt;\n&lt;h3 id=\&quot;markers--path\&quot;&gt;&lt;a href=\&quot;##markers--path\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markers &amp;##x26; Path&lt;/h3&gt;\n&lt;p&gt;The markers and path parameters give you a bit of customization options. For the purpose of this Flutter demo, we'll take a look at the basics.&lt;/p&gt;\n&lt;p&gt;Markers and paths are similar in format, in the fact that you separate the entire &lt;code&gt;markers&lt;/code&gt; section of the URL with &lt;code&gt;&amp;##x26;&lt;/code&gt;s.&lt;/p&gt;\n&lt;p&gt;However, you can have multiple markers, as well as style properties. Within the &lt;code&gt;markers&lt;/code&gt; section, separate the markers with &lt;code&gt;|&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;For example &lt;code&gt;...&amp;##x26;markers=45.678,43.899|45.987,42.345&amp;##x26;...&lt;/code&gt;&lt;/p&gt;\n&lt;p&gt;That will give you two markers. You can also add style decisions, such as marker color, by passing in parameters, also seperated by &lt;code&gt;|&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;Using the example above: &lt;code&gt;...&amp;##x26;markers=color:blue|45.678,43.899|45.987,42.345&amp;##x26;...&lt;/code&gt;&lt;/p&gt;\n&lt;p&gt;Paths work similarly: &lt;code&gt;path=color:0x0000ff|40.737102,-73.990318|40.749825,-73.987963|40.752946,-73.987384|40.755823,-73.986397&lt;/code&gt;.&lt;/p&gt;\n&lt;p&gt;That will draw a path between 3 locations as a red line. &lt;em&gt;These paths do not follow roads.&lt;/em&gt;&lt;/p&gt;\n&lt;h3 id=\&quot;dart-uri-library\&quot;&gt;&lt;a href=\&quot;##dart-uri-library\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dart Uri Library&lt;/h3&gt;\n&lt;p&gt;The Dart Uri Library is super handy in this situation because we can build formatted Static Map Uris based on device location or user input.&lt;/p&gt;\n&lt;p&gt;Suppose we want this result:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-text\&quot;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?size=600x400&amp;amp;markers=color:red|45.512,-122.67|46.512,-122.67&amp;amp;AIzaSyCzxj6UFfx8uvDaaE9OSSPkjJXdou3jD9I&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;We can use the library to build that uri with no worry about formatting.&lt;/p&gt;\n&lt;p&gt;First, establish a UriBuilder class, and add the information to build the base URL without the parameters.&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-dart\&quot;&gt;&lt;code&gt;    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// the locations, wdth and height depend on the users device, don&amp;apos;t worry about it yet.&lt;/span&gt;\n  String &lt;span class=\&quot;token function\&quot;&gt;_buildUrl&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;List&lt;span class=\&quot;token operator\&quot;&gt;&amp;lt;&lt;/span&gt;Location&lt;span class=\&quot;token operator\&quot;&gt;&amp;gt;&lt;/span&gt; locations&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt; int width&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt; int height&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n    &lt;span class=\&quot;token keyword\&quot;&gt;var&lt;/span&gt; finalUri &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;UriBuilder&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;scheme &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;https&amp;apos;&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;host &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;maps.googleapis.com&amp;apos;&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;port &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token number\&quot;&gt;443&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;path &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;/maps/api/staticmap&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n      \n  &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// ... continued below&lt;/span&gt;\n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;Now, with every request we make, we'll have this:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-text\&quot;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/staticmap?&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;From here, your implementation may be different depending on your needs. For my needs, I wanted to render a default map if there was no relevant location in the work order, but if there was location information, load up the proper map. This is the code:&lt;/p&gt;\n&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div class=\&quot;gatsby-highlight\&quot;&gt;\n      &lt;pre class=\&quot;language-dart\&quot;&gt;&lt;code&gt;    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// continue from previous code block&lt;/span&gt;\n    \n    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// Our state will always have a location, which is the default location if no location is passed in.&lt;/span&gt;\n    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// If there aren&amp;apos;t multiple locations, then there are no markers.&lt;/span&gt;\n    &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// With no markers, you must specify `center`, `zoom`.&lt;/span&gt;\n    &lt;span class=\&quot;token keyword\&quot;&gt;if&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;locations&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;length &lt;span class=\&quot;token operator\&quot;&gt;==&lt;/span&gt; &lt;span class=\&quot;token number\&quot;&gt;1&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n          finalUri&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;queryParameters &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;center&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;${locations[0].latitude},${locations[0].longitude}&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;zoom&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; defaultZoomLevel&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;toString&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;size&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;${width ?? defaultWidth}x${height ?? defaultHeight}&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;$googleMapsApiKey&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;&amp;apos;&lt;/span&gt;\n          &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n     &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// Otherwise, there is location data passed in.&lt;/span&gt;\n     &lt;span class=\&quot;token comment\&quot; spellcheck=\&quot;true\&quot;&gt;// If there are multiple locations, then we need to display some markers.&lt;/span&gt;\n     \n    &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;else&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n          List&lt;span class=\&quot;token operator\&quot;&gt;&amp;lt;&lt;/span&gt;String&lt;span class=\&quot;token operator\&quot;&gt;&amp;gt;&lt;/span&gt; markers &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token keyword\&quot;&gt;new&lt;/span&gt; &lt;span class=\&quot;token class-name\&quot;&gt;List&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          locations&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;forEach&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;location&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n            num lat &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; location&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;latitude&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n            num lng &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; location&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;longitude&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n            String marker &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;$lat,$lng&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n            markers&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;add&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;marker&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          String markersString &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; markers&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;join&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token string\&quot;&gt;&amp;apos;|&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n          finalUri&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;queryParameters &lt;span class=\&quot;token operator\&quot;&gt;=&lt;/span&gt; &lt;span class=\&quot;token punctuation\&quot;&gt;{&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;markers&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; markersString&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;size&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;${width ?? defaultWidth}x${height ?? defaultHeight}&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;,&lt;/span&gt;\n            &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;$googleMapsApiKey&amp;apos;&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;:&lt;/span&gt; &lt;span class=\&quot;token string\&quot;&gt;&amp;apos;&amp;apos;&lt;/span&gt;\n          &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n        &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;\n    \n        &lt;span class=\&quot;token keyword\&quot;&gt;return&lt;/span&gt; finalUri&lt;span class=\&quot;token punctuation\&quot;&gt;.&lt;/span&gt;&lt;span class=\&quot;token function\&quot;&gt;toString&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;(&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;)&lt;/span&gt;&lt;span class=\&quot;token punctuation\&quot;&gt;;&lt;/span&gt;\n      &lt;span class=\&quot;token punctuation\&quot;&gt;}&lt;/span&gt;      \n&lt;/code&gt;&lt;/pre&gt;\n      &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;\n&lt;p&gt;That's our uri building function. It's pretty simple! Now we just need to be able to pass it user information.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; I also have default variables set to handle lack of information from the user.&lt;/p&gt;\n&lt;h4 id=\&quot;getting-the-device-location\&quot;&gt;&lt;a href=\&quot;##getting-the-device-location\&quot; aria-hidden=\&quot;true\&quot; class=\&quot;anchor\&quot;&gt;&lt;svg aria-hidden=\&quot;true\&quot; height=\&quot;16\&quot; version=\&quot;1.1\&quot; viewBox=\&quot;0 0 16 16\&quot; width=\&quot;16\&quot;&gt;&lt;path fill-rule=\&quot;evenodd\&quot; d=\&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting the device location&lt;/h4&gt;&quot;...}" />
-            <marker date="1512328130000" expanded="true" signature="24933:25358" ph="{&quot;title&quot;: &quot;Faking Google Maps in a Flutter App&quot;...}" />
-            <marker date="1512328130000" expanded="true" signature="25207:25344" ph="[...]" />
-            <marker date="1512328130000" expanded="true" signature="25382:25460" ph="{&quot;slug&quot;: &quot;/faking-google-maps-in-a-flutter-app&quot;...}" />
-            <marker date="1512328130000" expanded="true" signature="25497:25559" ph="{&quot;slug&quot;: &quot;/faking-google-maps-in-a-flutter-app&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,7 +608,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="20">
             <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="226" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -716,24 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <marker date="1511024963000" expanded="false" signature="7:56" ph="..." />
-            <marker date="1511024963000" expanded="true" signature="100:1862" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="125:545" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="223:540" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="272:379" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="427:533" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="564:1187" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="635:1162" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="693:1156" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="717:1154" ph="{&quot;path&quot;: postEdge.node.fields.slug...}" />
-            <marker date="1511024963000" expanded="true" signature="1202:1860" ph="{...}" />
-            <marker date="1511024963000" expanded="true" signature="1263:1850" ph="&lt;div/&gt;" />
-            <marker date="1511024963000" expanded="true" signature="1332:1358" ph="/*...*/" />
-            <marker date="1511024963000" expanded="true" signature="1403:1823" ph="&lt;div/&gt;" />
-            <marker date="1511024963000" expanded="true" signature="1504:1651" ph="&lt;span/&gt;" />
-            <marker date="1511024963000" expanded="true" signature="1725:1804" ph="&lt;Link/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,21 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <marker date="1512228964000" expanded="false" signature="7:293" ph="..." />
-            <marker date="1512228964000" expanded="true" signature="324:2182" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="337:2180" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="359:2169" ph="&lt;main/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="391:506" ph="&lt;section/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="515:2155" ph="&lt;section/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="558:1020" ph="&lt;section/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="1069:1189" ph="&lt;section/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="1238:1332" ph="&lt;section/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="1381:1953" ph="&lt;section/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="1431:1477" ph="&lt;h2/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="2002:2136" ph="&lt;section/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="2024:2073" ph="&lt;h2/&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,13 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <marker date="1512228964000" expanded="false" signature="7:195" ph="..." />
-            <marker date="1512228964000" expanded="true" signature="233:539" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="246:537" ph="{...}" />
-            <marker date="1512228964000" expanded="true" signature="330:526" ph="&lt;div/&gt;" />
-            <marker date="1512228964000" expanded="true" signature="564:592" ph="/*...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -778,13 +639,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="100">
             <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            <folding>
-              <marker date="1510763254000" expanded="true" signature="2358:2467" ph="//..." />
-              <marker date="1510763254000" expanded="true" signature="2796:3130" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="2814:3090" ph="{...}" />
-              <marker date="1510763254000" expanded="true" signature="3285:3493" ph="//..." />
-              <marker date="1510763254000" expanded="true" signature="3512:3747" ph="{...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -795,21 +649,6 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="240">
             <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-28">
-            <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-            <folding>
-              <marker date="1512328888000" expanded="true" signature="1004:1279" ph="//..." />
-              <marker date="1512328888000" expanded="true" signature="1606:1732" ph="//..." />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -819,48 +658,127 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <marker date="1512328900000" expanded="false" signature="7:188" ph="..." />
-            <marker date="1512328900000" expanded="true" signature="246:1920" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="266:1354" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="300:370" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="596:625" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="660:689" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="730:765" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="801:831" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="872:904" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="945:1112" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="1159:1332" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="1366:1918" ph="{...}" />
-            <marker date="1512328900000" expanded="true" signature="1440:1907" ph="&lt;div/&gt;" />
-            <marker date="1512328900000" expanded="true" signature="1491:1664" ph="&lt;Helmet/&gt;" />
-            <marker date="1512328900000" expanded="true" signature="1673:1894" ph="&lt;div/&gt;" />
-            <marker date="1512328900000" expanded="true" signature="1757:1879" ph="&lt;WideSideNavigation/&gt;" />
-            <marker date="1512328900000" expanded="true" signature="1922:1950" ph="/*...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="704">
-            <caret line="241" column="0" lean-forward="true" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          <first_editor relative-caret-position="3104">
+            <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/drafts/google-maps-flutter-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/drafts/flutter-transitions.md" />
+    <entry file="file://$PROJECT_DIR$/content/posts/flutter-transitions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="269" column="6" lean-forward="true" selection-start-line="269" selection-start-column="6" selection-end-line="269" selection-end-column="6" />
             <folding>
-              <marker date="1512330045000" expanded="true" signature="3629:4084" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="3803:4079" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="6538:6632" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="6701:6908" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="6754:6905" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="7037:7202" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="9017:9216" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="9017:9624" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="9155:9215" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="9234:9624" ph="{...}" />
-              <marker date="1512330045000" expanded="true" signature="9406:9622" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="3704:3954" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="4307:4318" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="4359:5284" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="4401:4470" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="4534:4816" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="4858:5282" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="4909:4917" ph="&lt;~&gt;" />
+              <marker date="1513176283000" expanded="true" signature="8671:8686" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="8729:10507" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="8785:9639" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="9084:9286" ph="//..." />
+              <marker date="1513176283000" expanded="true" signature="9659:10505" ph="{...}" />
+              <marker date="1513176283000" expanded="true" signature="9806:9812" ph="&lt;~&gt;" />
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <marker date="1512228964000" expanded="true" signature="48:284" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="194:282" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="225:278" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="293:318" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="331:396" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="407:455" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="468:512" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="525:568" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="579:623" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="634:681" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="694:737" ph="{...}" />
+            <marker date="1512228964000" expanded="true" signature="745:795" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/RightNav.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <marker date="1513176561000" expanded="false" signature="0:38" ph="/*...*/" />
+            <marker date="1513176561000" expanded="false" signature="46:201" ph="..." />
+            <marker date="1513176561000" expanded="true" signature="246:5163" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="269:354" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="425:1717" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="509:1713" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="1148:1203" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="1721:1844" ph="//..." />
+            <marker date="1513176561000" expanded="true" signature="1863:3164" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="1884:3154" ph="&lt;nav/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="1921:2068" ph="&lt;Link/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="2077:2232" ph="&lt;Link/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="2241:2399" ph="&lt;Link/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="2408:2560" ph="&lt;Link/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="2569:2729" ph="&lt;Link/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="2738:2894" ph="&lt;Link/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="2903:3141" ph="&lt;footer/&gt;" />
+            <marker date="1513176561000" expanded="true" signature="3189:5110" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="3753:4428" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="3862:3917" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="4434:5104" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="4541:4597" ph="{...}" />
+            <marker date="1513176561000" expanded="true" signature="5123:5161" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/stream.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <marker date="1510536436000" expanded="false" signature="7:216" ph="..." />
+            <marker date="1510536436000" expanded="true" signature="253:545" ph="{...}" />
+            <marker date="1510536436000" expanded="true" signature="266:543" ph="{...}" />
+            <marker date="1510536436000" expanded="true" signature="350:532" ph="&lt;div/&gt;" />
+            <marker date="1510536436000" expanded="true" signature="575:603" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/Stream/Stream.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

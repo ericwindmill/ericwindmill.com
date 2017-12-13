@@ -28,13 +28,17 @@
     list-style: disc;
 
     li, p, ul, ol {
-      margin-bottom: 0;
+      margin: 0 !important;
     }
   }
 
   ol {
     margin-left: 25px;
     list-style: decimal;
+
+    li, p, ul, ol {
+      margin: 0 !important;
+    }
   }
 }
 
