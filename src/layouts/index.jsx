@@ -58,12 +58,12 @@ export default class MainLayout extends React.Component {
     );
   }
 }
-
-/* eslint no-undef: "off" */
+//
+// /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query PostsQuery {
         allMarkdownRemark(
-          limit: 6
+          limit: 10
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {

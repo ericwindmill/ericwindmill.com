@@ -23,7 +23,7 @@ export default StreamPage;
 export const pageQuery = graphql`
   query StreamQuery {
         allMarkdownRemark(
-          limit: 10
+          limit: 25
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {
