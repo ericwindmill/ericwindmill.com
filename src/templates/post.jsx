@@ -5,6 +5,7 @@ import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import OptInForm from "../components/Forms/OptInForm/OptInForm";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -35,6 +36,13 @@ export default class PostTemplate extends React.Component {
           <div className='Divider' />
           <section className='PostBody'>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            <div className="PostOptIn">
+              <h3>Get More Like This For Free</h3>
+              <p>
+                I'd like to send you a fun way to start your week: the Monday Morning Update. It's an email that takes about 30 seconds to read that'll give you some weekly entertainment: Maybe some new posts from me, the best developer and design happenings around the web that I've found the past week, and maybe a new album or book that I'm diggin'.
+              </p>
+              <OptInForm />
+            </div>
           </section>
           <div className="PostMeta">
             <PostTags tags={post.tags} />

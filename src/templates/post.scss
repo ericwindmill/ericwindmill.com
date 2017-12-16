@@ -49,6 +49,12 @@
   max-width: 100%;
 }
 
+.PostOptIn {
+  margin-top: $spacing-unit * 3;
+  padding-top: $spacing-unit * 2;
+  border-top: 1px solid black;
+}
+
 .PostMeta {
   border-top: 1px solid black;
   margin: 0 $spacing-unit * 3;

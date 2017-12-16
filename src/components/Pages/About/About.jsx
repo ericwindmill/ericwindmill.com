@@ -11,7 +11,7 @@ class About extends Component {
         </section>
         <section className='About--Body'>
           <div className='About--Content'>
-          <img src={cartoonNoBackground} />
+          <img className='self-portrait' src={cartoonNoBackground} />
           <p><em>Hi! I’m Eric Windmill. </em></p>
           <p>I’m a front-end developer, writer, UI designer and Sommelier. I currently live in dreamy
             Portland, Oregon, USA. I help clients and comapnies design killer user-centered experiences on mobile and
@@ -24,10 +24,18 @@ class About extends Component {
           </p>
           <p>Otherwise, I'm a Sommelier. Wine has changed the way I live possibly as much development. Some humans and animals that I call friends and family are really important to me. I like to read philosophy books, and for as long as I can remember I've devoured music.</p>
           </div>
-        </section>
-        <section>
-          <div>// image of currently listening to</div>
-          <div>// image of currently  reading</div>
+          <section className='Currently'>
+            <div>
+              <h3>Currently Listening:</h3>
+              <p>John Moreland - Big Bad Luv</p>
+              <img className='album-img' src="http://americansongwriter.com/wp-content/uploads/2017/05/John-Moreland-Big-Bad-Luv-4AD0007-800x800.jpg" alt='John Moreland album cover' />
+            </div>
+            <div>
+              <h3>Currently Reading:</h3>
+              <p>Yavul Harari - Sapiens</p>
+              <img className='book-img' src="https://s3-us-west-2.amazonaws.com/tabs.web.media/c/9/c9lw/c9lw-square-orig.jpg" alt='Sapiens book cover' />
+            </div>
+          </section>
         </section>
       </main>
     )
