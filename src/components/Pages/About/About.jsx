@@ -25,6 +25,10 @@ class About extends Component {
           <p>Otherwise, I'm a Sommelier. Wine has changed the way I live possibly as much development. Some humans and animals that I call friends and family are really important to me. I like to read philosophy books, and for as long as I can remember I've devoured music.</p>
           </div>
         </section>
+        <section>
+          <div>// image of currently listening to</div>
+          <div>// image of currently  reading</div>
+        </section>
       </main>
     )
   }

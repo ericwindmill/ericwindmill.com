@@ -111,7 +111,7 @@ class _FaderState extends State<Fader> {
 
     toggleFade() {
         setState(() {
-            first = !first;
+            fade = !fade;
         });
     }
 

@@ -12,7 +12,7 @@ tags:
     - google
     - maps
 ---
-Flutter's core team is working on supporting a feature that is super necessary in modern applications: Google Maps. But it isn't here yet. 
+Flutter's core team is working on supporting a feature that is used endlessly in modern applications: Google Maps. But it isn't here yet. 
 
 For the time being, it's easy to fake Google Maps in your app. 
 
@@ -239,3 +239,7 @@ class _StaticMapsProviderState extends State<StaticMapsProvider> {
 At this point, you're rendering a map that shows the United States. You've started building our Uri's dynamically. Not bad for a few minutes worth of work! And we've only leveraged what's built into Flutter and Dart. No packages, no plugins... yet.
 
 The next step is to render maps that are useful. We'll need the get the users location, and accept user input, and build dynamically generated Uri's. We'll also have a chance to dabble in Flutters UI system.
+
+#### Pt 2 is Complete
+
+[Find it here.](http://ericwindmill.com/zero-to-one-with-flutter-google-maps-app-pt-2)
