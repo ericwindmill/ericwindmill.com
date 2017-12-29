@@ -71,7 +71,6 @@ void main()
 void main() => print('Hello, World!');
 ```
 
-*Aside:* I love arrow functions, so this is a welcomed insight.
 
 ## Variables
 
@@ -96,7 +95,7 @@ This is valid. But if you change the code to give `x` a type, it wouldn't work:
 ```dart
 void main() {
   int x = 5;
-  x = 'Dart'
+  x = 'Dart';
 }
 ```
 This is <strong> invalid </strong>. In Dart, this will throw a warning, but not an error. It the program will still run. In fact, when dart runs, all variables are dynamic. The types are for people. They make the code cleaner, but they don't effect the program. That's pretty neat, actually.
@@ -148,8 +147,7 @@ Operators in Dart are similar to JavaScript.
 | Operater | JS Equivelent | Description |
 |----------|---------------|------------|
 | //       | //            | comment    |
-
-<div id='null-aware'></div>
+nu
 
 ### Null Aware Operators
 
@@ -279,7 +277,6 @@ void main() {
 
 This will print `Hellow, Orld`. 
 
-<div id='boolean-vals'></div>
 
 ### Boolean Values
 Boolean values are arguably not like Javascript. This is the first major difference I've seen in how you can use the language. In JavaScript, there are multiple values that can evaluate to `true`. In fact, most values are considered 'truthy'.
@@ -608,8 +605,6 @@ Functions return `null` if no return value is specified.
 
 
 ### Annotating Functions
-
-This is something I haven't delt with. You can annotate functions with what the type of both the argument and the return value are going to be.
 
 ```dart
 String peanutButter(String type) {

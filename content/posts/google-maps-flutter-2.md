@@ -13,7 +13,7 @@ tags:
     - maps
 ---
 
-This post is the second part of a two part series on settings up a basic app in Flutter that uses Google Static Maps. [Checkout part one.](http://ericwindmill.com/zero-to-one-with-flutter-google-maps-app-pt-1).
+This post is the second part of a two part series on settings up a basic app in Flutter that uses Google Static Maps. [Checkout part one.](/zero-to-one-with-flutter-google-maps-app-pt-1).
 
 Also, this post is inspired by [this post about using Flutter Animations](https://medium.com/flutter-io/zero-to-one-with-flutter-43b13fd7b354).
 

@@ -44,7 +44,7 @@ int x = newValue ?? 1;
 
 Many languages have this operator. I believe it was first written into C#. Ruby has something similar: the lazy assignment operator. But JavaScript doesn't have anything similar.
 
-I use this operator quite often. In the wild, you'll see it all the time when handling data asynchronously: 
+I use this operator quite often. In the wild, you'll see it all the time when handling data asynchronously.  
 
 ## ??=
 

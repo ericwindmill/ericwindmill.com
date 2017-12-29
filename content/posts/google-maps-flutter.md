@@ -242,4 +242,4 @@ The next step is to render maps that are useful. We'll need the get the users lo
 
 #### Pt 2 is Complete
 
-[Find it here.](http://ericwindmill.com/zero-to-one-with-flutter-google-maps-app-pt-2)
+[Find it here.](/zero-to-one-with-flutter-google-maps-app-pt-2)
