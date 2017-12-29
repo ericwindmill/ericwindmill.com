@@ -30,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="300">
-                <caret line="15" column="140" lean-forward="false" selection-start-line="15" selection-start-column="140" selection-end-line="15" selection-end-column="140" />
+              <first_editor relative-caret-position="540">
+                <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
                 <folding>
                   <marker date="1514554558000" expanded="true" signature="1244:1304" ph="dependencies: &lt;2 keys&gt;" />
                   <marker date="1514554558000" expanded="true" signature="1260:1285" ph="flutter: &lt;1 key&gt;" />
@@ -320,12 +320,12 @@
       <workItem from="1513175578285" duration="376000" />
       <workItem from="1513175959468" duration="960000" />
       <workItem from="1513390621888" duration="14986000" />
-      <workItem from="1514140869361" duration="9915000" />
+      <workItem from="1514140869361" duration="10006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143997000" />
+    <option name="totallyTimeSpent" value="144088000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -812,8 +812,8 @@
     <entry file="file://$PROJECT_DIR$/content/posts/google-maps-flutter-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="300">
-            <caret line="15" column="140" lean-forward="false" selection-start-line="15" selection-start-column="140" selection-end-line="15" selection-end-column="140" />
+          <first_editor relative-caret-position="540">
+            <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
             <folding>
               <marker date="1514554558000" expanded="true" signature="1244:1304" ph="dependencies: &lt;2 keys&gt;" />
               <marker date="1514554558000" expanded="true" signature="1260:1285" ph="flutter: &lt;1 key&gt;" />
