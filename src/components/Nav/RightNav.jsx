@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import React, {Component} from "react"
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import UserLinks from '../UserLinks/UserLinks'
 import config from '../../../data/SiteConfig'
@@ -8,7 +8,7 @@ class WideSideNavigation extends Component {
   constructor(props) {
     super(props)
 
-    this.handlePageChange = this.handlePageChange.bind(this);
+    this.handlePageChange = this.handlePageChange.bind(this)
   }
 
   // check to see what page you're on to start
@@ -22,15 +22,15 @@ class WideSideNavigation extends Component {
       const optInLink = document.querySelector('.to-OptIn')
       const contactLink = document.querySelector('.to-Contact')
       const footer = document.querySelector('footer')
-      const nav = document.querySelector("nav")
-      const permas = document.querySelectorAll(".permalink")
+      const nav = document.querySelector('nav')
+      const permas = document.querySelectorAll('.permalink')
 
       // adjust width
       nav.style.width = '300px'
 
       // rotate links
       permas.forEach(link => {
-        link.style.transform = "rotate(0deg)"
+        link.style.transform = 'rotate(0deg)'
       })
 
       // position links
@@ -52,7 +52,7 @@ class WideSideNavigation extends Component {
       contactLink.style.top = '420px'
       contactLink.style.left = '50px'
 
-      footer.style.bottom = "0px"
+      footer.style.bottom = '0px'
     }
   }
 
@@ -60,46 +60,59 @@ class WideSideNavigation extends Component {
   // The ones that should be hidden on home page begin with 'home-hidden' class
   navFoundation() {
     return (
-      <nav className='navigation'>
+      <nav className="navigation">
         <Link
           onClick={this.handlePageChange}
-          className='to-Home navEl home-revealed toggle-link'
-          to='/'
-        >Home</Link>
+          className="to-Home navEl home-revealed toggle-link"
+          to="/"
+        >
+          Home
+        </Link>
         <Link
           onClick={this.handlePageChange}
-          className='to-Stream navEl home-revealed permalink'
-          to='/stream'
-        >Stream</Link>
+          className="to-Stream navEl home-revealed permalink"
+          to="/stream"
+        >
+          Stream
+        </Link>
         <Link
           onClick={this.handlePageChange}
-          className='to-Courses navEl home-revealed permalink'
-          to='/courses'
-        >Courses</Link>
+          className="to-Courses navEl home-revealed permalink"
+          to="/courses"
+        >
+          Portfolio
+        </Link>
         <Link
           onClick={this.handlePageChange}
-          className='to-About navEl home-revealed permalink'
-          to='/about'
-        >About</Link>
+          className="to-About navEl home-revealed permalink"
+          to="/about"
+        >
+          About
+        </Link>
         <Link
           onClick={this.handlePageChange}
-          className='to-OptIn navEl home-hidden toggle-link'
-          to='/opt-in'
-        >Mailing List</Link>
+          className="to-OptIn navEl home-hidden toggle-link"
+          to="/opt-in"
+        >
+          Mailing List
+        </Link>
         <Link
           onClick={this.handlePageChange}
-          className='to-Contact navEl home-hidden permalink'
-          to='/contact'
-        >Contact</Link>
-        <footer className='home-hidden navEl toggle-link'>
+          className="to-Contact navEl home-hidden permalink"
+          to="/contact"
+        >
+          Contact
+        </Link>
+        <footer className="home-hidden navEl toggle-link">
           <h2>Elsewhere</h2>
-          <div className='Hero--SocialLinks'><UserLinks config={config}/></div>
+          <div className="Hero--SocialLinks">
+            <UserLinks config={config} />
+          </div>
           <p>I'm currently available for small projects.</p>
         </footer>
       </nav>
     )
   }
-
 
   handlePageChange(e) {
     const homeLink = document.querySelector('.to-Home')
@@ -109,16 +122,16 @@ class WideSideNavigation extends Component {
     const optInLink = document.querySelector('.to-OptIn')
     const contactLink = document.querySelector('.to-Contact')
     const footer = document.querySelector('footer')
-    const nav = document.querySelector("nav")
-    const permas = document.querySelectorAll(".permalink")
+    const nav = document.querySelector('nav')
+    const permas = document.querySelectorAll('.permalink')
 
-    if (!e.target.classList.contains("to-Home")) {
-       // adjust width
+    if (!e.target.classList.contains('to-Home')) {
+      // adjust width
       nav.style.width = '300px'
 
       // rotate links
       permas.forEach(link => {
-        link.style.transform = "rotate(0deg)"
+        link.style.transform = 'rotate(0deg)'
       })
 
       // position links
@@ -140,15 +153,14 @@ class WideSideNavigation extends Component {
       contactLink.style.top = '420px'
       contactLink.style.left = '50px'
 
-      footer.style.bottom = "0px"
-
+      footer.style.bottom = '0px'
     } else {
       // adjust width
       nav.style.width = '55px'
 
       // rotate links
       permas.forEach(link => {
-        link.style.transform = "rotate(90deg)"
+        link.style.transform = 'rotate(90deg)'
       })
 
       // position links
@@ -170,12 +182,12 @@ class WideSideNavigation extends Component {
       contactLink.style.top = '80%'
       contactLink.style.left = '0px'
 
-      footer.style.bottom = "-400px"
-      }
+      footer.style.bottom = '-400px'
     }
+  }
 
   render() {
-    return this.navFoundation();
+    return this.navFoundation()
   }
 }
 

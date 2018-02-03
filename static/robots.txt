@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: http://ericwindmill.com/
+sitemap: https://ericwindmill.com/

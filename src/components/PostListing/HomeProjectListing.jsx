@@ -2,21 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 class ProjectListing extends React.Component {
-  componentDidMount () {
-    // const posts = document.querySelectorAll('.HomePostListing--Post')
-    // posts.forEach(post => {
-    //   post.addEventListener('mouseover', () => {
-    //     const icon = post.querySelector('.PostIcon')
-    //     icon.innerHTML = '&nbsp; 👓  &nbsp;'
-    //   })
-    //   post.addEventListener('mouseout', () => {
-    //     const icon = post.querySelector('.PostIcon')
-    //     icon.innerHTML = '&nbsp; →  &nbsp;'
-    //   })
-    // })
-  }
-
-  getPostList () {
+  getPostList() {
     const postList = []
     this.props.postEdges.forEach(postEdge => {
       if (postEdge.node.frontmatter.type === 'Project') {
@@ -30,32 +16,33 @@ class ProjectListing extends React.Component {
           month: postEdge.node.frontmatter.month,
           excerpt: postEdge.node.excerpt,
           timeToRead: postEdge.node.timeToRead
-        })}
+        })
+      }
     })
     return postList
   }
 
-
-  render () {
+  render() {
     const postList = this.getPostList()
     return (
       <div className="HomePostListing">
-        <h2>Projects</h2>
+        <h2>Portfolio</h2>
+        <p style={{ marginBottom: '30px' }}>
+          These projects include highlights from my professional career, as well
+          as open-source contributions and personal projects.
+        </p>
         {/* Your post list here. */
-          postList.map(post =>
-            (<div
-              key={post.title}
-              className='HomePostListing--Post'>
-                <span className='HomePostListing--DateMeta'>
-                    <p>{post.month}</p>
-                    <p>{post.year}</p>
-                </span>
-              <p className='PostIcon'>&nbsp; →  &nbsp;</p>
-              <Link to={post.path}>
-                <p>{post.title}</p>
-              </Link>
-            </div>)
-          )}
+        postList.map(post => (
+          <div key={post.title} className="HomePostListing--Post">
+            <span className="HomePostListing--DateMeta">
+              <p>{post.month}</p>
+              <p>{post.year}</p>
+            </span>
+            <p className="PostIcon">&nbsp; → &nbsp;</p>
+            <p>{post.title}</p>
+          </div>
+        ))}
+        <Link to={'courses'}>View Portfolio.</Link>
       </div>
     )
   }
