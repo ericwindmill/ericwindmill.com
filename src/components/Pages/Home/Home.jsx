@@ -50,7 +50,7 @@ class Home extends Component {
             <h2>Currently</h2>
             <h4>AppTree Software - Portland, OR</h4>
             <p>
-              I'm currently working for Enterprise SaaS company AppTree. I work
+              I'm currently working for Enterprise PaaS company AppTree. I work
               on both the web client and the mobile app. This job is a blast
               because we're working in Dart with Flutter and Polymer, so it's
               all new to me. I'm the first employee hired solely for the Flutter

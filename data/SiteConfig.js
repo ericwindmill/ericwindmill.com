@@ -32,7 +32,7 @@ module.exports = {
     },
     {
       label: "Email",
-      url: "mailto:eric@ericwindmill.com",
+      url: "mailto:ericwindmill@gmail.com",
       iconClassName: "fa-envelope"
     },
     {
