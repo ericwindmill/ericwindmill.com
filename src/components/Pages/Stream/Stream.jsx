@@ -1,7 +1,5 @@
-import React, { Component } from "react";
-import Link from 'gatsby-link'
+import React, {Component} from "react";
 import PostListing from "../../PostListing/PostListing";
-import OptInForm from '../../Forms/OptInForm/HomeOptIn'
 
 class Stream extends Component {
 
@@ -25,20 +23,14 @@ class Stream extends Component {
   }
 
   render() {
-    const posts =  this.getPostListing();
+    const posts = this.getPostListing();
     return (
       <main className="Stream">
         <section className='Hero'>
-          <h1>Stream</h1>
-          <h2>Articles, Tutorials, Projects and Client Work</h2>
+          <h1>Articles</h1>
         </section>
         <section className='Stream--Body'>
-          <div className='StreamPostListing'><PostListing postEdges={posts} /></div>
-        </section>
-        <section className='OptIn Stream--OptIn'>
-          <h3>Monday Morning Updates</h3>
-          <p>Sign up to be updated when new courses are available, as well as receive the best design and development news from the web weekly.</p>
-          <OptInForm />
+          <div className='StreamPostListing'><PostListing postEdges={posts}/></div>
         </section>
       </main>
     );

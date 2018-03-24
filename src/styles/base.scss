@@ -2,20 +2,37 @@ html {
 	font-size: 10px;
 }
 
+
+
 /*********
 ** Font **
  ********/
-p, ul, ol, table{
-	margin-bottom: $text-margin-bottom;
+p,
+ul,
+ol,
+table {
 	line-height: $line-height;
+	margin-bottom: $text-margin-bottom;
 }
 
-p, a, ul, ol,
-table, caption, tbody, tfoot, thead, tr, th, td,
-input, textarea, button {
+p,
+a,
+ul,
+ol,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+input,
+textarea,
+button {
+	font-family: $sans;
 	font-size: $font-size;
 	line-height: $line-height;
-	font-family: $serif;
 }
 
 a {
@@ -30,16 +47,22 @@ a {
 	}
 }
 
-p > a {text-decoration: underline;}
+p > a {
+	text-decoration: underline;
+}
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
+	color: $ink;
 	font-family: $sans;
 	font-weight: $header-weight;
 	margin-bottom: 0;
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 4rem;
 	margin-bottom: $text-margin-bottom;
 }
 
@@ -57,13 +80,14 @@ h4 {
 	font-size: 2.2rem;
 	margin-bottom: $text-margin-bottom / 4;
 }
+
 .subtext {
 	font-size: 1.25rem;
 }
+
 /*********
 ** Forms **
  ********/
-
 
 /*********
 ** Blockquote **
@@ -102,12 +126,11 @@ thead {
 	color: white;
 }
 
-th, td{
+th,
+td {
 	text-align: left;
 	padding: 10px 10px;
 }
-
-
 
 /*********
 ** Divider **
@@ -127,4 +150,3 @@ th, td{
 	clear: both;
 	border-bottom: 1px solid $divider;
 }
-

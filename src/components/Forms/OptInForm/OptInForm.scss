@@ -1,99 +1,102 @@
 #mc_embed_signup {
-  background: #fff;
-  clear: left;
-  .input-text {
-    background: none;
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: $font-size;
-    width: 100%;
-    margin-top: 5px;
-    padding: 15px 5px 15px;
-    transition: all .3s ease;
-    &::-webkit-input-placeholder {
-      color: lighten($link-ink, 20%);
-    }
-    &:focus {
-      outline: none;
-      background: lighten($blue, 50%);
-    }
-  }
+	background: #ffffff;
+	clear: left;
+	.input-text {
+		background: none;
+		border: none;
+		border-bottom: 2px solid black;
+		font-size: $font-size;
+		width: 100%;
+		margin-top: 5px;
+		padding: 15px 5px 15px;
+		transition: all 0.3s ease;
 
-  .button {
-    width: 100%;
-    height: 65px;
-    margin-top: $spacing-unit / 2;
-    text-align: center;
-    border: 2px solid black;
-    background: lighten($blue, 50%);
-    border-radius: 0;
-    font-size: $font-size;
-    &:hover {
-      background: lighten($blue, 10%);
-      cursor: pointer;
-    }
-  }
+		&::-webkit-input-placeholder {
+			color: lighten($link-ink, 20%);
+		}
+		&:focus {
+			outline: none;
+			background: lighten($blue, 50%);
+		}
+	}
+
+	.button {
+		width: 100%;
+		height: 65px;
+		margin-top: $spacing-unit / 2;
+		text-align: center;
+		border: 2px solid black;
+		background: mistyrose;
+		border-radius: 0;
+		font-size: $font-size;
+		&:hover {
+			background: darken(mistyrose, 10%);
+			cursor: pointer;
+		}
+	}
 }
 
 .HideMe {
-  position: absolute;
-  left: -5000px;
+	position: absolute;
+	left: -5000px;
 }
 
 #home_mc_embed_signup_scroll {
-  background: #fff;
-  margin: auto;
-  .home_mc_form_fields {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    .mc-field-group {
-      width: 450px;
-      margin-right: 5px;
-    }
-  }
-  .input-text {
-    border: none;
-    border-bottom: 2px solid black;
-    width: 100%;
-    font-size: $font-size;
-    padding: 5px 5px 5px;
-    margin-top: 10px;
-    transition: all .3s ease;
-    &::-webkit-input-placeholder {
-      color: lighten($link-ink, 20%);
-    }
-    &:focus {
-      outline: none;
-      background: lighten($blue, 50%);
-    }
-  }
-  .clear { display: flex;}
-  .button {
-    width: 40%;
-    margin: $spacing-unit / 4 auto 0;
-    //height: 65px;
-    text-align: center;
-    border: 2px solid black;
-    background: lighten($blue, 50%);
-    border-radius: 0;
-    font-size: $font-size;
-    &:hover {
-      background: lighten($blue, 10%);
-      cursor: pointer;
-    }
-  }
+	background: #ffffff;
+	margin: auto;
+	.home_mc_form_fields {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		.mc-field-group {
+			width: 450px;
+			margin-right: 5px;
+		}
+	}
+	.input-text {
+		border: none;
+		border-bottom: 2px solid black;
+		width: 100%;
+		font-size: $font-size;
+		padding: 5px 5px 5px;
+		margin-top: 10px;
+		transition: all 0.3s ease;
+		&::-webkit-input-placeholder {
+			color: lighten($link-ink, 20%);
+		}
+		&:focus {
+			outline: none;
+			background: mistyrose;
+		}
+	}
+	.clear {
+		display: flex;
+	}
+	.button {
+		width: 40%;
+		margin: $spacing-unit / 4 auto 0;
+		//height: 65px;
+		text-align: center;
+		border: 2px solid black;
+		background: mistyrose;
+		border-radius: 0;
+		font-size: $font-size;
+		&:hover {
+			background: mistyrose;
+			cursor: pointer;
+		}
+	}
 }
 
 .OptIn {
-  border: 1px solid black;
-  padding: $spacing-unit / 3;
-  width: 80%;
-  margin:$spacing-unit auto;
+	border: 1px solid black;
+	padding: $spacing-unit / 3;
+	width: 80%;
+	margin: $spacing-unit auto;
 }
 
 .Stream--OptIn {
-  width: 100%;
-  margin-bottom: $spacing-unit * 2;
+	width: 100%;
+	margin-bottom: $spacing-unit * 2;
 }

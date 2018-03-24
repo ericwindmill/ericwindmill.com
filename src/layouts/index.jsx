@@ -1,14 +1,16 @@
 import React from "react";
 import Helmet from "react-helmet";
+import styled from "styled-components";
 import config from "../../data/SiteConfig";
 import "../main.scss";
-import WideSideNavigation from '../components/Nav/RightNav'
+import Sidebar from "../components/SidebarNav";
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
+
     const pathPrefix = config.pathPrefix ? config.pathPrefix : "/";
     const currentPath = this.props.location.pathname
       .replace(pathPrefix, "")
@@ -39,52 +41,72 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
+
   render() {
-    const { children, data, location } = this.props;
+    const {children, data, location} = this.props;
     return (
-      <div className='IndexTemplate--Container'>
+      <IndexTemplateContainer>
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
-          <meta name="description" content={config.siteDescription} />
+          <meta name="description" content={config.siteDescription}/>
         </Helmet>
-        <div className='IndexTemplate--Page ss-container'>
-          {children()}
-          <WideSideNavigation
-            path={location.pathname}
-            postEdges={data.allMarkdownRemark.edges}
-          />
-        </div>
-      </div>
+        <IndexContentContainer>
+          <div id='sidebar'>
+            <Sidebar/>
+          </div>
+          <div id='main-content'>
+            {children()}
+          </div>
+        </IndexContentContainer>
+      </IndexTemplateContainer>
     );
   }
 }
-//
+
+const IndexTemplateContainer = styled.main``;
+
+const IndexContentContainer = styled.section`
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  
+  #main-content {
+    padding: 100px 100px 100px 0;
+    overflow: scroll;
+    width: 100%;
+  }
+  
+  #sidebar {
+    padding: 100px;
+  }
+`
+
 // /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query PostsQuery {
-        allMarkdownRemark(
-          limit: 10
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              excerpt
-              timeToRead
-              frontmatter {
-                title
-                tags
-                cover
-                date
-                year
-                month
-                type
-                category
-              }
-            }
+    allMarkdownRemark(
+      limit: 10
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            cover
+            date
+            year
+            month
+            type
+            category
           }
         }
+      }
+    }
   }
-`
+`;

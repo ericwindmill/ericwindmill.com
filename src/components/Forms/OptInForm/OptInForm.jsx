@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
+import styled from 'styled-components'
 
 class OptInForm extends Component {
-  render () {
+  render() {
     return (
-      <div>
+      <OptInFormContainer>
         <div id="mc_embed_signup">
           <form
             action="https://sommacademy.us14.list-manage.com/subscribe/post?u=ba4877332e56c5f5d88603650&amp;id=b1bfca0682"
@@ -48,9 +49,12 @@ class OptInForm extends Component {
             </div>
           </form>
         </div>
-      </div>
+      </OptInFormContainer>
     )
   }
 }
+
+const OptInFormContainer = styled.div`
+`
 
 export default OptInForm
