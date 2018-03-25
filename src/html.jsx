@@ -23,29 +23,30 @@ export default class HTML extends React.Component {
       css = (
         <style
           id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: inlinedStyles }}
+          dangerouslySetInnerHTML={{__html: inlinedStyles}}
         />
       );
     }
     return (
       <html lang="en">
-        <head>
-          <meta charSet="utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          {this.props.headComponents}
-          <link rel="shortcut icon" href={favicon} />
-          {css}
-        </head>
-        <body>
-          <div
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
-          />
-          {this.props.postBodyComponents}
-        </body>
+      <head>
+        <meta charSet="utf-8"/>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
+        <meta name="google-site-verification" content="UZ67nTL4ENIDBq22wVcafOeR50-plpEH1cih_-iSHWA"/>
+        {this.props.headComponents}
+        <link rel="shortcut icon" href={favicon}/>
+        {css}
+      </head>
+      <body>
+      <div
+        id="___gatsby"
+        dangerouslySetInnerHTML={{__html: this.props.body}}
+      />
+      {this.props.postBodyComponents}
+      </body>
       </html>
     );
   }
