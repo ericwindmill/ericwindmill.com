@@ -74,7 +74,7 @@ export default class HomePage extends React.Component {
         <HeaderContainer>
           <div className="header">
             <h1>
-              Front-End Engineer with a design problem.{" "}
+              Front-End Engineer with a design infatuation.{" "}
               <b>
                 I make clean, precise UI that <span className="typewriter"/>.
               </b>
