@@ -37,13 +37,6 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "projects",
-        path: `${__dirname}/content/${config.projectsDir}`
-      }
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         name: "nuggets",
         path: `${__dirname}/content/${config.nuggetsDir}`
       }

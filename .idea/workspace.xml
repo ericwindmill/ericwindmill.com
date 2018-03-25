@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0caac08b-a6a9-4b68-b86a-0d7be1802aa7" name="Default" comment="Fix the postEdge bug that I created.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/html.jsx" afterPath="$PROJECT_DIR$/src/html.jsx" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" afterPath="$PROJECT_DIR$/gatsby-config.js" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.jsx" afterPath="$PROJECT_DIR$/src/pages/index.jsx" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,12 +25,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="4" column="97" lean-forward="false" selection-start-line="4" selection-start-column="97" selection-end-line="4" selection-end-column="97" />
-              <folding />
+            <state relative-caret-position="386">
+              <caret line="122" column="28" lean-forward="false" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <marker date="1521996481594" expanded="true" signature="5686:5891" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="5697:5888" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="5799:5849" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="5859:5884" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="5930:5972" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6004:6118" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6156:6199" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6239:6716" ph="query...{&#10;    allMarkdownRemark(&#10;      filter: {frontmatter: {type: {eq: &quot;Post&quot;}}}&#10;      sort: {fields: [frontmatter___date], order: DESC}&#10;    ) {&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }&#10;    }&#10;  }" />
+                <marker date="1521996481594" expanded="true" signature="6245:6254" ph="MainPosts...MainPosts" />
+                <marker date="1521996481594" expanded="true" signature="6255:6716" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6261:6278" ph="allMarkdownRemark...allMarkdownRemark" />
+                <marker date="1521996481594" expanded="true" signature="6261:6712" ph="allMarkdownRemark...{&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }&#10;    }" />
+                <marker date="1521996481594" expanded="true" signature="6278:6391" ph="(...)" />
+                <marker date="1521996481594" expanded="true" signature="6286:6292" ph="filter...filter" />
+                <marker date="1521996481594" expanded="true" signature="6286:6329" ph="filter...{frontmatter: {type: {eq: &quot;Post&quot;}}}" />
+                <marker date="1521996481594" expanded="true" signature="6294:6329" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6295:6306" ph="frontmatter...frontmatter" />
+                <marker date="1521996481594" expanded="true" signature="6295:6328" ph="frontmatter...{type: {eq: &quot;Post&quot;}}" />
+                <marker date="1521996481594" expanded="true" signature="6308:6328" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6309:6313" ph="type...type" />
+                <marker date="1521996481594" expanded="true" signature="6309:6327" ph="type...{eq: &quot;Post&quot;}" />
+                <marker date="1521996481594" expanded="true" signature="6315:6327" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6316:6318" ph="eq...eq" />
+                <marker date="1521996481594" expanded="true" signature="6336:6340" ph="sort...sort" />
+                <marker date="1521996481594" expanded="true" signature="6336:6385" ph="sort...{fields: [frontmatter___date], order: DESC}" />
+                <marker date="1521996481594" expanded="true" signature="6342:6385" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6343:6349" ph="fields...fields" />
+                <marker date="1521996481594" expanded="true" signature="6343:6371" ph="fields...[frontmatter___date]" />
+                <marker date="1521996481594" expanded="true" signature="6351:6371" ph="[...]" />
+                <marker date="1521996481594" expanded="true" signature="6373:6378" ph="order...order" />
+                <marker date="1521996481594" expanded="true" signature="6392:6712" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6400:6405" ph="edges...edges" />
+                <marker date="1521996481594" expanded="true" signature="6400:6706" ph="edges...{&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }" />
+                <marker date="1521996481594" expanded="true" signature="6406:6706" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6416:6420" ph="node...node" />
+                <marker date="1521996481594" expanded="true" signature="6416:6698" ph="node...{&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }" />
+                <marker date="1521996481594" expanded="true" signature="6421:6698" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6433:6439" ph="fields...fields" />
+                <marker date="1521996481594" expanded="true" signature="6433:6470" ph="fields...{&#10;            slug&#10;          }" />
+                <marker date="1521996481594" expanded="true" signature="6440:6470" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6454:6458" ph="slug...slug" />
+                <marker date="1521996481594" expanded="true" signature="6481:6488" ph="excerpt...excerpt" />
+                <marker date="1521996481594" expanded="true" signature="6499:6509" ph="timeToRead...timeToRead" />
+                <marker date="1521996481594" expanded="true" signature="6520:6531" ph="frontmatter...frontmatter" />
+                <marker date="1521996481594" expanded="true" signature="6520:6688" ph="frontmatter...{&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }" />
+                <marker date="1521996481594" expanded="true" signature="6532:6688" ph="{...}" />
+                <marker date="1521996481594" expanded="true" signature="6546:6551" ph="title...title" />
+                <marker date="1521996481594" expanded="true" signature="6564:6568" ph="tags...tags" />
+                <marker date="1521996481594" expanded="true" signature="6581:6586" ph="cover...cover" />
+                <marker date="1521996481594" expanded="true" signature="6599:6603" ph="date...date" />
+                <marker date="1521996481594" expanded="true" signature="6616:6620" ph="year...year" />
+                <marker date="1521996481594" expanded="true" signature="6633:6638" ph="month...month" />
+                <marker date="1521996481594" expanded="true" signature="6651:6655" ph="type...type" />
+                <marker date="1521996481594" expanded="true" signature="6668:6676" ph="category...category" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,7 +120,6 @@
       <find>graphql-skip</find>
       <find>graphql</find>
       <find>grapq</find>
-      <find>graph</find>
       <find>code-high</find>
       <find>taglist</find>
       <find>PostListing--</find>
@@ -75,6 +131,7 @@
       <find>Stream</find>
       <find>stream--</find>
       <find>html</find>
+      <find>graph</find>
     </findStrings>
     <replaceStrings>
       <replace>CoursesPage</replace>
@@ -125,7 +182,6 @@
         <option value="$PROJECT_DIR$/content/bookmarks/bookmark.md" />
         <option value="$PROJECT_DIR$/src/components/PostListing/HomePostListing.jsx" />
         <option value="$PROJECT_DIR$/data/SiteConfig.js" />
-        <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/pages/bookmarks.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/HomeGridBox.jsx" />
@@ -144,9 +200,10 @@
         <option value="$PROJECT_DIR$/src/components/HomePostListing.jsx" />
         <option value="$PROJECT_DIR$/src/styles/base.scss" />
         <option value="$PROJECT_DIR$/src/templates/post.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/index.jsx" />
         <option value="$PROJECT_DIR$/src/html.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/gatsby-config.js" />
+        <option value="$PROJECT_DIR$/src/pages/index.jsx" />
       </list>
     </option>
   </component>
@@ -217,6 +274,12 @@
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -329,12 +392,12 @@
       <workItem from="1521514750138" duration="1248000" />
       <workItem from="1521592236948" duration="7498000" />
       <workItem from="1521677797179" duration="7429000" />
-      <workItem from="1521839221845" duration="26183000" />
+      <workItem from="1521839221845" duration="26599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200859000" />
+    <option name="totallyTimeSpent" value="201275000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -396,22 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/courses.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Tabs/ContactTab.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/about.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -558,14 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -653,14 +692,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="85" column="11" lean-forward="true" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +875,7 @@
         <state relative-caret-position="-227">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
             <marker date="1521994109290" expanded="true" signature="718:759" ph="{...}" />
             <marker date="1521994109290" expanded="true" signature="861:1348" ph="query...{&#10;    allMarkdownRemark(&#10;      filter: { frontmatter: { type: { eq: &quot;Post&quot; } } }&#10;      sort: { fields: [frontmatter___date], order: DESC }&#10;    ) {&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }&#10;    }&#10;  }" />
             <marker date="1521994109290" expanded="true" signature="867:878" ph="StreamQuery...StreamQuery" />
@@ -902,7 +933,7 @@
         <state relative-caret-position="487">
           <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
             <marker date="1521994109294" expanded="true" signature="1843:2324" ph="{...}" />
             <marker date="1521994109294" expanded="true" signature="1909:1958" ph="{...}" />
             <marker date="1521994109294" expanded="true" signature="1985:2323" ph="{...}" />
@@ -1050,7 +1081,7 @@
         <state relative-caret-position="260">
           <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
             <marker date="1521992378632" expanded="true" signature="1145:1186" ph="{...}" />
             <marker date="1521992378632" expanded="true" signature="1226:1583" ph="query...{&#10;    allMarkdownRemark(filter: { frontmatter: { type: { eq: &quot;nugget&quot; } } }) {&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          frontmatter {&#10;            order&#10;            title&#10;            image&#10;            description&#10;            externalUrl&#10;            type&#10;          }&#10;        }&#10;      }&#10;    }&#10;  }" />
             <marker date="1521992378632" expanded="true" signature="1232:1244" ph="NuggetsQuery...NuggetsQuery" />
@@ -1131,7 +1162,7 @@
         <state relative-caret-position="456">
           <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
             <marker date="1521994631956" expanded="true" signature="2212:2275" ph="{...}" />
             <marker date="1521994631956" expanded="true" signature="2311:3251" ph="{...}" />
             <marker date="1521994631956" expanded="true" signature="2362:2629" ph="{...}" />
@@ -1189,85 +1220,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="76" column="58" lean-forward="false" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1521995048066" expanded="true" signature="5687:5892" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="5698:5889" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="5800:5850" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="5860:5885" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="5931:5973" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6005:6119" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6157:6200" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6240:6717" ph="query...{&#10;    allMarkdownRemark(&#10;      filter: {frontmatter: {type: {eq: &quot;Post&quot;}}}&#10;      sort: {fields: [frontmatter___date], order: DESC}&#10;    ) {&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }&#10;    }&#10;  }" />
-            <marker date="1521995048066" expanded="true" signature="6246:6255" ph="MainPosts...MainPosts" />
-            <marker date="1521995048066" expanded="true" signature="6256:6717" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6262:6279" ph="allMarkdownRemark...allMarkdownRemark" />
-            <marker date="1521995048066" expanded="true" signature="6262:6713" ph="allMarkdownRemark...{&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }&#10;    }" />
-            <marker date="1521995048066" expanded="true" signature="6279:6392" ph="(...)" />
-            <marker date="1521995048066" expanded="true" signature="6287:6293" ph="filter...filter" />
-            <marker date="1521995048066" expanded="true" signature="6287:6330" ph="filter...{frontmatter: {type: {eq: &quot;Post&quot;}}}" />
-            <marker date="1521995048066" expanded="true" signature="6295:6330" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6296:6307" ph="frontmatter...frontmatter" />
-            <marker date="1521995048066" expanded="true" signature="6296:6329" ph="frontmatter...{type: {eq: &quot;Post&quot;}}" />
-            <marker date="1521995048066" expanded="true" signature="6309:6329" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6310:6314" ph="type...type" />
-            <marker date="1521995048066" expanded="true" signature="6310:6328" ph="type...{eq: &quot;Post&quot;}" />
-            <marker date="1521995048066" expanded="true" signature="6316:6328" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6317:6319" ph="eq...eq" />
-            <marker date="1521995048066" expanded="true" signature="6337:6341" ph="sort...sort" />
-            <marker date="1521995048066" expanded="true" signature="6337:6386" ph="sort...{fields: [frontmatter___date], order: DESC}" />
-            <marker date="1521995048066" expanded="true" signature="6343:6386" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6344:6350" ph="fields...fields" />
-            <marker date="1521995048066" expanded="true" signature="6344:6372" ph="fields...[frontmatter___date]" />
-            <marker date="1521995048066" expanded="true" signature="6352:6372" ph="[...]" />
-            <marker date="1521995048066" expanded="true" signature="6374:6379" ph="order...order" />
-            <marker date="1521995048066" expanded="true" signature="6393:6713" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6401:6406" ph="edges...edges" />
-            <marker date="1521995048066" expanded="true" signature="6401:6707" ph="edges...{&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }" />
-            <marker date="1521995048066" expanded="true" signature="6407:6707" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6417:6421" ph="node...node" />
-            <marker date="1521995048066" expanded="true" signature="6417:6699" ph="node...{&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }" />
-            <marker date="1521995048066" expanded="true" signature="6422:6699" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6434:6440" ph="fields...fields" />
-            <marker date="1521995048066" expanded="true" signature="6434:6471" ph="fields...{&#10;            slug&#10;          }" />
-            <marker date="1521995048066" expanded="true" signature="6441:6471" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6455:6459" ph="slug...slug" />
-            <marker date="1521995048066" expanded="true" signature="6482:6489" ph="excerpt...excerpt" />
-            <marker date="1521995048066" expanded="true" signature="6500:6510" ph="timeToRead...timeToRead" />
-            <marker date="1521995048066" expanded="true" signature="6521:6532" ph="frontmatter...frontmatter" />
-            <marker date="1521995048066" expanded="true" signature="6521:6689" ph="frontmatter...{&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }" />
-            <marker date="1521995048066" expanded="true" signature="6533:6689" ph="{...}" />
-            <marker date="1521995048066" expanded="true" signature="6547:6552" ph="title...title" />
-            <marker date="1521995048066" expanded="true" signature="6565:6569" ph="tags...tags" />
-            <marker date="1521995048066" expanded="true" signature="6582:6587" ph="cover...cover" />
-            <marker date="1521995048066" expanded="true" signature="6600:6604" ph="date...date" />
-            <marker date="1521995048066" expanded="true" signature="6617:6621" ph="year...year" />
-            <marker date="1521995048066" expanded="true" signature="6634:6639" ph="month...month" />
-            <marker date="1521995048066" expanded="true" signature="6652:6656" ph="type...type" />
-            <marker date="1521995048066" expanded="true" signature="6669:6677" ph="category...category" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="4" column="97" lean-forward="false" selection-start-line="4" selection-start-column="97" selection-end-line="4" selection-end-column="97" />
+        <state relative-caret-position="576">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.stylelintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="85" column="11" lean-forward="true" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="122" column="28" lean-forward="false" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1521996481594" expanded="true" signature="5686:5891" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="5697:5888" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="5799:5849" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="5859:5884" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="5930:5972" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6004:6118" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6156:6199" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6239:6716" ph="query...{&#10;    allMarkdownRemark(&#10;      filter: {frontmatter: {type: {eq: &quot;Post&quot;}}}&#10;      sort: {fields: [frontmatter___date], order: DESC}&#10;    ) {&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }&#10;    }&#10;  }" />
+            <marker date="1521996481594" expanded="true" signature="6245:6254" ph="MainPosts...MainPosts" />
+            <marker date="1521996481594" expanded="true" signature="6255:6716" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6261:6278" ph="allMarkdownRemark...allMarkdownRemark" />
+            <marker date="1521996481594" expanded="true" signature="6261:6712" ph="allMarkdownRemark...{&#10;      edges {&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }&#10;    }" />
+            <marker date="1521996481594" expanded="true" signature="6278:6391" ph="(...)" />
+            <marker date="1521996481594" expanded="true" signature="6286:6292" ph="filter...filter" />
+            <marker date="1521996481594" expanded="true" signature="6286:6329" ph="filter...{frontmatter: {type: {eq: &quot;Post&quot;}}}" />
+            <marker date="1521996481594" expanded="true" signature="6294:6329" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6295:6306" ph="frontmatter...frontmatter" />
+            <marker date="1521996481594" expanded="true" signature="6295:6328" ph="frontmatter...{type: {eq: &quot;Post&quot;}}" />
+            <marker date="1521996481594" expanded="true" signature="6308:6328" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6309:6313" ph="type...type" />
+            <marker date="1521996481594" expanded="true" signature="6309:6327" ph="type...{eq: &quot;Post&quot;}" />
+            <marker date="1521996481594" expanded="true" signature="6315:6327" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6316:6318" ph="eq...eq" />
+            <marker date="1521996481594" expanded="true" signature="6336:6340" ph="sort...sort" />
+            <marker date="1521996481594" expanded="true" signature="6336:6385" ph="sort...{fields: [frontmatter___date], order: DESC}" />
+            <marker date="1521996481594" expanded="true" signature="6342:6385" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6343:6349" ph="fields...fields" />
+            <marker date="1521996481594" expanded="true" signature="6343:6371" ph="fields...[frontmatter___date]" />
+            <marker date="1521996481594" expanded="true" signature="6351:6371" ph="[...]" />
+            <marker date="1521996481594" expanded="true" signature="6373:6378" ph="order...order" />
+            <marker date="1521996481594" expanded="true" signature="6392:6712" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6400:6405" ph="edges...edges" />
+            <marker date="1521996481594" expanded="true" signature="6400:6706" ph="edges...{&#10;        node {&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }&#10;      }" />
+            <marker date="1521996481594" expanded="true" signature="6406:6706" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6416:6420" ph="node...node" />
+            <marker date="1521996481594" expanded="true" signature="6416:6698" ph="node...{&#10;          fields {&#10;            slug&#10;          }&#10;          excerpt&#10;          timeToRead&#10;          frontmatter {&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }&#10;        }" />
+            <marker date="1521996481594" expanded="true" signature="6421:6698" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6433:6439" ph="fields...fields" />
+            <marker date="1521996481594" expanded="true" signature="6433:6470" ph="fields...{&#10;            slug&#10;          }" />
+            <marker date="1521996481594" expanded="true" signature="6440:6470" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6454:6458" ph="slug...slug" />
+            <marker date="1521996481594" expanded="true" signature="6481:6488" ph="excerpt...excerpt" />
+            <marker date="1521996481594" expanded="true" signature="6499:6509" ph="timeToRead...timeToRead" />
+            <marker date="1521996481594" expanded="true" signature="6520:6531" ph="frontmatter...frontmatter" />
+            <marker date="1521996481594" expanded="true" signature="6520:6688" ph="frontmatter...{&#10;            title&#10;            tags&#10;            cover&#10;            date&#10;            year&#10;            month&#10;            type&#10;            category&#10;          }" />
+            <marker date="1521996481594" expanded="true" signature="6532:6688" ph="{...}" />
+            <marker date="1521996481594" expanded="true" signature="6546:6551" ph="title...title" />
+            <marker date="1521996481594" expanded="true" signature="6564:6568" ph="tags...tags" />
+            <marker date="1521996481594" expanded="true" signature="6581:6586" ph="cover...cover" />
+            <marker date="1521996481594" expanded="true" signature="6599:6603" ph="date...date" />
+            <marker date="1521996481594" expanded="true" signature="6616:6620" ph="year...year" />
+            <marker date="1521996481594" expanded="true" signature="6633:6638" ph="month...month" />
+            <marker date="1521996481594" expanded="true" signature="6651:6655" ph="type...type" />
+            <marker date="1521996481594" expanded="true" signature="6668:6676" ph="category...category" />
+          </folding>
         </state>
       </provider>
     </entry>

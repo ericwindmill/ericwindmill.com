@@ -114,7 +114,7 @@ export default class HomePage extends React.Component {
               <a href="https://twitter.com/ericwindmill">Twitter</a> and{" "}
               <a href="https://instagram.com/ericwindmill">Instagram</a>. Work
               inquires please{" "}
-              <a href="mailto:ericwindmill@gmail.com">email me</a>.
+              <a href="mailto:eric@ericwindmill.com">email me</a>.
             </p>
           </HomeGridBox>
           <HomeGridBox className="box music" title="Listening To">
