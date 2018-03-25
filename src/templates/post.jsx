@@ -1,12 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
 import styled from 'styled-components';
-import UserInfo from "../components/UserInfo/UserInfo";
-import PostTags from "../components/PostTags/PostTags";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
-import SEO from "../components/SEO/SEO";
+import UserInfo from "../components/UserInfo";
+import PostTags from "../components/PostTags";
+import SocialLinks from "../components/SocialLinks";
+import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
-import OptInForm from "../components/Forms/OptInForm/OptInForm";
+import OptInForm from "../components/OptInForm";
 
 export default class PostTemplate extends React.Component {
   render() {

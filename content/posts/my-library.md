@@ -32,7 +32,7 @@ Cheryl and those who write into her become a whole bundle of friends that will t
 ### Setting the Table - Danny Meyer
 The lessons learned in this book expand far beyond the restaurant industry. This book is *the* guide on how one should and can treat people.
 
-If that isn't enough,  the lessons in this book are wrapped up in the true story of how one man changed the restaurant industry through the power of simply following the golden rule.  I can't recommend this book enough for anyone that has to interact with a human at work. (So, everyone.)
+If that isn't enough, the lessons in this book are wrapped up in the true story of how one man changed the restaurant industry through the power of simply following the golden rule.  I can't recommend this book enough for anyone that has to interact with a human at work. (So, everyone.)
 
 <div class='Mini-Divider'> </div>
 
@@ -60,4 +60,5 @@ If that isn't enough,  the lessons in this book are wrapped up in the true story
 + The Obstacle is the Way - Ryan Holiday
 + Effective JavaScript - David Herman
 + The Gary Halbert Letters - Gary Halbert
++ The Best Interface is No Interface - Golden Krishna
 

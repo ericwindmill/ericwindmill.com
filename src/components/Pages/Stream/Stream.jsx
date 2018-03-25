@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import PostListing from "../../PostListing/PostListing";
+import PostListing from "../../PostListing";
+import HomePostListing from "../../HomePostListing";
 
 class Stream extends Component {
 
@@ -30,7 +31,9 @@ class Stream extends Component {
           <h1>Articles</h1>
         </section>
         <section className='Stream--Body'>
-          <div className='StreamPostListing'><PostListing postEdges={posts}/></div>
+          <div className='StreamPostListing'>
+            <HomePostListing postEdges={posts}/>
+          </div>
         </section>
       </main>
     );

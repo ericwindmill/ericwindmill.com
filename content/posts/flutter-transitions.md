@@ -13,7 +13,6 @@ tags:
     - transitions
 ---
 
-
 Imagine sitting and your living room and a friend appearing in front of you, rather than transitioning in the room by walking through the door. That isn't natural, and human brains don't like it.
 
 Animations and transitions are important for modern UX.

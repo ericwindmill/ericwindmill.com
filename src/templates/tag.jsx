@@ -1,10 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import PostListing from '../components/PostListing/PostListing'
+import PostListing from '../components/PostListing'
 import config from '../../data/SiteConfig'
+import HomePostListing from "../components/HomePostListing";
 
 export default class TagTemplate extends React.Component {
-  render () {
+  render() {
     const tag = this.props.pathContext.tag
     const postEdges = this.props.data.allMarkdownRemark.edges
     return (
@@ -14,7 +15,7 @@ export default class TagTemplate extends React.Component {
           <h1>{tag} Posts</h1>
         </section>
         <main className='TagListingBody'>
-          <PostListing postEdges={postEdges} />
+          <HomePostListing postEdges={postEdges} />
         </main>
 
       </div>

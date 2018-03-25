@@ -1,6 +1,8 @@
 module.exports = {
   blogPostDir: "posts", // The name of directory that contains your posts.
   projectsDir: "projects",
+  nuggetsDir: 'nuggets',
+  bookmarksDir: 'bookmarks',
   siteTitle: "Eric Windmill", // Site title.
   siteTitleAlt: "Eric Windmill's Flutter and CSS Posts", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
@@ -47,7 +49,7 @@ module.exports = {
     }
   ],
   copyright: "Copyright © 2017. Eric Windmill", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
+  themeColor: "#d65972", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
 

@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import { ShareButtons, ShareCounts, generateShareIcon } from "react-share";
-import config from "../../../data/SiteConfig";
+import React, {Component} from "react";
+import {ShareButtons, ShareCounts, generateShareIcon} from "react-share";
+import config from "../../data/SiteConfig";
 import "./SocialLinks.css";
 
-class   SocialLinks extends Component {
+class SocialLinks extends Component {
   render() {
-    console.log(config);
-    const { postNode, postPath, mobile } = this.props;
+    const {postNode, postPath, mobile} = this.props;
     const post = postNode.frontmatter;
     const url = config.siteUrl + config.pathPrefix + postPath;
     const {
@@ -36,7 +35,7 @@ class   SocialLinks extends Component {
     return (
       <div className="social-links">
         <RedditShareButton url={url} title={post.title}>
-          <RedditIcon round size={iconSize} />
+          <RedditIcon round size={iconSize}/>
           <RedditShareCount url={url}>
             {count =>
               <div className="share-count">
@@ -45,10 +44,10 @@ class   SocialLinks extends Component {
           </RedditShareCount>
         </RedditShareButton>
         <TwitterShareButton url={url} title={post.title}>
-          <TwitterIcon round size={iconSize} />
+          <TwitterIcon round size={iconSize}/>
         </TwitterShareButton>
         <GooglePlusShareButton url={url}>
-          <GooglePlusIcon round size={iconSize} />
+          <GooglePlusIcon round size={iconSize}/>
           <GooglePlusShareCount url={url}>
             {count =>
               <div className="share-count">
@@ -62,7 +61,7 @@ class   SocialLinks extends Component {
           picture={post.cover}
           description={postNode.excerpt}
         >
-          <FacebookIcon round size={iconSize} />
+          <FacebookIcon round size={iconSize}/>
           <FacebookShareCount url={url}>
             {count =>
               <div className="share-count">
@@ -75,7 +74,7 @@ class   SocialLinks extends Component {
           title={post.title}
           description={postNode.excerpt}
         >
-          <LinkedinIcon round size={iconSize} />
+          <LinkedinIcon round size={iconSize}/>
           <LinkedinShareCount url={url}>
             {count =>
               <div className="share-count">
@@ -84,7 +83,7 @@ class   SocialLinks extends Component {
           </LinkedinShareCount>
         </LinkedinShareButton>
         <TelegramShareButton url={url}>
-          <TelegramIcon round size={iconSize} />
+          <TelegramIcon round size={iconSize}/>
         </TelegramShareButton>
       </div>
     );

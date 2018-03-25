@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserLinks from '../UserLinks/UserLinks'
+import UserLinks from './UserLinks'
 
 class ContactForm extends Component {
   constructor(props) {

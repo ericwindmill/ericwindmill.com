@@ -17,4 +17,4 @@ Well, honestly, it's for me! I love trying new design and annimation tricks out 
 
 Right now at work I'm building a mobile app using Flutter. Flutter is a mobile framework from Google that makes heavy use of Material Design. You'll see a lot of that in v5.0 (current) of my portfolio. Other than that, I tried to go for bare-bones, whitespace, to-the-point design (with a few little quirks). 
 
-Current as of November 2017.
+Current as of March 2018.

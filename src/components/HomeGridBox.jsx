@@ -48,11 +48,6 @@ const HomeGridBoxContainer = styled.div`
       margin: 10px 0;
     }
     
-   @media screen and (max-width: 1200px) {
-      img {
-        width: 300px;
-      } 
-   }
 `
 
 const Divider = styled.div`

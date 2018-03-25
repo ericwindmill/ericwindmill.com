@@ -6,47 +6,94 @@ export default class Sidebar extends React.Component {
   render() {
     return (
       <SidebarContainer>
-        <h4>Eric Windmill</h4>
+        <Link to={"/"}>
+          <h4>Eric Windmill</h4>
+        </Link>
         <ul>
-          <li className={"primary active"}>
-            <Link to={"/"}>Home</Link>
+          <li>
+            <Link
+              exact
+              activeClassName={"active"}
+              className={"primary"}
+              to={"/"}
+            >
+              Home
+            </Link>
           </li>
-
-          <li className={"primary"}>
-            <Link to={"/stream"}>Articles</Link>
+          <li>
+            <Link
+              activeClassName={"active"}
+              className={"primary"}
+              to={"/stream"}
+            >
+              Articles
+            </Link>
           </li>
-
-          <li className={"primary"}>
-            <Link to={"/"}>Nuggets</Link>
+          <li>
+            <Link
+              activeClassName={"active"}
+              className={"primary"}
+              to={"/nuggets"}
+            >
+              Nuggets
+            </Link>
           </li>
-          <li className={"secondary"}>
-            <Link to={"/"}>Flutter By Example</Link>
+          <li>
+            <a
+              target="_blank"
+              className={"secondary"}
+              href="https://flutterbyexample.com"
+            >
+              Flutter By Example
+            </a>
           </li>
-          <li className={"secondary"}>
-            <Link to={"/"}>Dart for JS Developers</Link>
+          <li>
+            <a
+              target="_blank"
+              href="https://dartforwebdevelopers.com"
+              className={"secondary"}
+            >
+              Dart for JS Developers
+            </a>
           </li>
-          <li className={"secondary"}>
-            <Link to={"/"}>CSS Layout By Example</Link>
+          <li>
+            <a
+              target="_blank"
+              href="https://layoutbyexample.com"
+              className={"secondary"}
+            >
+              CSS Layout By Example
+            </a>
           </li>
-          <li className={"secondary"}>
-            <Link to={"/"}>On the Grid</Link>
+          <li>
+            <a
+              className={"secondary"}
+              target="_blank"
+              href="https://github.com/ericwindmill/on-the-grid"
+            >
+              On the Grid
+            </a>
           </li>
-
-          <li className={"primary"}>
-            <Link to={"/"}>Resumé</Link>
+          <li>
+            <p className={"primary fake-link"}>Et Cetera</p>
           </li>
-
-          <li className={"primary"}>
-            <Link to={"/"}>Et Cetera</Link>
+          <li>
+            <a
+              href="https://askadev.org/"
+              target="_blank"
+              className={"secondary"}
+            >
+              Ask-A-Dev
+            </a>
           </li>
-          <li className={"secondary"}>
-            <Link to={"/"}>Ask-A-Dev</Link>
-          </li>
-          <li className={"secondary"}>
-            <Link to={"/"}>My Library</Link>
-          </li>
-          <li className={"secondary"}>
-            <Link to={"/"}>Bookmarks</Link>
+          <li>
+            <Link
+              activeClassName={"active"}
+              className={"secondary"}
+              to={"/my-library"}
+            >
+              My Library
+            </Link>
           </li>
         </ul>
       </SidebarContainer>
@@ -58,50 +105,60 @@ const SidebarContainer = styled.div`
   height: 85vh;
 
   li {
-    height: 40px;
-    width: 220px;
-    margin: 1rem 0;
-    border-radius: 5px;
-    padding: 0 10px;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    transition: all 300ms ease-out;
+    height: 40px;
 
-    :hover {
-      a {
+    a,
+    .fake-link {
+      width: 220px;
+      margin: 0.3rem 0;
+      border-radius: 5px;
+      padding: 0 10px;
+      transition: all 300ms ease-out;
+
+      :hover {
         color: black;
       }
     }
-  }
 
-  .active {
-    background: rgba(214, 89, 114, 0.3);
-
-    :hover {
-      background: rgba(214, 89, 114, 0.4);
-      a {
-        color: black;
+    --link-blue: rgba(41, 99, 255, 1);
+    --link-blue-o-1: rgba(41, 99, 255, 0.1);
+    --link-blue-o-2: rgba(41, 99, 255, 0.2);
+    --link-blue-o-3: rgba(41, 99, 255, 0.3);
+    .primary {
+      :hover {
+        background: var(--link-blue-o-3);
       }
     }
-  }
 
-  .primary {
-    :hover {
-      background: rgba(214, 89, 114, 0.1);
-    }
-  }
-
-  .secondary {
-    margin: 0 0 0 1rem;
-    padding-left: 1rem;
-    height: 30px;
-    a {
-      color: rgba(0,0,0,.5);
+    .secondary {
+      margin: 0 0 0 1rem;
+      padding-left: 1rem;
+      height: 30px;
+      color: rgba(0, 0, 0, 0.5);
       font-size: 1.5rem;
+      :hover {
+        background: var(--link-blue-o-1);
+      }
     }
+
+    .active {
+      background: rgba(41, 99, 255, 1);
+      color: white;
+      box-shadow: 0 2px 2px 0 var(--link-blue-o-2),
+        0 3px 1px 2px var(--link-blue-o-1), -2px 1px 1px 0 var(--link-blue-o-1);
+      :hover {
+        background: rgba(41, 99, 255, 1);
+        color: white;
+      }
+    }
+  }
+
+  .fake-link {
     :hover {
-    background: rgba(214, 89, 114, 0.1);
+      background: transparent !important;
     }
   }
 `;

@@ -71,42 +71,12 @@ const IndexContentContainer = styled.section`
   width: 100vw;
   
   #main-content {
-    padding: 100px 100px 100px 0;
+    padding: 100px 100px 100px 5px;
     overflow: scroll;
     width: 100%;
   }
   
   #sidebar {
-    padding: 100px;
+    padding: 100px 50px;
   }
 `
-
-// /* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query PostsQuery {
-    allMarkdownRemark(
-      limit: 10
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover
-            date
-            year
-            month
-            type
-            category
-          }
-        }
-      }
-    }
-  }
-`;

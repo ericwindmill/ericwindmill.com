@@ -2,8 +2,6 @@ html {
 	font-size: 10px;
 }
 
-
-
 /*********
 ** Font **
  ********/
@@ -42,7 +40,7 @@ a {
 	text-decoration: none;
 
 	&:hover {
-		color: $red;
+		color: $blue;
 		cursor: pointer;
 	}
 }
@@ -85,13 +83,7 @@ h4 {
 	font-size: 1.25rem;
 }
 
-/*********
-** Forms **
- ********/
-
-/*********
-** Blockquote **
- ********/
+// Blockquote
 
 blockquote {
 	width: calc(100% + 33px);
@@ -99,8 +91,8 @@ blockquote {
 	border-left: 8px solid darken($peachy, 20%);
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
-	padding: $spacing-unit /2;
-	margin: ($spacing-unit * 2) 0;
+	padding: $spacing-unit / 2;
+	margin: ($spacing-unit) 0;
 	font-style: italic;
 	quotes: "\0022""\0022""\2018""\2019";
 	position: relative;
@@ -111,9 +103,7 @@ blockquote {
 	}
 }
 
-/*********
-** Tables **
- ********/
+// Tables
 table {
 	border-collapse: collapse;
 	border: 1px solid black;

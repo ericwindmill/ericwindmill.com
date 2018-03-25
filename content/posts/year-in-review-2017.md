@@ -117,18 +117,7 @@ This is one of my favorite things to do at the end of any year. I wish I wasn't 
 - NPR's Up First
     - I'm just too lazy to actually read the news daily. 
     
-    
-### Technology in 2017 
 
-The programming world seems to moving exponentially faster each year. Here's a few things that have had a big impact on me in the world of computers. 
-
-**ASIDE: I have an appointment right now as I write this. Instead of putting this in the drafts folder, I'm just going to add the descriptions in later.** 
-
-- JavaScript frameworks holy hell.
-- CSS
-- Flutter
-- Gatsby SSG
-- iPhone X UI
 
 
 #### The state of the world in 2017 keeps many of us up at night. Remember to take a moment and celebrate the good. 
