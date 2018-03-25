@@ -1,29 +1,41 @@
 import React, {Component} from "react";
 import Helmet from "react-helmet";
+import styled from "styled-components";
 import config from "../../data/SiteConfig";
-import Stream from "../components/Pages/Stream/Stream";
 import SEO from "../components/SEO";
+import HomePostListing from "../components/HomePostListing";
 
-class StreamPage extends Component {
+export default class StreamPage extends Component {
+
+
+
   render() {
-    const posts = this.props.data.allMarkdownRemark.edges;
+    const postsEdges = this.props.data.allMarkdownRemark.edges
     return (
-      <div className="Stream--Container">
+      <StreamContainer>
         <Helmet title={`Articles | ${config.siteTitle}`}/>
-        <SEO postEdges={posts}/>
-        <Stream posts={posts}/>
-      </div>
+        <SEO postEdges={postsEdges}/>
+        <h1>Articles</h1>
+        <StreamBody>
+          <HomePostListing postEdges={postsEdges}/>
+        </StreamBody>
+      </StreamContainer>
     );
   }
 }
 
-export default StreamPage;
+const StreamContainer = styled.div`
+  max-width: 825px;
+  min-width: 760px;
+`;
+
+const StreamBody = styled.div``
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query StreamQuery {
     allMarkdownRemark(
-      filter: {frontmatter: {type: {eq: "Post"}}}
+      filter: { frontmatter: { type: { eq: "Post" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

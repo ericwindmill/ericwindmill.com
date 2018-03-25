@@ -1,7 +1,8 @@
 import React from "react";
+import styled from 'styled-components';
 import Link from "gatsby-link";
 
-class PostListing extends React.Component {
+export default class PostListing extends React.Component {
   componentDidMount() {
     const posts = document.querySelectorAll(".HomePostListing--Post");
     posts.forEach(post => {
@@ -16,30 +17,29 @@ class PostListing extends React.Component {
     });
   }
 
-  getPostList() {
+  getPostListing() {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
-        path: postEdge.path,
-        tags: postEdge.tags,
-        cover: postEdge.cover,
-        title: postEdge.title,
-        type: postEdge.type,
-        month: postEdge.month,
-        year: postEdge.year,
-        excerpt: postEdge.excerpt,
-        timeToRead: postEdge.timeToRead,
-        category: postEdge.category
+        path: postEdge.node.fields.slug,
+        tags: postEdge.node.frontmatter.tags,
+        cover: postEdge.node.frontmatter.cover,
+        title: postEdge.node.frontmatter.title,
+        month: postEdge.node.frontmatter.month,
+        year: postEdge.node.frontmatter.year,
+        type: postEdge.node.frontmatter.type,
+        excerpt: postEdge.node.excerpt,
+        timeToRead: postEdge.node.timeToRead,
+        category: postEdge.node.frontmatter.category,
       });
     });
     return postList;
   }
 
   render() {
-    const postList = this.getPostList();
-    console.log(postList);
+    const postList = this.getPostListing()
     return (
-      <div className="HomePostListing">
+      <HomePostListingContainer>
         {postList.map(post => (
           <div key={post.title} className="HomePostListing--Post">
             <span className="HomePostListing--DateMeta">
@@ -52,9 +52,36 @@ class PostListing extends React.Component {
             </Link>
           </div>
         ))}
-      </div>
+      </HomePostListingContainer>
     );
   }
 }
 
-export default PostListing;
+const HomePostListingContainer = styled.div`
+  display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+		p {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	
+	.HomePostListing--Post {
+		display: grid;
+		grid-template-columns: 100px 50px 1fr;
+		padding-bottom: 25px;
+
+		.HomePostListing--DateMeta {
+			display: flex;
+			flex-direction: column;
+			p {
+				font-family: "Fira Code", monospace;
+				font-size: 1.5em;
+			}
+		}
+		.HomePostListing--Category {
+			font-family: "Fira Code", monospace;
+			font-size: 1.5em;
+		}
+	}
+`

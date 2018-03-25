@@ -41,10 +41,13 @@ export default class PostTemplate extends React.Component {
           <div className="PostOptIn">
             <h3>Get More Like This For Free</h3>
             <p>
-              I'd like to send you a fun way to start your week: the Monday Morning Update. It's an email that takes
-              about 30 seconds to read that'll give you some weekly entertainment: Maybe some new posts from me, the
-              best developer and design happenings around the web that I've found the past week, and maybe a new album
-              or book that I'm diggin'.
+              Enter your email address to get a short email to start your week off right. Every Monday, I send out a
+              short email with a few of the best things I've discovered this week. It mostly includes front-end articles
+              and talks, album recommendations, and weird things from around the web.
+            </p>
+            <p>
+              I'll also include updates on all
+              of courses. They'll always be free.
             </p>
             <OptInForm/>
           </div>
@@ -60,13 +63,13 @@ export default class PostTemplate extends React.Component {
 }
 
 const Divider = styled.div`
-  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-bottom: .5px solid rgba(0,0,0,.2);
   margin: 50px 0;
 `
 
 const PostContainer = styled.div`
-  max-width: 850px;
-  
+  max-width: 825px;
+  min-width: 760px;
 .PostBody {
 	p > img, img {
 		display: block;
@@ -102,7 +105,7 @@ const PostContainer = styled.div`
 .PostOptIn {
 	margin-top:  150px;
 	padding-top: 100px;
-	border-top: 1px solid black;
+	border-top: .5px solid rgba(0,0,0,.3);
 }
 
 .PostMeta {
