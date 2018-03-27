@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
-import { FaGithubAlt, FaTwitter, FaInstagram } from 'react-icons/lib/fa'
+import React, {Component} from 'react'
+import styled from 'styled-components'
+import {FaGithubAlt, FaTwitter, FaInstagram} from 'react-icons/lib/fa'
 import MdMessage from 'react-icons/lib/md/message'
 
 class UserLinks extends Component {
 
-  render () {
+  render() {
     return (
-      <div className="user-links">
+      <UserLinksContainer>
         <a href='https://github.com/ericwindmill'>
           <div className='github icon-container'>
             <FaGithubAlt className='social-icons'/>
@@ -27,9 +28,15 @@ class UserLinks extends Component {
             <MdMessage className='social-icons'/>
           </div>
         </a>
-      </div>
+      </UserLinksContainer>
     )
   }
 }
+
+const UserLinksContainer = styled.main`
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+`
 
 export default UserLinks
