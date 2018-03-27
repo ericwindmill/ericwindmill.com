@@ -51,13 +51,14 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription}/>
         </Helmet>
         <IndexContentContainer>
-          <div id='sidebar'>
+          <div id="sidebar">
             <Sidebar/>
           </div>
-          <div id='main-content'>
-            {children()}
-          </div>
+          <div id="main-content">{children()}</div>
         </IndexContentContainer>
+        <MobileIndexContainer>
+          <p>⚡Under Construction️⚡️</p>
+        </MobileIndexContainer>
       </IndexTemplateContainer>
     );
   }
@@ -66,17 +67,42 @@ export default class MainLayout extends React.Component {
 const IndexTemplateContainer = styled.main``;
 
 const IndexContentContainer = styled.section`
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  
-  #main-content {
-    padding: 100px 100px 100px 5px;
-    overflow: scroll;
-    width: 100%;
+  @media screen and (min-width: 800px) {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    #main-content {
+      padding: 100px 100px 100px 5px;
+      overflow: scroll;
+      width: 100%;
+    }
+    #sidebar {
+      padding: 100px 50px;
+    }
   }
-  
-  #sidebar {
-    padding: 100px 50px;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
+const MobileIndexContainer = styled.section`
+  @media screen and (max-width: 801px) {
+    display: flex;
+        flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0,70,191);
+    align-items: center;
+    justify-content: center;
+    > * {
+      font-family:"Andale Mono", monospace;
+      font-weight: normal;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width: 601px) {
+    display: none;
   }
 `

@@ -161,4 +161,5 @@ const SidebarContainer = styled.div`
       background: transparent !important;
     }
   }
+  
 `;
