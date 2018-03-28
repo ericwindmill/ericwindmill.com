@@ -102,7 +102,8 @@ export default class Sidebar extends React.Component {
 }
 
 const SidebarContainer = styled.div`
-  height: 85vh;
+  height: 100vh;
+  padding: 50px;
 
   li {
     display: flex;
