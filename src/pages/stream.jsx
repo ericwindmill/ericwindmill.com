@@ -4,9 +4,9 @@ import styled from "styled-components";
 import config from "../../data/SiteConfig";
 import SEO from "../components/SEO";
 import HomePostListing from "../components/HomePostListing";
+import PageHeader from "../components/PageHeader";
 
 export default class StreamPage extends Component {
-
 
 
   render() {
@@ -15,7 +15,9 @@ export default class StreamPage extends Component {
       <StreamContainer>
         <Helmet title={`Articles | ${config.siteTitle}`}/>
         <SEO postEdges={postsEdges}/>
-        <h1>Articles</h1>
+        <PageHeader>
+          <h1>Articles</h1>
+        </PageHeader>
         <StreamBody>
           <HomePostListing postEdges={postsEdges}/>
         </StreamBody>
@@ -25,11 +27,17 @@ export default class StreamPage extends Component {
 }
 
 const StreamContainer = styled.div`
-  max-width: 825px;
-  min-width: 760px;
+    max-width: 1100px;
+    margin: 10px;
 `;
 
-const StreamBody = styled.div``
+const StreamBody = styled.div`
+  margin: 0 50px;
+  
+  @media screen and (max-width: 600px) {
+    margin: 0 10px;
+  }
+`
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`

@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+	font-size: 10px;
 }
 
 /*********
@@ -9,8 +9,8 @@ p,
 ul,
 ol,
 table {
-  line-height: $line-height;
-  margin-bottom: $text-margin-bottom;
+	line-height: $line-height;
+	margin-bottom: $text-margin-bottom;
 }
 
 p,
@@ -28,102 +28,101 @@ td,
 input,
 textarea,
 button {
-  font-family: $sans;
-  font-size: $font-size;
-  line-height: $line-height;
+	font-family: $sans;
+	font-size: $font-size;
+	line-height: $line-height;
 }
 
 a {
-  color: $link-ink;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
+	color: $link-ink;
+	display: inline-block;
+	position: relative;
 
-  &:hover {
-    color: $blue;
-    cursor: pointer;
-  }
+	&:hover {
+		color: $blue;
+		cursor: pointer;
+	}
 }
 
 p > a {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: $ink;
-  font-family: $sans;
-  font-weight: $header-weight;
-  margin-bottom: 0;
+	color: $ink;
+	font-family: $sans;
+	font-weight: $header-weight;
+	margin-bottom: 0;
 }
 
 h1 {
-  font-size: 4rem;
-  margin-bottom: $text-margin-bottom;
+	font-size: 4rem;
+	margin-bottom: $text-margin-bottom;
 }
 
 h2 {
-  font-size: 3rem;
-  margin-bottom: $text-margin-bottom;
+	font-size: 3rem;
+	margin-bottom: $text-margin-bottom;
 }
 
 h3 {
-  font-size: 2.5rem;
-  margin-bottom: $text-margin-bottom / 4;
+	font-size: 2.5rem;
+	margin-bottom: $text-margin-bottom / 4;
 }
 
 h4 {
-  font-size: 2.2rem;
-  margin-bottom: $text-margin-bottom / 4;
+	font-size: 2.2rem;
+	margin-bottom: $text-margin-bottom / 4;
 }
 
 .subtext {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 // Blockquote
 
 blockquote {
-  width: calc(100% + 33px);
-  color: black;
-  border-left: 8px solid $peachy;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  padding: $spacing-unit / 2;
-  margin: ($spacing-unit) 0;
-  font-style: italic;
-  quotes: "\0022""\0022""\2018""\2019";
-  transition: all ease 300ms;
+	width: calc(100% + 33px);
+	color: black;
+	border-left: 8px solid $peachy;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	padding: $spacing-unit / 2;
+	margin: ($spacing-unit) 0;
+	font-style: italic;
+	quotes: "\0022""\0022""\2018""\2019";
+	transition: all ease 300ms;
 
-  p:last-child {
-    margin-bottom: 0;
-  }
+	p:last-child {
+		margin-bottom: 0;
+	}
 }
 
 blockquote:hover {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 2px rgba(0, 0, 0, 0.12),
-    -2px 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 2px rgba(0, 0, 0, 0.12),
+	-2px 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 // Tables
 table {
-  border-collapse: collapse;
-  border: 1px solid black;
-  width: 100%;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
 }
 
 thead {
-  border-bottom: 1px solid black;
-  background: $card-background-black;
-  color: white;
+	border-bottom: 1px solid black;
+	background: $card-background-black;
+	color: white;
 }
 
 th,
 td {
-  text-align: left;
-  padding: 10px 10px;
+	text-align: left;
+	padding: 10px 10px;
 }
 
 /*********
@@ -131,16 +130,16 @@ td {
  ********/
 
 .Divider {
-  margin: $spacing-unit 0;
-  display: block;
-  clear: both;
-  border-bottom: 1px solid $divider;
+	margin: $spacing-unit 0;
+	display: block;
+	clear: both;
+	border-bottom: 1px solid $divider;
 }
 
 .Mini-Divider {
-  width: 100px;
-  margin: $spacing-unit auto;
-  display: block;
-  clear: both;
-  border-bottom: 1px solid $divider;
+	width: 100px;
+	margin: $spacing-unit auto;
+	display: block;
+	clear: both;
+	border-bottom: 1px solid $divider;
 }

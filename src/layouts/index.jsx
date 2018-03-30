@@ -7,14 +7,13 @@ import "../main.scss";
 import Sidebar from "../components/SidebarNav";
 
 import FloatingActionButton from "../components/FloatingActionButton";
+import UserLinks from "../components/UserLinks";
 
 export default class MainLayout extends React.Component {
   constructor() {
     super();
-    this.state = {
-      isMenuShown: false,
-    }
     this.showMenu = this.showMenu.bind(this);
+    this.hideMenu = this.hideMenu.bind(this);
   }
 
   getLocalTitle() {
@@ -55,23 +54,24 @@ export default class MainLayout extends React.Component {
 
   showMenu() {
     const menu = document.querySelector('#sidebar');
-    const content = document.querySelector('#main-content');
-    const button = document.querySelector('#fab');
-    if (this.state.isMenuShown) {
+    const overlay = document.querySelector('#overlay');
+    if (menu.style.left === '0px') {
       menu.style.left = '-500px';
-      content.style.left = '0px';
-      button.style.left = '0px';
-      this.setState((_) => {
-        return {isMenuShown: false}
-      })
+      overlay.style.background = 'transparent';
+      overlay.style.zIndex = '-1';
     } else {
       menu.style.left = '0px';
-      content.style.left = '330px';
-      button.style.left = '330px';
-      this.setState((_) => {
-        return {isMenuShown: true}
-      })
+      overlay.style.background = 'rgba(0,0,0,.2)';
+      overlay.style.zIndex = '1';
     }
+  }
+
+  hideMenu() {
+    const menu = document.querySelector('#sidebar');
+    const overlay = document.querySelector('#overlay');
+    menu.style.left = '-500px';
+    overlay.style.background = 'transparent';
+    overlay.style.zIndex = '-1';
   }
 
   render() {
@@ -83,8 +83,9 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription}/>
         </Helmet>
         <IndexContentContainer>
+          <div id="overlay" onClick={this.hideMenu}></div>
           <div id="sidebar">
-            <Sidebar/>
+            <Sidebar hideMenuCallback={this.hideMenu}/>
           </div>
           <div id="fab" onClick={this.showMenu}>
             <FloatingActionButton>
@@ -92,33 +93,81 @@ export default class MainLayout extends React.Component {
             </FloatingActionButton>
           </div>
           <div id="main-content">{children()}</div>
+          <div className="mobile-links">
+            <Divider/>
+            <UserLinks className={'mobile-links'}/>
+          </div>
         </IndexContentContainer>
       </IndexTemplateContainer>
     );
   }
 }
+const Divider = styled.div`
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+`
 
 const IndexTemplateContainer = styled.main``;
 
 const IndexContentContainer = styled.section`
   position: relative;
+  display: flex;
+  height: 100vh;
+  @media screen and (max-width: 900px) {
+    display: initial;
+  }
   
   #fab {
-    position: relative;
-    left: 0;
-    transition: all 1s ease;
+    display: none
+    }
+  @media screen and (max-width: 900px) {
+    #fab {
+      display: block;
+      position: relative;
+      z-index: 3;
+    }
   }
   
   #sidebar {
-    position: absolute;
-    left: -500px;
-    transition: all 1s ease;
+    position: initial;
+  }
+
+  @media screen and (max-width: 900px) {
+    #sidebar {
+      position: absolute;
+      left: -500px;
+      transition: all 1s ease;
+      background: white;
+      z-index: 2;
+    }
   }
   
   #main-content {
-    position: absolute;
-    left: 0px;
-    transition: all 1s ease;
+    position: relative;
+    z-index: 0;
+    overflow: scroll;
+    padding-top: 100px;
   }
-
+  
+  @media screen and (max-width: 900px) {
+    display: initial;
+    #overlay {
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      background: transparent;
+      z-index: -1;
+      transition: all 1s ease;
+    }
+  }
+  
+  > .mobile-links {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .mobile-links {
+      display: block;
+    }
+   }
   `;

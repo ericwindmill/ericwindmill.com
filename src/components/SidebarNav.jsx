@@ -3,10 +3,26 @@ import styled from "styled-components";
 import Link from "gatsby-link";
 
 export default class Sidebar extends React.Component {
+  constructor() {
+    super();
+
+    this.hideMenu = this.hideMenu.bind(this);
+  }
+
+
+  hideMenu() {
+    const menu = document.querySelector('#sidebar');
+    const overlay = document.querySelector('#overlay');
+    menu.style.left = '-500px';
+    overlay.style.background = 'transparent';
+    overlay.style.zIndex = '-1';
+  }
+
+
   render() {
     return (
       <SidebarContainer>
-        <Link to={"/"}>
+        <Link to={"/"} onClick={this.hideMenu}>
           <h4>Eric Windmill</h4>
         </Link>
         <ul>
@@ -16,6 +32,7 @@ export default class Sidebar extends React.Component {
               activeClassName={"active"}
               className={"primary"}
               to={"/"}
+              onClick={this.hideMenu}
             >
               Home
             </Link>
@@ -25,6 +42,7 @@ export default class Sidebar extends React.Component {
               activeClassName={"active"}
               className={"primary"}
               to={"/stream"}
+              onClick={this.hideMenu}
             >
               Articles
             </Link>
@@ -34,6 +52,7 @@ export default class Sidebar extends React.Component {
               activeClassName={"active"}
               className={"primary"}
               to={"/nuggets"}
+              onClick={this.hideMenu}
             >
               Nuggets
             </Link>
@@ -75,6 +94,16 @@ export default class Sidebar extends React.Component {
             </a>
           </li>
           <li>
+            <Link
+              activeClassName={"active"}
+              className={"primary"}
+              to={"/resume"}
+              onClick={this.hideMenu}
+            >
+              Resumé
+            </Link>
+          </li>
+          <li>
             <p className={"primary fake-link"}>Et Cetera</p>
           </li>
           <li>
@@ -91,6 +120,7 @@ export default class Sidebar extends React.Component {
               activeClassName={"active"}
               className={"secondary"}
               to={"/my-library"}
+              onClick={this.hideMenu}
             >
               My Library
             </Link>
@@ -103,7 +133,7 @@ export default class Sidebar extends React.Component {
 
 const SidebarContainer = styled.div`
   height: 100vh;
-  padding: 50px;
+  padding: 150px 50px;
 
   li {
     display: flex;

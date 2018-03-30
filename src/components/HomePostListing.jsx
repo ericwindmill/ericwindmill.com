@@ -43,7 +43,7 @@ export default class PostListing extends React.Component {
         {postList.map(post => (
           <div key={post.title} className="HomePostListing--Post">
             <span className="HomePostListing--DateMeta">
-              <p>{post.month}</p>
+              <p className={'post-month'}>{post.month}</p> &nbsp;&nbsp;
               <p>{post.year}</p>
             </span>
             <p className="PostIcon">&nbsp; → &nbsp;</p>
@@ -79,9 +79,37 @@ const HomePostListingContainer = styled.div`
 				font-size: 1.5em;
 			}
 		}
-		.HomePostListing--Category {
-			font-family: "Fira Code", monospace;
-			font-size: 1.5em;
-		}
+	}
+	
+	@media screen and (max-width: 600px) {
+	  .PostIcon {
+	    display: none;
+	  }
+    .HomePostListing--Post {
+      display: flex;
+      flex-flow: column;
+      padding-bottom: 40px;
+      
+      .HomePostListing--DateMeta {
+      display: flex;
+      flex-flow: row;
+        p {
+          display: inline;
+          font-family: "Fira Code", monospace;
+          font-size: 1.5em;
+          position: relative;
+        }
+        .post-month {
+            &:after {
+              content: '';
+              border-bottom: .5px solid rgba(0,0,0,.5);
+              position: absolute;
+              top: -3px;
+              left: 0;
+              width: 130px;
+            }
+          }
+      }
+    }
 	}
 `

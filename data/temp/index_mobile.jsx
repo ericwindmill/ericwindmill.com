@@ -52,8 +52,8 @@ export default class MobileIndexContainer extends React.Component {
           <br/>
           <br/>
           <p>Cheers! <br/> Eric </p>
-          <Divider/>
-          <UserLinks/>
+
+
         </div>
       </MobileIndexContainer>
     );

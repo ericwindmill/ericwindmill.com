@@ -1,25 +1,40 @@
 import React from "react";
 import Helmet from "react-helmet";
+import styled from 'styled-components';
 import config from "../../data/SiteConfig";
 import HomePostListing from "../components/HomePostListing";
+import PageHeader from "../components/PageHeader";
 
 export default class TagTemplate extends React.Component {
   render() {
     const tag = this.props.pathContext.tag;
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div className="tag-container">
+      <TagPageContainer>
         <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`}/>
-        <section className="Hero">
-          <h1>{tag} Posts</h1>
-        </section>
-        <main className="TagListingBody">
+        <PageHeader>
+          <h1>Posts in {tag}</h1>
+        </PageHeader>
+        <TagPageBody>
           <HomePostListing postEdges={postEdges}/>
-        </main>
-      </div>
+        </TagPageBody>
+      </TagPageContainer>
     );
   }
 }
+
+const TagPageContainer = styled.div`
+      max-width: 1100px;
+    margin: 10px;
+`
+
+const TagPageBody = styled.main`
+  margin: 0 50px;
+  
+  @media screen and (max-width: 600px) {
+    margin: 0 10px;
+  }
+`
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`

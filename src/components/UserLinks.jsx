@@ -37,6 +37,22 @@ const UserLinksContainer = styled.main`
   display: flex;
   justify-content: space-around;
   margin: 50px 0;
+  
+  .twitter {
+    color: deepskyblue;
+  }
+  
+    .instagram {
+    color: mediumvioletred;
+  }
+  
+  .message {
+    color: mediumseagreen;
+  }
+  
+  .github {
+    color: mediumpurple;
+  }
 `
 
 export default UserLinks

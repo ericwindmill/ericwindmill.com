@@ -114,40 +114,6 @@ const OptInFormContainer = styled.div`
     background: #ffffff;
     clear: left;
   }
-  
-    //.input-text {
-    //  border: none;
-    //  border-bottom: 2px solid black;
-    //  width: 100%;
-    //  font-size: 2rem;
-    //  padding: 5px 5px 5px;
-    //  margin-top: 10px;
-    //  transition: all 0.3s ease;
-    //  &::-webkit-input-placeholder {
-    //    color: lighten(#434343, 20%);
-    //  }
-    //  &:focus {
-    //    outline: none;
-    //    background: mistyrose;
-    //  }
-    //}
-    //.clear {
-    //  display: flex;
-    //}
-    //.button {
-    //  width: 40%;
-    //  margin: 50px / 4 auto 0;
-    //  //height: 65px;
-    //  text-align: center;
-    //  border: 2px solid black;
-    //  background: mistyrose;
-    //  border-radius: 0;
-    //  font-size: 20px;
-    //  &:hover {
-    //    background: mistyrose;
-    //    cursor: pointer;
-    //  }
-    //}
     
   .HideMe {
     position: absolute;

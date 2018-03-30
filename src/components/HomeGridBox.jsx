@@ -29,6 +29,9 @@ export default class HomeGridBox extends React.Component {
 }
 
 const HomeGridBoxContainer = styled.div`
+    margin: 0 50px 50px;
+    width: 325px;
+    
     h1,h2,h3,h4 { 
       margin: 0; 
       font-weight: normal;
@@ -48,6 +51,11 @@ const HomeGridBoxContainer = styled.div`
       margin: 10px 0;
     }
     
+    
+    @media screen and (max-width: 600px) {
+          margin: 0 10px 50px;
+          width: 100%;
+    }
 `
 
 const Divider = styled.div`

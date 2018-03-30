@@ -157,19 +157,7 @@ export default class HomePage extends React.Component {
 }
 
 const HomePageContainer = styled.div`
-  .header {
-    max-width: 825px;
-    min-width: 760px;
-    margin-bottom: 100px;
-    min-height: 240px;
-    h1 {
-    font-size: 6rem;
-    margin-bottom: 0px;
-  }
-    h1 b {
-    font-size: 60%;
-  }
-  }
+
   `;
 
 const HeaderContainer = styled.div`
