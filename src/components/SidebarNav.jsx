@@ -95,6 +95,15 @@ export default class Sidebar extends React.Component {
             </a>
           </li>
           <li>
+            <a
+              target="_blank"
+              href="https://javascriptbyexample.com"
+              className={"secondary"}
+            >
+              JavaScript By Example
+            </a>
+          </li>
+          <li>
             <Link
               activeClassName={"active"}
               className={"primary"}
