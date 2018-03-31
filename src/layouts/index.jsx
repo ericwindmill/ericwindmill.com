@@ -147,6 +147,7 @@ const IndexContentContainer = styled.section`
     z-index: 0;
     overflow: scroll;
     padding-top: 100px;
+    width: 100%;
   }
   
   @media screen and (max-width: 900px) {

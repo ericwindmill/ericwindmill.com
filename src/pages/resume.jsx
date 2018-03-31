@@ -61,23 +61,6 @@ export default class ResumePage extends React.Component {
             stand-up.{" "} Ever since I can remember, I've devoured music.
           </p>
         </ResumeContentContainer>
-
-        {/*<HomeGridBox className="box music" title="Listening To">*/}
-        {/*<img*/}
-        {/*width="250px"*/}
-        {/*height="250px"*/}
-        {/*src="https://f4.bcbits.com/img/a3164574832_10.jpg"*/}
-        {/*alt="phoebe bridgers album cover"*/}
-        {/*/>*/}
-        {/*</HomeGridBox>*/}
-        {/*<HomeGridBox title="Reading">*/}
-        {/*<img*/}
-        {/*height="250px"*/}
-        {/*width="250px"*/}
-        {/*src="https://s3-us-west-2.amazonaws.com/tabs.web.media/c/9/c9lw/c9lw-square-orig.jpg"*/}
-        {/*alt="sapiens book cover"*/}
-        {/*/>*/}
-        {/*</HomeGridBox>*/}
       </ResumePageContainer>
     );
   }
@@ -91,7 +74,7 @@ const ResumePageContainer = styled.div`
 const ResumeContentContainer = styled.div`
   margin: 0 50px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     margin: 0 10px;
   }
   

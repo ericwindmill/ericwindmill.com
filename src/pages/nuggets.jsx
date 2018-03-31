@@ -44,7 +44,7 @@ const NuggetsPageContainerContainer = styled.div`
 const ContentContainer = styled.div`
   margin: 0 50px;
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     margin: 0 10px;
   }
 `;

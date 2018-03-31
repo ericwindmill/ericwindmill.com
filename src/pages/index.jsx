@@ -24,7 +24,7 @@ export default class HomePage extends React.Component {
         </PageHeader>
         <BodyContainer>
           <HomeGridBox className="box job" title="Day Job">
-            <a href={"https://apptree.cloud"}>
+            <a href={"https://apptree.cloud"} style={{textDecoration: 'none'}}>
               <h2 style={{color: "#43ab60"}}>AppTree Software</h2>
             </a>
             <h3>Software Engineer</h3>

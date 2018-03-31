@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
+import FaHeart from 'react-icons/lib/fa/heart';
 
 export default class Sidebar extends React.Component {
   constructor() {
@@ -110,8 +111,12 @@ export default class Sidebar extends React.Component {
             <a
               href="https://askadev.org/"
               target="_blank"
-              className={"secondary"}
+              className={"secondary ask-a-dev"}
             >
+              <img src="http://res.cloudinary.com/ericwindmill/image/upload/v1522373777/portfolio_site/Curly.png"
+                   style={{margin: '0 10px 0 0'}}
+                   height='20px'
+                   alt=""/>
               Ask-A-Dev
             </a>
           </li>
@@ -123,6 +128,16 @@ export default class Sidebar extends React.Component {
               onClick={this.hideMenu}
             >
               My Library
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClassName={"active"}
+              className={"secondary"}
+              to={"/favorites"}
+              onClick={this.hideMenu}
+            >
+              <FaHeart style={{color: 'mistyrose', margin: '0 10px 0 0'}}/>Favorites
             </Link>
           </li>
         </ul>
@@ -173,6 +188,11 @@ const SidebarContainer = styled.div`
       :hover {
         background: var(--link-blue-o-1);
       }
+    }
+    
+    .ask-a-dev {
+      display: flex;
+      align-items: center;
     }
 
     .active {
