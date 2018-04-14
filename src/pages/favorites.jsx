@@ -4,6 +4,7 @@ import PageHeader from "../components/PageHeader";
 import HomeGridBox from "../components/HomeGridBox";
 import April2018Favorites from "../components/favorites_by_date/apr_2018";
 import December2017Favorites from "../components/favorites_by_date/dec_2017";
+import CurrentSelectionsFavorites from "../components/favorites_by_date/selected";
 
 export default class FavoritesPage extends React.Component {
   constructor() {
@@ -35,10 +36,17 @@ export default class FavoritesPage extends React.Component {
         </PageHeader>
         <PageContentContainer>
           <SnapshotTabsContainer>
+
             <ul className={'date-tabs'}>
-              <li className={'tab-link active-tab-link'} id={'april2018'} onClick={this.handleTabChange}>April 2018</li>
+              <li className={'tab-link active-tab-link'} id={'currated'} onClick={this.handleTabChange}>
+                Currated Favorites
+              </li>
+              <li className={'tab-link'} id={'april2018'} onClick={this.handleTabChange}>April 2018</li>
               <li className={'tab-link'} onClick={this.handleTabChange} id={'december2017'}>December 2017</li>
             </ul>
+            <div className="favorites-tab" id={'currated-tab'}>
+              <CurrentSelectionsFavorites/>
+            </div>
             <div className="favorites-tab" id={'april2018-tab'}>
               <April2018Favorites/>
             </div>
@@ -58,13 +66,15 @@ const FavoritesPageContainer = styled.div`
 `;
 
 const SnapshotTabsContainer = styled.div`
+  
+
   .date-tabs {
     width: 500px;
     display: flex;
     margin-bottom: 100px;
   }
   
-  li.tab-link {
+  li.tab-link, h3.tab-link {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -101,11 +111,9 @@ const SnapshotTabsContainer = styled.div`
       display: none;
     }
     
-    #april2018-tab {
+    #currated-tab {
       display: initial;
     }
-    
-  
 `
 
 const PageContentContainer = styled.main`

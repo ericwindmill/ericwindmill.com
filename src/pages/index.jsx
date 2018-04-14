@@ -31,7 +31,7 @@ export default class HomePage extends React.Component {
             <h3>Web and Mobile Clients</h3>
           </HomeGridBox>
           <HomeGridBox className="box article" title="Latest Article">
-            <Link to={path}>
+            <Link to={path} className='article' style={{textDecoration: 'none', cursor: 'pointer'}}>
               <h2>{title}</h2>
               <h3>
                 {month} {year}

@@ -1,145 +1,107 @@
-// Code Blocks
-$turq: #00d0d0;
-$peach: #ff8080;
-$skin: #efc090;
-$light-blue: #bed6ff;
-$yellow: #ccdf32;
-$pink: #dc78dc;
-code {
-  font-family: $mono;
-}
-
 .gatsby-highlight {
-  margin: $spacing-unit 0;
+	padding-bottom: 30px;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
-  padding: $spacing-unit;
-  color: #f8f8f2;
-  background: transparent;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: $mono;
-  font-size: $code-text-size;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+pre[class*='language-'] {
+	color: #f8f8f2;
+	padding: 1em 1em 1em 1em;
+	background: none;
+	font-family: 'Fira Code', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 2;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-size: $code-text-size;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
-  border-radius: 0.3em;
+pre[class*='language-'] {
+	margin: 0.1em 0;
+	overflow: auto;
+	border-radius: 0;
+	background: #242424;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: #272822;
-}
-
-/* Inline code -- Don't actualy know if this is used*/
-:not(pre) > code[class*="language-"] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
-}
-
-/*Inline MarkdownCode*/
+/* Inline code */
+:not(pre) > code[class*='language-'],
 :not(pre) > code {
-  background: lighten($card-background-black, 70%);
-  font-size: $code-text-size;
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
+	padding: 0.1em 0.5em;
+	border-radius: 0.1em;
+	white-space: normal;
+	background: #ced4dd;
+	color: black;
 }
 
+/*Things that shouldn't POP*/
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: lighten($card-background-black, 50%);
+	color: #5e6165;
 }
 
-.token.class-name {
-  color: $peach;
-}
-
-.token.punctuation {
-  color: #f8f8f2;
-}
-
-.namespace {
-  opacity: 0.7;
-}
-
+/*Normal things*/
 .token.property,
 .token.tag,
 .token.constant,
 .token.symbol,
-.token.deleted {
-  color: #f92672;
-}
-
-.token.boolean,
-.token.number {
-  color: $skin;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted,
-.token.variable {
-  color: $pink;
-}
-
+.token.deleted,
+.token.punctuation,
 .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #f8f8f2;
+	color: #ffffff;
 }
 
+/*The most important things to call attention to:*/
+.token.selector,
+.token.attr-name,
+.token.class-name,
+.token.builtin,
+.token.inserted,
 .token.atrule,
 .token.attr-value,
 .token.function {
-  color: $light-blue;
+	color: #39a0ff;
 }
 
-.token.keyword {
-  color: $turq;
-}
-
+/*Important things that are mainly user inputs and arbitrary*/
+.token.boolean,
+.token.number .token.keyword,
+.token.string,
+.token.char,
+.token.variable,
 .token.regex,
-.token.important {
-  color: $yellow;
+.token.number {
+	color: #ff94f6;
+}
+
+/*very important framework specific*/
+.token.important,
+.token.keyword {
+	color: rgb(55, 226, 208);
 }
 
 .token.important,
 .token.bold {
-  font-weight: bold;
+	font-weight: bold;
 }
+
 .token.italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 .token.entity {
-  cursor: help;
+	cursor: help;
 }
