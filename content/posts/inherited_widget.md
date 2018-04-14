@@ -1,5 +1,5 @@
 ---
-title: "Effectively Using Flutter Inherited Widgets"
+title: "Using Flutter Inherited Widgets Effectively"
 cover: "https://unsplash.it/1152/300/?random?bird"
 type: "Post" 
 category: "Programming"
