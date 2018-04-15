@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import HorizontalScrollable from "../HorizontalScrollable";
 
 export default class April2018Favorites extends React.Component {
   render() {
@@ -50,7 +51,7 @@ export default class April2018Favorites extends React.Component {
         </ul>
         <Divider/>
         <h2>Music in 2018</h2>
-        <div className={"albums"}>
+        <HorizontalScrollable>
           <img
             src="https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/83/1c/87/831c871d-71f1-2175-2e0d-79f1139eb4b1/UMG_cvrart_00602567350248_01_RGB72_3000x3000_18UMGIM00001.jpg/268x0w.jpg"
             alt=""
@@ -76,7 +77,7 @@ export default class April2018Favorites extends React.Component {
             alt=""
             className="album-cover"
           />
-        </div>
+        </HorizontalScrollable>
         <Divider/>
         <h2>Podcast Episodes</h2>
         <ul className="podcasts">

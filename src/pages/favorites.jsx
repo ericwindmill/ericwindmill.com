@@ -39,7 +39,7 @@ export default class FavoritesPage extends React.Component {
 
             <ul className={'date-tabs'}>
               <li className={'tab-link active-tab-link'} id={'currated'} onClick={this.handleTabChange}>
-                Currated Favorites
+                All Times
               </li>
               <li className={'tab-link'} id={'april2018'} onClick={this.handleTabChange}>April 2018</li>
               <li className={'tab-link'} onClick={this.handleTabChange} id={'december2017'}>December 2017</li>
@@ -62,7 +62,7 @@ export default class FavoritesPage extends React.Component {
 
 const FavoritesPageContainer = styled.div`
   max-width: 1100px;
-  margin: 10px;
+  margin: 10px 10px 100px;
 `;
 
 const SnapshotTabsContainer = styled.div`
