@@ -5,6 +5,7 @@ import config from "../../data/SiteConfig";
 import NuggetListing from "../components/NuggetListing";
 import SEO from "../components/SEO";
 import PageHeader from "../components/PageHeader";
+import OptInForm from "../components/OptInForm";
 
 export default class NuggetsPageContainer extends React.Component {
   render() {

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Link from 'gatsby-link';
 import HomeGridBox from "../components/HomeGridBox";
-import OptInForm from "../components/OptInForm";
 import PageHeader from "../components/PageHeader";
 
 export default class HomePage extends React.Component {
@@ -52,7 +51,10 @@ export default class HomePage extends React.Component {
               <a href="https://www.messenger.com/t/eric.windmill">Messenger</a>{" "}
               (it makes my watch vibrate). I'm also active on{" "}
               <a href="https://twitter.com/ericwindmill">Twitter</a> and{" "}
-              <a href="https://instagram.com/ericwindmill">Instagram</a>. Work
+              <a href="https://instagram.com/ericwindmill">Instagram</a>. If you want, you can join my{' '}
+              <Link to={'/optin'}>Mailing List</Link>.
+            </p>
+            <p>Work
               inquires please{" "}
               <a href="mailto:eric@ericwindmill.com">email me</a>.
             </p>

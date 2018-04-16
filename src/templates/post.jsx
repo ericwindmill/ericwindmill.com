@@ -8,6 +8,7 @@ import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 import OptInForm from "../components/OptInForm";
 import PageHeader from "../components/PageHeader";
+import OptInFormSlim from "../components/OptInSlim";
 
 export default class PostTemplate extends React.Component {
   render() {
@@ -41,19 +42,7 @@ export default class PostTemplate extends React.Component {
             <div dangerouslySetInnerHTML={{__html: postNode.html}}/>
           </section>
           <div className="PostOptIn">
-            <h3>Get More Like This For Free</h3>
-            <p>
-              Enter your email address to get a short email to start your week
-              off right. Every Monday, I send out a short email with a few of
-              the best things I've discovered this week. It mostly includes
-              front-end articles and talks, album recommendations, and weird
-              things from around the web.
-            </p>
-            <p>
-              I'll also include updates on all of courses. They'll always be
-              free.
-            </p>
-            <OptInForm/>
+            <OptInFormSlim/>
           </div>
           <div className="PostMeta">
             <PostTags tags={post.tags}/>

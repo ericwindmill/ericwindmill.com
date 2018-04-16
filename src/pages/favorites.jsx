@@ -41,8 +41,8 @@ export default class FavoritesPage extends React.Component {
               <li className={'tab-link active-tab-link'} id={'currated'} onClick={this.handleTabChange}>
                 All Times
               </li>
-              <li className={'tab-link'} id={'april2018'} onClick={this.handleTabChange}>April 2018</li>
-              <li className={'tab-link'} onClick={this.handleTabChange} id={'december2017'}>December 2017</li>
+              <li className={'tab-link'} id={'april2018'} onClick={this.handleTabChange}>2018 (So far)</li>
+              <li className={'tab-link'} onClick={this.handleTabChange} id={'december2017'}>2017</li>
             </ul>
             <div className="favorites-tab" id={'currated-tab'}>
               <CurrentSelectionsFavorites/>

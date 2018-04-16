@@ -1,10 +1,13 @@
 import React, {Component} from "react";
 import styled from "styled-components";
 
-class OptInForm extends Component {
+class OptInFormSlim extends Component {
   render() {
     return (
-      <OptInFormContainer>
+      <OptInFormSlimContainer>
+        <p>
+          Sign up to get updates about posts, courses, and special treats every Monday Morning.
+        </p>
         <div id="mc_embed_signup">
           <form
             action="https://ericwindmill.us14.list-manage.com/subscribe/post?u=ba4877332e56c5f5d88603650&amp;id=c03985072c"
@@ -15,7 +18,8 @@ class OptInForm extends Component {
             target="_blank"
             novalidate
           >
-            <div id="mc_embed_signup_scroll">
+            <div id="mc_embed_signup_scroll" className='form-container'>
+
               <div className="mc-field-group">
                 <input
                   type="email"
@@ -58,22 +62,31 @@ class OptInForm extends Component {
             </div>
           </form>
         </div>
-      </OptInFormContainer>
+      </OptInFormSlimContainer>
     );
   }
 }
 
-const OptInFormContainer = styled.div`
-  max-width: 600px;
+const OptInFormSlimContainer = styled.div`  
+  background: rgba(41, 99, 255, .5);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
   
   .input-text {
-      background: none;
+      background: #ffffff;
       border: none;
-      border-bottom: 2px solid #434343;
-      font-size: 2rem;
-      width: 100%;
-      margin: 5px 0 10px;
-      padding: 15px 5px 15px;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      padding: 5px 5px 5px;
       transition: all 0.3s ease;
 
       &::-webkit-input-placeholder {
@@ -82,7 +95,6 @@ const OptInFormContainer = styled.div`
       &:focus {
         border-radius: 5px;
         outline: none;
-        background: rgba(41, 99, 255, .2);
       }
     }
     
@@ -93,17 +105,15 @@ const OptInFormContainer = styled.div`
     --link-blue-o-3: rgba(41, 99, 255, 0.3);
     
     .button {
-      width: 100%;
-      height: 65px;
       margin-top: 50px / 2;
       text-align: center;
       background: rgba(41, 99, 255, 1);
       color: white;
       border-radius: 5px;
-      font-size: 2rem;
+      border: none;
+      font-size: 1.6rem;
+      padding: 5px 10px 5px;
       transition: all 300ms ease;
-      box-shadow: 0 2px 2px 0 var(--link-blue-o-2),
-        0 3px 1px 2px var(--link-blue-o-1), -2px 1px 1px 0 var(--link-blue-o-1);
       
       &:hover {
         box-shadow: 0 2px 4px 4px var(--link-blue-o-2),
@@ -111,9 +121,27 @@ const OptInFormContainer = styled.div`
         cursor: pointer;
       }
     }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > div {
+      margin: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+      .form-container {
+        flex-flow: column;
+        > div {
+          margin: 10px;
+        }
+      }
+    }
 
   #mc_embed_signup {
-    background: #ffffff;
+    background: none;
     clear: left;
   }
     
@@ -123,4 +151,4 @@ const OptInFormContainer = styled.div`
   }
 `;
 
-export default OptInForm;
+export default OptInFormSlim;
