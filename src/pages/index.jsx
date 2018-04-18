@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Link from 'gatsby-link';
 import HomeGridBox from "../components/HomeGridBox";
 import PageHeader from "../components/PageHeader";
+import OptInFormSlim from "../components/OptInSlim";
 
 export default class HomePage extends React.Component {
   render() {
@@ -51,14 +52,16 @@ export default class HomePage extends React.Component {
               <a href="https://www.messenger.com/t/eric.windmill">Messenger</a>{" "}
               (it makes my watch vibrate). I'm also active on{" "}
               <a href="https://twitter.com/ericwindmill">Twitter</a> and{" "}
-              <a href="https://instagram.com/ericwindmill">Instagram</a>. If you want, you can join my{' '}
-              <Link to={'/optin'}>Mailing List</Link>.
+              <a href="https://instagram.com/ericwindmill">Instagram</a>.
             </p>
             <p>Work
               inquires please{" "}
               <a href="mailto:eric@ericwindmill.com">email me</a>.
             </p>
           </HomeGridBox>
+          <div className="optin">
+            <OptInFormSlim/>
+          </div>
         </BodyContainer>
       </HomePageContainer>
     );
@@ -74,7 +77,9 @@ const HomePageContainer = styled.div`
 const BodyContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
-  
+  > .optin {
+  margin:  auto;
+  }
 `;
 
 export const pageQuery = graphql`
