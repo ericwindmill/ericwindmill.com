@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Link from 'gatsby-link';
+import Link from "gatsby-link";
 import HomeGridBox from "../components/HomeGridBox";
 import PageHeader from "../components/PageHeader";
 import OptInFormSlim from "../components/OptInSlim";
@@ -16,22 +16,30 @@ export default class HomePage extends React.Component {
       <HomePageContainer>
         <PageHeader>
           <h1>
-            Hi There.{' '}
+            Hi There.{" "}
             <b>
-              I'm Eric Windmill. Software Engineer, UI Designer, and writer on the webs.
+              I'm Eric Windmill. Software Engineer, UI Designer, and writer on
+              the webs.
             </b>
           </h1>
         </PageHeader>
         <BodyContainer>
           <HomeGridBox className="box job" title="Day Job">
-            <a href={"https://apptree.cloud"} style={{textDecoration: 'none'}}>
-              <h2 style={{color: "#43ab60"}}>AppTree Software</h2>
+            <a
+              href={"https://apptree.cloud"}
+              style={{ textDecoration: "none" }}
+            >
+              <h2 style={{ color: "#43ab60" }}>AppTree Software</h2>
             </a>
             <h3>Software Engineer</h3>
             <h3>Web and Mobile Clients</h3>
           </HomeGridBox>
           <HomeGridBox className="box article" title="Latest Article">
-            <Link to={path} className='article' style={{textDecoration: 'none', cursor: 'pointer'}}>
+            <Link
+              to={path}
+              className="article"
+              style={{ textDecoration: "none", cursor: "pointer" }}
+            >
               <h2>{title}</h2>
               <h3>
                 {month} {year}
@@ -46,7 +54,7 @@ export default class HomePage extends React.Component {
               alt="map of USA"
             />
           </HomeGridBox>
-          <HomeGridBox title={'Elsewhere'}>
+          <HomeGridBox title={"Elsewhere"}>
             <p>
               The quickest way to get in touch is via{" "}
               <a href="https://www.messenger.com/t/eric.windmill">Messenger</a>{" "}
@@ -54,13 +62,13 @@ export default class HomePage extends React.Component {
               <a href="https://twitter.com/ericwindmill">Twitter</a> and{" "}
               <a href="https://instagram.com/ericwindmill">Instagram</a>.
             </p>
-            <p>Work
-              inquires please{" "}
+            <p>
+              Work inquires please{" "}
               <a href="mailto:eric@ericwindmill.com">email me</a>.
             </p>
           </HomeGridBox>
           <div className="optin">
-            <OptInFormSlim/>
+            <OptInFormSlim />
           </div>
         </BodyContainer>
       </HomePageContainer>
@@ -68,25 +76,24 @@ export default class HomePage extends React.Component {
   }
 }
 
-
 const HomePageContainer = styled.div`
-    margin: 10px;
-    max-width: 1100px;
+  margin: 10px;
+  max-width: 1100px;
 `;
 
 const BodyContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   > .optin {
-  margin:  auto;
+    margin: 0 50px;
   }
 `;
 
 export const pageQuery = graphql`
   query MainPosts {
     allMarkdownRemark(
-      filter: {frontmatter: {type: {eq: "Post"}}}
-      sort: {fields: [frontmatter___date], order: DESC}
+      filter: { frontmatter: { type: { eq: "Post" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
         node {

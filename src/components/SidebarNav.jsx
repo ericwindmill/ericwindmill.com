@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
-import FaHeart from 'react-icons/lib/fa/heart';
+import FaHeart from "react-icons/lib/fa/heart";
 
 export default class Sidebar extends React.Component {
   constructor() {
@@ -10,15 +10,13 @@ export default class Sidebar extends React.Component {
     this.hideMenu = this.hideMenu.bind(this);
   }
 
-
   hideMenu() {
-    const menu = document.querySelector('#sidebar');
-    const overlay = document.querySelector('#overlay');
-    menu.style.left = '-500px';
-    overlay.style.background = 'transparent';
-    overlay.style.zIndex = '-1';
+    const menu = document.querySelector("#sidebar");
+    const overlay = document.querySelector("#overlay");
+    menu.style.left = "-500px";
+    overlay.style.background = "transparent";
+    overlay.style.zIndex = "-1";
   }
-
 
   render() {
     return (
@@ -114,6 +112,16 @@ export default class Sidebar extends React.Component {
             </Link>
           </li>
           <li>
+            <Link
+              activeClassName={"active"}
+              className={"primary"}
+              to={"/optin"}
+              onClick={this.hideMenu}
+            >
+              Mailing List
+            </Link>
+          </li>
+          <li>
             <p className={"primary fake-link"}>Et Cetera</p>
           </li>
           <li>
@@ -122,10 +130,12 @@ export default class Sidebar extends React.Component {
               target="_blank"
               className={"secondary ask-a-dev"}
             >
-              <img src="http://res.cloudinary.com/ericwindmill/image/upload/v1522373777/portfolio_site/Curly.png"
-                   style={{margin: '0 10px 0 0'}}
-                   height='20px'
-                   alt=""/>
+              <img
+                src="http://res.cloudinary.com/ericwindmill/image/upload/v1522373777/portfolio_site/Curly.png"
+                style={{ margin: "0 10px 0 0" }}
+                height="20px"
+                alt=""
+              />
               Ask-A-Dev
             </a>
           </li>
@@ -146,7 +156,7 @@ export default class Sidebar extends React.Component {
               to={"/favorites"}
               onClick={this.hideMenu}
             >
-              <FaHeart style={{color: 'mistyrose', margin: '0 10px 0 0'}}/>Favorites
+              <FaHeart style={{ color: "mistyrose", margin: "0 10px 0 0" }} />Favorites
             </Link>
           </li>
         </ul>
@@ -198,7 +208,7 @@ const SidebarContainer = styled.div`
         background: var(--link-blue-o-1);
       }
     }
-    
+
     .ask-a-dev {
       display: flex;
       align-items: center;
@@ -221,5 +231,4 @@ const SidebarContainer = styled.div`
       background: transparent !important;
     }
   }
-  
 `;
