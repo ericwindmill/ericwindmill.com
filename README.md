@@ -1,20 +1,51 @@
-# Welcome to My Digital Home
+# gatsby-starter-typescript-plus
 
-Here you'll find [my website](http://ericwindmill.com)
+> A starter kit for TypeScript-based Gatsby projects with sensible defaults.
 
-## What's this thing made out of?
+This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. It includes the bare essentials for you to get started (styling, Markdown parsing, minimal toolset).
 
-The latest redesign of my site was done with [GatbsyJs](http://gatsbyjs.org), which has been an absolute joy to build with. If you like React, check it out. 😎
+## Features
 
-If you aren't familiar, Gatsby is a static site generator built in React. So this site is a SPA, built in React, and my preferred CSS pre-processor is SCSS. I host using Netlify.
+* TypeScript
+* TSLint (with custom TSLint rules)
+* Markdown rendering with Remark
+* Basic component structure
+* Styling with [styled-components](https://www.styled-components.com/)
+
+## Geting started
+
+Install this starter (assuming you have `gatsby-cli` installed) by running the following command:
 
 
-## Who's this website for?
+```bash
+gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
+```
 
-Well, honestly, it's for me! I love trying new design and annimation tricks out on this website. It's my vanilla front-end playground. It's also for you. If you've stumbled upon the site or my work elsewhere on the internet, this is the best play to get a conversation started.
+## Developing
 
-## Design Inspiration
+A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
 
-Right now at work I'm building a mobile app using Flutter. Flutter is a mobile framework from Google that makes heavy use of Material Design. You'll see a lot of that in v5.0 (current) of my portfolio. Other than that, I tried to go for bare-bones, whitespace, to-the-point design (with a few little quirks). 
+``` bash
+# install dependencies
+yarn
 
-Current as of March 2018.
+# ...or, for npm
+npm install
+
+# serve with hot reload at localhost:8000
+npm start
+
+# build for production
+npm run build
+
+# build for production and push to gh-pages branch
+npm run deploy
+```
+
+## Credits
+
+Built with [Gatsby](https://www.gatsbyjs.org/) - the blazing-fast static site generator for [React](https://facebook.github.io/react/).
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/resir014/gatsby-starter-typescript-plus)
