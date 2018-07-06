@@ -38,28 +38,48 @@ export default () => (
           <a style={{ color: "#00b300" }} href="https://apptree.cloud">
             AppTree
           </a>, a PaaS company in Portland, Oregon. I'm also writing Flutter in
-          Action for <a href="https://manning.com">Manning Publishing</a>. I
-          also write articles <Link to={"/articles"}>on this site</Link> and
-          sometimes on <a href="https://csstricks.com">CSS Tricks</a>.
+          Action for <a href="https://www.manning.com/">Manning Publishing</a>.
+          I also write articles <Link to={"/articles"}>on this site</Link> and
+          sometimes on{" "}
+          <a href="https://css-tricks.com/using-es2017-async-functions/">
+            CSS Tricks
+          </a>.
+        </p>
+        <p>
+          Finally, I write and maintain a few sites about my favorite
+          programming technologies, notably{" "}
+          <a href="https://flutterbyexample.com">Flutter By Example</a>. See the
+          rest on my <Link to="/portfolio">portfolio page</Link>.
         </p>
         <h3>Extra Curricular</h3>
         <p>
           On my own time, I mentor for{" "}
-          <a href="https://askadev.org">Ask-a-dev </a> and contribute to
-          open-source projects like <a href="">GatsbyJS</a>,{" "}
-          <a href="">flutter_map_view plugin</a>, and the{" "}
-          <a href="">flutter_calendar plugin</a>.
+          <a href="https://askadev.org/">Ask-a-dev </a> and contribute to
+          open-source projects like{" "}
+          <a href="https://www.gatsbyjs.org/">GatsbyJS</a>,{" "}
+          <a href="https://pub.dartlang.org/packages/map_view">
+            Flutter map_view plugin
+          </a>, and the{" "}
+          <a href="https://pub.dartlang.org/packages/flutter_calendar">
+            flutter_calendar plugin
+          </a>.
         </p>
         <h3>Et Cetera</h3>
         <p>
-          In the past, I got my <a href="">Sommelier certification</a>. I've
-          also spent time working in Bourbon distilleries in my hometown of
-          Lousiville, KY. I spend a lot of energy learning about booze -- its
-          the most interesting food around.
+          In the past, I got my{" "}
+          <a href="https://www.mastersommeliers.org/">
+            Sommelier certification
+          </a>. I've also spent time working in Bourbon distilleries in my
+          hometown of Lousiville, KY. I spend a lot of energy learning about
+          booze -- its the most interesting food around.
         </p>
         <p>
-          I like to read and write a lot. I'm a big fan of stand-up. Ever since
-          I can remember, <a href="">I've devoured music</a>.
+          I like to <Link to="/posts/my-library">read</Link> and{" "}
+          <Link to="/articles">write</Link>. I'm a big fan of stand-up. Ever
+          since I can remember,{" "}
+          <a href="https://www.youtube.com/watch?v=JnAzDRaOD-k">
+            I've devoured music
+          </a>.
         </p>
       </StyledContent>
     </Container>

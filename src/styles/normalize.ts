@@ -167,6 +167,7 @@ injectGlobal`
     h1 {font-size: 26px;}
     h2 {font-size: 24px;}
     h3 {font-size: 20px;}
-    h4,h5,h6 {font-size: 18px;}
+    h4,h5,h6 {font-size: 16px;}
+    p {font-size: 14px;}
   `};
 `;
