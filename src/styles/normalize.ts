@@ -156,6 +156,7 @@ injectGlobal`
         margin-bottom: 0;
       }
     }
+    
 
     ${media.md`
       padding-right: 5rem;
