@@ -97,19 +97,24 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
             <a href="https://apptree.cloud">
               <h4>AppTree Software</h4>
             </a>
-            <p>...</p>
-          </StyledListElement>
-          <StyledListElement>
-            <a href="https://dacatime.org">
-              <h4>Contract Developer</h4>
-            </a>
-            <p>...</p>
-          </StyledListElement>
-          <StyledListElement>
-            <a href="https://dacatime.org">
-              <h4>DacaTime</h4>
-            </a>
-            <p>...</p>
+            <p>
+              On the web team, I help design and build the web and mobile
+              clients for a platform that empowers enterprise companies to build
+              cross-platform (web and mobile) apps fast. Our clients team uses
+              Dart, Flutter, AngularDart and PolymerDart.
+            </p>
+            <p>
+              I'm also on a team that's building a new Emergency Notification
+              App for large companies like University campuses and
+              municipalities. I've built the web-application MVP in Dart and
+              AngularDart, as well as writing Dart wrappers for popular
+              JavaScript libraries like Leaflet and FreeDraw.
+            </p>
+            <p>
+              I also built{" "}
+              <a href="https://apptree.cloud">the company website</a> using
+              GatsbyJS and React.
+            </p>
           </StyledListElement>
         </StyledList>
 
@@ -119,7 +124,12 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
             <a href="https://manning.com">
               <h4>Flutter In Action</h4>
             </a>
-            <p>...</p>
+            <p>
+              Flutter In Action is a book coming soon from Manning Publishing.
+              Flutter is a new cross-platform technology from Google, written in
+              Dart. In this book, I explore when Flutter is the right tool, and
+              walk through building multiple applications.
+            </p>
           </StyledListElement>
         </StyledList>
 
@@ -129,7 +139,6 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
             <a href="https://css-tricks.com/using-es2017-async-functions/">
               <h4>JavaScript Async Functions - CSS Tricks</h4>
             </a>
-            <p>...</p>
           </StyledListElement>
         </StyledList>
         <h3>Projects</h3>
@@ -147,28 +156,34 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
         <h3>Open Source</h3>
         <StyledList>
           <StyledListElement>
-            <a href="https://manning.com">
-              <h4>Flutter In Action</h4>
+            <a href="https://gatsbyjs.org">
+              <h4>GatsbyJS</h4>
             </a>
-            <p>...</p>
           </StyledListElement>
           <StyledListElement>
-            <a href="https://manning.com">
-              <h4>Flutter In Action</h4>
+            <a href="http://www.dacatime.com/">
+              <h4>DACA Time</h4>
             </a>
-            <p>...</p>
           </StyledListElement>
           <StyledListElement>
-            <a href="https://manning.com">
-              <h4>Flutter In Action</h4>
+            <a href="https://www.gatsbyjs.org/docs/gatsby-starters/">
+              <h4>gatsby_starter_docs and gatsby_starter_wordpress</h4>
             </a>
-            <p>...</p>
           </StyledListElement>
           <StyledListElement>
-            <a href="https://manning.com">
-              <h4>Flutter In Action</h4>
+            <a href="https://pub.dartlang.org/packages/map_view">
+              <h4>Flutter map_view</h4>
             </a>
-            <p>...</p>
+          </StyledListElement>
+          <StyledListElement>
+            <a href="https://pub.dartlang.org/packages/flutter_calendar">
+              <h4>flutter_calendar</h4>
+            </a>
+          </StyledListElement>
+          <StyledListElement>
+            <a href="https://pub.dartlang.org/packages/date_utils">
+              <h4>Dart date_utils</h4>
+            </a>
           </StyledListElement>
         </StyledList>
       </Container>
