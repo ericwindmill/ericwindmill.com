@@ -68,6 +68,16 @@ export const postQuery = graphql`
 const StyledList = styled.ul`
   padding: 0;
 `;
+
+const StyledListWithoutDescriptions = styled.ul`
+  padding: 0;
+  h4 {
+    padding-bottom: 0;
+    line-height: 1;
+    margin: 0;
+  }
+`;
+
 const StyledListElement = styled.li`
   list-style: none;
   h4 {
@@ -141,6 +151,7 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
             </a>
           </StyledListElement>
         </StyledList>
+
         <h3>Projects</h3>
         <StyledList>
           {projects.map(project => (
@@ -154,7 +165,7 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
         </StyledList>
 
         <h3>Open Source</h3>
-        <StyledList>
+        <StyledListWithoutDescriptions id="os-list">
           <StyledListElement>
             <a href="https://gatsbyjs.org">
               <h4>GatsbyJS</h4>
@@ -185,7 +196,7 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
               <h4>Dart date_utils</h4>
             </a>
           </StyledListElement>
-        </StyledList>
+        </StyledListWithoutDescriptions>
       </Container>
     </Page>
   );
