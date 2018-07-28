@@ -37,7 +37,7 @@ export default () => (
           days, I'm a Dart 🎯 developer at{" "}
           <a style={{ color: "#00b300" }} href="https://apptree.cloud">
             AppTree
-          </a>, a PaaS company in Portland, Oregon. I'm also writing Flutter in
+          </a>, a PaaS company in Portland, Oregon. I'm writing Flutter in
           Action for <a href="https://www.manning.com/">Manning Publishing</a>.
           I also write articles <Link to={"/articles"}>on this site</Link> and
           sometimes on{" "}

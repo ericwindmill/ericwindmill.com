@@ -126,6 +126,15 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
               GatsbyJS and React.
             </p>
           </StyledListElement>
+          <StyledListElement>
+            <h4>DACA Time</h4>
+            <p>
+              DACA Time is a service that simplifies the process of applying for
+              DACA status. It's a Django/React web app, in which I helped on the
+              React front-end. Unfortunately because of the current political
+              climate, this company doesn't exist.
+            </p>
+          </StyledListElement>
         </StyledList>
 
         <h3>Published Book</h3>
@@ -156,7 +165,7 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
         <StyledList>
           {projects.map(project => (
             <StyledListElement>
-              <a to={project.node.frontmatter.externalUrl}>
+              <a href={project.node.frontmatter.externalUrl}>
                 <h4>{project.node.frontmatter.title}</h4>
               </a>
               <p>{project.node.frontmatter.description}</p>
