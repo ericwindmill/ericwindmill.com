@@ -156,9 +156,9 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
         <StyledList>
           {projects.map(project => (
             <StyledListElement>
-              <Link to={project.node.frontmatter.externalUrl}>
+              <a to={project.node.frontmatter.externalUrl}>
                 <h4>{project.node.frontmatter.title}</h4>
-              </Link>
+              </a>
               <p>{project.node.frontmatter.description}</p>
             </StyledListElement>
           ))}
