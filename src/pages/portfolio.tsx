@@ -181,11 +181,6 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
             </a>
           </StyledListElement>
           <StyledListElement>
-            <a href="http://www.dacatime.com/">
-              <h4>DACA Time</h4>
-            </a>
-          </StyledListElement>
-          <StyledListElement>
             <a href="https://www.gatsbyjs.org/docs/gatsby-starters/">
               <h4>gatsby_starter_docs and gatsby_starter_wordpress</h4>
             </a>
