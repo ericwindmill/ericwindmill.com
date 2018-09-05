@@ -3,8 +3,7 @@ import * as React from "react";
 import Page from "../components/Page";
 import Container from "../components/Container";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { colors, fonts } from "../styles/variables";
+import { colors } from "../styles/variables";
 
 interface PortfolioPageProps {
   data: {
@@ -157,6 +156,11 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
           <StyledListElement>
             <a href="https://css-tricks.com/using-es2017-async-functions/">
               <h4>JavaScript Async Functions - CSS Tricks</h4>
+            </a>
+          </StyledListElement>
+          <StyledListElement>
+            <a href="https://css-tricks.com/flutter-googles-take-on-cross-platform/">
+              <h4>Flutter: Google's Take on Cross Platform - CSS Tricks</h4>
             </a>
           </StyledListElement>
         </StyledList>
