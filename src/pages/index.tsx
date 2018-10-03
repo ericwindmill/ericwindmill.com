@@ -81,6 +81,7 @@ export default () => (
             I've devoured music
           </a>.
         </p>
+        <p>Recently, I've been sucked into the horrifying world of Twitter. <a href="https://twitter.com/ericwindmill">Follow me</a> if you like to see lots of Muppets based retweets.</p>
       </StyledContent>
     </Container>
   </Page>
