@@ -1,41 +1,43 @@
 import * as React from "react";
 import styled from "styled-components";
-import { transparentize } from "polished";
-import Link from "gatsby-link";
-
-import { heights, dimensions, colors } from "../styles/variables";
-// import { onEvent } from "../styles/mixins";
-import Container from "./Container";
+import MaterialButton from "./MaterialButton";
+import {colors} from "../styles/variables";
 
 const StyledHeader = styled.header`
-`;
-
-const HeaderInner = styled(Container)`
+  display:flex;
+  justify-content: flex-end;
+  background: ${colors.brand};
+  padding: 10px;
+  border-radius: 25px 25px 0 0;
 `;
 
 const Links = styled.div`
 `;
 
-const Title = styled.div`
-`;
-
 interface HeaderProps {
-  title: string;
+  title?: string;
+  toggleMenu: () => void;
 }
 
-const Header: React.SFC<HeaderProps> = ({ title }) => (
-  <StyledHeader>
-    <HeaderInner>
-      <Title>
-        <Link to="/">{title}</Link>
-      </Title>
-      <Links>
-        <Link to="/posts/my-library/">Library</Link>
-        <Link to="/articles">Articles</Link>
-        <Link to="/portfolio">Portfolio</Link>
-      </Links>
-    </HeaderInner>
-  </StyledHeader>
-);
+class Header extends React.Component<HeaderProps> {
+  private onClick = () => {
+    this.props.toggleMenu();
+  }
+
+  public render(): React.ReactNode {
+    return (
+      <StyledHeader>
+        <Links>
+          <MaterialButton
+            darkTheme={true}
+            label={"menu"}
+            trigger={this.onClick}
+          ></MaterialButton>
+        </Links>
+      </StyledHeader>
+    );
+  }
+
+}
 
 export default Header;

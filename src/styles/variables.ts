@@ -1,13 +1,18 @@
 /* tslint:disable:max-line-length */
 
 export const colors = {
-  brand: "#2963ff",
-  brandLight: "#608cff",
+  brand: "rgba(12, 30, 56, 1)",
+  brandLight: "rgba(15, 28, 43, 1)",
   brandDark: "#0942ff",
   lilac: "#9d7cbf",
   accent: "#cfa5ff",
   success: "#37b635",
   warning: "#ec1818",
+  brandGradientPurple: 'rgba(120, 42, 114, 1)',
+  brandGradientRed: 'rgba(241, 91, 116, 1)',
+  brandGradientOrange: 'rgba(255, 77, 91, 1)',
+  brandAccentBlue: 'rgba(63, 99, 129, 1)',
+  brandAccentGreen: 'rgba(78, 106, 110, 1)',
   ui: {
     bright: "#e0d6eb",
     light: "#f5f3f7",
@@ -16,7 +21,6 @@ export const colors = {
   background: {
     nightSky1: '#2D4A53',
     nightSky: '#4E6A6E',
-
   },
   code: "#fcf6f0",
   gray: {
@@ -74,6 +78,7 @@ export const dimensions = {
   },
   containerPadding: 1.5,
   gridUnit: 10,
+  siteMargin: 75,
 };
 
 export const heights = {
@@ -84,6 +89,7 @@ export const elevation = {
   one: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
   oneHover: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
   two: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
-  three: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
+  three: '20px 30px 100px 10px rgba(0,0,0,.13)',
   hoverTransitionCurve: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
+  text: '0 10px 30px rgba(2, 11, 22, 0.5);'
 }

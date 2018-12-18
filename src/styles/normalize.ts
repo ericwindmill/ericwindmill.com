@@ -41,6 +41,28 @@ injectGlobal`
       text-decoration: underline;
     `}
   }
+  
+   button {
+      outline: none;
+      border: none;
+      background: transparent;
+      font-family: ${fonts.sansSerif};
+      cursor: pointer;
+      
+  }
+
+  .ripple{
+    overflow:hidden;
+  }
+
+  .ripple-effect{
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+    animation: ripple-animation 2s;
+  }
 
   img {
     max-width: 100%;
@@ -156,6 +178,18 @@ injectGlobal`
         margin-bottom: 0;
       }
     }
+    
+    
+    @keyframes ripple-animation {
+    from {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+}
     
 
     ${media.md`

@@ -3,26 +3,33 @@ import styled from "styled-components";
 
 import Page from "../components/Page";
 import Container from "../components/Container";
-import { dimensions } from "../styles/variables";
+import {dimensions, colors, elevation} from "../styles/variables";
 import HeroTransitionText from "../components/HeroTransitionText";
+import PerspectiveCard from "../components/PerspectiveCard";
 
 const StyledHeader = styled.div`
-    margin: ${dimensions.gridUnit * 2}px;
+    padding: ${dimensions.gridUnit * 5}px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    background: ${colors.brand};
+    height: calc(100vh - ${dimensions.siteMargin}px * 2);
     
     h1, h2 {
       margin: 0;
-      font-size: 9vw;
+      font-size: 7vw;
       letter-spacing: 4px;
       text-transform: uppercase;
+      color: #EEE;
+      text-shadow: ${elevation.text};
     }
     
     h2 {
-      font-size: 7vw;
+      font-size: 5vw;
     }
 `;
+
+const StyledMainContent = styled.section``;
 
 export default class IndexPage extends React.Component {
   render() {
@@ -38,6 +45,11 @@ export default class IndexPage extends React.Component {
               <HeroTransitionText className={"slide-top-c"} text={"Portfolio"} />
             </h2>
           </StyledHeader>
+          <StyledMainContent>
+            <PerspectiveCard>
+              <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2009/11/26/03/petoftheweek.jpeg" alt=""/>
+            </PerspectiveCard>
+          </StyledMainContent>
         </Container>
       </Page>
     );

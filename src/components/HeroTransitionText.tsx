@@ -21,12 +21,12 @@ const HeroTransitionTextContainer = styled.span`
     
     @-webkit-keyframes slide-top-a {
       0% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       75% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       100% {
         -webkit-transform: translateY(0);
@@ -35,12 +35,12 @@ const HeroTransitionTextContainer = styled.span`
     }
     @keyframes slide-top-a {
       0% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       75% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       100% {
         -webkit-transform: translateY(0);
@@ -55,12 +55,12 @@ const HeroTransitionTextContainer = styled.span`
     
     @-webkit-keyframes slide-top-b {
       0% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       80% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       100% {
         -webkit-transform: translateY(0);
@@ -69,12 +69,12 @@ const HeroTransitionTextContainer = styled.span`
     }
     @keyframes slide-top-b {
       0% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       80% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       100% {
         -webkit-transform: translateY(0);
@@ -89,12 +89,12 @@ const HeroTransitionTextContainer = styled.span`
     
     @-webkit-keyframes slide-top-c {
       0% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       80% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       100% {
         -webkit-transform: translateY(0);
@@ -103,12 +103,12 @@ const HeroTransitionTextContainer = styled.span`
     }
     @keyframes slide-top-c {
       0% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       80% {
-        -webkit-transform: translateY(100px);
-                transform: translateY(100px);
+        -webkit-transform: translateY(110px);
+                transform: translateY(110px);
       }
       100% {
         -webkit-transform: translateY(0);
