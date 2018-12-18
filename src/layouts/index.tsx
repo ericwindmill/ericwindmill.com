@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 
 import '../styles/normalize'
 
-import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 
@@ -19,19 +18,17 @@ interface WrapperProps {
   }
 }
 
-const IndexLayout: React.SFC<WrapperProps> = ({ children, data }) => (
-  <LayoutRoot>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: data.site.siteMetadata.description },
-        { name: 'keywords', content: 'gatsbyjs, gatsby, javascript, sample, something' }
-      ]}
-    />
-    <Header title={data.site.siteMetadata.title} />
-    <LayoutMain>{children()}</LayoutMain>
-  </LayoutRoot>
-)
+// @ts-ignore
+const IndexLayout: React.SFC<WrapperProps> = ({children, data}) => <LayoutRoot>
+  <Helmet
+    title={data.site.siteMetadata.title}
+    meta={[
+      {name: 'description', content: data.site.siteMetadata.description},
+      {name: 'keywords', content: 'gatsbyjs, gatsby, javascript, sample, something'}
+    ]}
+  />
+  <LayoutMain>{children()}</LayoutMain>
+</LayoutRoot>
 
 export default IndexLayout
 

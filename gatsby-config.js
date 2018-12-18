@@ -15,6 +15,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `hind\:300, 400, 700`, // you can also specify font weights and styles
+          `EB Garamond\:400, 400i, 700`, // you can also specify font weights and styles
+        ]
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",

@@ -1,12 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
-import { colors } from "../styles/variables";
+import {elevation} from "../styles/variables";
 
 const StyledLayoutMain = styled.main`
   display: flex;
   flex-direction: column;
   flex: 1;
-  background: ${colors.ui.light};
+  margin: 75px;
+  border-radius: 25px;
+  background: white;
+  box-shadow: ${elevation.three};
 `;
 
 interface LayoutMainProps {

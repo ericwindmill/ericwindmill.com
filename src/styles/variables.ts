@@ -13,6 +13,11 @@ export const colors = {
     light: "#f5f3f7",
     whisper: "#fbfafc",
   },
+  background: {
+    nightSky1: '#2D4A53',
+    nightSky: '#4E6A6E',
+
+  },
   code: "#fcf6f0",
   gray: {
     dark: "hsla(270, 17.119554496%, 0%, 0.92)",
@@ -27,9 +32,9 @@ export const colors = {
 
 export const fonts = {
   sansSerif:
-    '"Avenir",-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",' +
+    '"Hind", "Avenir",-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",' +
     ' "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif',
+  serif: '"EB Garamond", Georgia, "Times New Roman", Times, serif',
   monospace:
     'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",' +
     " monospace, monospace",
@@ -65,7 +70,7 @@ export const dimensions = {
   lineHeight: {
     regular: 1.5,
     heading: 1,
-    hero: 1.2,
+    hero: 0.8,
   },
   containerPadding: 1.5,
   gridUnit: 10,
@@ -74,3 +79,11 @@ export const dimensions = {
 export const heights = {
   header: 40,
 };
+
+export const elevation = {
+  one: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+  oneHover: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
+  two: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+  three: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
+  hoverTransitionCurve: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
+}

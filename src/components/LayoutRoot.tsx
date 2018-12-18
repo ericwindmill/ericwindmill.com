@@ -8,11 +8,21 @@ const StyledLayoutRoot = styled.div`
 `
 
 interface LayoutRootProps {
-  className?: string
+  className?: string,
+  children: React.ReactChild,
 }
 
-const LayoutRoot: React.SFC<LayoutRootProps> = ({ children, className }) => (
-  <StyledLayoutRoot className={className}>{children}</StyledLayoutRoot>
-)
+class LayoutRoot extends React.Component<LayoutRootProps> {
+
+  public render() {
+    return (
+      <StyledLayoutRoot
+        id="background-container"
+        className={this.props.className}>
+        {this.props.children}
+      </StyledLayoutRoot>
+    );
+  }
+}
 
 export default LayoutRoot
