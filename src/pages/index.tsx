@@ -6,6 +6,7 @@ import Container from "../components/Container";
 import {dimensions, colors, elevation} from "../styles/variables";
 import HeroTransitionText from "../components/HeroTransitionText";
 import PerspectiveCard from "../components/PerspectiveCard";
+import CanvasAnimation from "../components/CanvasAnimation";
 
 const StyledHeader = styled.div`
     padding: ${dimensions.gridUnit * 5}px;
@@ -47,8 +48,9 @@ export default class IndexPage extends React.Component {
           </StyledHeader>
           <StyledMainContent>
             <PerspectiveCard>
-              <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2009/11/26/03/petoftheweek.jpeg" alt=""/>
+              <img width='300px' height='120px' src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2009/11/26/03/petoftheweek.jpeg" alt=""/>
             </PerspectiveCard>
+            <CanvasAnimation/>
           </StyledMainContent>
         </Container>
       </Page>
