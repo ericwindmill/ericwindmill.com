@@ -1,44 +1,81 @@
 import * as React from 'react';
-import {Stage, Layer, Rect} from 'react-konva';
+import {Stage, Layer, Circle} from 'react-konva';
 import * as Konva from "konva";
+import styled from "styled-components";
+import {Vector2d} from "konva";
 
-class MyRect extends React.Component {
-  private ref_ = React.createRef<Konva.Rect>();
+interface StarDotProps {
+  radius: number;
+  opacity: number;
+}
 
-  changeSize = () => {
-    // to() is a method of `Konva.Node` instances
-    if (this.ref_.current !== null) {
-      this.ref_.current.to({
-        scaleX: Math.random() + 0.8,
-        scaleY: Math.random() + 0.8,
-        duration: 0.2
-      });
-    }
-  };
+const alphaOptions = [0.4, 0.5, 0.6, 0.7, 0.,8, 0.9];
+
+class StarDot extends React.Component<StarDotProps> {
+  private ref_ = React.createRef<Konva.Circle>();
 
   render() {
     return (
-      <Rect
+      <Circle
         ref={this.ref_}
-        width={50}
-        height={50}
-        fill="green"
-        draggable
-        onDragEnd={this.changeSize}
-        onDragStart={this.changeSize}
+        fill={`rgba(255,255,255,${this.props.radius})`}
+        radius={this.props.radius}
+        x={Math.random() * (window.innerWidth)}
+        y={Math.random() * (window.innerHeight)}
       />
     );
   }
 }
 
-class CanvasAnimation extends React.Component {
+const CanvasContainer = styled.div`
+  position: absolute;
+  top: -136px;
+  left: -75px;
+  right: 75px;
+  height: 100vh;
+  overflow: scroll;
+  width: 100vw;
+`
+
+class  CanvasAnimation extends React.Component {
+  private ref_ = React.createRef<Konva.Layer>();
+
+  animate = () => {
+    if (this.ref_.current != null) {
+      const anim = new Konva.Animation((frame: any) => {
+        // @ts-ignore
+        const children = this.ref_.current.getChildren();
+        children.each((shape) => {
+          let yDist = (Math.random() * 10) * (frame.timeDiff / 1000);
+          let xDist = (Math.random() * 3) * (frame.timeDiff / 1000);
+          let vect = {x: xDist, y: -yDist} as Vector2d;
+          shape.move(vect);
+        })
+      }, this.ref_.current);
+
+      anim.start();
+    }
+  }
+
+  componentDidMount() {
+    this.animate();
+  }
+
   render() {
     return (
-      <Stage width={window.innerWidth} height={window.innerHeight}>
-        <Layer>
-          <MyRect />
-        </Layer>
-      </Stage>
+      <CanvasContainer className={"canvas-container"}>
+        <Stage width={window.innerWidth} height={window.innerHeight}>
+          <Layer ref={this.ref_}>
+            {Array.from({length:50},(_)=> {
+              return Math.random() * 3;
+            }).map((value: number, idx: number) => {
+              let alpha = alphaOptions[Math.floor(Math.random() * alphaOptions.length) + 1];
+              return <StarDot radius={value} key={value + idx} opacity={alpha} />
+            })}
+          </Layer>
+        </Stage>
+      </CanvasContainer>
+
     );
   }
 }

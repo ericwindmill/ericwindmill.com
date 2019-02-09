@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import {elevation} from "../styles/variables";
+import GalaxyEdge from "./GalaxyFeatureSVG";
 
 const StyledLayoutMain = styled.main`
   display: flex;
@@ -17,7 +18,9 @@ interface LayoutMainProps {
 }
 
 const LayoutMain: React.SFC<LayoutMainProps> = ({ children, className }) => (
-  <StyledLayoutMain className={className}>{children}</StyledLayoutMain>
+  <StyledLayoutMain className={className}>
+      {children}
+    </StyledLayoutMain>
 );
 
 export default LayoutMain;

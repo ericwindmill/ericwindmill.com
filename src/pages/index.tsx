@@ -5,8 +5,9 @@ import Page from "../components/Page";
 import Container from "../components/Container";
 import {dimensions, colors, elevation} from "../styles/variables";
 import HeroTransitionText from "../components/HeroTransitionText";
-import PerspectiveCard from "../components/PerspectiveCard";
 import CanvasAnimation from "../components/CanvasAnimation";
+import EngineeringItem from "../components/index_portfolio_items/engineering_item";
+import GalaxyEdge from "../components/GalaxyFeatureSVG";
 
 const StyledHeader = styled.div`
     padding: ${dimensions.gridUnit * 5}px;
@@ -26,11 +27,15 @@ const StyledHeader = styled.div`
     }
     
     h2 {
-      font-size: 5vw;
+      font-size: 3.5vw;
     }
 `;
 
-const StyledMainContent = styled.section``;
+
+
+const StyledMainContent = styled.section`
+  position: relative;
+`;
 
 export default class IndexPage extends React.Component {
   render() {
@@ -38,6 +43,7 @@ export default class IndexPage extends React.Component {
       <Page>
         <Container>
           <StyledHeader>
+            <CanvasAnimation/>
             <h1 className="name">
               <HeroTransitionText className={"slide-top-a"} text={"Eric"} />
               <HeroTransitionText className={"slide-top-b"} text={"Windmill"} />
@@ -45,12 +51,10 @@ export default class IndexPage extends React.Component {
             <h2>
               <HeroTransitionText className={"slide-top-c"} text={"Portfolio"} />
             </h2>
+            <GalaxyEdge/>
           </StyledHeader>
           <StyledMainContent>
-            <PerspectiveCard>
-              <img width='300px' height='120px' src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2009/11/26/03/petoftheweek.jpeg" alt=""/>
-            </PerspectiveCard>
-            <CanvasAnimation/>
+            <EngineeringItem/>
           </StyledMainContent>
         </Container>
       </Page>
