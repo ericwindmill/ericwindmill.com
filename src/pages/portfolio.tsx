@@ -82,8 +82,9 @@ const StyledListElement = styled.li`
   h4 {
     margin-bottom: 0;
     line-height: 1.5rem;
+    font-size: 1.4rem;
   }
-  h4:hover {
+  h4:hover, h5:hover {
     color: ${colors.linkInk};
   }
   p {
@@ -91,6 +92,12 @@ const StyledListElement = styled.li`
   }
   a:hover {
     text-decoration: none;
+  }
+   h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 `;
 
@@ -104,20 +111,30 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
         <StyledList>
           <StyledListElement>
             <a href="https://apptree.cloud">
-              <h4>AppTree Software</h4>
+              <h4>AppTree Software, Software Engineer, 2 years</h4>
             </a>
             <p>
-              On the web team, I help design and build the web and mobile
-              clients for a platform that empowers enterprise companies to build
-              cross-platform (web and mobile) apps fast. Our clients team uses
-              Dart, Flutter, AngularDart and PolymerDart.
+              At AppTree, we're creating tools that make software development easier for enterprise companies. The
+              products that I've helped build are mission-critical tools used by hundreds of large coorporations,
+              municipalities and universities.
             </p>
             <p>
-              I'm also on a team that's building a new Emergency Notification
-              App for large companies like University campuses and
-              municipalities. I've built the web-application MVP in Dart and
-              AngularDart, as well as writing Dart wrappers for popular
-              JavaScript libraries like Leaflet and FreeDraw.
+              I've helped <b>design and build the web and mobile
+             clients</b> for our core platform, which empowers enterprise companies to build
+              cross-platform (web and mobile) apps fast. Our client are mostly written in
+              <b>Dart, Flutter, AngularDart and Golang.</b>
+            </p>
+            <p>
+              I'm <b>building a new Emergency Notification
+                     App</b> for large university campuses and
+              municipalities. It's a two-way, real-time communication tool that allows first-responders and
+              citizens to organize and communicate effectively and efficiently. I've built the web-application MVP in <b> Dart and
+             AngularDart,</b> as well as <b>writing Dart wrappers for popular
+                                            JavaScript libraries</b> like Leaflet and FreeDraw.
+            </p>
+            <p>
+              My new favorite product to work on is our Integrations platform. We're building a build-tool, workflow
+              style <b>integration platform in C# and .NET</b>.
             </p>
             <p>
               I also built{" "}
@@ -126,7 +143,7 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
             </p>
           </StyledListElement>
           <StyledListElement>
-            <h4>DACA Time</h4>
+            <h4>DACA Time - Software Developer</h4>
             <p>
               DACA Time is a service that simplifies the process of applying for
               DACA status. It's a Django/React web app, in which I helped on the
@@ -155,12 +172,12 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
         <StyledList>
           <StyledListElement>
             <a href="https://css-tricks.com/using-es2017-async-functions/">
-              <h4>JavaScript Async Functions - CSS Tricks</h4>
+              <h5>JavaScript Async Functions - CSS Tricks</h5>
             </a>
           </StyledListElement>
           <StyledListElement>
             <a href="https://css-tricks.com/flutter-googles-take-on-cross-platform/">
-              <h4>Flutter: Google's Take on Cross Platform - CSS Tricks</h4>
+              <h5>Flutter: Google's Take on Cross Platform - CSS Tricks</h5>
             </a>
           </StyledListElement>
         </StyledList>
@@ -181,27 +198,27 @@ const PortfolioPage = ({ data }: PortfolioPageProps) => {
         <StyledListWithoutDescriptions id="os-list">
           <StyledListElement>
             <a href="https://gatsbyjs.org">
-              <h4>GatsbyJS</h4>
+              <h5>GatsbyJS</h5>
             </a>
           </StyledListElement>
           <StyledListElement>
             <a href="https://www.gatsbyjs.org/docs/gatsby-starters/">
-              <h4>gatsby_starter_docs and gatsby_starter_wordpress</h4>
+              <h5>gatsby_starter_docs and gatsby_starter_wordpress</h5>
             </a>
           </StyledListElement>
           <StyledListElement>
             <a href="https://pub.dartlang.org/packages/map_view">
-              <h4>Flutter map_view</h4>
+              <h5>Flutter map_view</h5>
             </a>
           </StyledListElement>
           <StyledListElement>
             <a href="https://pub.dartlang.org/packages/flutter_calendar">
-              <h4>flutter_calendar</h4>
+              <h5>flutter_calendar</h5>
             </a>
           </StyledListElement>
           <StyledListElement>
             <a href="https://pub.dartlang.org/packages/date_utils">
-              <h4>Dart date_utils</h4>
+              <h5>Dart date_utils</h5>
             </a>
           </StyledListElement>
         </StyledListWithoutDescriptions>

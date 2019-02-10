@@ -28,25 +28,25 @@ export default () => (
     <Container>
       <StyledHeader>
         <h1>Hi There.</h1>{" "}
-        <h2>I'm Eric Windmill. Software Engineer, UI Designer, and Author.</h2>
+        <h2>I'm Eric Windmill, a Software Engineer in Portland, OR.</h2>
       </StyledHeader>
       <StyledContent>
         <h3>Work</h3>
         <p>
-          I've been designing and building web applications for 3 years. These
+          I've been designing and building web and mobile applications for 3 years. These
           days, I'm a Dart 🎯 developer at{" "}
           <a style={{ color: "#00b300" }} href="https://apptree.cloud">
             AppTree
           </a>, a PaaS company in Portland, Oregon. I'm writing Flutter in
           Action for <a href="https://www.manning.com/">Manning Publishing</a>.
-          I also write articles <Link to={"/articles"}>on this site</Link> and
+          I also write articles <Link to={"/articles"}>on the site your on right now</Link> and
           sometimes on{" "}
           <a href="https://css-tricks.com/using-es2017-async-functions/">
             CSS Tricks
           </a>.
         </p>
         <p>
-          Finally, I write and maintain a few sites about my favorite
+          Finally, I write and maintain a helpful sites about my favorite
           programming technologies, notably{" "}
           <a href="https://flutterbyexample.com">Flutter By Example</a>. See the
           rest on my <Link to="/portfolio">portfolio page</Link>.
