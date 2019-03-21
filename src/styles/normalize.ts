@@ -1,7 +1,7 @@
-import styledNormalize from "styled-normalize";
-import { injectGlobal } from "styled-components";
-import { dimensions, fonts, colors } from "./variables";
-import { onEvent, media } from "./mixins";
+import styledNormalize from "styled-normalize"
+import {injectGlobal} from "styled-components"
+import {dimensions, fonts, colors} from "./variables"
+import {onEvent, media} from "./mixins"
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
@@ -28,7 +28,6 @@ injectGlobal`
     overflow-y: scroll;
     font-family: ${fonts.sansSerif};
     color: ${colors.black};
-    background-color: ${colors.white};
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }
@@ -114,7 +113,7 @@ injectGlobal`
     margin-top: 1.414rem;
     margin-bottom: .5rem;
     color: ${colors.ink};
-    font-weight: 600;
+    font-weight: 300;
     line-height: ${dimensions.lineHeight.heading};
     text-rendering: optimizeLegibility;
   }
@@ -126,6 +125,7 @@ injectGlobal`
 
   h2 {
     font-size: ${dimensions.headingSizes.h2}rem;
+    color: ${colors.inkSecondary};
   }
 
   h3 {
@@ -166,6 +166,17 @@ injectGlobal`
     border: 0;
     border-top: 1px solid ${colors.ui.light};
   }
+  
+ @keyframes fade-in {
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	60% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
+ .fade-in {
+    animation: fade-in .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
 
   blockquote {
     margin: .8rem 0;
@@ -205,4 +216,4 @@ injectGlobal`
     h4,h5,h6 {font-size: 16px;}
     p {font-size: 14px;}
   `};
-`;
+`

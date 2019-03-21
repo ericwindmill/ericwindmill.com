@@ -1,5 +1,6 @@
 ---
 title: "My Library"
+layout: "post"
 cover: "https://unsplash.it/1152/300/?random?MyLibrary"
 type: “Post”
 category: "Life"

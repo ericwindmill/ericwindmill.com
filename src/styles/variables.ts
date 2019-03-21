@@ -1,9 +1,8 @@
 /* tslint:disable:max-line-length */
 
 export const colors = {
-  brand: "rgba(12, 30, 56, 1)",
-  brandLight: "rgba(15, 28, 43, 1)",
-  brandDark: "#0942ff",
+  brand: "#1dc4f4",
+  brandAccent: "rgb(255, 221, 0)",
   lilac: "#9d7cbf",
   accent: "#cfa5ff",
   success: "#37b635",
@@ -16,74 +15,75 @@ export const colors = {
   ui: {
     bright: "#e0d6eb",
     light: "#f5f3f7",
-    whisper: "#fbfafc",
+    whisper: "#fbfafc"
   },
   background: {
     nightSky1: '#2D4A53',
-    nightSky: '#4E6A6E',
+    nightSky: '#4E6A6E'
   },
   code: "#fcf6f0",
   gray: {
     dark: "hsla(270, 17.119554496%, 0%, 0.92)",
     copy: "hsla(270, 15.797828016000002%, 0%, 0.88)",
-    calm: "rgba(0, 0, 0, 0.54)",
+    calm: "rgba(0, 0, 0, 0.54)"
   },
   white: "#fff",
   black: "#000",
-  ink: "rgba(0, 0, 0, .7)",
-  linkInk: "#4100ba",
-};
+  ink: "rgba(0, 0, 0, .9)",
+  inkSecondary: "#7B7B7B",
+  linkInk: "#4100ba"
+}
 
 export const fonts = {
   sansSerif:
-    '"Hind", "Avenir",-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",' +
+    ' "Overpass", "Avenir", "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",' +
     ' "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
   serif: '"EB Garamond", Georgia, "Times New Roman", Times, serif',
   monospace:
-    'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",' +
-    " monospace, monospace",
-};
+    '"Overpass Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",' +
+    " monospace, monospace"
+}
 
 export const breakpoints = {
   xs: 0,
   sm: 576,
   md: 768,
   lg: 992,
-  xl: 1200,
-};
+  xl: 1200
+}
 
 export const widths = {
   sm: 600,
   md: 720,
   lg: 960,
-  xl: 1140,
-};
+  xl: 1140
+}
 
 export const dimensions = {
   fontSize: {
     base: 10,
     regular: 16,
-    large: 18,
+    large: 18
   },
   headingSizes: {
-    h1: 4,
-    h2: 3,
-    h3: 2,
-    h4: 1,
+    h1: 3,
+    h2: 2,
+    h3: 1.5,
+    h4: 1
   },
   lineHeight: {
-    regular: 1.5,
+    regular: 1,
     heading: 1,
-    hero: 0.8,
+    hero: 0.8
   },
   containerPadding: 1.5,
   gridUnit: 10,
-  siteMargin: 75,
-};
+  siteMargin: 75
+}
 
 export const heights = {
-  header: 40,
-};
+  header: 40
+}
 
 export const elevation = {
   one: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',

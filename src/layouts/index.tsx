@@ -3,8 +3,8 @@ import Helmet from 'react-helmet'
 
 import '../styles/normalize'
 
-import LayoutRoot from '../components/LayoutRoot'
-import LayoutMain from '../components/LayoutMain'
+import LayoutRoot from '../components/layout/LayoutRoot'
+import LayoutMain from '../components/layout/LayoutMain'
 
 interface WrapperProps {
   children: () => any

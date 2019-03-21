@@ -1,8 +1,8 @@
 import * as React from "react"
 
-import Page from "../components/layout/Page"
 import styled from "styled-components"
 import {fonts} from "../styles/variables"
+import BlogPost from "../components/layout/BlogPost"
 
 interface PageTemplateProps {
   data: {
@@ -27,18 +27,18 @@ interface PageTemplateProps {
 }
 
 const PageTemplate: React.SFC<PageTemplateProps> = ({data}) => (
-  <Page>
+  <BlogPost>
     <SyntaxHighlighting>
       <h2>{data.markdownRemark.frontmatter.title}</h2>
       <div dangerouslySetInnerHTML={{__html: data.markdownRemark.html}} />
     </SyntaxHighlighting>
-  </Page>
+  </BlogPost>
 )
 
 export default PageTemplate
 
 export const query = graphql`
-  query PageTemplateQuery($slug: String!) {
+  query PostTemplateQuery($slug: String!) {
     site {
       siteMetadata {
         title

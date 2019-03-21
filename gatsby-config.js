@@ -8,7 +8,7 @@ module.exports = {
     description: "Eric Windmill's digital portfolio.",
     siteUrl: "https://gatsby-starter-typescript-plus.netlify.com",
     author: {
-      name: "Resi Respati",
+      name: "Eric Windmill",
       url: "https://twitter.com/resir014",
       email: "resir014@gmail.com",
     },
@@ -18,8 +18,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `hind\:300, 400, 700`, // you can also specify font weights and styles
-          `EB Garamond\:400, 400i, 700`, // you can also specify font weights and styles
+          `material icons`,
+          `Overpass\:300,300i,600`, // you can also specify font weights and styles
+          `Overpass Mono\:300`, // you can also specify font weights and styles
+          `EB Garamond\:400, 400i, 600`, // you can also specify font weights and styles
         ]
       }
     },
@@ -43,6 +45,14 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
+          {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+              rule: {
+                include: /assets/ // See below to configure properly
+              }
+            }
+          },
           {
             resolve: "gatsby-remark-images",
             options: {
